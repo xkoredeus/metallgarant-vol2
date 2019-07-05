@@ -66,6 +66,30 @@ option {
   color: #05162E;
 }
 
+textarea {
+  overflow: hidden;
+}
+
+textarea::-webkit-input-placeholder {
+  color: #05162E;
+}
+
+textarea::-moz-placeholder {
+  color: #05162E;
+}
+
+textarea:-ms-input-placeholder {
+  color: #05162E;
+}
+
+textarea::-ms-input-placeholder {
+  color: #05162E;
+}
+
+textarea::placeholder {
+  color: #05162E;
+}
+
 input,
 textarea,
 select {
@@ -596,17 +620,32 @@ button:active .shd:hover {
 
 .owl-carousel .owl-nav button.owl-prev,
 .owl-carousel .owl-nav button.owl-next {
+  width: 31px;
+  height: 31px;
   position: absolute;
   bottom: 50%;
   margin-bottom: -25.5px;
   border-radius: 50%;
-  padding: 7px !important;
+  padding: 0;
   background-color: #fff;
+  border: 1.5px solid #05162E;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 
 .owl-carousel .owl-nav button.owl-prev img,
 .owl-carousel .owl-nav button.owl-next img {
-  width: 17px;
+  max-width: 17px;
   height: auto;
 }
 
@@ -616,6 +655,7 @@ button:active .shd:hover {
   -webkit-transform: scale(0.9);
       -ms-transform: scale(0.9);
           transform: scale(0.9);
+  border-color: #F18E02;
 }
 
 .owl-carousel .owl-nav button.owl-prev.disabled,
@@ -679,8 +719,9 @@ button:active .shd:hover {
 }
 
 .header {
-  background-color: #05162E;
+  font-size: 13px;
   color: #fff;
+  background-color: #05162E;
   padding: 10px 0;
 }
 
@@ -695,7 +736,7 @@ button:active .shd:hover {
 .header__city-select {
   width: 100%;
   padding: 7px 35px 7px 15px;
-  border: 1px solid #fff;
+  border: 1px solid #f9f9f966;
   border-radius: 2px;
   position: relative;
   cursor: pointer;
@@ -836,7 +877,7 @@ button:active .shd:hover {
   text-align: center;
   padding: 12px 10px;
   color: #fff;
-  border: 1px solid #F9F9F9;
+  border: 1px solid #f9f9f966;
   border-radius: 2px;
   position: relative;
   overflow: hidden;
@@ -877,6 +918,11 @@ button:active .shd:hover {
 .banner__nav-item.active {
   background-color: #F18E02;
   border-color: #F18E02;
+}
+
+.banner__nav .btn {
+  padding-left: 5px;
+  padding-right: 5px;
 }
 
 .banner__tel {
@@ -1019,10 +1065,12 @@ button:active .shd:hover {
 
 .begin__slider .owl-nav button.owl-prev {
   left: 10px;
+  border-color: transparent;
 }
 
 .begin__slider .owl-nav button.owl-next {
   right: 10px;
+  border-color: transparent;
 }
 
 .begin__slider .owl-dots {
@@ -1728,4 +1776,404 @@ button:active .shd:hover {
 
 .footer__logo img {
   max-width: 100%;
+}
+
+.crumbs {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-wrap: wrap;
+      -ms-flex-wrap: wrap;
+          flex-wrap: wrap;
+  list-style-type: none;
+  padding-left: 0;
+  margin-left: 0;
+  margin-bottom: 0;
+  margin-top: 20px;
+}
+
+.crumbs li,
+.crumbs a {
+  position: relative;
+  color: #05162E;
+  padding: 7px 12px;
+  border-radius: 2px;
+}
+
+.crumbs li:not(:last-child) {
+  background-color: transparent;
+  border: 1px solid #072754;
+  margin-right: 8px;
+}
+
+.crumbs li:not(:last-child):hover {
+  background-color: #072754;
+  border-color: #072754;
+}
+
+.crumbs li:not(:last-child):hover a {
+  color: #fff;
+}
+
+.crumbs li:last-child {
+  color: #fff;
+  background-color: #072754;
+}
+
+.main {
+  padding: 30px 0;
+}
+
+.rev__in {
+  padding-left: 50px;
+  padding-right: 50px;
+}
+
+.rev__item {
+  background-position: 50% 50%;
+  background-repeat: no-repeat;
+  background-size: cover;
+  border-radius: 2px;
+  overflow: hidden;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 100%;
+  max-width: 170px;
+  height: 241px;
+  margin-left: auto;
+  margin-right: auto;
+  position: relative;
+}
+
+.rev__item::before {
+  content: '';
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  left: 0;
+  top: 0;
+  background-color: #008CFF;
+  opacity: 0;
+}
+
+.rev__item-more {
+  width: 52px;
+  height: 53px;
+  background: url("../img/rev__btn.png") no-repeat 50% 50%/contain;
+  opacity: 0;
+  position: relative;
+}
+
+.rev__item:hover {
+  -webkit-box-shadow: 0px 19px 19px rgba(0, 80, 147, 0.25);
+          box-shadow: 0px 19px 19px rgba(0, 80, 147, 0.25);
+}
+
+.rev__item:hover::before {
+  opacity: .7;
+}
+
+.rev__item:hover .rev__item-more {
+  opacity: 1;
+}
+
+.rev .owl-stage {
+  padding-bottom: 35px;
+}
+
+.rev__list-item img {
+  -webkit-filter: grayscale(100%);
+          filter: grayscale(100%);
+  opacity: .6;
+}
+
+.rev__list-item-date {
+  position: relative;
+  margin-right: 35px;
+  opacity: .6;
+}
+
+.rev__list-item-date::before {
+  content: '';
+  position: absolute;
+  width: 1px;
+  height: 100%;
+  right: -10px;
+  top: 0;
+  background-color: #000;
+  opacity: 6;
+}
+
+.rev__list-item-ttl {
+  font-family: "AvenirNextCyr-Bold";
+  font-size: 18px;
+  color: #008CFF;
+}
+
+.rev-form {
+  color: #fff;
+  background: url("../img/feed__bg.jpg") no-repeat 50% 50%/cover;
+  position: relative;
+}
+
+.rev-form::before {
+  content: '';
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  left: 0;
+  top: 0;
+  background-color: #05162E;
+  opacity: .8;
+}
+
+.rev-form .container {
+  position: relative;
+}
+
+.rev-form__input,
+.rev-form .btn_file {
+  width: 100%;
+  max-width: 370px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.rev-form textarea {
+  width: 100%;
+}
+
+.corp__in {
+  padding-left: 50px;
+  padding-right: 50px;
+}
+
+.corp__item-img {
+  background-position: 50% 50%;
+  background-repeat: no-repeat;
+  background-size: cover;
+  border-radius: 2px;
+  overflow: hidden;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 100%;
+  max-width: 300px;
+  height: 187px;
+  margin-left: auto;
+  margin-right: auto;
+  position: relative;
+}
+
+.corp__item-img::before {
+  content: '';
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  left: 0;
+  top: 0;
+  background-color: #008CFF;
+  opacity: 0;
+}
+
+.corp__item-img:hover::before {
+  opacity: .7;
+}
+
+.corp__item-img:hover .corp__item-more {
+  opacity: 1;
+}
+
+.corp__item-more {
+  width: 52px;
+  height: 53px;
+  background: url("../img/rev__btn.png") no-repeat 50% 50%/contain;
+  opacity: 0;
+  position: relative;
+}
+
+.corp__item-top img {
+  -webkit-filter: grayscale(100%);
+          filter: grayscale(100%);
+  opacity: .6;
+}
+
+.corp__item-date {
+  position: relative;
+  margin-right: 35px;
+  opacity: .6;
+}
+
+.corp__item-date::before {
+  content: '';
+  position: absolute;
+  width: 1px;
+  height: 100%;
+  right: -10px;
+  top: 0;
+  background-color: #000;
+  opacity: 6;
+}
+
+.corp__item-ttl {
+  font-family: "AvenirNextCyr-Bold";
+  font-size: 18px;
+  color: #008CFF;
+}
+
+div.pagination {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-top: 20px;
+  padding: 15px 0;
+}
+
+div.pagination ul.pagination {
+  list-style-type: none;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-bottom: 0;
+  padding: 0;
+}
+
+div.pagination ul.pagination li {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+      -ms-flex-align: center;
+          align-items: center;
+  border-radius: 50%;
+}
+
+div.pagination ul.pagination li:not(:last-child) {
+  margin-right: 5px;
+}
+
+div.pagination ul.pagination li.active {
+  background-color: #F18E02;
+}
+
+div.pagination ul.pagination li.active a {
+  color: #fff;
+}
+
+div.pagination ul.pagination li a {
+  color: #000;
+  width: 25px;
+  height: 25px;
+  border: none;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+div.pagination ul.pagination li:hover {
+  opacity: .7;
+}
+
+div.pagination ul.pagination li.control {
+  opacity: 1;
+  color: #fff;
+  position: relative;
+  border: 1.5px solid #05162E;
+  background-color: #fff;
+}
+
+div.pagination ul.pagination li.control:hover {
+  background-color: #F18E02;
+  border-color: #F18E02;
+}
+
+div.pagination ul.pagination li.control a {
+  width: 30px;
+  height: 30px;
+}
+
+div.pagination ul.pagination li.control span {
+  width: 30px;
+  height: 30px;
+  opacity: 0;
+}
+
+div.pagination ul.pagination li.control::before {
+  content: '';
+  position: absolute;
+  left: 50%;
+  margin-left: -15px;
+  top: 50%;
+  margin-top: -10px;
+  width: 30px;
+  height: 20px;
+}
+
+div.pagination ul.pagination li.control_prev {
+  margin-right: 25px;
+}
+
+div.pagination ul.pagination li.control_prev::before {
+  background: url("../img/slider__arrow_prev.png") no-repeat 50% 50%/contain;
+}
+
+div.pagination ul.pagination li.control_next {
+  margin-left: 25px;
+}
+
+div.pagination ul.pagination li.control_next::before {
+  background: url("../img/slider__arrow_next.png") no-repeat 50% 50%/contain;
 }
