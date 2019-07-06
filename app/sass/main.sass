@@ -146,8 +146,12 @@ button:active
 	font-family: $a-bold
 .tac
 	text-align: center
+.tal
+	text-align: left !important
 .und
 	text-decoration: underline
+.upp
+	text-transform: uppercase
 .btn
 	outline: none
 	font-size: 14px
@@ -597,6 +601,10 @@ button:active
 		color: #fff
 	&__mail
 		color: #fff
+	&__logo
+		&:hover
+			img
+				transform: scale(.95)
 	.btn_blue
 		padding: 25px 10px
 		width: 100%
@@ -673,12 +681,38 @@ button:active
 			background-size: cover
 			padding: 30px 65px
 			color: #fff
+			&_2
+				color: $dark-blue
+				.begin__slider-ttl
+					span
+						color: $yellow
+			&_3
+				.begin__slider-subttl
+					span
+						color: #fff
+						background-color: $yellow
+						padding: 5px 6px
+				.begin__slider-ttl
+					&>div:nth-child(1)
+						margin-bottom: 13px
+						margin-top: 10px
+					.begin__slider-item-string
+						color: $dark-blue
+						background-color: #FFFFFFe3
+						padding: 2px 6px
+			&_4
+				.begin__slider-subttl
+					max-width: 460px
+					color: $dark-blue
+					font-family: $a-bold
 		&-subttl
 			font-size: 22px
 			text-transform: uppercase
 		&-ttl
 			font-size: 38px
+			line-height: 1
 			text-transform: uppercase
+			margin-bottom: 8px
 		.owl-nav
 			button.owl-prev
 				left: 10px
@@ -1103,6 +1137,9 @@ button:active
 			opacity: .3
 		img
 			max-width: 100%
+		&:hover
+			img
+				transform: scale(.95)
 .crumbs
 	display: flex
 	flex-wrap: wrap
@@ -1118,7 +1155,7 @@ button:active
 		padding: 7px 12px
 		border-radius: 2px
 	li:not(:last-child)
-		background-color: transparent
+		background-color: #fff
 		border: 1px solid $mid-blue
 		margin-right: 8px
 		&:hover
@@ -1132,7 +1169,9 @@ button:active
 
 .main
 	padding: 30px 0
-
+	background-color: #f9f9f9
+	p
+		font-size: 15px
 .rev
 	&__in
 		padding-left: 50px
@@ -1351,3 +1390,461 @@ div
 							margin-left: 25px
 							&::before
 								background: url('../img/slider__arrow_next.png') no-repeat 50% 50% / contain
+.sale
+	.begin__slider
+		&_sale
+			display: flex
+			flex-direction: column
+		&-item
+			&:not(:last-child)
+				margin-bottom: 30px
+	&-page
+		.begin__slider
+			&-item
+				display: flex;
+				flex-direction: column
+				align-items: flex-start
+				justify-content: center
+		&__descr
+			text-align: center
+			display: flex;
+			flex-direction: column
+			align-items: center
+			justify-content: center
+			font-size: 18px
+		&__in
+			padding-left: 50px
+			padding-right: 50px
+		&__item
+			&-img
+				background-position: 50% 50%
+				background-repeat: no-repeat
+				background-size: cover
+				border-radius: 2px
+				overflow: hidden
+				display: flex
+				justify-content: center
+				align-items: center
+				width: 100%
+				max-width: 300px
+				height: 187px
+				margin-left: auto
+				margin-right: auto
+				position: relative
+				&::before
+					content: ''
+					position: absolute
+					width: 100%
+					height: 100%
+					left: 0
+					top: 0
+					background-color: $blue
+					opacity: 0
+				&:hover
+					&::before
+						opacity: .7
+					.sale-page__item-more
+						opacity: 1
+			&-more
+				width: 52px
+				height: 53px
+				background: url('../img/rev__btn.png') no-repeat 50% 50% / contain
+				opacity: 0
+				position: relative
+.del
+	&__banner
+		min-height: 370px
+		background-position: 50% 50%
+		background-repeat: no-repeat
+		background-size: cover
+		margin-bottom: 30px
+	&__item
+		padding: 200px 20px 30px
+		background: #F3F3F3
+		box-shadow: 0px 2px 2px rgba(0, 0, 0, 0.15)
+		border-radius: 2px
+		position: relative
+		max-width: 370px
+		margin-left: auto
+		margin-right: auto
+		overflow: hidden
+		&::before
+			content: ''
+			position: absolute
+			width: 100%
+			height: 100%
+			left: 0
+			top: 0
+			background: url('../img/del__item-bg.jpg') no-repeat 50% 50% / cover
+			opacity: 0
+			transition: .6s all ease
+		&-img
+			position: absolute
+			width: 330px
+			height: 159px
+			right: 0
+			top: 30px
+			background-position: 100% 50%
+			background-repeat: no-repeat
+			background-size: contain
+			z-index: 1
+			transform: translateX(10px)
+		&-info
+			font-size: 15px
+			line-height: 1.5
+			position: relative
+			margin-top: 15px
+			transform: unset
+			& *
+				transform: unset
+		&:hover
+			box-shadow: 0px 30px 40px rgba(0, 80, 147, 0.25)
+			.del__item-img
+				transform: translateX(0px)
+			.del__item-info
+				& *
+					color: #fff
+			&::before
+				opacity: 1
+	&__info
+		color: #fff
+		background: url('../img/del__info-bg.jpg') no-repeat 50% 50% / cover
+		.section__ttl
+			text-align: left
+		.btn
+			width: 100%
+			max-width: 370px
+			margin-left: auto
+			margin-right: auto
+.book
+	&__list
+		&-item
+			width: 100%
+			max-width: 270px
+			height: 270px
+			margin-left: auto
+			margin-right: auto
+			position: relative
+			overflow: hidden
+			border-radius: 2px
+			background-color: #F3F3F3
+			&-img
+				position: absolute
+				width: 230px
+				height: 139px
+				right: 0
+				top: 0px
+				background-position: 100% 50%
+				background-repeat: no-repeat
+				background-size: contain
+			&::after
+				content: ''
+				position: absolute
+				width: 100%
+				height: 100%
+				left: 0
+				top: 0
+				background: url('../img/begin__cat-item_bg.jpg') no-repeat 50% 50% / cover
+				opacity: 0
+			&-in
+				height: 100%
+				color: $dark-blue
+				position: relative
+				z-index: 1
+				padding: 30px
+				transform: translateY(55%)
+				transition: .6s all ease
+			.btn
+				opacity: 0
+				&:hover
+					color: #000
+			&:hover
+				box-shadow: 0px 30px 40px rgba(0, 80, 147, 0.25)
+				.book__list-item-in
+					transform: translateY(0)
+				.btn,
+				.list_string
+					opacity: 1
+				.book__list-ttl
+					color: #fff
+				// &::before
+				// 	opacity: 0
+				&::after
+					opacity: .8
+		&-ttl
+			font-family: $a-bold
+			text-transform: uppercase
+			font-size: 18px
+			margin-bottom: 11px
+		.list_string
+			opacity: 0
+			li
+				a
+					display: block
+					color: #fff
+					&:hover
+						color: $yellow
+				&:not(:last-child)
+					margin-bottom: 6px
+				&::before
+					background-color: #fff
+				&:hover
+					&::before
+						background-color: $yellow
+	&-page
+		&__banner
+			background-color: #F3F3F3
+			border-radius: 2px
+			overflow: hidden
+			position: relative
+			padding: 20px
+			.section__ttl
+				position: relative
+			&-img
+				position: absolute
+				width: 140px
+				height: 79px
+				right: 0
+				top: 0px
+				background-position: 100% 50%
+				background-repeat: no-repeat
+				background-size: contain
+.watch-more
+	background-color: #fff
+	&__item
+		width: 100%
+		max-width: 370px
+		margin-left: auto
+		margin-right: auto
+		padding: 20px 15px 20px 100px
+		display: flex
+		align-items: center
+		box-shadow: 0px 2px 2px rgba(0, 0, 0, 0.15)
+		border-radius: 2px
+		overflow: hidden
+		&-img
+			position: absolute
+			width: 90px
+			height: 100%
+			left: 15px
+			top: 0px
+			background-position: 100% 50%
+			background-repeat: no-repeat
+			background-size: contain
+			transform: scale(-1,1)
+		&-ttl
+			font-family: $a-bold
+			font-size: 16px
+			position: relative
+			img
+				transform: scale(.7)
+		&:hover
+			img
+				transform: scale(.7) translateX(8px)
+.table
+	text-align: center
+	width: 100%
+	th,
+	td
+		padding: 15px
+	th
+		background-color: $mid-blue
+		color: #fff
+	tr
+		&:nth-child(odd)
+			td
+				background-color: #C4C4C4
+		&:nth-child(even)
+			td
+				background-color: #fff
+.roll
+	&__list
+		&-item
+			width: 100%
+			max-width: 270px
+			height: 270px
+			margin-left: auto
+			margin-right: auto
+			position: relative
+			overflow: hidden
+			border-radius: 2px
+			background-color: #F3F3F3
+			display: block
+			&-img
+				position: absolute
+				width: 230px
+				height: 139px
+				right: 0
+				top: 0px
+				background-position: 100% 50%
+				background-repeat: no-repeat
+				background-size: contain
+				z-index: 1
+			&::after
+				content: ''
+				position: absolute
+				width: 100%
+				height: 100%
+				left: 0
+				top: 0
+				background: url('../img/begin__cat-item_bg.jpg') no-repeat 50% 50% / cover
+				opacity: 0
+			&-in
+				height: 100%
+				color: $dark-blue
+				position: relative
+				z-index: 1
+				padding: 25px
+				display: flex
+				align-items: flex-end
+				transition: .6s all ease
+			.btn
+				opacity: 0
+				&:hover
+					color: #000
+			&:hover
+				box-shadow: 0px 30px 40px rgba(0, 80, 147, 0.25)
+				.roll__list-ttl
+					color: #fff
+				&::after
+					opacity: .8
+		&-ttl
+			font-family: $a-bold
+			text-transform: uppercase
+			font-size: 18px
+			margin-bottom: 11px
+	&-cards
+		&__item
+			display: flex
+			justify-content: space-between
+			align-items: center
+			text-align: center
+			padding: 20px 15px
+			position: relative
+			background-color: #F3F3F3
+			color: $dark-blue
+			border-radius: 2px
+			overflow: hidden
+			&:hover
+				box-shadow: 0px 30px 40px rgba(0, 80, 147, 0.25)
+			&-img
+				width: 160px
+				height: 160px
+				display: block
+				background-position: 50% 50%
+				background-size: contain
+				background-repeat: no-repeat
+				margin-bottom: 10px
+				&:hover
+					opacity: .7
+			&-ttl
+				font-size: 16px
+				margin-bottom: 8px
+			&-price
+				&-wrp
+					margin-bottom: 10px
+				&_cur
+					font-family: $a-bold
+					font-size: 26px
+				&_old
+					font-size: 13px
+					color: #BDBDBD
+					text-decoration: line-through
+			&-btn
+				&-wrp
+					display: flex
+					flex-direction: column
+					align-items: center
+			.btn
+				box-shadow: 0px 2px 2px rgba(0, 0, 0, 0.2)
+				margin-bottom: 15px
+			&-flag
+				padding: 8px 12px 8px 20px
+				text-align: center
+				transform: skew(-20deg)
+				display: flex
+				justify-content: center
+				align-items: center
+				color: #fff
+				font-family: $a-bold
+				font-size: 16px
+				width: 70px
+				position: absolute
+				top: 19px
+				left: -15px
+				z-index: 1
+				span
+					transform: skew(20deg)
+				&_sale
+					background-color: $yellow
+				&_hit
+					text-transform: uppercase
+					background-color: $blue
+.serv
+	background-color: #F9F9F9
+	&__in
+		padding-left: 50px
+		padding-right: 50px
+	&__item
+		display: flex
+		flex-direction: column
+		align-items: center
+		padding: 30px 0
+		max-width: 270px
+		margin-left: auto
+		margin-right: auto
+		&-top
+			width: 170px
+			height: 100px
+			position: relative
+			background: #FFFFFF
+			box-shadow: 0px 2px 2px rgba(0, 0, 0, 0.15)
+			border-radius: 2px
+			overflow: hidden
+			transition: .6s all ease
+			&>*
+				position: relative
+			&::before
+				content: ''
+				position: absolute
+				width: 138px
+				height: 158px
+				left: -210%
+				top: -70px
+				background: linear-gradient(272.36deg, #FFFFFF -11.72%, rgba(255, 255, 255, 0) 23.19%)
+				opacity: 0.5
+				transform: rotate(36.57deg)
+				transition: 3s all ease
+			&:hover
+				color: #fff
+				background-color: $blue
+				&::before
+					left: 150%
+		&-ttl
+			font-family: $a-bold
+			font-size: 19px
+			text-align: center
+			margin-top: 20px
+		&-img
+			width: 70px
+			height: 70px
+			background-position: 50% 50%
+			background-size: contain
+			background-repeat: no-repeat
+			position: absolute
+			left: 50%
+			margin-left: -35px
+			top: 50%
+			margin-top: -35px
+			&_2
+				opacity: 0
+		&:hover
+			.serv__item
+				&-top
+					transform: translateY(-5px)
+					box-shadow: 0px 30px 40px rgba(0, 80, 147, 0.25)
+				&-img
+					&_1
+						opacity: 0
+					&_2
+						opacity: 1
