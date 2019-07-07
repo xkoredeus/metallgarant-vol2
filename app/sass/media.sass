@@ -79,6 +79,10 @@ $a-bold: 'AvenirNextCyr-Bold'
 				background-color: #fff
 				&-ttl
 					font-size: 14px
+	.footer__logo::after
+		display: none
+	.footer__copy-text
+		text-align: center
 .begin__nav-link
 	position: relative
 	&::after
@@ -97,7 +101,13 @@ $a-bold: 'AvenirNextCyr-Bold'
 		&::after
 			top: 15px
 			transform: rotate(45deg) scale(-1,-1)
+
+	
 @media screen and (max-width: 900px)
+	.section_inner
+		padding: 35px 0
+	.banner__offer
+		padding: 10px 0
 	.begin
 		&__slider
 			&-item
@@ -117,11 +127,19 @@ $a-bold: 'AvenirNextCyr-Bold'
 				&_1
 					&::before
 						background-color: #f18e02
-				&_2,
+				&_2
 					color: #fff
+				&_3
+					.begin__slider-ttl 
+						.begin__slider-item-string
+							line-height: 1.4
+						> div:nth-child(1)
+							margin-bottom: 0
 				&_4
 					.begin__slider-subttl
+						font-size: 19px
 						color: #fff
+
 				& *
 					position: relative
 			&-ttl
@@ -147,6 +165,9 @@ $a-bold: 'AvenirNextCyr-Bold'
 	.section__ttl,
 	.banner__ttl
 		font-size: 25px
+	.footer__ttl,
+	.footer__info
+		text-align: center
 	.test__item
 		flex-direction: column
 		text-align: center
@@ -160,6 +181,26 @@ $a-bold: 'AvenirNextCyr-Bold'
 @media screen and (max-width: 600px)
 	.watch-more__item-img
 		left: 30px
+	.footer__ttl_mobile
+		position: relative
+		&::after
+			content: ''
+			position: absolute
+			width: 10px
+			height: 10px
+			right: 60px
+			top: 3px
+			border-bottom: solid 5px #fff
+			border-right: solid 5px #fff
+			border-left: solid 5px transparent
+			border-top: solid 5px transparent
+			transform: rotate(45deg)
+		&.active
+			&::after
+				top: 9px
+				transform: rotate(45deg) scale(-1,-1)
+	.footer__link
+		transition: unset
 @media screen and (max-width: 576px)
 	.header__cart::after
 		display: none

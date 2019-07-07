@@ -271,4 +271,12 @@ $(function() {
       $(this).children('.header__city-list').slideToggle();
     });
   };
+  //footer dropdown
+  if ( $(window).width() < 600 ) {
+    $('.footer__link').hide();
+    $('.footer__ttl_mobile').on('click', function(e){
+      e.preventDefault();
+      $(this).toggleClass('active').next('div').find('.footer__link').slideToggle();
+    });
+  };
 });

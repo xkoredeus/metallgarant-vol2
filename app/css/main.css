@@ -1128,6 +1128,10 @@ button:active .shd:hover {
   font-size: 15px;
 }
 
+.begin {
+  overflow: hidden;
+}
+
 .begin__slider {
   margin-bottom: 30px;
 }
