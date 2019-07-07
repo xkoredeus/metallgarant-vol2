@@ -1182,12 +1182,21 @@ button:active .shd:hover {
   position: relative;
 }
 
-.begin__nav-link {
+.begin__nav-link-wrp {
+  position: relative;
   padding: 8px 20px;
 }
 
-.begin__nav-link:hover {
+.begin__nav-link-wrp:hover {
   background-color: #F3F3F3;
+}
+
+.begin__nav-sub {
+  position: absolute;
+  right: -100%;
+  top: 0;
+  z-index: 2;
+  background-color: #008CFF;
 }
 
 .begin__nav-more {
