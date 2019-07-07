@@ -9,7 +9,6 @@ $(function() {
 	});
   $('.trust__in').owlCarousel({
       nav: true,
-      items: 5,
       loop: true,
       smartSpeed: 800,
       margin: 20,
@@ -20,22 +19,24 @@ $(function() {
             items: 1
         },
         380 : {
-            items: 2
+            items: 1
         },
         480 : {
-            items: 3
+            items: 2
         },
         768 : {
-            items: 4
+            items: 3
         },
         1040 : {
+            items: 4
+        },
+        1100 : {
             items: 5
         }
       }
   });
   $('.rev__in').owlCarousel({
       nav: true,
-      items: 5,
       loop: true,
       smartSpeed: 800,
       margin: 20,
@@ -46,15 +47,18 @@ $(function() {
             items: 1
         },
         380 : {
-            items: 2
+            items: 1
         },
         480 : {
-            items: 3
+            items: 2
         },
         768 : {
-            items: 4
+            items: 3
         },
         1040 : {
+            items: 4
+        },
+        1100 : {
             items: 5
         }
       }
@@ -105,13 +109,15 @@ $(function() {
             items: 3
         },
         1040 : {
+            items: 4
+        },
+        1100 : {
             items: 5
         }
       }
   });
   $('.rev__in').owlCarousel({
       nav: true,
-      items: 5,
       loop: true,
       smartSpeed: 800,
       margin: 20,
@@ -122,15 +128,18 @@ $(function() {
             items: 1
         },
         380 : {
-            items: 2
+            items: 1
         },
         480 : {
-            items: 3
+            items: 2
         },
         768 : {
-            items: 4
+            items: 3
         },
         1040 : {
+            items: 4
+        },
+        1100 : {
             items: 5
         }
       }
@@ -220,6 +229,46 @@ $(function() {
       });
     };
   });
-
-
+  //mobile menu
+  $(".banner__hamburger").on('click',function() {
+      $(this).toggleClass("active");
+      $('.banner__nav').toggleClass("active");
+      // $('body').toggleClass("fixed");
+  });
+  //sidebar
+    //sidebar nav
+    $('.begin__nav-sub').hide();
+    if ( $(window).width() > 1199 ) {
+      $('.begin__nav-link-wrp').hover(function() {
+        $(this).find('.begin__nav-sub').slideToggle();
+        
+      });
+    };
+    if ( $(window).width() < 1199 ) {
+      $('.begin__nav-link').on('click', function(e){
+        e.preventDefault();
+        $(this).toggleClass('active').siblings('.begin__nav-sub').slideToggle();
+      })
+    };
+    //sidebar slice more than 3 items
+    // $('.begin__nav-bot .begin__nav-link-wrp').slice(3).hide();
+    // $('.begin__nav-more').on('click', function(){
+    //   $('.begin__nav-link-wrp').slice(3).slideToggle();
+    //   $(this).hide();
+    // })
+  //city dropdown
+  $('.header__city-list').hide();
+  if ( $(window).width() > 1199 ) {
+    $('.header__city-wrp').hover(function(){
+      $(this).children('.header__city-select').toggleClass('active');
+      $(this).children('.header__city-list').slideToggle();
+    });
+  };
+  if ( $(window).width() < 1199 ) {
+    $('.header__city-list').hide();
+    $('.header__city-wrp').on('click', function(){
+      $(this).children('.header__city-select').toggleClass('active');
+      $(this).children('.header__city-list').slideToggle();
+    });
+  };
 });

@@ -1,25 +1,167 @@
-@media screen and (max-width: 1070px)
-	.main-slider__item
-		background-position-x: 20%
-	.main-slider__container
-		padding-right: 30px
-		padding-left: 30px
-	.main-slider .owl-carousel .owl-nav button.owl-prev
-		left: 0
-	.main-slider .owl-carousel .owl-nav button.owl-next
-		right: 0
+$mid-blue: #072754
+$dark-blue: #05162E
+$blue: #008CFF
+$yellow: #F18E02
+$tr: transparent
+$wt: #E3E3E3
+$a-lig: 'AvenirNextCyr-Light'
+$a-reg: 'AvenirNextCyr-Regular'
+$a-med: 'AvenirNextCyr-Medium'
+$a-demi: 'AvenirNextCyr-Demi'
+$a-bold: 'AvenirNextCyr-Bold'
+@media screen and (max-width: 1200px)
+	.banner__hamburger
+		display: block
+	.banner__menu-btn
+		display: block
+	.banner .btn_blue
+		padding-top: 14px
+		padding-bottom: 14px
+	.banner
+		.banner__nav
+			display: none
+		&.active
+			top: 0
+			opacity: 1
+			z-index: 3
+		.header__info-ttl
+			margin-bottom: 5px
+		.header__info-item
+			text-align: center
+			margin-bottom: 10px
+			display: block
+		.header__logo
+			display: block
+			margin-bottom: 25px
+		&-item
+			width: 170px
+			margin-bottom: 6px
+			&:last-child
+				margin-bottom: 25px
+			&:nth-child(5)
+				margin-top: 20px
+		.btn
+			width: 170px
+	.banner__tel
+		font-size: 20px
+	.test__item-img
+		min-width: 90px
+		height: 90px
+		padding: 10px
+		img
+			max-width: 100%
+			height: auto
+	.header
+
+		.header
+			&__city-wrp
+				display: none
+			&__soc,
+			&__work
+				display: none !important
+			&__days
+				display: none
+
+	.contact
+		padding-bottom: 30px
+	#sidebar
+		display: none
+		min-height: 100vh
+		padding: 0
+		.begin__nav
+			&-sub
+				position: relative
+				left: 0
+				width: 90%
+				left: 5%
+				right: 5%
+				padding: 15px
+				background-color: #fff
+				&-ttl
+					font-size: 14px
+.begin__nav-link
+	position: relative
+	&::after
+		content: ''
+		position: absolute
+		width: 10px
+		height: 10px
+		right: 20px
+		top: 10px
+		border-bottom: solid 5px $dark-blue
+		border-right: solid 5px $dark-blue
+		border-left: solid 5px transparent
+		border-top: solid 5px transparent
+		transform: rotate(45deg)
+	&.active
+		&::after
+			top: 15px
+			transform: rotate(45deg) scale(-1,-1)
+@media screen and (max-width: 900px)
+	.begin
+		&__slider
+			&-item
+				// min-height: 300px
+				// height: auto
+				position: relative
+				padding: 20px 45px
+				&::before
+					content: ''
+					position: absolute
+					width: 100%
+					height: 100%
+					left: 0
+					top: 0
+					background-color: #072754
+					opacity: .7
+				&_1
+					&::before
+						background-color: #f18e02
+				&_2,
+					color: #fff
+				&_4
+					.begin__slider-subttl
+						color: #fff
+				& *
+					position: relative
+			&-ttl
+				font-size: 25px
+		&__cat-item
+			&::before
+				opacity: 0
+			&::after
+				opacity: .7
+			&-in
+				transform: translateY(0)
+				color: #fff
+			.list_string,
+			.btn
+				opacity: 1
+	.feed__top
+		input,
+		.btn
+			margin: 0 auto
+			display: block
+
 @media screen and (max-width: 768px)
 	.section__ttl,
-	.main-slider__ttl
+	.banner__ttl
 		font-size: 25px
+	.test__item
+		flex-direction: column
+		text-align: center
+		&-img
+			margin: 0 auto 15px
+	.begin
+		&__slider
+			&-item
+				min-height: 300px
+				height: auto
+@media screen and (max-width: 600px)
+	.watch-more__item-img
+		left: 30px
 @media screen and (max-width: 576px)
-	.news__item-wrp
-		max-width: 320px
-		margin-left: auto
-		margin-right: auto
-	.main-slider .owl-carousel .owl-nav button.owl-prev
-		left: -9px
-		transform: scale(.7)
-	.main-slider .owl-carousel .owl-nav button.owl-next
-		right: -9px
-		transform: scale(.7)
+	.header__cart::after
+		display: none
+	.mobile-menu
+		padding: 10px

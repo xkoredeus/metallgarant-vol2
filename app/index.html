@@ -11,12 +11,117 @@
 	<link rel="stylesheet" href="css/media.css">
 </head>
 <body>
+  <!--mobile menu-->
+  <div class="mobile-menu" id="mobile-menu">
+    <div class="container">
+      <div class="d-flex flex-column align-items-center">
+        <div class="mb-3">
+          <div class="d-flex flex-column align-items-center">
+            <a href="#" class="banner__logo">
+              <img src="img/banner__logo.png" alt="">
+            </a>
+          </div>
+        </div>
+        <div class="banner__nav-in d-flex flex-column align-items-center mb-3">
+          <a href="#" class="banner__nav-item">
+            <span>О компании</span>
+          </a>
+          <a href="#" class="banner__nav-item">
+            <span>Способы оплаты</span>
+          </a>
+          <a href="#" class="banner__nav-item">
+            <span>Доставка</span>
+          </a>
+          <a href="#" class="banner__nav-item">
+            <span>Карьера</span>
+          </a>
+          <a href="#" class="banner__nav-item">
+            <span>Контакты</span>
+          </a>
+          <a href="#" class="banner__nav-item">
+            <span>Коммерческое предложение</span>
+          </a>
+          <a href="#" class="banner__nav-item active">
+            <span>Акции</span>
+          </a>
+          <a href="#popup_call" data-fancybox class="btn">
+            <span>Написать директору</span>
+          </a>
+        </div>
+        <div class="mb-3">
+          <div class="d-flex flex-column align-items-center">
+            <a href="#popup_call" data-fancybox class="btn btn_blue">Заказать звонок</a>
+            <a href="#sidebar" data-fancybox class="btn banner__menu-btn">
+              <span>Меню</span>
+            </a>
+          </div>
+        </div>
+
+        <div class="header__city-wrp mb-3">
+          <div class="header__city-select">Санкт-Петербург</div>
+          <div class="header__city-list">
+            <a href="#" class="header__city-list-item">Москва</a>
+            <a href="#" class="header__city-list-item">Самара</a>
+            <a href="#" class="header__city-list-item">Саратов</a>
+            <a href="#" class="header__city-list-item">Саранск</a>
+            <a href="#" class="header__city-list-item">Смоленск</a>
+            <a href="#" class="header__city-list-item">Астрахань</a>
+          </div>
+        </div>
+        <div class="header__soc d-flex mb-2">
+          <a href="#" class="header__soc-link mr-2">
+            <img src="img/icon__in.png" alt="">
+          </a>
+          <a href="#" class="header__soc-link mr-2">
+            <img src="img/icon__fb.png" alt="">
+          </a>
+          <a href="#" class="header__soc-link mr-2">
+            <img src="img/icon__vk.png" alt="">
+          </a>
+          <a href="#" class="header__soc-link">
+            <img src="img/icon__yu.png" alt="">
+          </a>
+        </div>
+        <div class="header__days">
+          365/7/24
+        </div>
+        <div class="banner__info pb-4 pt-4 pt-xl-0">
+          <div class="d-flex flex-column">
+            <div class="header__work d-flex justify-content-center align-items-start mb-3">
+              <img src="img/icon__time_white.png" alt="" class="mr-2 mt-1">
+              <div class="d-flex flex-column">
+                <span>Пн-Пт: 09.00-18.00</span>
+                <span>Сб-Вс: Выходной</span>
+              </div>
+            </div>
+            <div class="mb-3">
+              <div class="d-flex flex-column align-items-center">
+                <div class="mb-1"><span class="b">Офис:</span> пр.Обуховской Обороны, 112/2, оф.517</div>
+                <div class="mb-1"><span class="b">Производство/склад:</span> ул. Караваевская, д.57</div>
+                <div class="mb-1"><span class="b">Шоу-рум:</span> п.Сосново, ул.Вокзальная, 21</div>
+              </div>
+            </div>
+            <div class="mb-4">
+              <div class="d-flex flex-column align-items-center">
+                <a href="tel:88126042003" class="banner__tel">+7 (812) 604-20-03</a>
+                <a href="mailto:info@lzmmg.ru" class="banner__mail d-flex align-items-center">
+                  <img src="img/icon__mes_white.png" alt="" class="mr-2">
+                  <span>info@lzmmg.ru</span>
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!--/mobile menu-->
   <header class="header">
     <div class="container">
-      <div class="row align-items-center">
-        <div class="col-sm-8">
-          <div class="d-flex align-items-center">
-            <div class="header__work d-flex align-items-start mr-5">
+      <div class="row align-items-center pr-5 pr-sm-0">
+        <div class="col-xl-8">
+          <div class="d-flex align-items-center flex-sm-row flex-wrap flex-xl-nowrap flex-column">
+            <div class="header__work d-flex align-items-start mr-xl-5">
               <img src="img/icon__time_white.png" alt="" class="mr-2 mt-1">
               <div class="d-flex flex-column">
                 <span>Пн-Пт: 09.00-18.00</span>
@@ -26,8 +131,12 @@
             <div class="header__city-wrp mr-4">
               <div class="header__city-select">Санкт-Петербург</div>
               <div class="header__city-list">
-                <div class="header__city-list-item">Москва</div>
-                <div class="header__city-list-item">Самара</div>
+                <a href="#" class="header__city-list-item">Москва</a>
+                <a href="#" class="header__city-list-item">Самара</a>
+                <a href="#" class="header__city-list-item">Саратов</a>
+                <a href="#" class="header__city-list-item">Саранск</a>
+                <a href="#" class="header__city-list-item">Смоленск</a>
+                <a href="#" class="header__city-list-item">Астрахань</a>
               </div>
             </div>
             <div class="header__soc d-flex mr-4">
@@ -50,9 +159,9 @@
           </div>
             
         </div>
-        <div class="col-sm-4">
-          <div class="d-flex justify-content-end align-items-center">
-            <a href="#" class="header__cart d-flex align-items-center mr-5">
+        <div class="col-xl-4">
+          <div class="d-flex justify-content-xl-end justify-content-center align-items-center">
+            <a href="#" class="header__cart d-flex align-items-center mr-3 mr-xl-5">
               <div class="header__cart-val mr-3">
                 <img src="img/icon__cart.png" alt="">
                 <div class="header__cart-val-num">1</div>
@@ -70,8 +179,9 @@
   </header>
   <section class="banner">
     <div class="container">
-      <div class="row align-items-center pt-3 pb-3 mb-3 banner__nav">
-        <div class="col-sm-10">
+      <a href="#mobile-menu" data-fancybox class="banner__hamburger"></a>
+      <div class="row align-items-center justify-content-between pt-3 pb-3 mb-3 banner__nav">
+        <div class="col-xl-10">
           <div class="banner__nav-in d-flex justify-content-between align-items-center">
             <a href="#" class="banner__nav-item">
               <span>О компании</span>
@@ -96,30 +206,32 @@
             </a>
           </div>
         </div>
-        <div class="col-sm-2">
-          <div class="d-flex justify-content-end align-items-center">
+        <div class="col-xl-2">
+          <div class="d-flex justify-content-center justify-content-xl-end align-items-center">
             <a href="#popup_call" data-fancybox class="btn">
               <span>Написать директору</span>
             </a>
           </div>
         </div>
       </div>
-      <div class="banner__info pb-4">
-        <div class="row">
-          <div class="col-xl-3">
-            <a href="#" class="banner__logo">
-              <img src="img/banner__logo.png" alt="">
-            </a>
+      <div class="banner__info pb-4 pt-4 pt-xl-0">
+        <div class="row justify-content-center">
+          <div class="col-xl-3 mb-3 mb-xl-0">
+            <div class="d-flex flex-column align-items-center align-items-xl-start">
+              <a href="#" class="banner__logo">
+                <img src="img/banner__logo.png" alt="">
+              </a>
+            </div>
           </div>
-          <div class="col-xl-4">
-            <div class="d-flex flex-column">
+          <div class="col-xl-4 mb-3 mb-xl-0 d-none d-xl-flex">
+            <div class="d-flex flex-column align-items-start">
               <div class="mb-1"><span class="b">Офис:</span> пр.Обуховской Обороны, 112/2, оф.517</div>
               <div class="mb-1"><span class="b">Производство/склад:</span> ул. Караваевская, д.57</div>
               <div class="mb-1"><span class="b">Шоу-рум:</span> п.Сосново, ул.Вокзальная, 21</div>
             </div>
           </div>
-          <div class="col-xl-3">
-            <div class="d-flex flex-column">
+          <div class="col-xl-3 mb-xl-0 mb-4">
+            <div class="d-flex flex-column align-items-center align-items-xl-start">
               <a href="tel:88126042003" class="banner__tel">+7 (812) 604-20-03</a>
               <a href="mailto:info@lzmmg.ru" class="banner__mail d-flex align-items-center">
                 <img src="img/icon__mes_white.png" alt="" class="mr-2">
@@ -128,7 +240,12 @@
             </div>
           </div>
           <div class="col-xl-2">
-            <a href="#popup_call" data-fancybox class="btn btn_blue">Заказать звонок</a>
+            <div class="d-flex flex-column align-items-center align-items-xl-start">
+              <a href="#popup_call" data-fancybox class="btn btn_blue">Заказать звонок</a>
+              <a href="#sidebar" data-fancybox class="btn banner__menu-btn">
+                <span>Меню</span>
+              </a>
+            </div>
           </div>
         </div>
       </div>
@@ -141,28 +258,28 @@
       </div>
       <div class="banner__test">
         <div class="row">
-          <div class="col-xl-3 col-sm-6 mb-3">
+          <div class="col-xl-3 col-sm-6 mb-5 mb-xl-3">
             <div class="banner__test-item">
               <div class="banner__test-item-img" style="background-image: url(img/banner__test_1.png);"></div>
               <div class="banner__test-item-ttl">3000 м<sup>2</sup></div>
               <div class="banner__test-item-descr">площадь нашего<br> собственного производства</div>
             </div>
           </div>
-          <div class="col-xl-3 col-sm-6 mb-3">
+          <div class="col-xl-3 col-sm-6 mb-5 mb-xl-3">
             <div class="banner__test-item">
               <div class="banner__test-item-img" style="background-image: url(img/banner__test_2.png);"></div>
               <div class="banner__test-item-ttl">300 тонн</div>
               <div class="banner__test-item-descr">металлоконструкций<br> изготавливаем ежемесячно</div>
             </div>
           </div>
-          <div class="col-xl-3 col-sm-6 mb-3">
+          <div class="col-xl-3 col-sm-6 mb-5 mb-xl-3">
             <div class="banner__test-item">
               <div class="banner__test-item-img" style="background-image: url(img/banner__test_3.png);"></div>
               <div class="banner__test-item-ttl">1500 м<sup>2</sup></div>
               <div class="banner__test-item-descr">окрасочный цех, оснащенный<br> инфракрасными обогревателями</div>
             </div>
           </div>
-          <div class="col-xl-3 col-sm-6 mb-3">
+          <div class="col-xl-3 col-sm-6 mb-5 mb-xl-3">
             <div class="banner__test-item">
               <div class="banner__test-item-img" style="background-image: url(img/banner__test_4.png);"></div>
               <div class="banner__test-item-ttl">3000 позиций</div>
@@ -176,9 +293,9 @@
   <section class="section_inner begin">
     <div class="container">
       <div class="row">
-          <aside class="col-xl-3">
-            <div class="d-flex flex-column">
-              <div class="begin__nav mb-4">
+          <aside class="col-xl-3" id="sidebar">
+            <div class="d-flex flex-xl-column flex-row flex-wrap">
+              <div class="begin__nav mb-4 col-sm-6 col-xl-12">
                 <div class="begin__nav-top">
                   <div class="d-flex align-items-center">
                     <img src="img/begin__nav_1.png" alt="" class="mr-3">
@@ -187,14 +304,65 @@
                 </div>
                 <div class="begin__nav-bot">
                   <div class="begin__nav-list d-flex flex-column">
-                    <a href="#" class="begin__nav-link-wrp">Черный металлопрокат</a>
-                    <a href="#" class="begin__nav-link-wrp">Оцинкованный металлопрокат</a>
-                    <a href="#" class="begin__nav-link-wrp">Нержавеющий металлопрокат</a>
+                    <div class="begin__nav-link-wrp">
+                      <a href="#" class="begin__nav-link">Черный металлопрокат</a>
+                      <!--sub-->
+                      <div class="begin__nav-sub">
+                        <div class="row">
+                          <div class="col-xl-4 col-sm-6 d-flex flex-column mb-3">
+                            <a href="#" class="begin__nav-sub-ttl mb-2">Подкатегория</a>
+                            <a href="#" class="begin__nav-sub-link">Под-подкатегория</a>
+                            <a href="#" class="begin__nav-sub-link">Под-подкатегория</a>
+                            <a href="#" class="begin__nav-sub-link">Под-подкатегория</a>
+                            <a href="#" class="begin__nav-sub-link">Под-подкатегория</a>
+                            <a href="#" class="begin__nav-sub-link mb-3">Под-подкатегория</a>
+
+                            <a href="#" class="begin__nav-sub-ttl mb-2">Подкатегория</a>
+                            <a href="#" class="begin__nav-sub-link">Под-подкатегория</a>
+                            <a href="#" class="begin__nav-sub-link">Под-подкатегория</a>
+                            <a href="#" class="begin__nav-sub-link">Под-подкатегория</a>
+                            <a href="#" class="begin__nav-sub-link">Под-подкатегория</a>
+                            <a href="#" class="begin__nav-sub-link">Под-подкатегория</a>
+                          </div>
+                          <div class="col-xl-4 col-sm-6 d-flex flex-column mb-3">
+                            <a href="#" class="begin__nav-sub-ttl mb-2">Подкатегория</a>
+                              <a href="#" class="begin__nav-sub-link">Под-подкатегория</a>
+                              <a href="#" class="begin__nav-sub-link">Под-подкатегория</a>
+                              <a href="#" class="begin__nav-sub-link">Под-подкатегория</a>
+                              <a href="#" class="begin__nav-sub-link">Под-подкатегория</a>
+                              <a href="#" class="begin__nav-sub-link">Под-подкатегория</a>
+                              <a href="#" class="begin__nav-sub-link">Под-подкатегория</a>
+                              <a href="#" class="begin__nav-sub-link">Под-подкатегория</a>
+                              <a href="#" class="begin__nav-sub-link">Под-подкатегория</a>
+                              <a href="#" class="begin__nav-sub-link">Под-подкатегория</a>
+                          </div>
+                          <div class="col-xl-4 col-sm-6 d-flex flex-column mb-3">
+                            <a href="#" class="begin__nav-sub-ttl mb-2">Подкатегория</a>
+                            <a href="#" class="begin__nav-sub-link">Под-подкатегория</a>
+                            <a href="#" class="begin__nav-sub-link">Под-подкатегория</a>
+                            <a href="#" class="begin__nav-sub-link">Под-подкатегория</a>
+                            <a href="#" class="begin__nav-sub-link">Под-подкатегория</a>
+                            <a href="#" class="begin__nav-sub-link">Под-подкатегория</a>
+                            <a href="#" class="begin__nav-sub-link">Под-подкатегория</a>
+                            <a href="#" class="begin__nav-sub-link">Под-подкатегория</a>
+                            <a href="#" class="begin__nav-sub-link">Под-подкатегория</a>
+                          </div>
+                          
+                        </div>
+                      </div>
+                      <!--/sub-->
+                    </div>
+                    <div class="begin__nav-link-wrp">
+                      <a href="#" class="begin__nav-link">Оцинкованный металлопрокат</a>
+                    </div>
+                    <div class="begin__nav-link-wrp">
+                      <a href="#" class="begin__nav-link">Нержавеющий металлопрокат</a>
+                    </div>
                   </div>
                   <div class="begin__nav-more"><img src="img/icon__arr.png" alt=""></div>
                 </div>
               </div>
-              <div class="begin__nav mb-4">
+              <div class="begin__nav mb-4 col-sm-6 col-xl-12">
                 <div class="begin__nav-top">
                   <div class="d-flex align-items-center">
                     <img src="img/begin__nav_2.png" alt="" class="mr-3">
@@ -203,28 +371,110 @@
                 </div>
                 <div class="begin__nav-bot">
                   <div class="begin__nav-list d-flex flex-column">
-                    <a href="#" class="begin__nav-link-wrp">Профнастил</a>
-                    <a href="#" class="begin__nav-link-wrp">Металлочерепица</a>
                     <div class="begin__nav-link-wrp">
-                      <a href="#" class="begin__nav-link">Водосточные системы и снегозадержатели</a>
+                      <a href="#" class="begin__nav-link">Профнастил</a>
+                    </div>
+                    <div class="begin__nav-link-wrp">
+                      <a href="#" class="begin__nav-link">Металлочерепица</a>
+                      <!--sub-->
                       <div class="begin__nav-sub">
                         <div class="row">
                           <div class="col-xl-4 col-sm-6 d-flex flex-column mb-3">
-                            <a href="#" class="begin__nav-sub-ttl mb-2">Труба электросварная</a>
-                            <a href="#">Труба электросварная стальная</a>
-                            <a href="#">Труба электросварная стальная</a>
-                            <a href="#">Труба электросварная стальная</a>
-                            <a href="#">Труба электросварная стальная</a>
-                            <a href="#">Труба электросварная стальная</a>
+                            <a href="#" class="begin__nav-sub-ttl mb-2">Подкатегория</a>
+                            <a href="#" class="begin__nav-sub-link">Под-подкатегория</a>
+                            <a href="#" class="begin__nav-sub-link">Под-подкатегория</a>
+                            <a href="#" class="begin__nav-sub-link">Под-подкатегория</a>
+                            <a href="#" class="begin__nav-sub-link">Под-подкатегория</a>
+                            <a href="#" class="begin__nav-sub-link mb-3">Под-подкатегория</a>
+
+                            <a href="#" class="begin__nav-sub-ttl mb-2">Подкатегория</a>
+                            <a href="#" class="begin__nav-sub-link">Под-подкатегория</a>
+                            <a href="#" class="begin__nav-sub-link">Под-подкатегория</a>
+                            <a href="#" class="begin__nav-sub-link">Под-подкатегория</a>
+                            <a href="#" class="begin__nav-sub-link">Под-подкатегория</a>
+                            <a href="#" class="begin__nav-sub-link">Под-подкатегория</a>
                           </div>
+                          <div class="col-xl-4 col-sm-6 d-flex flex-column mb-3">
+                            <a href="#" class="begin__nav-sub-ttl mb-2">Подкатегория</a>
+                              <a href="#" class="begin__nav-sub-link">Под-подкатегория</a>
+                              <a href="#" class="begin__nav-sub-link">Под-подкатегория</a>
+                              <a href="#" class="begin__nav-sub-link">Под-подкатегория</a>
+                              <a href="#" class="begin__nav-sub-link">Под-подкатегория</a>
+                              <a href="#" class="begin__nav-sub-link">Под-подкатегория</a>
+                              <a href="#" class="begin__nav-sub-link">Под-подкатегория</a>
+                              <a href="#" class="begin__nav-sub-link">Под-подкатегория</a>
+                              <a href="#" class="begin__nav-sub-link">Под-подкатегория</a>
+                              <a href="#" class="begin__nav-sub-link">Под-подкатегория</a>
+                          </div>
+                          <div class="col-xl-4 col-sm-6 d-flex flex-column mb-3">
+                            <a href="#" class="begin__nav-sub-ttl mb-2">Подкатегория</a>
+                            <a href="#" class="begin__nav-sub-link">Под-подкатегория</a>
+                            <a href="#" class="begin__nav-sub-link">Под-подкатегория</a>
+                            <a href="#" class="begin__nav-sub-link">Под-подкатегория</a>
+                            <a href="#" class="begin__nav-sub-link">Под-подкатегория</a>
+                            <a href="#" class="begin__nav-sub-link">Под-подкатегория</a>
+                            <a href="#" class="begin__nav-sub-link">Под-подкатегория</a>
+                            <a href="#" class="begin__nav-sub-link">Под-подкатегория</a>
+                            <a href="#" class="begin__nav-sub-link">Под-подкатегория</a>
+                          </div>
+                          
                         </div>
                       </div>
+                      <!--/sub-->
+                    </div>
+                    <div class="begin__nav-link-wrp">
+                      <a href="#" class="begin__nav-link">Водосточные системы и снегозадержатели</a>
+                      <!--sub-->
+                      <div class="begin__nav-sub">
+                        <div class="row">
+                          <div class="col-xl-4 col-sm-6 d-flex flex-column mb-3">
+                            <a href="#" class="begin__nav-sub-ttl mb-2">Подкатегория</a>
+                            <a href="#" class="begin__nav-sub-link">Под-подкатегория</a>
+                            <a href="#" class="begin__nav-sub-link">Под-подкатегория</a>
+                            <a href="#" class="begin__nav-sub-link">Под-подкатегория</a>
+                            <a href="#" class="begin__nav-sub-link">Под-подкатегория</a>
+                            <a href="#" class="begin__nav-sub-link mb-3">Под-подкатегория</a>
+
+                            <a href="#" class="begin__nav-sub-ttl mb-2">Подкатегория</a>
+                            <a href="#" class="begin__nav-sub-link">Под-подкатегория</a>
+                            <a href="#" class="begin__nav-sub-link">Под-подкатегория</a>
+                            <a href="#" class="begin__nav-sub-link">Под-подкатегория</a>
+                            <a href="#" class="begin__nav-sub-link">Под-подкатегория</a>
+                            <a href="#" class="begin__nav-sub-link">Под-подкатегория</a>
+                          </div>
+                          <div class="col-xl-4 col-sm-6 d-flex flex-column mb-3">
+                            <a href="#" class="begin__nav-sub-ttl mb-2">Подкатегория</a>
+                              <a href="#" class="begin__nav-sub-link">Под-подкатегория</a>
+                              <a href="#" class="begin__nav-sub-link">Под-подкатегория</a>
+                              <a href="#" class="begin__nav-sub-link">Под-подкатегория</a>
+                              <a href="#" class="begin__nav-sub-link">Под-подкатегория</a>
+                              <a href="#" class="begin__nav-sub-link">Под-подкатегория</a>
+                              <a href="#" class="begin__nav-sub-link">Под-подкатегория</a>
+                              <a href="#" class="begin__nav-sub-link">Под-подкатегория</a>
+                              <a href="#" class="begin__nav-sub-link">Под-подкатегория</a>
+                              <a href="#" class="begin__nav-sub-link">Под-подкатегория</a>
+                          </div>
+                          <div class="col-xl-4 col-sm-6 d-flex flex-column mb-3">
+                            <a href="#" class="begin__nav-sub-ttl mb-2">Подкатегория</a>
+                            <a href="#" class="begin__nav-sub-link">Под-подкатегория</a>
+                            <a href="#" class="begin__nav-sub-link">Под-подкатегория</a>
+                            <a href="#" class="begin__nav-sub-link">Под-подкатегория</a>
+                            <a href="#" class="begin__nav-sub-link">Под-подкатегория</a>
+                            <a href="#" class="begin__nav-sub-link">Под-подкатегория</a>
+                            <a href="#" class="begin__nav-sub-link">Под-подкатегория</a>
+                            <a href="#" class="begin__nav-sub-link">Под-подкатегория</a>
+                            <a href="#" class="begin__nav-sub-link">Под-подкатегория</a>
+                          </div>
+                          
+                        </div>
+                      </div>
+                      <!--/sub-->
                     </div>
                   </div>
                   <div class="begin__nav-more"><img src="img/icon__arr.png" alt=""></div>
                 </div>
               </div>
-              <div class="begin__nav mb-4">
+              <div class="begin__nav mb-4 col-sm-6 col-xl-12">
                 <div class="begin__nav-top">
                   <div class="d-flex align-items-center">
                     <img src="img/begin__nav_3.png" alt="" class="mr-3">
@@ -233,14 +483,20 @@
                 </div>
                 <div class="begin__nav-bot">
                   <div class="begin__nav-list d-flex flex-column">
-                    <a href="#" class="begin__nav-link-wrp">Строительные</a>
-                    <a href="#" class="begin__nav-link-wrp">Складские и логистические</a>
-                    <a href="#" class="begin__nav-link-wrp">Электроэнергетика</a>
+                    <div class="begin__nav-link-wrp">
+                      <a href="#" class="begin__nav-link">Строительные</a>
+                    </div>
+                    <div class="begin__nav-link-wrp">
+                      <a href="#" class="begin__nav-link">Складские и логистические</a>
+                    </div>
+                    <div class="begin__nav-link-wrp">
+                      <a href="#" class="begin__nav-link">Электроэнергетика</a>
+                    </div>
                   </div>
                   <div class="begin__nav-more"><img src="img/icon__arr.png" alt=""></div>
                 </div>
               </div>
-              <div class="begin__nav mb-4">
+              <div class="begin__nav mb-4 col-sm-6 col-xl-12">
                 <div class="begin__nav-top">
                   <div class="d-flex align-items-center">
                     <img src="img/begin__nav_4.png" alt="" class="mr-3">
@@ -249,9 +505,15 @@
                 </div>
                 <div class="begin__nav-bot">
                   <div class="begin__nav-list d-flex flex-column">
-                    <a href="#" class="begin__nav-link-wrp">Резка</a>
-                    <a href="#" class="begin__nav-link-wrp">Оцинкование</a>
-                    <a href="#" class="begin__nav-link-wrp">Гибка</a>
+                    <div class="begin__nav-link-wrp">
+                      <a href="#" class="begin__nav-link">Резка</a>
+                    </div>
+                    <div class="begin__nav-link-wrp">
+                      <a href="#" class="begin__nav-link">Оцинкование</a>
+                    </div>
+                    <div class="begin__nav-link-wrp">
+                      <a href="#" class="begin__nav-link">Гибка</a>
+                    </div>
                   </div>
                   <div class="begin__nav-more"><img src="img/icon__arr.png" alt=""></div>
                 </div>
@@ -293,7 +555,7 @@
           </div>
           <!--/slider-->
           <div class="begin__cat">
-            <div class="row">
+            <div class="row justify-content-center">
               <!--item-->
               <div class="col-xl-4 col-sm-6 mb-3">
                 <div class="begin__cat-item" style="background-image: url(img/begin__cat_1.jpg);">
@@ -575,7 +837,7 @@
   </section>
   <section class="section_inner test">
     <div class="container">
-      <div class="row">
+      <div class="row justify-content-center">
         <div class="col-xl-4 col-sm-6 mb-3">
           <div class="test__item">
             <div class="test__item-img">
@@ -630,7 +892,7 @@
   <section class="section_inner news">
     <div class="container">
       <h3 class="section__ttl">Новости компании</h3>
-      <div class="row">
+      <div class="row justify-content-center">
         <div class="col-xl-4 col-sm-6 mb-3">
           <a href="#" class="news__item">
             <div class="news__item-img mb-3" style="background-image: url(img/news__img_1.jpg);"></div>
@@ -672,7 +934,7 @@
       <h3 class="section__ttl">Отправьте заявку</h3>
       <form class="d-flex flex-column align-items-center">
         <div class="feed__top mb-4">
-          <div class="row">
+          <div class="row justify-content-center">
             <div class="col-xl-3 col-sm-6 mb-3">
               <input type="text" placeholder="Имя*" class="feed__input" required="">
             </div>
@@ -705,19 +967,21 @@
   <section class="contact">
     <div class="container">
       <div class="row">
-        <div class="col-xl-4 section_inner">
-          <h3 class="section__ttl">Наши контакты</h3>
-          <div class="contact__item js-tab-contact contact__item_active" data-coord="[59.86663456, 30.47202250]">
-              <div class="contact__item-title contact__item-title_light-blue">Офис</div>
-              <div class="contact__item-text">пр.Обуховской Обороны, 112/2, оф.517</div>
-          </div>
-          <div class="contact__item js-tab-contact" data-coord="[59.82384206, 30.52547200]">
-              <div class="contact__item-title contact__item-title_blue">Производство/склад</div>
-              <div class="contact__item-text">ул. Караваевская, д.57</div>
-          </div>
-          <div class="contact__item js-tab-contact" data-coord="[60.54950006, 30.21664900]">
-              <div class="contact__item-title contact__item-title_light-orange">Шоу-рум</div>
-              <div class="contact__item-text">п.Сосново, ул.Вокзальная, 21</div>
+        <div class="col-xl-4">
+          <div class="section_inner">
+            <h3 class="section__ttl">Наши контакты</h3>
+            <div class="contact__item js-tab-contact contact__item_active" data-coord="[59.86663456, 30.47202250]">
+                <div class="contact__item-title contact__item-title_light-blue">Офис</div>
+                <div class="contact__item-text">пр.Обуховской Обороны, 112/2, оф.517</div>
+            </div>
+            <div class="contact__item js-tab-contact" data-coord="[59.82384206, 30.52547200]">
+                <div class="contact__item-title contact__item-title_blue">Производство/склад</div>
+                <div class="contact__item-text">ул. Караваевская, д.57</div>
+            </div>
+            <div class="contact__item js-tab-contact" data-coord="[60.54950006, 30.21664900]">
+                <div class="contact__item-title contact__item-title_light-orange">Шоу-рум</div>
+                <div class="contact__item-text">п.Сосново, ул.Вокзальная, 21</div>
+            </div>
           </div>
         </div>
         <div class="col-xl-8" id="ymap_tabs"></div>
