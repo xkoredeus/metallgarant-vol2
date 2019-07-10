@@ -83,26 +83,26 @@ $a-bold: 'AvenirNextCyr-Bold'
 		display: none
 	.footer__copy-text
 		text-align: center
-.begin__nav-link
-	position: relative
-	&::after
-		content: ''
-		position: absolute
-		width: 10px
-		height: 10px
-		right: 20px
-		top: 10px
-		border-bottom: solid 5px $dark-blue
-		border-right: solid 5px $dark-blue
-		border-left: solid 5px transparent
-		border-top: solid 5px transparent
-		transform: rotate(45deg)
-	&.active
+	.banner__test-item::after
+		display: none
+	.begin__nav-link
+		position: relative
 		&::after
-			top: 15px
-			transform: rotate(45deg) scale(-1,-1)
-
-	
+			content: ''
+			position: absolute
+			width: 10px
+			height: 10px
+			right: 20px
+			top: 10px
+			border-bottom: solid 5px $dark-blue
+			border-right: solid 5px $dark-blue
+			border-left: solid 5px transparent
+			border-top: solid 5px transparent
+			transform: rotate(45deg)
+		&.active
+			&::after
+				top: 15px
+				transform: rotate(45deg) scale(-1,-1)
 @media screen and (max-width: 900px)
 	.section_inner
 		padding: 35px 0
@@ -165,6 +165,10 @@ $a-bold: 'AvenirNextCyr-Bold'
 	.section__ttl,
 	.banner__ttl
 		font-size: 25px
+	.section__subttl
+		font-size: 20px
+	.car__ttl
+		font-size: 18px
 	.footer__ttl,
 	.footer__info
 		text-align: center
@@ -201,6 +205,13 @@ $a-bold: 'AvenirNextCyr-Bold'
 				transform: rotate(45deg) scale(-1,-1)
 	.footer__link
 		transition: unset
+	.succ__item
+		width: 100% !important
+	.car-block
+		text-align: center
+		&__left
+			padding: 15px
+
 @media screen and (max-width: 576px)
 	.header__cart::after
 		display: none

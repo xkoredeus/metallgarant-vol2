@@ -144,6 +144,59 @@ $(function() {
         }
       }
   });
+  $('.team__in').owlCarousel({
+      nav: true,
+      loop: true,
+      smartSpeed: 800,
+      margin: 20,
+      dots: false,
+      navText: ["<img src='img/slider__arrow_prev.png'>", "<img src='img/slider__arrow_next.png'>"],
+      responsive : {
+        0   : {
+            items: 1
+        },
+        380 : {
+            items: 1
+        },
+        480 : {
+            items: 1
+        },
+        768 : {
+            items: 2
+        },
+        1040 : {
+            items: 3
+        }
+      }
+  });
+  $('.succ__in').owlCarousel({
+      nav: true,
+      loop: true,
+      smartSpeed: 800,
+      margin: 20,
+      dots: false,
+      navText: ["<img src='img/slider__arrow_prev.png'>", "<img src='img/slider__arrow_next.png'>"],
+      responsive : {
+        0   : {
+            items: 1
+        },
+        380 : {
+            items: 1
+        },
+        570 : {
+            items: 1
+        },
+        768 : {
+            items: 2,
+            autoWidth:true
+        },
+        1040 : {
+            items: 3,
+            autoWidth:true
+        }
+      }
+  });
+  
 	// tabs 
   $(document).ready(function () {
     $(".tabs-content__item:not(:first-child)").hide();
@@ -229,6 +282,7 @@ $(function() {
       });
     };
   });
+
   //mobile menu
   $(".banner__hamburger").on('click',function() {
       $(this).toggleClass("active");

@@ -25,10 +25,10 @@ body
 *:before
 	transition: .3s all ease
 h1::selection, h2::selection, h3::selection, h4::selection, h5::selection, h6::selection, p::selection, a::selection, span::selection, div::selection, img::selection, mark::selection, ul::selection, li::selection
-	color            : #fff
+	color						: #fff
 	background-color : $dark-blue
 ::selection
-	color            : #fff
+	color						: #fff
 	background-color : $dark-blue
 a, a:hover, a:active, a:focus,
 button, input, button:hover, button:active, button:focus,
@@ -138,10 +138,9 @@ textarea:active
 	max-width: 100%
 	height: auto
 .shd,
-button:active
-	box-shadow: 0px 12px 28px -13px rgba(0,0,0,0.64)
-	.shd:hover
-		box-shadow: 0px 16px 32px -9px rgba(0,0,0,0.69)
+	box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25)
+	&:hover
+		box-shadow: 0px 30px 40px rgba(0, 80, 147, 0.25)
 .b
 	font-family: $a-bold
 .tac
@@ -433,6 +432,13 @@ button:active
 		margin-bottom: 35px
 		text-align: center
 		text-transform: uppercase
+	&__subttl
+		font-size: 28px
+		font-family: $a-bold
+		letter-spacing: .5px
+		margin-bottom: 35px
+		margin-top: -10px
+		text-align: center
 .input__wrp
 	position: relative
 	max-width: 230px
@@ -718,13 +724,29 @@ button:active
 	&__test
 		padding-top: 20px
 		padding-bottom: 40px
+		&>.row>div
+			&:last-child
+				.banner__test-item
+					&::after
+						display: none
 		&-item
 			display: flex
 			flex-direction: column
 			align-items: center
 			text-align: center
+			position: relative
 			// padding-left: 15px
 			// padding-right: 15px
+			&::after
+				content: ''
+				position: absolute
+				width: 10px
+				height: 10px
+				right: -20px
+				top: 50%
+				margin-top: -5px
+				background-color: #fff
+				border-radius: 50%
 			&-img
 				width: 95px
 				height: 73px
@@ -1133,6 +1155,11 @@ button:active
 				color: $yellow
 		&-text
 			font-size: 15px
+.cont
+	&-page
+		background-color: #E5E5E5
+		.section__ttl
+			text-align: left
 .ymaps-2-1-74-map
 	min-height: 400px !important
 	& *
@@ -1140,7 +1167,7 @@ button:active
 .footer
 	background-color: $dark-blue
 	color: #fff
-	a
+	a:not(.btn)
 		color: #fff
 		&:hover
 			color: $yellow
@@ -1269,6 +1296,21 @@ button:active
 	p
 		font-size: 15px
 .rev
+	&__pop
+		max-width: 970px
+		&-ttl
+			font-family: $a-bold
+			font-size: 18px
+			margin-bottom: 15px
+		&-img
+			width: 100%
+			max-width: 295px
+			height: 415px
+			margin-left: auto
+			margin-right: auto
+			background-size: cover
+			background-position: 50% 50%
+			background-repeat: no-repeat
 	&__in
 		padding-left: 50px
 		padding-right: 50px
@@ -1417,6 +1459,17 @@ button:active
 			font-family: $a-bold
 			font-size: 18px
 			color: $blue
+	&-block
+		background: url('../img/about__video-bg.jpg') no-repeat 50% 50%/cover
+		&__in
+			border-radius: 3px
+			min-height: 400px
+			padding: 25px
+			background-position: 50% 50%
+			background-repeat: no-repeat
+			background-size: cover
+			display: flex
+			align-items: flex-end
 div
 	&.pagination
 		display: flex
@@ -1497,13 +1550,13 @@ div
 	&-page
 		.begin__slider
 			&-item
-				display: flex;
+				display: flex
 				flex-direction: column
 				align-items: flex-start
 				justify-content: center
 		&__descr
 			text-align: center
-			display: flex;
+			display: flex
 			flex-direction: column
 			align-items: center
 			justify-content: center
@@ -1959,3 +2012,255 @@ div
 		width: 210px
 	.header__soc::after
 		display: none
+.about
+	&__ttl
+		color: $blue
+		font-size: 20px
+		margin-bottom: 15px
+	&-test
+		color: #fff
+		background-position: 50% 50%
+		background-size: cover
+		background-repeat: no-repeat
+		background-image: url('../img/banner__bg.jpg')
+	&-video
+		background: url('../img/about__video-bg.jpg') no-repeat 50% 50% / cover
+		&::hover
+			opacity: .8
+.team
+	background-color: #E5E5E5
+	&__col
+		display: flex
+		flex-direction: column
+	&__item
+		width: 100%
+		max-width: 280px
+		text-align: center
+		margin-left: auto
+		margin-right: auto
+		margin-bottom: 10px
+		&-top
+			position: relative
+			background-color: #d9d9d9
+			width: 100%
+			height: 215px
+		&-bot
+			background-color: #d9d9d9
+			padding: 0 20px 15px 20px
+		&-decor
+			width: 100%
+			height: 100%
+			position: relative
+			overflow: hidden
+			&::after
+				content: ''
+				position: absolute
+				width: 100%
+				height: 86%
+				left: -80px
+				bottom: 10px
+				transform: skew(-26deg)
+				background-color: #008CFF
+		&-img
+			position: absolute
+			bottom: 0
+			width: 100%
+			height: 110%
+			background-position: 50% 100%
+			background-repeat: no-repeat
+			-webkit-background-size: contain
+			background-size: contain
+			transform: translateY(-10px)
+		&-ttl
+			font-family: $a-bold
+			font-size: 24px
+			margin-bottom: 17px
+.pay
+	&__ttl
+		font-size: 20px
+		margin-bottom: 15px
+		span
+			color: $blue
+	&__item
+		max-width: 370px
+		margin-left: auto
+		margin-right: auto
+		display: flex
+		justify-content: space-between
+		align-items: center
+		&-img
+			position: absolute
+			left: 50%
+			margin-left: -30px
+			top: 50%
+			margin-top: -30px
+			width: 60px
+			height: 60px
+			background-position: 50% 50%
+			background-repeat: no-repeat
+			-webkit-background-size: contain
+			background-size: contain
+			z-index: 1
+			&_2
+				opacity: 0
+			&-wrp
+				min-width: 170px
+				height: 95px
+				background-color: #fff
+				border-radius: 3px
+				margin-right: 15px
+				position: relative
+				overflow: hidden
+				&::before
+					content: ''
+					position: absolute
+					width: 138px
+					height: 168px
+					left: -210%
+					top: -80px
+					background: linear-gradient(272.36deg, #FFFFFF -11.72%, rgba(255, 255, 255, 0) 23.19%)
+					opacity: 0.5
+					transform: rotate(36.57deg)
+					transition: 3s all ease
+		&:hover
+			.pay__item-img-wrp
+				color: #fff
+				background-color: $blue
+				&::before
+							left: 150%
+			.pay__item-img
+				&_1
+					opacity: 0
+				&_2
+					opacity: 1
+		&-ttl
+			font-family: $a-med
+.inner
+	&-banner
+		background-position: 50% 50%
+		background-repeat: no-repeat
+		background-size: cover
+		padding: 20px 0 30px
+		min-height: 400px
+		&__ttl
+			margin-top: 30px
+			color: #fff
+			span
+				background-color: $yellow
+				padding: 4px 15px
+.car
+	&__ttl
+		font-size: 24px
+		font-family: $a-bold
+		letter-spacing: .5px
+		margin-bottom: 15px
+	p
+		font-size: 14px
+	&-block
+		color: #fff
+		background: url('../img/career-page__bg.jpg') no-repeat 50% 50% / cover
+		position: relative
+		&::before
+			content: ''
+			position: absolute
+			width: 100%
+			height: 100%
+			left: 0
+			top: 0
+			background-color: $blue
+			opacity: .8
+		.container
+			position: relative
+		&__left
+			color: $dark-blue
+			background-color: #fff
+			box-shadow: 0px 30px 40px rgba(0, 80, 147, 0.25)
+			border-radius: 2px
+			padding: 30px 20px
+		&__ttl
+			font-size: 24px
+			font-family: $a-bold
+			letter-spacing: .5px
+			margin-bottom: 20px
+			text-align: center
+.vac
+	&__left
+		max-width: 570px
+		margin-left: auto
+		margin-right: auto
+		border-radius: 3px
+		min-height: 400px
+		padding: 25px
+		background-position: 50% 50%
+		background-repeat: no-repeat
+		background-size: cover
+		display: flex
+		align-items: flex-end
+	&__right
+		max-width: 570px
+		margin-left: auto
+		margin-right: auto
+		&-img
+			width: 100%
+			height: 211px
+			background-position: 50% 50%
+			background-repeat: no-repeat
+			background-size: cover
+			border-radius: 3px
+			margin-bottom: 15px
+		&-ttl
+			font-family: $a-bold
+			color: $blue
+			font-size: 22px
+			margin-bottom: 15px
+.succ
+	background-color: #fff
+	&__in
+		padding-left: 50px
+		padding-right: 50px
+	&__item
+		background-position: 50% 50%
+		background-repeat: no-repeat
+		background-size: cover
+		border-radius: 2px
+		overflow: hidden
+		display: flex
+		justify-content: center
+		align-items: center
+		width: 100%
+		max-width: 300px
+		height: 260px
+		margin-left: auto
+		margin-right: auto
+		position: relative
+		&_vid
+			max-width: unset
+		&::before
+			content: ''
+			position: absolute
+			width: 100%
+			height: 100%
+			left: 0
+			top: 0
+			background-color: $blue
+			opacity: 0
+		&-more
+			width: 52px
+			height: 53px
+			background: url('../img/rev__btn.png') no-repeat 50% 50% / contain
+			opacity: 0
+			position: relative
+		&-play
+			width: 63px
+			height: 45px
+			background: url('../img/icon__play.png') no-repeat 50% 50% / contain
+			opacity: 1
+			position: relative
+		&:hover
+			box-shadow: 0px 19px 19px rgba(0, 80, 147, 0.25)
+			&::before
+				opacity: .7
+			.succ__item-more
+				opacity: 1
+	.owl-stage
+		padding-bottom: 35px
