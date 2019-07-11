@@ -54,13 +54,13 @@
     max-width: 100%;
     height: auto;
   }
-  .header .header__city-wrp {
+  .header__city-wrp {
     display: none;
   }
-  .header .header__soc, .header .header__work {
+  .header__soc, .header__work {
     display: none !important;
   }
-  .header .header__days {
+  .header__days {
     display: none;
   }
   .contact {

@@ -2,7 +2,9 @@ $(function() {
   $('.begin__slider').owlCarousel({
       nav: true,
       items: 1,
-      loop: false,
+      autoplay: true,
+      autoplayHoverPause: true,
+      loop: true,
       smartSpeed: 800,
       dots: true,
       navText: ["<img src='img/slider__arrow_prev.png'>", "<img src='img/slider__arrow_next.png'>"]
@@ -196,7 +198,14 @@ $(function() {
         }
       }
   });
-  
+  //catalog list|tab view
+  $('.roll__view').on('click', function(){
+    var view = $(this).attr('data-view');
+    $('.roll__view').removeClass('active');
+    $('.roll__view[data-view="'+view+'"]').addClass('active');
+    console.log(view);
+    $('.roll__list').removeClass('view__col view__row').addClass(view);
+  });
 	// tabs 
   $(document).ready(function () {
     $(".tabs-content__item:not(:first-child)").hide();
@@ -293,9 +302,9 @@ $(function() {
     //sidebar nav
     $('.begin__nav-sub').hide();
     if ( $(window).width() > 1199 ) {
-      $('.begin__nav-link-wrp').hover(function() {
-        $(this).find('.begin__nav-sub').slideToggle();
-        
+      $('.begin__nav-link-wrp').hover( function() {
+        $(this).siblings('.begin__nav-link-wrp').find('.begin__nav-sub').hide(0);
+        $(this).find('.begin__nav-sub').toggle("slide");
       });
     };
     if ( $(window).width() < 1199 ) {
@@ -304,18 +313,21 @@ $(function() {
         $(this).toggleClass('active').siblings('.begin__nav-sub').slideToggle();
       })
     };
-    //sidebar slice more than 3 items
-    // $('.begin__nav-bot .begin__nav-link-wrp').slice(3).hide();
-    // $('.begin__nav-more').on('click', function(){
-    //   $('.begin__nav-link-wrp').slice(3).slideToggle();
-    //   $(this).hide();
-    // })
+  //sidebar slice more than 3 items
+  $('.begin__nav_1 .begin__nav-link-wrp').slice(3).hide();
+  $('.begin__nav_2 .begin__nav-link-wrp').slice(3).hide();
+  $('.begin__nav_3 .begin__nav-link-wrp').slice(3).hide();
+  $('.begin__nav_4 .begin__nav-link-wrp').slice(3).hide();
+  $('.begin__nav-more').on('click', function(){
+    $(this).hide();
+    $(this).parent('.begin__nav-bot').find('.begin__nav-link-wrp').slice(3).slideToggle();
+  });
   //city dropdown
   $('.header__city-list').hide();
   if ( $(window).width() > 1199 ) {
     $('.header__city-wrp').hover(function(){
       $(this).children('.header__city-select').toggleClass('active');
-      $(this).children('.header__city-list').slideToggle();
+      $(this).children('.header__city-list').slideToggle(50);
     });
   };
   if ( $(window).width() < 1199 ) {

@@ -141,8 +141,37 @@ textarea:active {
   outline: none;
 }
 
+.select__wrp {
+  border: 1px solid #BDBDBD;
+  border-radius: 3px;
+  position: relative;
+}
+
+.select__wrp::before {
+  content: '';
+  position: absolute;
+  width: 20px;
+  height: 20px;
+  background: url("../img/select__arr.png") no-repeat 50% 50%/contain;
+  top: 8px;
+  right: 9px;
+}
+
+.select__wrp select {
+  width: 100%;
+  background-color: transparent;
+  padding: 8px 40px 8px 12px;
+  position: relative;
+  -webkit-appearance: none;
+     -moz-appearance: none;
+          appearance: none;
+}
+
+.select__wrp select option {
+  width: 100%;
+}
+
 .checkbox {
-  min-width: 200px;
   cursor: pointer;
   position: relative;
   margin-bottom: 0;
@@ -177,14 +206,14 @@ textarea:active {
   height: 20px;
   border-radius: 2px;
   border: 1px solid #c3c2c2;
-  background: #E1E1E1;
+  background: #fff;
 }
 
 .checkbox .checkbox__text::after {
   content: '';
   position: absolute;
   top: 50%;
-  margin-top: -10px;
+  margin-top: -11px;
   left: 2px;
   width: 12px;
   height: 12px;
@@ -236,6 +265,10 @@ textarea:active {
 
 .b {
   font-family: "AvenirNextCyr-Bold";
+}
+
+.m {
+  font-family: "AvenirNextCyr-Medium";
 }
 
 .tac {
@@ -405,6 +438,21 @@ textarea:active {
   margin: 0;
 }
 
+.btn_subm.btn_transp {
+  border: none;
+  background-color: #F3F3F3;
+  -webkit-box-shadow: 0px 2px 2px rgba(0, 0, 0, 0.2);
+          box-shadow: 0px 2px 2px rgba(0, 0, 0, 0.2);
+}
+
+.btn_subm.btn_transp:hover {
+  background-color: #ccc;
+}
+
+.btn_subm.btn_transp input[type="submit"] {
+  color: #000;
+}
+
 .list_circle {
   list-style-type: none;
   padding-left: 0;
@@ -452,6 +500,28 @@ textarea:active {
   background-color: #05162E;
   left: 0;
   top: 9px;
+}
+
+.list_num {
+  padding-left: 0;
+  counter-reset: list1;
+}
+
+.list_num li {
+  list-style-type: none;
+}
+
+.list_num li {
+  margin-bottom: 10px;
+}
+
+.list_num li::before {
+  counter-increment: list1;
+  content: counter(list1);
+  color: #008CFF;
+  font-size: 16px;
+  font-family: "AvenirNextCyr-Bold";
+  margin-right: 15px;
 }
 
 .popup__container {
@@ -1033,7 +1103,7 @@ textarea:active {
 }
 
 .banner .btn_blue {
-  padding: 25px 10px;
+  padding: 15px 10px;
   width: 100%;
   max-width: 180px;
 }
@@ -1244,7 +1314,7 @@ textarea:active {
   font-family: "AvenirNextCyr-Bold";
   color: #fff;
   position: relative;
-  padding: 10px 12px;
+  padding: 10px 5px 10px 10px;
 }
 
 .begin__nav-top::before {
@@ -1264,16 +1334,46 @@ textarea:active {
   position: relative;
 }
 
-.begin__nav:nth-child(2) .begin__nav-top::before {
+.begin__nav_1 .begin__nav-top::before {
+  background-color: #008CFF;
+}
+
+.begin__nav_2 .begin__nav-top::before {
   background-color: #F18E02;
 }
 
-.begin__nav:nth-child(3) .begin__nav-top::before {
+.begin__nav_3 .begin__nav-top::before {
   background-color: #072754;
 }
 
-.begin__nav:nth-child(4) .begin__nav-top::before {
+.begin__nav_4 .begin__nav-top::before {
   background-color: #838383;
+}
+
+.begin__nav_filter .begin__nav-top::before {
+  background-color: #838383;
+}
+
+.begin__nav_filter .begin__nav-bot {
+  padding: 20px 15px;
+  font-size: 13px;
+}
+
+.begin__nav_filter .checkbox__text {
+  padding-left: 25px;
+  font-size: 13px;
+}
+
+.begin__nav_filter .unav {
+  opacity: .3;
+}
+
+.begin__nav_filter .select__wrp {
+  max-width: 370px;
+}
+
+.begin__nav_filter .btn {
+  max-width: 370px;
 }
 
 .begin__nav-bot {
@@ -1500,13 +1600,19 @@ textarea:active {
   text-align: center;
   padding: 30px 15px;
   position: relative;
-  background-color: #fff;
+  background-color: #F3F3F3;
   color: #05162E;
+  height: 100%;
   border-radius: 2px;
   overflow: hidden;
   max-width: 370px;
   margin-left: auto;
   margin-right: auto;
+}
+
+.hot__item:hover {
+  -webkit-box-shadow: 0px 10px 7px rgba(11, 40, 79, 0.13);
+          box-shadow: 0px 10px 7px rgba(11, 40, 79, 0.13);
 }
 
 .hot__item-img {
@@ -1525,6 +1631,22 @@ textarea:active {
 .hot__item-ttl {
   font-size: 16px;
   margin-bottom: 8px;
+}
+
+.hot__item-btns {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -webkit-flex-direction: column;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 
 .hot__item-price-wrp {
@@ -2034,6 +2156,13 @@ textarea:active {
 
 .main p {
   font-size: 15px;
+}
+
+.main__ttl {
+  color: #072754;
+  font-family: "AvenirNextCyr-Bold";
+  font-size: 20px;
+  margin-bottom: 15px;
 }
 
 .rev__pop {
@@ -2862,6 +2991,178 @@ div.pagination ul.pagination li.control_next::before {
   background-color: #fff;
 }
 
+.roll__banner {
+  background-color: #F3F3F3;
+  border-radius: 2px;
+  overflow: hidden;
+  position: relative;
+  padding: 20px;
+}
+
+.roll__banner .section__ttl {
+  position: relative;
+  z-index: 1;
+}
+
+.roll__banner-img {
+  position: absolute;
+  width: 140px;
+  height: 79px;
+  right: 0;
+  top: 0px;
+  background-position: 100% 50%;
+  background-repeat: no-repeat;
+  background-size: contain;
+}
+
+.roll__list.view__row > div {
+  width: 100%;
+  max-width: unset;
+  -webkit-box-flex: 0;
+  -webkit-flex: 0 0 100%;
+      -ms-flex: 0 0 100%;
+          flex: 0 0 100%;
+}
+
+.roll__list.view__row > div .hot__item {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+  -webkit-flex-direction: row;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: justify;
+  -webkit-justify-content: space-between;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+      -ms-flex-align: center;
+          align-items: center;
+  text-align: center;
+  max-width: unset;
+  height: auto;
+  padding: 20px 15px;
+  position: relative;
+  background-color: #F3F3F3;
+  color: #05162E;
+  border-radius: 2px;
+  overflow: hidden;
+}
+
+.roll__list.view__row > div .hot__item:hover {
+  -webkit-box-shadow: 0px 30px 40px rgba(0, 80, 147, 0.25);
+          box-shadow: 0px 30px 40px rgba(0, 80, 147, 0.25);
+}
+
+.roll__list.view__row > div .hot__item-img {
+  width: 160px;
+  height: 160px;
+  display: block;
+  background-position: 50% 50%;
+  background-size: contain;
+  background-repeat: no-repeat;
+}
+
+.roll__list.view__row > div .hot__item-img:hover {
+  opacity: .7;
+}
+
+.roll__list.view__row > div .hot__item-ttl {
+  font-size: 16px;
+  margin-bottom: 8px;
+  max-width: 120px;
+  width: 100%;
+}
+
+.roll__list.view__row > div .hot__item-price {
+  max-width: 135px;
+  width: 100%;
+}
+
+.roll__list.view__row > div .hot__item-price-wrp {
+  margin-bottom: 10px;
+}
+
+.roll__list.view__row > div .hot__item-price_cur {
+  font-family: "AvenirNextCyr-Bold";
+  font-size: 26px;
+}
+
+.roll__list.view__row > div .hot__item-price_old {
+  font-size: 13px;
+  color: #BDBDBD;
+  text-decoration: line-through;
+}
+
+.roll__list.view__row > div .hot__item-btn-wrp {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -webkit-flex-direction: column;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.roll__list.view__row > div .hot__item .btn {
+  -webkit-box-shadow: 0px 2px 2px rgba(0, 0, 0, 0.2);
+          box-shadow: 0px 2px 2px rgba(0, 0, 0, 0.2);
+  margin-bottom: 15px;
+}
+
+.roll__list.view__row > div .hot__item-flag {
+  padding: 8px 12px 8px 20px;
+  text-align: center;
+  -webkit-transform: skew(-20deg);
+      -ms-transform: skew(-20deg);
+          transform: skew(-20deg);
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+      -ms-flex-align: center;
+          align-items: center;
+  color: #fff;
+  font-family: "AvenirNextCyr-Bold";
+  font-size: 16px;
+  width: 70px;
+  position: absolute;
+  top: 19px;
+  left: -15px;
+  z-index: 1;
+}
+
+.roll__list.view__row > div .hot__item-flag span {
+  -webkit-transform: skew(20deg);
+      -ms-transform: skew(20deg);
+          transform: skew(20deg);
+}
+
+.roll__list.view__row > div .hot__item-flag_sale {
+  background-color: #F18E02;
+}
+
+.roll__list.view__row > div .hot__item-flag_hit {
+  text-transform: uppercase;
+  background-color: #008CFF;
+}
+
 .roll__list-item {
   width: 100%;
   max-width: 270px;
@@ -2945,132 +3246,22 @@ div.pagination ul.pagination li.control_next::before {
   margin-bottom: 11px;
 }
 
-.roll-cards__item {
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: justify;
-  -webkit-justify-content: space-between;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
-  -webkit-box-align: center;
-  -webkit-align-items: center;
-      -ms-flex-align: center;
-          align-items: center;
-  text-align: center;
-  padding: 20px 15px;
-  position: relative;
-  background-color: #F3F3F3;
-  color: #05162E;
-  border-radius: 2px;
-  overflow: hidden;
+.roll__view {
+  -webkit-filter: grayscale(100);
+          filter: grayscale(100);
+  opacity: .6;
 }
 
-.roll-cards__item:hover {
-  -webkit-box-shadow: 0px 30px 40px rgba(0, 80, 147, 0.25);
-          box-shadow: 0px 30px 40px rgba(0, 80, 147, 0.25);
+.roll__view.active {
+  -webkit-filter: grayscale(0);
+          filter: grayscale(0);
+  opacity: 1;
 }
 
-.roll-cards__item-img {
-  width: 160px;
-  height: 160px;
-  display: block;
-  background-position: 50% 50%;
-  background-size: contain;
-  background-repeat: no-repeat;
-  margin-bottom: 10px;
-  margin-left: auto;
-  margin-right: auto;
-}
-
-.roll-cards__item-img:hover {
-  opacity: .7;
-}
-
-.roll-cards__item-ttl {
-  font-size: 16px;
-  margin-bottom: 8px;
-}
-
-.roll-cards__item-price-wrp {
-  margin-bottom: 10px;
-}
-
-.roll-cards__item-price_cur {
-  font-family: "AvenirNextCyr-Bold";
-  font-size: 26px;
-}
-
-.roll-cards__item-price_old {
-  font-size: 13px;
-  color: #BDBDBD;
-  text-decoration: line-through;
-}
-
-.roll-cards__item-btn-wrp {
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-  -webkit-flex-direction: column;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  -webkit-box-align: center;
-  -webkit-align-items: center;
-      -ms-flex-align: center;
-          align-items: center;
-}
-
-.roll-cards__item .btn {
-  -webkit-box-shadow: 0px 2px 2px rgba(0, 0, 0, 0.2);
-          box-shadow: 0px 2px 2px rgba(0, 0, 0, 0.2);
-  margin-bottom: 15px;
-}
-
-.roll-cards__item-flag {
-  padding: 8px 12px 8px 20px;
-  text-align: center;
-  -webkit-transform: skew(-20deg);
-      -ms-transform: skew(-20deg);
-          transform: skew(-20deg);
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: center;
-  -webkit-justify-content: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: center;
-  -webkit-align-items: center;
-      -ms-flex-align: center;
-          align-items: center;
-  color: #fff;
-  font-family: "AvenirNextCyr-Bold";
-  font-size: 16px;
-  width: 70px;
-  position: absolute;
-  top: 19px;
-  left: -15px;
-  z-index: 1;
-}
-
-.roll-cards__item-flag span {
-  -webkit-transform: skew(20deg);
-      -ms-transform: skew(20deg);
-          transform: skew(20deg);
-}
-
-.roll-cards__item-flag_sale {
-  background-color: #F18E02;
-}
-
-.roll-cards__item-flag_hit {
-  text-transform: uppercase;
-  background-color: #008CFF;
+.roll__view:hover:not(.active) {
+  -webkit-transform: scale(0.9);
+      -ms-transform: scale(0.9);
+          transform: scale(0.9);
 }
 
 .serv {
@@ -3185,6 +3376,12 @@ div.pagination ul.pagination li.control_next::before {
 
 .serv__item:hover .serv__item-img_2 {
   opacity: 1;
+}
+
+.serv__img {
+  width: 100%;
+  height: 300px;
+  background: url("../img/serv__img.jpg") no-repeat 50% 50%/cover;
 }
 
 .mobile-menu {
