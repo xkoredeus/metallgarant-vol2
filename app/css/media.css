@@ -69,7 +69,7 @@
   #sidebar {
     display: none;
     min-height: 100vh;
-    padding: 0;
+    padding: 30px 15px;
   }
   #sidebar .begin__nav-sub {
     position: relative;
@@ -115,6 +115,9 @@
     -webkit-transform: rotate(45deg) scale(-1, -1);
         -ms-transform: rotate(45deg) scale(-1, -1);
             transform: rotate(45deg) scale(-1, -1);
+  }
+  .header__cart::after {
+    display: none;
   }
 }
 
@@ -217,6 +220,22 @@
 }
 
 @media screen and (max-width: 600px) {
+  .main-page .banner {
+    background-image: url("../img/banner__bg.jpg");
+    position: relative;
+    z-index: 2;
+    overflow: visible;
+  }
+  .main-page .banner::before {
+    display: none;
+  }
+  .main-page .banner__video {
+    display: none;
+  }
+  .main-page .container {
+    position: relative;
+    z-index: 2;
+  }
   .watch-more__item-img {
     left: 30px;
   }
@@ -261,9 +280,6 @@
 }
 
 @media screen and (max-width: 576px) {
-  .header__cart::after {
-    display: none;
-  }
   .mobile-menu {
     padding: 10px;
   }

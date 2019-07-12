@@ -37,6 +37,27 @@ $(function() {
         }
       }
   });
+  $('.sale-list__in').owlCarousel({
+      nav: true,
+      smartSpeed: 800,
+      margin: 20,
+      dots: false,
+      navText: ["<img src='img/slider__arrow_prev.png'>", "<img src='img/slider__arrow_next.png'>"],
+      responsive : {
+        0   : {
+            items: 1
+        },
+        380 : {
+            items: 1
+        },
+        768 : {
+            items: 2
+        },
+        1040 : {
+            items: 3
+        }
+      }
+  });
   $('.rev__in').owlCarousel({
       nav: true,
       loop: true,
@@ -252,25 +273,28 @@ $(function() {
     function init(){
       myMap = new ymaps.Map("ymap_tabs", {
           center: [59.86663456, 30.47202250],
-          zoom: 16
+          zoom: 16,
+          // scrollZoom: false,
+          controls: ["typeSelector"],
       });
-
+      myMap.behaviors.disable('drag');
+      myMap.behaviors.disable('scrollZoom'); 
       var placemarks = [
           {
               coords: [59.86663456, 30.47202250],
-              icon: '/img/baloon.png',
+              icon: 'img/baloon.png',
               icon_size: [46, 52],
               icon_offset: [-23, -52], // -50% ширины, -100% высоты от точки привязки (левый верхний угол)
           },
           {
               coords: [59.82384206, 30.52547200],
-              icon: '/img/baloon.png',
+              icon: 'img/baloon.png',
               icon_size: [46, 52],
               icon_offset: [-23, -52],
           },
           {
               coords: [60.54950006, 30.21664900],
-              icon: '/img/baloon.png',
+              icon: 'img/baloon.png',
               icon_size: [46, 52],
               icon_offset: [-23, -52],
           }
@@ -304,7 +328,7 @@ $(function() {
     if ( $(window).width() > 1199 ) {
       $('.begin__nav-link-wrp').hover( function() {
         $(this).siblings('.begin__nav-link-wrp').find('.begin__nav-sub').hide(0);
-        $(this).find('.begin__nav-sub').toggle("slide");
+        $(this).find('.begin__nav-sub').slideToggle(50);
       });
     };
     if ( $(window).width() < 1199 ) {
