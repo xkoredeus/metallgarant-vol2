@@ -1,0 +1,928 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+  <meta name="theme-color" content="#6232ad">
+  <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+  <title>New Project</title>
+  <link rel="stylesheet" href="css/libs.min.css">
+  <link rel="stylesheet" href="css/main.css">
+  <link rel="stylesheet" href="css/media.css">
+</head>
+<body>
+  <!--mobile menu-->
+  <div class="mobile-menu" id="mobile-menu">
+    <div class="container">
+      <div class="d-flex flex-column align-items-center">
+        <div class="mb-3">
+          <div class="d-flex flex-column align-items-center">
+            <a href="#" class="banner__logo">
+              <img src="img/banner__logo.png" alt="">
+            </a>
+          </div>
+        </div>
+        <div class="banner__nav-in d-flex flex-column align-items-center mb-3">
+          <a href="#" class="banner__nav-item">
+            <span>О компании</span>
+          </a>
+          <a href="#" class="banner__nav-item">
+            <span>Способы оплаты</span>
+          </a>
+          <a href="#" class="banner__nav-item">
+            <span>Доставка</span>
+          </a>
+          <a href="#" class="banner__nav-item">
+            <span>Карьера</span>
+          </a>
+          <a href="#" class="banner__nav-item">
+            <span>Контакты</span>
+          </a>
+          <a href="#" class="banner__nav-item">
+            <span>Коммерческое предложение</span>
+          </a>
+          <a href="#" class="banner__nav-item active">
+            <span>Акции</span>
+          </a>
+          <a href="#popup_call" data-fancybox class="btn">
+            <span>Написать директору</span>
+          </a>
+        </div>
+        <div class="mb-3">
+          <div class="d-flex flex-column align-items-center">
+            <a href="#popup_call" data-fancybox class="btn btn_blue">Заказать звонок</a>
+            <a href="#sidebar" data-fancybox class="btn banner__menu-btn">
+              <span>Меню</span>
+            </a>
+          </div>
+        </div>
+
+        <div class="header__city-wrp mb-3">
+          <div class="header__city-select">Санкт-Петербург</div>
+          <div class="header__city-list">
+            <a href="#" class="header__city-list-item">Москва</a>
+            <a href="#" class="header__city-list-item">Самара</a>
+            <a href="#" class="header__city-list-item">Саратов</a>
+            <a href="#" class="header__city-list-item">Саранск</a>
+            <a href="#" class="header__city-list-item">Смоленск</a>
+            <a href="#" class="header__city-list-item">Астрахань</a>
+          </div>
+        </div>
+        <div class="header__soc d-flex mb-2">
+          <a href="#" class="header__soc-link mr-2">
+            <img src="img/icon__in.png" alt="">
+          </a>
+          <a href="#" class="header__soc-link mr-2">
+            <img src="img/icon__fb.png" alt="">
+          </a>
+          <a href="#" class="header__soc-link mr-2">
+            <img src="img/icon__vk.png" alt="">
+          </a>
+          <a href="#" class="header__soc-link">
+            <img src="img/icon__yu.png" alt="">
+          </a>
+        </div>
+        <div class="header__days">
+          365/7/24
+        </div>
+        <div class="banner__info pb-4 pt-4 pt-xl-0">
+          <div class="d-flex flex-column">
+            <div class="header__work d-flex justify-content-center align-items-start mb-3">
+              <img src="img/icon__time_white.png" alt="" class="mr-2 mt-1">
+              <div class="d-flex flex-column">
+                <span>Пн-Пт: 09.00-18.00</span>
+                <span>Сб-Вс: Выходной</span>
+              </div>
+            </div>
+            <div class="mb-3">
+              <div class="d-flex flex-column align-items-center">
+                <div class="mb-1"><span class="b">Офис:</span> пр.Обуховской Обороны, 112/2, оф.517</div>
+                <div class="mb-1"><span class="b">Производство/склад:</span> ул. Караваевская, д.57</div>
+                <div class="mb-1"><span class="b">Шоу-рум:</span> п.Сосново, ул.Вокзальная, 21</div>
+              </div>
+            </div>
+            <div class="mb-4">
+              <div class="d-flex flex-column align-items-center">
+                <a href="tel:88126042003" class="banner__tel">+7 (812) 604-20-03</a>
+                <a href="mailto:info@lzmmg.ru" class="banner__mail d-flex align-items-center">
+                  <img src="img/icon__mes_white.png" alt="" class="mr-2">
+                  <span>info@lzmmg.ru</span>
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!--/mobile menu-->
+  <header class="header">
+    <div class="container">
+      <div class="row align-items-center pr-5 pr-sm-0">
+        <div class="col-xl-8">
+          <div class="d-flex align-items-center flex-sm-row flex-wrap flex-xl-nowrap flex-column">
+            <div class="header__work d-flex align-items-start mr-xl-5">
+              <img src="img/icon__time_white.png" alt="" class="mr-2 mt-1">
+              <div class="d-flex flex-column">
+                <span>Пн-Пт: 09.00-18.00</span>
+                <span>Сб-Вс: Выходной</span>
+              </div>
+            </div>
+            <div class="header__city-wrp mr-4">
+              <div class="header__city-select">Санкт-Петербург</div>
+              <div class="header__city-list">
+                <a href="#" class="header__city-list-item">Москва</a>
+                <a href="#" class="header__city-list-item">Самара</a>
+                <a href="#" class="header__city-list-item">Саратов</a>
+                <a href="#" class="header__city-list-item">Саранск</a>
+                <a href="#" class="header__city-list-item">Смоленск</a>
+                <a href="#" class="header__city-list-item">Астрахань</a>
+              </div>
+            </div>
+            <div class="header__soc d-flex mr-4">
+              <a href="#" class="header__soc-link mr-2">
+                <img src="img/icon__in.png" alt="">
+              </a>
+              <a href="#" class="header__soc-link mr-2">
+                <img src="img/icon__fb.png" alt="">
+              </a>
+              <a href="#" class="header__soc-link mr-2">
+                <img src="img/icon__vk.png" alt="">
+              </a>
+              <a href="#" class="header__soc-link">
+                <img src="img/icon__yu.png" alt="">
+              </a>
+            </div>
+            <div class="header__days">
+              365/7/24
+            </div>
+          </div>
+            
+        </div>
+        <div class="col-xl-4">
+          <div class="d-flex justify-content-xl-end justify-content-center align-items-center">
+            <a href="#" class="header__cart d-flex align-items-center mr-3 mr-xl-5">
+              <div class="header__cart-val mr-3">
+                <img src="img/icon__cart.png" alt="">
+                <div class="header__cart-val-num">1</div>
+              </div>
+              <div class="header__cart-price">15 000 Р</div>
+            </a>
+            <a href="#" class="header__cab d-flex align-items-center">
+              <img src="img/icon__cab.png" alt="" class="mr-2">
+              <span>Личный кабинет</span>
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </header>
+  <section class="banner">
+    <div class="container">
+      <a href="#mobile-menu" data-fancybox class="banner__hamburger"></a>
+      <div class="row align-items-center justify-content-between pt-3 pb-3 mb-3 banner__nav">
+        <div class="col-xl-10">
+          <div class="banner__nav-in d-flex justify-content-between align-items-center">
+            <a href="#" class="banner__nav-item">
+              <span>О компании</span>
+            </a>
+            <a href="#" class="banner__nav-item">
+              <span>Способы оплаты</span>
+            </a>
+            <a href="#" class="banner__nav-item">
+              <span>Доставка</span>
+            </a>
+            <a href="#" class="banner__nav-item">
+              <span>Карьера</span>
+            </a>
+            <a href="#" class="banner__nav-item">
+              <span>Контакты</span>
+            </a>
+            <a href="#" class="banner__nav-item">
+              <span>Коммерческое предложение</span>
+            </a>
+            <a href="#" class="banner__nav-item active">
+              <span>Акции</span>
+            </a>
+          </div>
+        </div>
+        <div class="col-xl-2">
+          <div class="d-flex justify-content-center justify-content-xl-end align-items-center">
+            <a href="#popup_call" data-fancybox class="btn">
+              <span>Написать директору</span>
+            </a>
+          </div>
+        </div>
+      </div>
+      <div class="banner__info pb-4 pt-4 pt-xl-0">
+        <div class="row justify-content-center">
+          <div class="col-xl-3 mb-3 mb-xl-0">
+            <div class="d-flex flex-column align-items-center align-items-xl-start">
+              <a href="#" class="banner__logo">
+                <img src="img/banner__logo.png" alt="">
+              </a>
+            </div>
+          </div>
+          <div class="col-xl-4 mb-3 mb-xl-0 d-none d-xl-flex">
+            <div class="d-flex flex-column align-items-start">
+              <div class="mb-1"><span class="b">Офис:</span> пр.Обуховской Обороны, 112/2, оф.517</div>
+              <div class="mb-1"><span class="b">Производство/склад:</span> ул. Караваевская, д.57</div>
+              <div class="mb-1"><span class="b">Шоу-рум:</span> п.Сосново, ул.Вокзальная, 21</div>
+            </div>
+          </div>
+          <div class="col-xl-3 mb-xl-0 mb-4">
+            <div class="d-flex flex-column align-items-center align-items-xl-start">
+              <a href="tel:88126042003" class="banner__tel">+7 (812) 604-20-03</a>
+              <a href="mailto:info@lzmmg.ru" class="banner__mail d-flex align-items-center">
+                <img src="img/icon__mes_white.png" alt="" class="mr-2">
+                <span>info@lzmmg.ru</span>
+              </a>
+            </div>
+          </div>
+          <div class="col-xl-2">
+            <div class="d-flex flex-column align-items-center align-items-xl-start">
+              <a href="#popup_call" data-fancybox class="btn btn_blue">Заказать звонок</a>
+              <a href="#sidebar" data-fancybox class="btn banner__menu-btn">
+                <span>Меню</span>
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <main class="main">
+    <div class="container">
+      <ul class="crumbs">
+        <li><a href="#">Главная</a></li>
+        <li><a href="#">Металлоконструкции</a></li>
+        <li><a href="#">Строительные</a></li>
+        <li>Металлические фермы</li>
+      </ul>
+    </div>
+    <section class="section_inner">
+      <div class="container">
+        <div class="row">
+          <aside class="col-xl-3">
+            <div id="sidebar">
+              <div class="d-flex flex-xl-column flex-row flex-wrap">
+                <div class="begin__nav begin__nav_1 mb-4 col-sm-6 col-xl-12">
+                  <div class="begin__nav-top">
+                    <div class="d-flex align-items-center">
+                      <img src="img/begin__nav_1.png" alt="" class="mr-3">
+                      <span>Металлопрокат</span>
+                    </div>
+                  </div>
+                  <div class="begin__nav-bot">
+                    <div class="begin__nav-list d-flex flex-column">
+                      <div class="begin__nav-link-wrp">
+                        <a href="#" class="begin__nav-link">Черный металлопрокат</a>
+                        <!--sub-->
+                        <div class="begin__nav-sub">
+                          <div class="row">
+                            <div class="col-xl-4 col-sm-6 d-flex flex-column mb-3">
+                              <a href="#" class="begin__nav-sub-ttl mb-2">Подкатегория</a>
+                              <a href="#" class="begin__nav-sub-link">Под-подкатегория</a>
+                              <a href="#" class="begin__nav-sub-link">Под-подкатегория</a>
+                              <a href="#" class="begin__nav-sub-link">Под-подкатегория</a>
+                              <a href="#" class="begin__nav-sub-link">Под-подкатегория</a>
+                              <a href="#" class="begin__nav-sub-link mb-3">Под-подкатегория</a>
+
+                              <a href="#" class="begin__nav-sub-ttl mb-2">Подкатегория</a>
+                              <a href="#" class="begin__nav-sub-link">Под-подкатегория</a>
+                              <a href="#" class="begin__nav-sub-link">Под-подкатегория</a>
+                              <a href="#" class="begin__nav-sub-link">Под-подкатегория</a>
+                              <a href="#" class="begin__nav-sub-link">Под-подкатегория</a>
+                              <a href="#" class="begin__nav-sub-link">Под-подкатегория</a>
+                            </div>
+                            <div class="col-xl-4 col-sm-6 d-flex flex-column mb-3">
+                              <a href="#" class="begin__nav-sub-ttl mb-2">Подкатегория</a>
+                                <a href="#" class="begin__nav-sub-link">Под-подкатегория</a>
+                                <a href="#" class="begin__nav-sub-link">Под-подкатегория</a>
+                                <a href="#" class="begin__nav-sub-link">Под-подкатегория</a>
+                                <a href="#" class="begin__nav-sub-link">Под-подкатегория</a>
+                                <a href="#" class="begin__nav-sub-link">Под-подкатегория</a>
+                                <a href="#" class="begin__nav-sub-link">Под-подкатегория</a>
+                                <a href="#" class="begin__nav-sub-link">Под-подкатегория</a>
+                                <a href="#" class="begin__nav-sub-link">Под-подкатегория</a>
+                                <a href="#" class="begin__nav-sub-link">Под-подкатегория</a>
+                            </div>
+                            <div class="col-xl-4 col-sm-6 d-flex flex-column mb-3">
+                              <a href="#" class="begin__nav-sub-ttl mb-2">Подкатегория</a>
+                              <a href="#" class="begin__nav-sub-link">Под-подкатегория</a>
+                              <a href="#" class="begin__nav-sub-link">Под-подкатегория</a>
+                              <a href="#" class="begin__nav-sub-link">Под-подкатегория</a>
+                              <a href="#" class="begin__nav-sub-link">Под-подкатегория</a>
+                              <a href="#" class="begin__nav-sub-link">Под-подкатегория</a>
+                              <a href="#" class="begin__nav-sub-link">Под-подкатегория</a>
+                              <a href="#" class="begin__nav-sub-link">Под-подкатегория</a>
+                              <a href="#" class="begin__nav-sub-link">Под-подкатегория</a>
+                            </div>
+                            
+                          </div>
+                        </div>
+                        <!--/sub-->
+                      </div>
+                      <div class="begin__nav-link-wrp">
+                        <a href="#" class="begin__nav-link">Оцинкованный металлопрокат</a>
+                      </div>
+                      <div class="begin__nav-link-wrp">
+                        <a href="#" class="begin__nav-link">Нержавеющий металлопрокат</a>
+                      </div>
+                      <div class="begin__nav-link-wrp">
+                        <a href="#" class="begin__nav-link">Оцинкованный металлопрокат</a>
+                      </div>
+                      <div class="begin__nav-link-wrp">
+                        <a href="#" class="begin__nav-link">Нержавеющий металлопрокат</a>
+                      </div>
+                    </div>
+                    <div class="begin__nav-more"><img src="img/icon__arr.png" alt=""></div>
+                  </div>
+                </div>
+                <div class="begin__nav begin__nav_2 mb-4 col-sm-6 col-xl-12">
+                  <div class="begin__nav-top">
+                    <div class="d-flex align-items-center">
+                      <img src="img/begin__nav_2.png" alt="" class="mr-3">
+                      <span>Кровельные материалы</span>
+                    </div>
+                  </div>
+                  <div class="begin__nav-bot">
+                    <div class="begin__nav-list d-flex flex-column">
+                      <div class="begin__nav-link-wrp">
+                        <a href="#" class="begin__nav-link">Профнастил</a>
+                      </div>
+                      <div class="begin__nav-link-wrp">
+                        <a href="#" class="begin__nav-link">Металлочерепица</a>
+                        <!--sub-->
+                        <div class="begin__nav-sub">
+                          <div class="row">
+                            <div class="col-xl-4 col-sm-6 d-flex flex-column mb-3">
+                              <a href="#" class="begin__nav-sub-ttl mb-2">Подкатегория</a>
+                              <a href="#" class="begin__nav-sub-link">Под-подкатегория</a>
+                              <a href="#" class="begin__nav-sub-link">Под-подкатегория</a>
+                              <a href="#" class="begin__nav-sub-link">Под-подкатегория</a>
+                              <a href="#" class="begin__nav-sub-link">Под-подкатегория</a>
+                              <a href="#" class="begin__nav-sub-link mb-3">Под-подкатегория</a>
+
+                              <a href="#" class="begin__nav-sub-ttl mb-2">Подкатегория</a>
+                              <a href="#" class="begin__nav-sub-link">Под-подкатегория</a>
+                              <a href="#" class="begin__nav-sub-link">Под-подкатегория</a>
+                              <a href="#" class="begin__nav-sub-link">Под-подкатегория</a>
+                              <a href="#" class="begin__nav-sub-link">Под-подкатегория</a>
+                              <a href="#" class="begin__nav-sub-link">Под-подкатегория</a>
+                            </div>
+                            <div class="col-xl-4 col-sm-6 d-flex flex-column mb-3">
+                              <a href="#" class="begin__nav-sub-ttl mb-2">Подкатегория</a>
+                                <a href="#" class="begin__nav-sub-link">Под-подкатегория</a>
+                                <a href="#" class="begin__nav-sub-link">Под-подкатегория</a>
+                                <a href="#" class="begin__nav-sub-link">Под-подкатегория</a>
+                                <a href="#" class="begin__nav-sub-link">Под-подкатегория</a>
+                                <a href="#" class="begin__nav-sub-link">Под-подкатегория</a>
+                                <a href="#" class="begin__nav-sub-link">Под-подкатегория</a>
+                                <a href="#" class="begin__nav-sub-link">Под-подкатегория</a>
+                                <a href="#" class="begin__nav-sub-link">Под-подкатегория</a>
+                                <a href="#" class="begin__nav-sub-link">Под-подкатегория</a>
+                            </div>
+                            <div class="col-xl-4 col-sm-6 d-flex flex-column mb-3">
+                              <a href="#" class="begin__nav-sub-ttl mb-2">Подкатегория</a>
+                              <a href="#" class="begin__nav-sub-link">Под-подкатегория</a>
+                              <a href="#" class="begin__nav-sub-link">Под-подкатегория</a>
+                              <a href="#" class="begin__nav-sub-link">Под-подкатегория</a>
+                              <a href="#" class="begin__nav-sub-link">Под-подкатегория</a>
+                              <a href="#" class="begin__nav-sub-link">Под-подкатегория</a>
+                              <a href="#" class="begin__nav-sub-link">Под-подкатегория</a>
+                              <a href="#" class="begin__nav-sub-link">Под-подкатегория</a>
+                              <a href="#" class="begin__nav-sub-link">Под-подкатегория</a>
+                            </div>
+                            
+                          </div>
+                        </div>
+                        <!--/sub-->
+                      </div>
+                      <div class="begin__nav-link-wrp">
+                        <a href="#" class="begin__nav-link">Водосточные системы и снегозадержатели</a>
+                        <!--sub-->
+                        <div class="begin__nav-sub">
+                          <div class="row">
+                            <div class="col-xl-4 col-sm-6 d-flex flex-column mb-3">
+                              <a href="#" class="begin__nav-sub-ttl mb-2">Подкатегория</a>
+                              <a href="#" class="begin__nav-sub-link">Под-подкатегория</a>
+                              <a href="#" class="begin__nav-sub-link">Под-подкатегория</a>
+                              <a href="#" class="begin__nav-sub-link">Под-подкатегория</a>
+                              <a href="#" class="begin__nav-sub-link">Под-подкатегория</a>
+                              <a href="#" class="begin__nav-sub-link mb-3">Под-подкатегория</a>
+
+                              <a href="#" class="begin__nav-sub-ttl mb-2">Подкатегория</a>
+                              <a href="#" class="begin__nav-sub-link">Под-подкатегория</a>
+                              <a href="#" class="begin__nav-sub-link">Под-подкатегория</a>
+                              <a href="#" class="begin__nav-sub-link">Под-подкатегория</a>
+                              <a href="#" class="begin__nav-sub-link">Под-подкатегория</a>
+                              <a href="#" class="begin__nav-sub-link">Под-подкатегория</a>
+                            </div>
+                            <div class="col-xl-4 col-sm-6 d-flex flex-column mb-3">
+                              <a href="#" class="begin__nav-sub-ttl mb-2">Подкатегория</a>
+                                <a href="#" class="begin__nav-sub-link">Под-подкатегория</a>
+                                <a href="#" class="begin__nav-sub-link">Под-подкатегория</a>
+                                <a href="#" class="begin__nav-sub-link">Под-подкатегория</a>
+                                <a href="#" class="begin__nav-sub-link">Под-подкатегория</a>
+                                <a href="#" class="begin__nav-sub-link">Под-подкатегория</a>
+                                <a href="#" class="begin__nav-sub-link">Под-подкатегория</a>
+                                <a href="#" class="begin__nav-sub-link">Под-подкатегория</a>
+                                <a href="#" class="begin__nav-sub-link">Под-подкатегория</a>
+                                <a href="#" class="begin__nav-sub-link">Под-подкатегория</a>
+                            </div>
+                            <div class="col-xl-4 col-sm-6 d-flex flex-column mb-3">
+                              <a href="#" class="begin__nav-sub-ttl mb-2">Подкатегория</a>
+                              <a href="#" class="begin__nav-sub-link">Под-подкатегория</a>
+                              <a href="#" class="begin__nav-sub-link">Под-подкатегория</a>
+                              <a href="#" class="begin__nav-sub-link">Под-подкатегория</a>
+                              <a href="#" class="begin__nav-sub-link">Под-подкатегория</a>
+                              <a href="#" class="begin__nav-sub-link">Под-подкатегория</a>
+                              <a href="#" class="begin__nav-sub-link">Под-подкатегория</a>
+                              <a href="#" class="begin__nav-sub-link">Под-подкатегория</a>
+                              <a href="#" class="begin__nav-sub-link">Под-подкатегория</a>
+                            </div>
+                            
+                          </div>
+                        </div>
+                        <!--/sub-->
+                      </div>
+                      <div class="begin__nav-link-wrp">
+                        <a href="#" class="begin__nav-link">Профнастил</a>
+                      </div>
+                      <div class="begin__nav-link-wrp">
+                        <a href="#" class="begin__nav-link">Профнастил</a>
+                      </div>
+                      <div class="begin__nav-link-wrp">
+                        <a href="#" class="begin__nav-link">Профнастил</a>
+                      </div>
+                    </div>
+                    <div class="begin__nav-more"><img src="img/icon__arr.png" alt=""></div>
+                  </div>
+                </div>
+                <div class="begin__nav begin__nav_3 mb-4 col-sm-6 col-xl-12">
+                  <div class="begin__nav-top">
+                    <div class="d-flex align-items-center">
+                      <img src="img/begin__nav_3.png" alt="" class="mr-3">
+                      <span>Металлоконструкции</span>
+                    </div>
+                  </div>
+                  <div class="begin__nav-bot">
+                    <div class="begin__nav-list d-flex flex-column">
+                      <div class="begin__nav-link-wrp">
+                        <a href="#" class="begin__nav-link">Строительные</a>
+                      </div>
+                      <div class="begin__nav-link-wrp">
+                        <a href="#" class="begin__nav-link">Складские и логистические</a>
+                      </div>
+                      <div class="begin__nav-link-wrp">
+                        <a href="#" class="begin__nav-link">Электроэнергетика</a>
+                      </div>
+                      <div class="begin__nav-link-wrp">
+                        <a href="#" class="begin__nav-link">Электроэнергетика</a>
+                      </div>
+                    </div>
+                    <div class="begin__nav-more"><img src="img/icon__arr.png" alt=""></div>
+                  </div>
+                </div>
+                <div class="begin__nav begin__nav_4 mb-4 col-sm-6 col-xl-12">
+                  <div class="begin__nav-top">
+                    <div class="d-flex align-items-center">
+                      <img src="img/begin__nav_4.png" alt="" class="mr-3">
+                      <span>Услуги</span>
+                    </div>
+                  </div>
+                  <div class="begin__nav-bot">
+                    <div class="begin__nav-list d-flex flex-column">
+                      <div class="begin__nav-link-wrp">
+                        <a href="#" class="begin__nav-link">Резка</a>
+                      </div>
+                      <div class="begin__nav-link-wrp">
+                        <a href="#" class="begin__nav-link">Оцинкование</a>
+                      </div>
+                      <div class="begin__nav-link-wrp">
+                        <a href="#" class="begin__nav-link">Гибка</a>
+                      </div>
+                      <div class="begin__nav-link-wrp">
+                        <a href="#" class="begin__nav-link">Оцинкование</a>
+                      </div>
+                      <div class="begin__nav-link-wrp">
+                        <a href="#" class="begin__nav-link">Гибка</a>
+                      </div>
+                      <div class="begin__nav-link-wrp">
+                        <a href="#" class="begin__nav-link">Оцинкование</a>
+                      </div>
+                      <div class="begin__nav-link-wrp">
+                        <a href="#" class="begin__nav-link">Гибка</a>
+                      </div>
+                      <div class="begin__nav-link-wrp">
+                        <a href="#" class="begin__nav-link">Оцинкование</a>
+                      </div>
+                      <div class="begin__nav-link-wrp">
+                        <a href="#" class="begin__nav-link">Гибка</a>
+                      </div>
+                    </div>
+                    <div class="begin__nav-more"><img src="img/icon__arr.png" alt=""></div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </aside>
+          <div class="col-xl-9">
+            <div class="section__ttl tal">МЕТАЛЛИЧЕСКИЕ ФЕРМЫ</div>
+            <div class="row no-gutters mb-5">
+              <div class="col-xl-6 mb-3 mb-xl-0">
+                <div class="steel-page__img-wrp">
+                  <div class="steel-page__img" style="background-image: url(img/steel-page__img.jpg)"></div>
+                </div>
+              </div>
+              <div class="col-xl-6 pl-2 pl-sm-4 pr-2 pr-sm-0">
+                <div class="d-flex flex-column align-items-start">
+                  <div class="d-flex flex-wrap flex-sm-nowrap align-items-end steel-page__price">
+                    <span class="mr-3">Цена от 1т.:</span>
+                    <span class="b">68 Р/кг.</span>
+                  </div>
+                  <p>Для консультации обратитесь к нашим специалистам по телефону <a href="tel:78126042003" class="m">+7 (812) 604-20-03</a> или оставьте заявку и Вам перезвонят</p>
+                  <form action="" class="steel-page__form">
+                    <input type="text" placeholder="Имя*" class="mb-2 steel-page__form-input">
+                    <input type="tel" placeholder="Номер телефона*" class="mb-2 steel-page__form-input">
+                    <div class="d-flex flex-column flex-sm-row justify-content-between align-items-center w100">
+                      <div class="btn btn_file btn_blue">
+                        <input type="file" name="" id="steel-page__file" class="upload__file" placeholder="Выберите файл">
+                        <label for="steel-page__file" class="filename">Прикрепить файл</label>
+                        <img src="img/btn_file.jpg" alt="">
+                      </div>
+                      <div class="btn btn_subm mt-2 mt-sm-0">
+                        <input type="submit" value="Отправить">
+                      </div>
+                    </div>
+                    <div class="d-flex justify-content-center mt-3 mb-3">
+                      <img src="img/captcha.jpg" alt="">
+                    </div>
+                    <div class="tac">Нажимая на кнопку, вы подтверждаете свое совершеннолетие, соглашаетесь на <a href="#">обработку персональных данных</a></div>
+                  </form>
+                </div>
+              </div>
+            </div>
+            <div class="steel-descr w100">
+              <div class="steel-descr__ttl">Производим фермы под ключ по типовым и индивидуальным проектам, уже реализовано более 100 объектов</div>
+              <div class="steel-descr__in owl-carousel mb-4">
+                <a href="img/steel-descr__img_1.jpg" data-fancybox="steel-descr-gal" class="steel-descr__item-img" style="background-image: url(img/steel-descr__img_1.jpg)">
+                  <div class="steel-descr__item-more"></div>
+                </a>
+                <a href="img/steel-descr__img_2.jpg" data-fancybox="steel-descr-gal" class="steel-descr__item-img" style="background-image: url(img/steel-descr__img_2.jpg)">
+                  <div class="steel-descr__item-more"></div>
+                </a>
+                <a href="img/steel-descr__img_3.jpg" data-fancybox="steel-descr-gal" class="steel-descr__item-img" style="background-image: url(img/steel-descr__img_3.jpg)">
+                  <div class="steel-descr__item-more"></div>
+                </a>
+                <a href="img/steel-descr__img_1.jpg" data-fancybox="steel-descr-gal" class="steel-descr__item-img" style="background-image: url(img/steel-descr__img_1.jpg)">
+                  <div class="steel-descr__item-more"></div>
+                </a>
+              </div>
+              <p>В современных архитектурных решениях вместо сплошных металлоконструкций повсеместно используются металлические фермы – решетчатые сквозные конструкции для монтажа на крышу, выполненные из стальных труб, швеллеров и другого профильного проката. Этот тип строительных изделий отличается низкой массой и способностью выдерживать высокие нагрузки. Кроме этого, сборка таких ферм обходится значительно дешевле, чем производство цельнометаллических несущих систем.</p>
+              <p>Располагая производственно-складским комплексом мощностью 300 тонн металлоконструкций в месяц, мы предлагаем купить фермы перекрытия без участия посредников. Готовы поставить любые объемы собственным автотранспортом по Северо-Западному федеральному округу, поможем с проектированием и расчетами, обеспечим консультативное сопровождение монтажа.</p>
+              <div class="b mt-3 mb-3">Виды металлических ферм перекрытия</div>
+              <p>Элементы ферм изготавливаются из профильных труб, двутавровых балок и швеллеров с применением сварного или болтового соединения. В классическом исполнении эти металлоконструкции представляют собой два параллельных ряда профиля, соединенные зигзагообразными перемычками, которые образуют треугольники. Такая компоновка обеспечивает высокую прочность структуры и низкий вес. В зависимости от используемых материалов, наша продукция делится на:</p>
+              <ul class="list_string">
+                <li>Из круглой или профильной трубы различного диаметра.</li>
+                <li>Арматурные (так называемые прутковые конструкции).</li>
+                <li>Из уголка (одиночного или двух спаренных).</li>
+                <li>С усиленными поясами из широкополочных двутавров.</li>
+              </ul>
+              <p>В зависимости от формы металлоконструкции фермы делятся на следующие виды:</p>
+              <ul class="list_string">
+                <li>Арочные – используются для строительства промышленных и сельскохозяйственных ангаров, торговых центров, развлекательных павильонов и других крупных зданий. Арочная форма обеспечивает высокую прочность конструкции и существенно снижает общий вес кровли.</li>
+                <li>Портальные – используются при монтаже двускатных крыш для промышленных зданий и легких архитектурных комплексов: декораций, сценических павильонов. Возможно изготовление облегченных и усиленных конструкций.</li>
+                <li>Портальные с защемлением – за счет отсутствия изгибающего момента эти фермы используются для перекрытия крупных объектов.</li>
+                <li>Двухшарнирные портальные – отличаются невысокой материалоемкостью, легкостью и простой формой. </li>
+                <li>Шедовые – конструкции с несимметричным профилем, позволяющие создавать М-образные фонари в надстройке зданий.</li>
+                <li>Фермы-балки с параллельными поясами – классические системы, которые используются для формирования базового несущего каркаса. Могут использоваться в качестве подстропильных узлов.</li>
+              </ul>
+              <div class="b mt-3 mb-3">Классификация строительных металлических ферм по назначению:</div>
+              <ul class="list_string">
+                <li>Облегченные – используются для строительства различных навесов.</li>
+                <li>Пространственные – применяются в качестве балок для монтажа эстакад, мостов и других объектов транспортной инфраструктуры.</li>
+                <li>Кровельные – предназначены для монтажа односкатных, двускатных и других видов крыш.</li>
+                <li>Стропильные и подстропильные – используются в строительстве крупных объектов с пролетами до 30 м.</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+  <section class="serv section_inner">
+    <div class="container">
+      <div class="section__ttl">Дополнительные услуги</div>
+      <div class="serv__in owl-carousel mb-3">
+        <!--Item-->
+        <a href="#" class="serv__item">
+          <div class="serv__item-top">
+            <div class="serv__item-img">
+              <div class="serv__item-img serv__item-img_1" style="background-image: url(img/serv__item-img_1-1.png)"></div>
+              <div class="serv__item-img serv__item-img_2" style="background-image: url(img/serv__item-img_1-2.png)"></div>
+            </div>
+          </div>
+          <div class="serv__item-ttl">Гибка металла</div>
+        </a>
+        <!--/Item-->
+        <!--Item-->
+        <a href="#" class="serv__item">
+          <div class="serv__item-top">
+            <div class="serv__item-img">
+              <div class="serv__item-img serv__item-img_1" style="background-image: url(img/serv__item-img_2-1.png)"></div>
+              <div class="serv__item-img serv__item-img_2" style="background-image: url(img/serv__item-img_2-2.png)"></div>
+            </div>
+          </div>
+          <div class="serv__item-ttl">Покраска металла</div>
+        </a>
+        <!--/Item-->
+        <!--Item-->
+        <a href="#" class="serv__item">
+          <div class="serv__item-top">
+            <div class="serv__item-img">
+              <div class="serv__item-img serv__item-img_1" style="background-image: url(img/serv__item-img_3-1.png)"></div>
+              <div class="serv__item-img serv__item-img_2" style="background-image: url(img/serv__item-img_3-2.png)"></div>
+            </div>
+          </div>
+          <div class="serv__item-ttl">Резка металла</div>
+        </a>
+        <!--/Item-->
+        <!--Item-->
+        <a href="#" class="serv__item">
+          <div class="serv__item-top">
+            <div class="serv__item-img">
+              <div class="serv__item-img serv__item-img_1" style="background-image: url(img/serv__item-img_4-1.png)"></div>
+              <div class="serv__item-img serv__item-img_2" style="background-image: url(img/serv__item-img_4-2.png)"></div>
+            </div>
+          </div>
+          <div class="serv__item-ttl">Сварка металла</div>
+        </a>
+        <!--/Item-->
+        <!--Item-->
+        <a href="#" class="serv__item">
+          <div class="serv__item-top">
+            <div class="serv__item-img">
+              <div class="serv__item-img serv__item-img_1" style="background-image: url(img/serv__item-img_5-1.png)"></div>
+              <div class="serv__item-img serv__item-img_2" style="background-image: url(img/serv__item-img_5-2.png)"></div>
+            </div>
+          </div>
+          <div class="serv__item-ttl">Фрезеровка металла</div>
+        </a>
+        <!--/Item-->
+        <!--Item-->
+        <a href="#" class="serv__item">
+          <div class="serv__item-top">
+            <div class="serv__item-img">
+              <div class="serv__item-img serv__item-img_1" style="background-image: url(img/serv__item-img_1-1.png)"></div>
+              <div class="serv__item-img serv__item-img_2" style="background-image: url(img/serv__item-img_1-2.png)"></div>
+            </div>
+          </div>
+          <div class="serv__item-ttl">Гибка металла</div>
+        </a>
+        <!--/Item-->
+        <!--Item-->
+        <a href="#" class="serv__item">
+          <div class="serv__item-top">
+            <div class="serv__item-img">
+              <div class="serv__item-img serv__item-img_1" style="background-image: url(img/serv__item-img_2-1.png)"></div>
+              <div class="serv__item-img serv__item-img_2" style="background-image: url(img/serv__item-img_2-2.png)"></div>
+            </div>
+          </div>
+          <div class="serv__item-ttl">Покраска металла</div>
+        </a>
+        <!--/Item-->
+      </div>
+      <div class="serv__img"></div>
+    </div>
+  </section>
+  <section class="watch-more section_inner">
+    <div class="container">
+      <div class="section__ttl">Смотрите также</div>
+      <div class="row">
+        <div class="col-xl-4 col-sm-6 mb-3">
+          <a href="#" class="watch-more__item">
+            <div class="watch-more__item-img" style="background-image: url(img/book__list-item_9.png);"></div>
+            <div class="watch-more__item-ttl">
+              <span>Емкости</span>
+              <img src="img/slider__arrow_next.png" alt="" class="ml-2">
+            </div>
+          </a>
+        </div>
+        <div class="col-xl-4 col-sm-6 mb-3">
+          <a href="#" class="watch-more__item">
+            <div class="watch-more__item-img" style="background-image: url(img/book__list-item_9.png);"></div>
+            <div class="watch-more__item-ttl">
+              <span>Каркасы</span>
+              <img src="img/slider__arrow_next.png" alt="" class="ml-2">
+            </div>
+          </a>
+        </div>
+        <div class="col-xl-4 col-sm-6 mb-3">
+          <a href="#" class="watch-more__item">
+            <div class="watch-more__item-img" style="background-image: url(img/book__list-item_9.png);"></div>
+            <div class="watch-more__item-ttl">
+              <span>Лестницы</span>
+              <img src="img/slider__arrow_next.png" alt="" class="ml-2">
+            </div>
+          </a>
+        </div>
+      </div>
+    </div>
+  </section>
+  <section class="section_inner test">
+    <div class="container">
+      <div class="row">
+        <div class="col-xl-4 col-sm-6 mb-3">
+          <div class="test__item">
+            <div class="test__item-img">
+              <img src="img/test__img_1.png" alt="">
+            </div>
+            <div class="test__item-info">
+              <div class="test__item-ttl">Уважаем покупатели</div>
+              <div class="test__item-descr">Комплектуем и доставляем заказы в любое время суток и точно в срок.</div>
+            </div>
+          </div>
+        </div>
+        <div class="col-xl-4 col-sm-6 mb-3">
+          <div class="test__item">
+            <div class="test__item-img">
+              <img src="img/test__img_2.png" alt="">
+            </div>
+            <div class="test__item-info">
+              <div class="test__item-ttl">ДЕРЖИМ СЛОВО</div>
+              <div class="test__item-descr">Производим и поставляем качественную продукцию. Спросите наших клиентов.</div>
+            </div>
+          </div>
+        </div>
+        <div class="col-xl-4 col-sm-6 mb-3">
+          <div class="test__item">
+            <div class="test__item-img">
+              <img src="img/test__img_3.png" alt="">
+            </div>
+            <div class="test__item-info">
+              <div class="test__item-ttl">ГИБКИЙ ПРАЙС</div>
+              <div class="test__item-descr">Развитая система лояльности. При оптовом сотрудничестве — собенные скидки.</div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <section class="contact">
+    <div class="container">
+      <div class="row">
+        <div class="col-xl-4">
+          <div class="section_inner">
+            <div class="section__ttl">Наши контакты</div>
+            <div class="contact__item js-tab-contact contact__item_active" data-coord="[59.86663456, 30.47202250]">
+                <div class="contact__item-title contact__item-title_light-blue">Офис</div>
+                <div class="contact__item-text">пр.Обуховской Обороны, 112/2, оф.517</div>
+            </div>
+            <div class="contact__item js-tab-contact" data-coord="[59.82384206, 30.52547200]">
+                <div class="contact__item-title contact__item-title_blue">Производство/склад</div>
+                <div class="contact__item-text">ул. Караваевская, д.57</div>
+            </div>
+            <div class="contact__item js-tab-contact" data-coord="[60.54950006, 30.21664900]">
+                <div class="contact__item-title contact__item-title_light-orange">Шоу-рум</div>
+                <div class="contact__item-text">п.Сосново, ул.Вокзальная, 21</div>
+            </div>
+          </div>
+        </div>
+        <div class="col-xl-8" id="ymap_tabs"></div>
+      </div>
+    </div>
+  </section>
+  
+  <footer class="footer section_inner">
+    <div class="container">
+      <div class="row mb-3">
+        <div class="col-xl-3 col-sm-6 mb-4 mb-xl-3">
+          <div class="d-flex flex-column align-items-center align-items-sm-start">
+            <div class="footer__ttl">Связаться с нами</div>
+            <div class="d-flex align-items-center mb-4">
+              <div class="footer__soc d-flex mr-4">
+                <a href="#" class="footer__soc-link mr-2">
+                  <img src="img/icon__in.png" alt="">
+                </a>
+                <a href="#" class="footer__soc-link mr-2">
+                  <img src="img/icon__fb.png" alt="">
+                </a>
+                <a href="#" class="footer__soc-link mr-2">
+                  <img src="img/icon__vk.png" alt="">
+                </a>
+                <a href="#" class="footer__soc-link">
+                  <img src="img/icon__yu.png" alt="">
+                </a>
+              </div>
+              <div class="footer__days">
+                365/7/24
+              </div>
+            </div>
+            <a href="#" class="d-flex align-items-center footer__req mb-4">
+              <div class="footer__req-img mr-2">
+                <img src="img/icon__arr-down.png" alt="">
+              </div>
+              <span>Скачать реквизиты</span>
+            </a>
+            <a href="#popup_call" data-fancybox class="btn">Написать директору</a>
+          </div>
+        </div>
+        <div class="col-xl-3 col-sm-6 mb-4 mb-xl-3">
+          <div class="footer__ttl footer__ttl_mobile">Лзм металлгарант</div>
+          <div class="d-flex flex-column align-items-center align-items-sm-start">
+            <a href="#" class="mb-1 und footer__link">О компании</a>
+            <a href="#" class="mb-1 und footer__link">Акции</a>
+            <a href="#" class="mb-1 und footer__link">Карьера</a>
+            <a href="#" class="mb-1 und footer__link">Вакансии</a>
+            <a href="#" class="mb-1 und footer__link">Корпоративная жизнь</a>
+            <a href="#" class="mb-1 und footer__link">Реализованные проекты</a>
+            <a href="#" class="mb-1 und footer__link">Отзывы</a>
+            <a href="#" class="mb-1 und footer__link">Контакты</a>
+          </div>
+        </div>
+        <div class="col-xl-3 col-sm-6 mb-4 mb-xl-3">
+          <div class="footer__ttl footer__ttl_mobile">Помощь по сайту</div>
+          <div class="d-flex flex-column align-items-center align-items-sm-start">
+            <a href="#" class="mb-1 und footer__link">Доставка</a>
+            <a href="#" class="mb-1 und footer__link">Способы оплаты</a>
+            <a href="#" class="mb-1 und footer__link">Справочник металлопроката</a>
+            <a href="#" class="mb-1 und footer__link">Марочник металлопроката</a>
+            <a href="#" class="mb-1 und footer__link">Каталог металлобаз</a>
+            <a href="#" class="mb-1 und footer__link">FAQ</a>
+            <a href="#" class="mb-1 und footer__link">Политика конфиденциальности</a>
+            <a href="#" class="mb-1 und footer__link">Карта сайта</a>
+          </div>
+        </div>
+        <div class="col-xl-3 col-sm-6 mb-4 mb-xl-3 footer__info">
+          <div class="footer__ttl">Контакты</div>
+          <div class="d-flex flex-column align-items-center align-items-sm-start">
+            <a href="tel:88126042003" class="mb-1 b">+7 (812) 604-20-03</a>
+            <a href="mailto:info@lzmmg.ru" class="mb-3 und">info@lzmmg.ru</a>
+            <div class="mb-1">Офис: пр.Обуховской Обороны, 112/2, оф.517</div>
+            <div class="mb-3">Производство/склад: ул. Караваевская, д.57 Шоу-рум: п.Сосново, ул.Вокзальная, 21</div>
+            <div>Пн-Пт: 09.00-18.00, Сб-Вс: Выходной</div>
+          </div>
+        </div>
+      </div>
+      <div class="row align-items-center">
+        <div class="col-xl-2 mb-4 mb-xl-0">
+          <a href="#" class="footer__logo">
+            <img src="img/banner__logo.png" alt="" class="img-fluid">
+          </a>
+        </div>
+        <div class="col-xl-7 mb-3 mb-xl-0 footer__copy-text">
+          © 2001-2019 Ленинградский Завод Металлоконструкций МеталлГарант - Производство и продажа металлопроката и металлоконструкций в Санкт-Петербурге Использование материалов сайта lzmmg.ru без письменного разрешения запрещено.
+        </div>
+        <div class="col-xl-3">
+          <div class="d-flex flex-column align-items-xl-start align-items-center">
+            <img src="img/footer__stars.png" alt="">
+            <span>Оценка: 4,8 (Голосов: 49)</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </footer>
+  <div id="popup_call" class="popup__container" style="display:none">
+    <div  class="popup__wrp popup_call__wrp">
+      <form action="[[~[[*id]]]]" method="post" class="popup">
+        <div class="popup__ttl">Оставьте заявку</div>
+        <div class="input__wrp input__wrp_name">
+          <input type="text" class="form__input" name="popup_call__name" placeholder="Ваше имя" required="">
+        </div>
+        <div class="input__wrp input__wrp_tel">
+          <input type="tel" class="form__input" name="popup_call__tel" placeholder="Телефон" required="">
+        </div>
+        <div class="input__wrp input__wrp_mail">
+          <input type="email" class="form__input" name="popup_call__email" placeholder="E-mail">
+        </div>
+        <input type="submit" class="btn" name="popup_call__sumbit" value="Заказать">
+        <div class="popup__policy">
+          Нажимая кнопку "Отправить", вы соглашаетесь с <a href="#" class="form__policy-link">политикой конфиденциальности</a>
+        </div>
+      </form>
+    </div>
+  </div>
+  <script src="js/libs.min.js"></script>
+  <script src="https://api-maps.yandex.ru/2.1/?apikey=3629c6cc-8564-466b-9c39-8680f92c24c3&lang=ru_RU" type="text/javascript"></script>
+  <script src="js/scripts.js"></script>
+  <!-- Marquiz script start -->
+  <script src="//script.marquiz.ru/v1.js" type="application/javascript"></script>
+  <script>
+  document.addEventListener("DOMContentLoaded", function() {
+    Marquiz.init({ 
+      id: '5c6a8f6a084fad005583a641', 
+      autoOpen: false, 
+      autoOpenFreq: 'once', 
+      openOnExit: false 
+    });
+  });
+  </script>
+  <div class="d-none">
+  #popup:marquiz_5c6a8f6a084fad005583a641
+    onclick="Marquiz.showModal('5c6a8f6a084fad005583a641')"
+  </div>
+  <!-- Marquiz script end -->
+</body>
+</html>

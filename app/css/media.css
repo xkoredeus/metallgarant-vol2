@@ -277,6 +277,9 @@
   .car-block__left {
     padding: 15px;
   }
+  .steel-page__img-wrp {
+    padding: 15px;
+  }
 }
 
 @media screen and (max-width: 576px) {

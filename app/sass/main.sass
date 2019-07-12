@@ -58,8 +58,8 @@ select
 	font-family: $a-med
 	font-size: 14px
 	padding: 12px 30px
-	border: none
 	border-radius: 2px
+	border: 1px solid #E0E0E0
 // input,
 // select
 // 	border: 1px solid #fff
@@ -95,6 +95,9 @@ textarea:active
 		appearance: none
 		option
 			width: 100%
+	&:hover
+		&::before
+			transform: scale(.9)
 .fancybox-container *
 		transition: unset
 .tabs
@@ -166,6 +169,8 @@ textarea:active
 	box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25)
 	&:hover
 		box-shadow: 0px 30px 40px rgba(0, 80, 147, 0.25)
+.w100
+	width: 100%
 .b
 	font-family: $a-bold
 .m
@@ -799,6 +804,7 @@ textarea:active
 			background: url('../img/icon__loupe.png') no-repeat 50% 50% / contain
 			padding: 0
 			transform: scale(.96)
+			border: none
 			&:hover
 				transform: scale(1.05)
 	&__test
@@ -2509,3 +2515,80 @@ div
 				opacity: 1
 	.owl-stage
 		padding-bottom: 35px
+.steel
+	&-page
+		&__img
+			width: 100%
+			height: 297px
+			background-position: 50% 50%
+			background-repeat: no-repeat
+			background-size: contain
+			&-wrp
+				background-color: #F3F3F3
+				border-radius: 3px
+				padding: 40px
+		&__price
+			font-size: 24px
+			margin-bottom: 15px
+		&__form
+			display: flex
+			flex-direction: column
+			align-items: center
+			max-width: 370px
+			margin-left: auto
+			margin-right: auto
+			&-input
+				width: 100%
+			.btn
+				padding-left: 10px
+				padding-right: 10px
+				box-shadow: 0px 1.6px 1.6px rgba(0, 0, 0, 0.2)
+				&_subm
+					min-width: 150px
+				&_file
+					padding-right: 48px
+	&-descr
+		&__ttl
+			font-size: 18px
+			font-family: $a-bold
+			margin-bottom: 20px
+			text-transform: uppercase
+		&__in
+			padding-left: 50px
+			padding-right: 50px
+		&__item
+			&-img
+				background-position: 50% 50%
+				background-repeat: no-repeat
+				background-size: cover
+				border-radius: 2px
+				overflow: hidden
+				display: flex
+				justify-content: center
+				align-items: center
+				width: 100%
+				max-width: 300px
+				height: 187px
+				margin-left: auto
+				margin-right: auto
+				position: relative
+				&::before
+					content: ''
+					position: absolute
+					width: 100%
+					height: 100%
+					left: 0
+					top: 0
+					background-color: $blue
+					opacity: 0
+				&:hover
+					&::before
+						opacity: .7
+					.steel-descr__item-more
+						opacity: 1
+			&-more
+				width: 52px
+				height: 53px
+				background: url('../img/rev__btn.png') no-repeat 50% 50% / contain
+				opacity: 0
+				position: relative
