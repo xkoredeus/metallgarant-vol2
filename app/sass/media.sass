@@ -182,6 +182,8 @@ $a-bold: 'AvenirNextCyr-Bold'
 			&-item
 				min-height: 300px
 				height: auto
+	.roll-page__bot .tabs__list li
+		width: 100%
 @media screen and (max-width: 600px)
 	.main-page
 		.banner
@@ -226,6 +228,47 @@ $a-bold: 'AvenirNextCyr-Bold'
 			padding: 15px
 	.steel-page__img-wrp
 		padding: 15px
+	.roll-page__bot
+		.tabs
+			&__list
+				display: none
+			&__content-item
+				padding: 0
+				background-color: $tr
+				box-shadow: unset
+			&-acc
+				&__btn
+					display: block
+					position: relative
+					&::after
+						content: ''
+						position: absolute
+						width: 10px
+						height: 10px
+						right: 60px
+						top: 50%
+						border-bottom: solid 5px $dark-blue
+						border-right: solid 5px $dark-blue
+						border-left: solid 5px transparent
+						border-top: solid 5px transparent
+						transform: rotate(45deg) translateY(-50%)
+					&.active
+						&::after
+							border-left: solid 5px #fff
+							border-top: solid 5px #fff
+							border-bottom: solid 5px transparent
+							border-right: solid 5px transparent
+				&__cnt
+					display: none
+					background-color: #fff
+					padding: 15px 10px
+					box-shadow: 0px 2px 2px rgba(0, 0, 0, 0.15)
+					border-radius: 2px
 @media screen and (max-width: 576px)
 	.mobile-menu
 		padding: 10px
+	.roll-page__img-top-item
+		height: 240px
+@media screen and (max-width: 330px)
+	.footer__ttl_mobile::after
+		right: -6px

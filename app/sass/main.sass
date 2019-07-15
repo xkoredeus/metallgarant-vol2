@@ -75,21 +75,31 @@ textarea:active
 	color: $dark-blue
 	box-shadow: inset 0px 0px 5px 1px $yellow
 	outline: none
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button 
+	-webkit-appearance: none
+input[type="number"]
+	-moz-appearance: textfield
+	appearance: textfield
 .select__wrp
 	border: 1px solid #BDBDBD
 	border-radius: 3px
 	position: relative
+	display: flex
+	background-color: #fff
 	&::before
 		content: ''
 		position: absolute
 		width: 20px
 		height: 20px
 		background: url('../img/select__arr.png') no-repeat 50% 50% / contain
-		top: 8px
+		top: 50%
+		transform: translateY(-50%)
 		right: 9px
 	select
 		width: 100%
 		background-color: $tr
+		border: none
 		padding: 8px 40px 8px 12px
 		position: relative
 		appearance: none
@@ -97,12 +107,48 @@ textarea:active
 			width: 100%
 	&:hover
 		&::before
-			transform: scale(.9)
+			transform: translateY(-50%) scale(.9)
+.quantity
+	position: relative
+	max-width: 129px
+	input
+		width: 100%
+	&-num
+		// max-width: 110px
+		text-align: center
+	&-minus,
+	&-plus
+		position: absolute
+		height: 50%
+		top: 50%
+		transform: translate(0,-50%)
+		font-family: $a-bold
+		width: 22px
+		height: 22px
+		background-color: #F3F3F3
+		border: none
+		border-radius: 50%
+		display: flex
+		justify-content: center
+		align-items: center
+		line-height: 1
+		&:hover
+			background-color: #ccc
+	&-minus
+		left: 15px
+		color: $blue
+	&-plus
+		right: 15px
+		color: $yellow
 .fancybox-container *
 		transition: unset
 .tabs
 	&__content-item
 		transition: unset
+	&__list
+		list-style-type: none
+		padding: 0
+		margin: 0
 .checkbox
 	// min-width: 200px
 	cursor: pointer
@@ -240,6 +286,7 @@ textarea:active
 		max-width: 192px
 		padding-right: 80px
 		overflow: hidden
+		box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.2)
 		img
 			height: 100%
 			position: absolute
@@ -427,6 +474,9 @@ textarea:active
 					font-size: 12px 
 					color: #00BFF3
 .owl-carousel
+	.owl-item
+		img
+			width: auto !important
 	.owl-dots
 		position: absolute
 		width: 100%
@@ -486,7 +536,7 @@ textarea:active
 	&_inner
 		padding: 60px 0
 	&__ttl
-		font-size: 36px
+		font-size: 34px
 		font-family: $a-bold
 		letter-spacing: 1px
 		margin-bottom: 35px
@@ -911,7 +961,7 @@ textarea:active
 			font-family: $a-bold
 			color: #fff
 			position: relative
-			padding: 10px 5px 10px 10px
+			padding: 10px 5px 10px 20px
 			&::before
 				content: ''
 				position: absolute
@@ -941,6 +991,7 @@ textarea:active
 			.begin__nav-bot
 				padding: 20px 15px
 				font-size: 13px
+				position: relative
 			.checkbox__text
 				padding-left: 25px
 				font-size: 13px
@@ -950,6 +1001,14 @@ textarea:active
 				max-width: 370px
 			.btn
 				max-width: 370px
+			.filter__float-submit
+				position: absolute
+				width: 90px
+				min-width: unset
+				padding: 5px
+				right: -84px
+				z-index: 2
+				// display: none
 		&-bot
 			padding: 15px 0 35px
 			box-shadow: 0px 2px 2px rgba(0, 0, 0, 0.15)
@@ -1149,10 +1208,13 @@ textarea:active
 			span
 				transform: skew(20deg)
 			&_sale
-				background-color: $yellow
+				background-color: #EE1A26
 			&_hit
 				text-transform: uppercase
 				background-color: $blue
+	&__in
+		padding-left: 40px
+		padding-right: 40px
 .feed
 	color: #fff
 	background: url('../img/feed__bg.jpg') no-repeat 50% 50% / cover
@@ -1590,6 +1652,7 @@ div
 						a
 							color: #fff
 					a
+						font-family: $a-med
 						color: #000
 						width: 25px
 						height: 25px
@@ -2079,84 +2142,104 @@ div
 			text-transform: uppercase
 			font-size: 18px
 			margin-bottom: 11px
-	// &-cards
-	// 	&__item
-	// 		display: flex
-	// 		justify-content: space-between
-	// 		align-items: center
-	// 		text-align: center
-	// 		padding: 20px 15px
-	// 		position: relative
-	// 		background-color: #F3F3F3
-	// 		color: $dark-blue
-	// 		border-radius: 2px
-	// 		overflow: hidden
-	// 		&:hover
-	// 			box-shadow: 0px 30px 40px rgba(0, 80, 147, 0.25)
-	// 		&-img
-	// 			width: 160px
-	// 			height: 160px
-	// 			display: block
-	// 			background-position: 50% 50%
-	// 			background-size: contain
-	// 			background-repeat: no-repeat
-	// 			margin-bottom: 10px
-	// 			margin-left: auto
-	// 			margin-right: auto
-	// 			&:hover
-	// 				opacity: .7
-	// 		&-ttl
-	// 			font-size: 16px
-	// 			margin-bottom: 8px
-	// 		&-price
-	// 			&-wrp
-	// 				margin-bottom: 10px
-	// 			&_cur
-	// 				font-family: $a-bold
-	// 				font-size: 26px
-	// 			&_old
-	// 				font-size: 13px
-	// 				color: #BDBDBD
-	// 				text-decoration: line-through
-	// 		&-btn
-	// 			&-wrp
-	// 				display: flex
-	// 				flex-direction: column
-	// 				align-items: center
-	// 		.btn
-	// 			box-shadow: 0px 2px 2px rgba(0, 0, 0, 0.2)
-	// 			margin-bottom: 15px
-	// 		&-flag
-	// 			padding: 8px 12px 8px 20px
-	// 			text-align: center
-	// 			transform: skew(-20deg)
-	// 			display: flex
-	// 			justify-content: center
-	// 			align-items: center
-	// 			color: #fff
-	// 			font-family: $a-bold
-	// 			font-size: 16px
-	// 			width: 70px
-	// 			position: absolute
-	// 			top: 19px
-	// 			left: -15px
-	// 			z-index: 1
-	// 			span
-	// 				transform: skew(20deg)
-	// 			&_sale
-	// 				background-color: $yellow
-	// 			&_hit
-	// 				text-transform: uppercase
-	// 				background-color: $blue
 	&__view
 		filter: grayscale(100)
 		opacity: .6
+		cursor: pointer
 		&.active
 			filter: grayscale(0)
 			opacity: 1
 		&:hover
 			&:not(.active)
 				transform: scale(.9)
+	&-page
+		&__img
+			.owl-item
+				transition: unset
+			&-top
+				margin-bottom: 15px
+				&-item
+					width: 100%
+					height: 340px
+					background-color: #F3F3F3
+					border-radius: 3px
+					background-position: 50% 50%
+					background-repeat: no-repeat
+					background-size: contain
+			&-bot
+				&-item
+					width: 100%
+					height: 70px
+					background-color: #F3F3F3
+					border-radius: 3px
+					background-position: 50% 50%
+					background-repeat: no-repeat
+					background-size: contain
+					cursor: pointer
+					margin-bottom: 30px
+					&:hover
+						box-shadow: 0px 10px 7px rgba(11, 40, 79, 0.13)
+				.synced
+					.roll-page__img-bot-item
+						box-shadow: 0px 10px 7px rgba(11, 40, 79, 0.13)
+		&__info
+			font-size: 18px
+			&-price
+				max-width: 230px
+				div:nth-child(2)
+					font-family: $a-bold
+					font-size: 22px
+		&__price
+			&-descr
+				font-size: 14px
+				// line-height: 1.2
+		&__bot
+			.tabs
+				&__list
+					display: flex
+					flex-wrap: wrap
+					margin-left: 7px
+					li
+						min-width: 200px
+						padding: 12px 25px
+						background-color: #E0E0E0
+						font-family: $a-bold
+						transform: skew(-20deg)
+						// display: flex
+						text-align: center
+						cursor: pointer
+						border: 1px solid #fff
+						span
+							position: relative
+							display: block
+							transform: skew(20deg)
+						&:hover:not(.active)
+							transform: skew(-20deg) translateY(-3px)
+						&.active
+							background-color: $blue
+							span
+								color: #fff
+				&__content
+					&-item
+						background-color: #fff
+						padding: 25px 20px
+						box-shadow: 0px 2px 2px rgba(0, 0, 0, 0.15)
+						border-radius: 2px
+				&-acc
+					&__btn
+						display: none
+						width: 100%
+						padding: 12px 25px
+						background-color: #E0E0E0
+						font-family: $a-bold
+						text-align: center
+						cursor: pointer
+						border: 1px solid #fff
+						&.active
+							background-color: $blue
+							color: #fff
+					&__cnt
+						transition: unset
 .serv
 	background-color: #F9F9F9
 	&__in
@@ -2522,31 +2605,83 @@ div
 			height: 297px
 			background-position: 50% 50%
 			background-repeat: no-repeat
-			background-size: contain
-			&-wrp
-				background-color: #F3F3F3
-				border-radius: 3px
-				padding: 40px
-		&__price
-			font-size: 24px
-			margin-bottom: 15px
-		&__form
+			background-size: cover
+			border-radius: 3px
+		// &__price
+		// 	font-size: 24px
+		// 	margin-bottom: 15px
+		// &__form
+		// 	display: flex
+		// 	flex-direction: column
+		// 	align-items: center
+		// 	max-width: 370px
+		// 	margin-left: auto
+		// 	margin-right: auto
+		// 	&-input
+		// 		width: 100%
+		// 	.btn
+		// 		padding-left: 10px
+		// 		padding-right: 10px
+		// 		box-shadow: 0px 1.6px 1.6px rgba(0, 0, 0, 0.2)
+		// 		&_subm
+		// 			min-width: 150px
+		// 		&_file
+		// 			padding-right: 48px
+	&-views
+		&__item
 			display: flex
 			flex-direction: column
-			align-items: center
+			width: 100%
 			max-width: 370px
 			margin-left: auto
 			margin-right: auto
-			&-input
+			&-img
 				width: 100%
-			.btn
-				padding-left: 10px
-				padding-right: 10px
-				box-shadow: 0px 1.6px 1.6px rgba(0, 0, 0, 0.2)
-				&_subm
-					min-width: 150px
-				&_file
-					padding-right: 48px
+				height: 100px
+				background-position: bottom center
+				background-repeat: no-repeat
+				background-size: contain
+			&-info
+				background: #FFFFFF
+				box-shadow: 0px 2px 2px rgba(0, 0, 0, 0.25)
+				padding: 10px 15px
+			&-ttl
+				font-family: $a-bold
+				font-size: 18px
+				color: $blue
+	&-forms
+		&__item
+			display: flex
+			flex-direction: column
+			width: 100%
+			max-width: 370px
+			margin-left: auto
+			margin-right: auto
+			&-top
+				width: 100%
+				height: 50px
+				background-color: #fff
+				box-shadow: 0px 2px 2px rgba(0, 0, 0, 0.15)
+				border-radius: 2px
+				overflow: hidden
+				position: relative
+				margin-bottom: 8px
+			&-img
+				position: absolute
+				width: 90px
+				height: 100%
+				left: 0
+				top: 0px
+				background-position: 100% 50%
+				background-repeat: no-repeat
+				background-size: contain
+			&-ttl
+				position: relative
+				img
+					transform: scale(.7)
+			&:hover
+				img
+					transform: scale(.7) translateX(8px)
 	&-descr
 		&__ttl
 			font-size: 18px
