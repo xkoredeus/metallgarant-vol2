@@ -527,4 +527,40 @@ $(function() {
       input.val( +input.val() + 1 );
     };
   });
+  //del calc
+    //distance
+    $(".del-calc__input_dis").on('input', function () {
+      var x = $(this).val();
+      // console.log(x);
+      $(this).css({'background': 'linear-gradient(left ,#134284 0%,#134284 ' + x/10 + '%,#C4C4C4 ' + x/10 + '%, #C4C4C4 100%)'});
+      $(this).css({'background': '-webkit-linear-gradient(left ,#134284 0%,#134284 ' + x/10 + '%,#C4C4C4 ' + x/10 + '%, #C4C4C4 100%)'});
+      $(this).css({'background': '-moz-linear-gradient(left ,#134284 0%,#134284 ' + x/10 + '%,#C4C4C4 ' + x/10 + '%, #C4C4C4 100%)'});
+      $('.del-calc__res_dis-num').html(x-1);
+    });
+    //mass
+    $(".del-calc__input_mas").on('input', function () {
+      var x = $(this).val();
+      // console.log(x);
+      $(this).css({'background': 'linear-gradient(left ,#134284 0%,#134284 ' + x + '%,#C4C4C4 ' + x + '%, #C4C4C4 100%)'});
+      $(this).css({'background': '-webkit-linear-gradient(left ,#134284 0%,#134284 ' + x + '%,#C4C4C4 ' + x + '%, #C4C4C4 100%)'});
+      $(this).css({'background': '-moz-linear-gradient(left ,#134284 0%,#134284 ' + x + '%,#C4C4C4 ' + x + '%, #C4C4C4 100%)'});
+      $('.del-calc__res_mas-num').html(x-1);
+    });
+    //result
+    $('.del-calc__in input[type="range"]').on('change', function(){
+      var dis = $('.del-calc__input_dis').val();
+          dis = dis-1;
+      var mas = $('.del-calc__input_mas').val();
+          mas = mas-1;
+      var res = $('.del-calc__res-item_sum-num');
+      res = res.text(dis*mas);
+      
+      console.log(res);
+    });
+    //form
+    $('.del-calc__form-wrp').hide();
+    $('.del-calc__btn').on('click', function(){
+      $(this).css('display','none').siblings('.del-calc__form-wrp').slideToggle();
+    })
+
 });

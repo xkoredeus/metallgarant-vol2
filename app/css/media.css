@@ -119,6 +119,20 @@
   .header__cart::after {
     display: none;
   }
+  .del-calc__ttl {
+    font-size: 14px;
+    margin-bottom: 10px;
+  }
+  .del-calc__res {
+    text-align: center;
+  }
+  .del-calc__res > div {
+    width: 100%;
+    -webkit-box-pack: center;
+    -webkit-justify-content: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
 }
 
 @media screen and (max-width: 900px) {

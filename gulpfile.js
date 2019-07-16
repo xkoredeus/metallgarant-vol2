@@ -10,7 +10,7 @@ var gulp       = require('gulp'), // Подключаем Gulp
 	pngquant     = require('imagemin-pngquant'), // Подключаем библиотеку для работы с png
 	cache        = require('gulp-cache'), // Подключаем библиотеку кеширования
 	autoprefixer = require('gulp-autoprefixer');// Подключаем библиотеку для автоматического добавления префиксов
-
+	
 gulp.task('sass', function(){ // Создаем таск Sass
 	return gulp.src('app/sass/**/*.sass') // Берем источник
 		.pipe(sass({outputStyle: 'expanded'})) // Преобразуем Sass в CSS посредством gulp-sass
