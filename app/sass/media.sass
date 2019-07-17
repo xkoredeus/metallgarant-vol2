@@ -44,6 +44,7 @@ $a-bold: 'AvenirNextCyr-Bold'
 			width: 170px
 	.banner__tel
 		font-size: 20px
+
 	.test__item-img
 		min-width: 90px
 		height: 90px
@@ -59,7 +60,15 @@ $a-bold: 'AvenirNextCyr-Bold'
 			display: none !important
 		&__days
 			display: none
-	
+		&__cab-in
+			&-wrp
+				right: 50%
+				transform: translateX(50%)
+			&::after
+				width: 16px
+				height: 16px
+				right: 50%
+				margin-right: -8px
 	.contact
 		padding-bottom: 30px
 	#sidebar
@@ -207,6 +216,10 @@ $a-bold: 'AvenirNextCyr-Bold'
 		.container
 			position: relative
 			z-index: 2
+	.header
+		&>.container:nth-child(1)
+			// position: relative
+			z-index: 3
 	.watch-more__item-img
 		left: 30px
 	.footer__ttl_mobile
@@ -276,8 +289,16 @@ $a-bold: 'AvenirNextCyr-Bold'
 @media screen and (max-width: 576px)
 	.mobile-menu
 		padding: 10px
+	.header__cab-in-wrp
+		width: 260px
+
 	.roll-page__img-top-item
 		height: 240px
+	.popup__container
+		.popup_cart
+			padding: 5px
+	.header__cab-in-wrp
+		right: 62%
 @media screen and (max-width: 330px)
 	.footer__ttl_mobile::after
 		right: -6px

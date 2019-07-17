@@ -263,6 +263,19 @@ $(function() {
         }
       }
   });
+  //login/reg popups
+  $('.header__cab').on('click', function(e) {
+    e.preventDefault();
+    $('.header__cab-in-wrp_log').slideToggle(50);
+  })
+  $('.header__cab-show-reg').on('click', function(e){
+    e.preventDefault();
+    $('.header__cab-in-wrp_log').slideToggle(50);
+    $('.header__cab-in-wrp_reg').slideToggle(50);
+  });
+  $('.header__cab-ttl-btn').on('click', function(){
+    $(this).parents('.header__cab-in-wrp').slideToggle(50);
+  });
   //catalog list|tab view
   $('.roll__view').on('click', function(){
     var view = $(this).attr('data-view');

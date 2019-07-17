@@ -63,6 +63,18 @@
   .header__days {
     display: none;
   }
+  .header__cab-in-wrp {
+    right: 50%;
+    -webkit-transform: translateX(50%);
+        -ms-transform: translateX(50%);
+            transform: translateX(50%);
+  }
+  .header__cab-in::after {
+    width: 16px;
+    height: 16px;
+    right: 50%;
+    margin-right: -8px;
+  }
   .contact {
     padding-bottom: 30px;
   }
@@ -253,6 +265,9 @@
     position: relative;
     z-index: 2;
   }
+  .header > .container:nth-child(1) {
+    z-index: 3;
+  }
   .watch-more__item-img {
     left: 30px;
   }
@@ -345,8 +360,14 @@
   .mobile-menu {
     padding: 10px;
   }
+  .header__cab-in-wrp {
+    width: 260px;
+  }
   .roll-page__img-top-item {
     height: 240px;
+  }
+  .popup__container .popup_cart {
+    padding: 5px;
   }
 }
 
