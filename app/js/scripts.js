@@ -575,5 +575,36 @@ $(function() {
     $('.del-calc__btn').on('click', function(){
       $(this).css('display','none').siblings('.del-calc__form-wrp').slideToggle();
     })
-
+    // Самописный placeholder
+    $(function () {
+    var placeholderText = [
+      "Арматура",
+      "Катанка",
+      "Труба",
+      "Круг",
+      "Балка",
+      "Швеллер",
+      "Профнастил",
+    ];
+    var $pls = $('.banner__search-input');
+    $pls.placeholderTypewriter({
+      text: placeholderText,
+      delay: 150,
+      pause: 1500,
+    });
+    /*
+    $pls.focus(function () {
+      // $pls[0].toggleAttribute('placeholder');
+      // $pls.placeholderTypewriter({text: []});
+    });
+    $pls.blur(function () {
+      // $pls[0].toggleAttribute('placeholder');
+      // $pls.placeholderTypewriter({
+      //   text: placeholderText,
+      //   delay: 150,
+      //   pause: 1500,
+      // });
+    });
+    */
+  });
 });

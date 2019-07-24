@@ -948,7 +948,7 @@ input[type="number"] {
   top: 0;
   background: url("../img/main-page__top-filter.jpg") no-repeat 50% 50%/cover;
   z-index: 1;
-  opacity: .7;
+  opacity: .46;
 }
 
 .main-page .banner__video {
