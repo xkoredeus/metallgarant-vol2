@@ -44,7 +44,7 @@
 					<a href="#" class="banner__nav-item active">
 						<span>Акции</span>
 					</a>
-					<a href="#popup_call" data-fancybox class="btn">
+					<a href="#popup_dir" data-fancybox class="btn">
 						<span>Написать директору</span>
 					</a>
 				</div>
@@ -189,6 +189,9 @@
 										</div>
 									</div>
 									<div class="tac"><span>Нажимая на кнопку регистрации, вы соглашаетесь с</span> <a href="#" class="und">Политикой конфиденциальности компании</a></div>
+									<div class="tac mt-2 header__cab-show-log">
+										Уже зарегистрированы? <a href="#" class="header__cab-show-log-link und">Войти</a>
+									</div>
 								</div>
 							</div>
 							<!--/reg-->
@@ -248,7 +251,7 @@
 				</div>
 				<div class="col-xl-2">
 					<div class="d-flex justify-content-center justify-content-xl-end align-items-center">
-						<a href="#popup_call" data-fancybox class="btn">
+						<a href="#popup_dir" data-fancybox class="btn">
 							<span>Написать директору</span>
 						</a>
 					</div>
@@ -1093,7 +1096,7 @@
 							</div>
 							<span>Скачать реквизиты</span>
 						</a>
-						<a href="#popup_call" data-fancybox class="btn">Написать директору</a>
+						<a href="#popup_dir" data-fancybox class="btn">Написать директору</a>
 					</div>
 				</div>
 				<div class="col-xl-3 col-sm-6 mb-4 mb-xl-3">
@@ -1171,6 +1174,29 @@
 			</form>
 		</div>
 	</div>
+	<div id="popup_dir" class="popup__container" style="display:none">
+		<div  class="popup__wrp popup_call__wrp">
+			<form action="[[~[[*id]]]]" method="post" class="popup">
+				<div class="popup__ttl">Написать директору</div>
+				<div class="input__wrp input__wrp_name">
+					<input type="text" class="form__input" name="popup_call__name" placeholder="Ваше имя" required="">
+				</div>
+				<div class="input__wrp input__wrp_tel">
+					<input type="tel" class="form__input" name="popup_call__tel" placeholder="Телефон" required="">
+				</div>
+				<div class="input__wrp input__wrp_mail">
+					<input type="email" class="form__input" name="popup_call__email" placeholder="E-mail">
+				</div>
+				<div class="input__wrp">
+					<textarea placeholder="Ваше сообщение"></textarea>
+				</div>
+				<input type="submit" class="btn" name="popup_call__sumbit" value="Заказать">
+				<div class="popup__policy">
+					Нажимая кнопку "Отправить", вы соглашаетесь с <a href="#" class="form__policy-link">политикой конфиденциальности</a>
+				</div>
+			</form>
+		</div>
+	</div>
 	<div id="popup_cart" class="popup__container" style="display:none">
 		<div  class="popup__wrp popup_cart__wrp">
 			<form action="[[~[[*id]]]]" method="post" class="popup_cart">
@@ -1218,7 +1244,11 @@
 			</form>
 		</div>
 	</div>
-
+	<!-- preloader-->
+	<div class="preloader">
+		<div class="preloader__icon"></div>
+	</div>
+	<!--/ preloader-->
 	<script src="js/libs.min.js"></script>
 	<script src="https://api-maps.yandex.ru/2.1/?apikey=3629c6cc-8564-466b-9c39-8680f92c24c3&lang=ru_RU" type="text/javascript"></script>
 	<script src="js/scripts.js"></script>

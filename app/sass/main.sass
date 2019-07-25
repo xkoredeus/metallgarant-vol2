@@ -11,6 +11,36 @@ $a-med: 'AvenirNextCyr-Medium'
 $a-demi: 'AvenirNextCyr-Demi'
 $a-bold: 'AvenirNextCyr-Bold'
 
+
+.preloader
+	position: fixed
+	left: 0
+	top: 0
+	right: 0
+	bottom: 0
+	min-height: 100vh
+	display: flex
+	flex-wrap: wrap
+	justify-content: space-around
+	align-content: space-around
+	flex: 1 1 25%
+	background-color: #fff
+	z-index: 1000
+.preloader__icon
+	width: 4em
+	height: 4em
+	margin: auto
+	background-color: $blue
+	animation: rotating-plane 1.2s infinite ease-in-out
+@keyframes rotating-plane
+	0%
+		transform: perspective(120px) rotateX(0deg) rotateY(0deg)
+	50%
+		transform: perspective(120px) rotateX(-180.1deg) rotateY(0deg)
+		background-color: $yellow
+	100%
+		transform: perspective(120px) rotateX(-180deg) rotateY(-179.9deg)
+
 body
 	scroll-behavior: smooth
 	background-color: #fff
@@ -20,6 +50,7 @@ body
 	line-height: 1.4
 	position: relative
 	-webkit-font-smoothing: antialiased
+	transition: unset
 *,
 *:after,
 *:before
@@ -443,7 +474,7 @@ input[type="number"]
 			justify-content: flex-start
 			background-color: #fff
 			color: $dark-blue
-			padding: 20px 25px 30px
+			padding: 25px 25px 30px
 			text-align: center
 			&__ttl
 				font-family: $a-bold
@@ -562,6 +593,9 @@ input[type="number"]
 .input__wrp
 	position: relative
 	max-width: 230px
+	textarea
+		width: 100%
+		border: 1px solid #000
 	input,
 	select
 		width: 100%
@@ -603,7 +637,7 @@ input[type="number"]
 		&__video
 			position: absolute
 			left: 0
-			top: 0
+			top: -140px
 			width: 100%
 			height: 100%
 .header
@@ -767,6 +801,11 @@ input[type="number"]
 				cursor: pointer
 				&:hover
 					transform: translateY(-50%) rotate(180deg)
+		&-show-log
+			font-size: 15px
+			a
+				color: $blue
+
 	&__in
 		position: relative
 .banner
@@ -908,7 +947,7 @@ input[type="number"]
 			height: 26px
 			top: 19px
 			right: 25px
-			background: url('../img/icon__loupe.png') no-repeat 50% 50% / contain
+			background: #fff url('../img/icon__loupe.svg') no-repeat 50% 50%/contain
 			padding: 0
 			transform: scale(.96)
 			border: none
@@ -1072,6 +1111,9 @@ input[type="number"]
 			border-bottom-left-radius: 2px
 			border-bottom-right-radius: 2px
 			position: relative
+			&.active
+				.begin__nav-more
+					transform: scaleY(-1)
 		&-link
 			padding: 8px 20px
 			width: 100%
@@ -1248,9 +1290,9 @@ input[type="number"]
 		.btn
 			margin-bottom: 15px
 		&-flag
-			padding: 8px 12px 8px 20px
+			padding: 8px 0px 8px 20px
 			text-align: center
-			transform: skew(-20deg)
+			// transform: skew(-20deg)
 			display: flex
 			justify-content: center
 			align-items: center
@@ -1260,15 +1302,33 @@ input[type="number"]
 			width: 70px
 			position: absolute
 			top: 19px
-			left: -15px
+			left: -18px
 			z-index: 1
 			span
-				transform: skew(20deg)
+				// transform: skew(20deg)
 			&_sale
 				background-color: #EE1A26
+				&::after
+					content: ''
+					position: absolute
+					border-style: solid
+					border-width: 38px 13px 0 0
+					border-color: #EE1A26 transparent transparent transparent
+					right: -13px
+					top: 0
+					height: 100%
 			&_hit
 				text-transform: uppercase
 				background-color: $blue
+				&::after
+					content: ''
+					position: absolute
+					border-style: solid
+					border-width: 38px 13px 0 0
+					border-color: $blue transparent transparent transparent
+					right: -13px
+					top: 0
+					height: 100%
 	&__in
 		padding-left: 40px
 		padding-right: 40px
@@ -1920,11 +1980,12 @@ input[type=range]
 		background: $blue
 .del
 	&__banner
-		min-height: 370px
-		background-position: 50% 50%
-		background-repeat: no-repeat
-		background-size: cover
 		margin-bottom: 30px
+		&-item
+			min-height: 370px
+			background-position: 50% 50%
+			background-repeat: no-repeat
+			background-size: cover
 	&__item
 		padding: 200px 20px 30px
 		background: #F3F3F3
@@ -2391,7 +2452,7 @@ input[type=range]
 						// display: flex
 						text-align: center
 						cursor: pointer
-						border: 1px solid #fff
+						border-right: 1px solid #fff
 						span
 							position: relative
 							display: block
@@ -2484,6 +2545,7 @@ input[type=range]
 		&:hover
 			.serv__item
 				&-top
+					background-color: $blue
 					transform: translateY(-5px)
 					box-shadow: 0px 30px 40px rgba(0, 80, 147, 0.25)
 				&-img
