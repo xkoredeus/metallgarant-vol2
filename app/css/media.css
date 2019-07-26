@@ -239,6 +239,26 @@
   .test__item-img {
     margin: 0 auto 15px;
   }
+  .banner_inner .banner__tel {
+    font-size: 14px;
+    margin-bottom: 0;
+  }
+  .banner_inner .banner__search-input {
+    font-size: 16px;
+    padding: 9px 30px 9px 30px;
+  }
+  .banner_inner .banner__search::before {
+    width: 12px;
+    height: 16px;
+    left: 10px;
+    top: 13px;
+  }
+  .banner_inner .banner__search-btn {
+    width: 16px;
+    height: 16px;
+    top: 13px;
+    right: 10px;
+  }
   .begin__slider-item {
     min-height: 300px;
     height: auto;

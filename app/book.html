@@ -478,7 +478,7 @@
       <div class="section__ttl">Отправьте заявку</div>
       <form class="d-flex flex-column align-items-center">
         <div class="feed__top mb-4">
-          <div class="row">
+          <div class="row justify-content-center">
             <div class="col-xl-3 col-sm-6 mb-3">
               <input type="text" placeholder="Имя*" class="feed__input" required="">
             </div>
@@ -497,13 +497,19 @@
             </div>
           </div>
         </div>
-        <img src="img/captcha.jpg" alt="" class="mb-4">
-        <label for="feed__checkbox_1" class="checkbox mb-3">
-          <input type="checkbox" id="feed__checkbox_1" required="" checked>
-          <span class="checkbox__text">Отправляя заявку, вы соглашаетесь на обработку <a href="#">персональных данных</a></span>
-        </label>
-        <div class="btn btn_subm">
-          <input type="submit" value="Отправить">
+        <div class="feed__bot">
+          <div class="d-flex flex-column align-items-center">
+            <div class="feed-captcha tac">
+              <img src="img/captcha.jpg" alt="" class="mb-4">
+            </div>
+            <label for="feed__checkbox_1" class="checkbox mb-3">
+              <input type="checkbox" id="feed__checkbox_1" required="" checked>
+              <span class="checkbox__text">Отправляя заявку, вы соглашаетесь на обработку <a href="#">персональных данных</a></span>
+            </label>
+            <div class="btn btn_subm">
+              <input type="submit" value="Отправить">
+            </div>
+          </div>
         </div>
       </form>
     </div>

@@ -317,7 +317,8 @@ input[type="number"]
 		margin-left: auto
 		margin-right: auto
 		max-width: 192px
-		padding-right: 80px
+		padding-right: 60px
+		padding-left: 15px
 		overflow: hidden
 		box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.2)
 		img
@@ -805,7 +806,21 @@ input[type="number"]
 			font-size: 15px
 			a
 				color: $blue
-
+	&__logo-min
+		div
+			position: relative
+			&::before
+				content: ''
+				position: absolute
+				width: 1px
+				height: 100%
+				left: -12px
+				top: 0
+				background-color: #F9F9F9
+				opacity: .3
+		span
+			font-size: 10px
+			font-family: $a-bold
 	&__in
 		position: relative
 .banner
@@ -991,6 +1006,28 @@ input[type="number"]
 				font-family: $a-bold
 				margin-bottom: 10px
 			&-descr
+				font-size: 15px
+	&_inner
+		.btn_blue
+			padding-top: 12px
+			padding-bottom: 12px
+		.banner
+			&__tel
+				font-size: 14px
+				margin-bottom: 0
+			&__search
+				&-input
+					font-size: 16px
+					padding: 10px 40px 10px 50px
+				&::before
+					width: 12px
+					height: 16px
+					left: 20px
+				&-btn
+					width: 16px
+					height: 16px
+					top: 15px
+			&__adress
 				font-size: 15px
 .begin
 	overflow: hidden
@@ -1230,6 +1267,8 @@ input[type="number"]
 				&:hover
 					&::before
 						background-color: $yellow
+hr
+	opacity: .5
 .hot
 	color: #fff
 	background: url('../img/hot__bg.jpg') no-repeat 50% 50% / cover
@@ -1282,7 +1321,7 @@ input[type="number"]
 				margin-bottom: 10px
 			&_cur
 				font-family: $a-bold
-				font-size: 26px
+				font-size: 25px
 			&_old
 				font-size: 13px
 				color: #BDBDBD
@@ -1352,6 +1391,8 @@ input[type="number"]
 		max-width: 370px
 		margin-left: auto
 		margin-right: auto
+	&__bot
+		transition: unset
 .test
 	color: #fff
 	background: url('../img/test__bg.jpg') no-repeat 50% 50% / cover
@@ -1422,6 +1463,10 @@ input[type="number"]
 				color: $yellow
 		&-text
 			font-size: 15px
+	&__pan
+		min-height: 300px
+		&_item
+			transition: unset
 .cont
 	&-page
 		background-color: #E5E5E5
@@ -1537,13 +1582,16 @@ input[type="number"]
 	margin-left: 0
 	margin-bottom: 0
 	margin-top: 20px
+	li
+		border-radius: 3px
+		box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.25)
 	li,
 	a
 		position: relative
 		color: $dark-blue
 		padding: 7px 12px
-		border-radius: 2px
 		margin-bottom: 10px
+
 	li:not(:last-child)
 		background-color: #fff
 		border: 1px solid $mid-blue
@@ -2311,9 +2359,9 @@ input[type=range]
 							box-shadow: 0px 2px 2px rgba(0, 0, 0, 0.2)
 							margin-bottom: 15px
 						&-flag
-							padding: 8px 12px 8px 20px
+							padding: 8px 0px 8px 20px
 							text-align: center
-							transform: skew(-20deg)
+							// transform: skew(-20deg)
 							display: flex
 							justify-content: center
 							align-items: center
@@ -2323,15 +2371,33 @@ input[type=range]
 							width: 70px
 							position: absolute
 							top: 19px
-							left: -15px
+							left: -18px
 							z-index: 1
 							span
-								transform: skew(20deg)
+								// transform: skew(20deg)
 							&_sale
-								background-color: $yellow
+								background-color: #EE1A26
+								&::after
+									content: ''
+									position: absolute
+									border-style: solid
+									border-width: 38px 13px 0 0
+									border-color: #EE1A26 transparent transparent transparent
+									right: -13px
+									top: 0
+									height: 100%
 							&_hit
 								text-transform: uppercase
 								background-color: $blue
+								&::after
+									content: ''
+									position: absolute
+									border-style: solid
+									border-width: 38px 13px 0 0
+									border-color: $blue transparent transparent transparent
+									right: -13px
+									top: 0
+									height: 100%
 		&-item
 			width: 100%
 			max-width: 270px
@@ -2340,7 +2406,7 @@ input[type=range]
 			margin-right: auto
 			position: relative
 			overflow: hidden
-			border-radius: 2px
+			border-radius: 3px
 			background-color: #F3F3F3
 			display: block
 			&-img

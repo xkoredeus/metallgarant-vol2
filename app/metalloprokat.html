@@ -651,8 +651,7 @@
               </div>
               <!--/item-->
             </div>
-            <div class="row roll__list view__row mt-2 mb-4">
-              <!--item-->
+            <!-- <div class="row roll__list view__row mt-2 mb-4">
               <div class="col-xl-4 col-sm-6 mb-3">
                 <form class="hot__item">
                   <div class="hot__item-flag hot__item-flag_sale">
@@ -673,8 +672,6 @@
                   </div>
                 </form>
               </div>
-              <!--/item-->
-              <!--item-->
               <div class="col-xl-4 col-sm-6 mb-3">
                 <form class="hot__item">
                   <div class="hot__item-flag hot__item-flag_hit">
@@ -695,8 +692,6 @@
                   </div>
                 </form>
               </div>
-              <!--/item-->
-              <!--item-->
               <div class="col-xl-4 col-sm-6 mb-3">
                 <form class="hot__item">
                   <div class="hot__item-flag">
@@ -717,8 +712,6 @@
                   </div>
                 </form>
               </div>
-              <!--/item-->
-              <!--item-->
               <div class="col-xl-4 col-sm-6 mb-3">
                 <form class="hot__item">
                   <div class="hot__item-flag hot__item-flag_sale">
@@ -739,8 +732,7 @@
                   </div>
                 </form>
               </div>
-              <!--/item-->
-            </div>
+            </div> -->
             <p>Производители выпускают металлический прокат разных видов и марок. Работая напрямую с крупнейшими российскими металлургическими компаниями, мы обеспечиваем минимальную стоимость продукции.</p>
             <p>Вы можете приобрести любой металлопрокат, прайс поможет Вам подобрать необходимую продукцию. Вы можете выгодно заказать арматуру, уголок, квадрат, двутавр, лист, сетку, швеллер, проволоку, круг, ленту, полосу, шестигранник, штрипс и другой металлопрокат. Общее количество товарных позиций в нашем каталоге свыше 10 000 SKU.</p>
             <p>Благодаря большому ассортименту и быстрому выполнению заказов мы приобрели множество постоянных заказчиков, работающих с нами многие годы. Благодаря наличию собственного склада мы всегда имеем в наличии большие объемы стального проката, что позволяет нам удовлетворить практически любые запросы наших заказчиков. Вы можете приобрести металлопрокат оптом по очень доступным ценам.</p>
@@ -755,7 +747,7 @@
       <div class="section__ttl">Отправьте заявку</div>
       <form class="d-flex flex-column align-items-center">
         <div class="feed__top mb-4">
-          <div class="row">
+          <div class="row justify-content-center">
             <div class="col-xl-3 col-sm-6 mb-3">
               <input type="text" placeholder="Имя*" class="feed__input" required="">
             </div>
@@ -774,13 +766,19 @@
             </div>
           </div>
         </div>
-        <img src="img/captcha.jpg" alt="" class="mb-4">
-        <label for="feed__checkbox_1" class="checkbox mb-3">
-          <input type="checkbox" id="feed__checkbox_1" required="" checked>
-          <span class="checkbox__text">Отправляя заявку, вы соглашаетесь на обработку <a href="#">персональных данных</a></span>
-        </label>
-        <div class="btn btn_subm">
-          <input type="submit" value="Отправить">
+        <div class="feed__bot">
+          <div class="d-flex flex-column align-items-center">
+            <div class="feed-captcha tac">
+              <img src="img/captcha.jpg" alt="" class="mb-4">
+            </div>
+            <label for="feed__checkbox_1" class="checkbox mb-3">
+              <input type="checkbox" id="feed__checkbox_1" required="" checked>
+              <span class="checkbox__text">Отправляя заявку, вы соглашаетесь на обработку <a href="#">персональных данных</a></span>
+            </label>
+            <div class="btn btn_subm">
+              <input type="submit" value="Отправить">
+            </div>
+          </div>
         </div>
       </form>
     </div>
