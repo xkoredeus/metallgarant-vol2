@@ -1,0 +1,530 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+  <meta name="theme-color" content="#6232ad">
+  <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+  <title>New Project</title>
+  <link rel="stylesheet" href="css/libs.min.css">
+  <link rel="stylesheet" href="css/main.css">
+  <link rel="stylesheet" href="css/media.css">
+</head>
+<body>
+  <!--mobile menu-->
+  <div class="mobile-menu" id="mobile-menu">
+    <div class="container">
+      <div class="d-flex flex-column align-items-center">
+        <div class="mb-3">
+          <div class="d-flex flex-column align-items-center">
+            <a href="#" class="banner__logo">
+              <img src="img/banner__logo.png" alt="">
+            </a>
+          </div>
+        </div>
+        <div class="banner__nav-in d-flex flex-column align-items-center mb-3">
+          <a href="#" class="banner__nav-item">
+            <span>О компании</span>
+          </a>
+          <a href="#" class="banner__nav-item">
+            <span>Способы оплаты</span>
+          </a>
+          <a href="#" class="banner__nav-item">
+            <span>Доставка</span>
+          </a>
+          <a href="#" class="banner__nav-item">
+            <span>Карьера</span>
+          </a>
+          <a href="#" class="banner__nav-item">
+            <span>Контакты</span>
+          </a>
+          <a href="#" class="banner__nav-item">
+            <span>Коммерческое предложение</span>
+          </a>
+          <a href="#" class="banner__nav-item active">
+            <span>Акции</span>
+          </a>
+          <a href="#popup_call" data-fancybox class="btn">
+            <span>Написать директору</span>
+          </a>
+        </div>
+        <div class="mb-3">
+          <div class="d-flex flex-column align-items-center">
+            <a href="#popup_call" data-fancybox class="btn btn_blue">Заказать звонок</a>
+            <a href="#sidebar" data-fancybox class="btn banner__menu-btn">
+              <span>Меню</span>
+            </a>
+          </div>
+        </div>
+
+        <div class="header__city-wrp mb-3">
+          <div class="header__city-select">Санкт-Петербург</div>
+          <div class="header__city-list">
+            <a href="#" class="header__city-list-item">Москва</a>
+            <a href="#" class="header__city-list-item">Самара</a>
+            <a href="#" class="header__city-list-item">Саратов</a>
+            <a href="#" class="header__city-list-item">Саранск</a>
+            <a href="#" class="header__city-list-item">Смоленск</a>
+            <a href="#" class="header__city-list-item">Астрахань</a>
+          </div>
+        </div>
+        <div class="header__soc d-flex mb-2">
+          <a href="#" class="header__soc-link mr-2">
+            <img src="img/icon__in.png" alt="">
+          </a>
+          <a href="#" class="header__soc-link mr-2">
+            <img src="img/icon__fb.png" alt="">
+          </a>
+          <a href="#" class="header__soc-link mr-2">
+            <img src="img/icon__vk.png" alt="">
+          </a>
+          <a href="#" class="header__soc-link">
+            <img src="img/icon__yu.png" alt="">
+          </a>
+        </div>
+        <div class="header__days">
+          365/7/24
+        </div>
+        <div class="banner__info pb-4 pt-4 pt-xl-0">
+          <div class="d-flex flex-column">
+            <div class="header__work d-flex justify-content-center align-items-start mb-3">
+              <img src="img/icon__time_white.png" alt="" class="mr-2 mt-1">
+              <div class="d-flex flex-column">
+                <span>Пн-Пт: 09.00-18.00</span>
+                <span>Сб-Вс: Выходной</span>
+              </div>
+            </div>
+            <div class="mb-3">
+              <div class="d-flex flex-column align-items-center">
+                <div class="mb-1"><span class="b">Офис:</span> пр.Обуховской Обороны, 112/2, оф.517</div>
+                <div class="mb-1"><span class="b">Производство/склад:</span> ул. Караваевская, д.57</div>
+                <div class="mb-1"><span class="b">Шоу-рум:</span> п.Сосново, ул.Вокзальная, 21</div>
+              </div>
+            </div>
+            <div class="mb-4">
+              <div class="d-flex flex-column align-items-center">
+                <a href="tel:88126042003" class="banner__tel">+7 (812) 604-20-03</a>
+                <a href="mailto:info@lzmmg.ru" class="banner__mail d-flex align-items-center">
+                  <img src="img/icon__mes_white.png" alt="" class="mr-2">
+                  <span>info@lzmmg.ru</span>
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!--/mobile menu-->
+  <header class="header">
+    <div class="container">
+      <div class="row align-items-center pr-5 pr-sm-0">
+        <div class="col-xl-8">
+          <div class="d-flex align-items-center flex-sm-row flex-wrap flex-xl-nowrap flex-column">
+            <a href="#" class="header__logo-min d-none d-xl-flex align-items-center mr-xl-5">
+              <img src="img/banner__logo-min.png" alt="" class="mr-4">
+              <div class="d-flex flex-column">
+                <span>Ленинградский</span>
+                <span>Завод Металлоконструкций</span>
+              </div>
+            </a>
+            <div class="header__city-wrp mr-4">
+              <div class="header__city-select">Санкт-Петербург</div>
+              <div class="header__city-list">
+                <a href="#" class="header__city-list-item">Москва</a>
+                <a href="#" class="header__city-list-item">Самара</a>
+                <a href="#" class="header__city-list-item">Саратов</a>
+                <a href="#" class="header__city-list-item">Саранск</a>
+                <a href="#" class="header__city-list-item">Смоленск</a>
+                <a href="#" class="header__city-list-item">Астрахань</a>
+              </div>
+            </div>
+            <div class="header__soc d-flex mr-4">
+              <a href="#" class="header__soc-link mr-2">
+                <img src="img/icon__in.png" alt="">
+              </a>
+              <a href="#" class="header__soc-link mr-2">
+                <img src="img/icon__fb.png" alt="">
+              </a>
+              <a href="#" class="header__soc-link mr-2">
+                <img src="img/icon__vk.png" alt="">
+              </a>
+              <a href="#" class="header__soc-link">
+                <img src="img/icon__yu.png" alt="">
+              </a>
+            </div>
+            <div class="header__days">
+              365/7/24
+            </div>
+          </div>
+            
+        </div>
+        <div class="col-xl-4">
+          <div class="d-flex justify-content-xl-end justify-content-center align-items-center">
+            <a href="#" class="header__cart d-flex align-items-center mr-3 mr-xl-5">
+              <div class="header__cart-val mr-3">
+                <img src="img/icon__cart.png" alt="">
+                <div class="header__cart-val-num">1</div>
+              </div>
+              <div class="header__cart-price">15 000 Р</div>
+            </a>
+            <a href="#" class="header__cab d-flex align-items-center">
+              <img src="img/icon__cab.png" alt="" class="mr-2">
+              <span>Личный кабинет</span>
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </header>
+  <section class="banner banner_inner">
+    <div class="container">
+      <a href="#mobile-menu" data-fancybox class="banner__hamburger"></a>
+      <div class="row align-items-center justify-content-between pt-3 pb-3 mb-3 banner__nav">
+        <div class="col-xl-10">
+          <div class="banner__nav-in d-flex justify-content-between align-items-center">
+            <a href="#" class="banner__nav-item">
+              <span>О компании</span>
+            </a>
+            <a href="#" class="banner__nav-item">
+              <span>Способы оплаты</span>
+            </a>
+            <a href="#" class="banner__nav-item">
+              <span>Доставка</span>
+            </a>
+            <a href="#" class="banner__nav-item">
+              <span>Карьера</span>
+            </a>
+            <a href="#" class="banner__nav-item">
+              <span>Контакты</span>
+            </a>
+            <a href="#" class="banner__nav-item">
+              <span>Коммерческое предложение</span>
+            </a>
+            <a href="#" class="banner__nav-item active">
+              <span>Акции</span>
+            </a>
+          </div>
+        </div>
+        <div class="col-xl-2">
+          <div class="d-flex justify-content-center justify-content-xl-end align-items-center">
+            <a href="#popup_call" data-fancybox class="btn">
+              <span>Написать директору</span>
+            </a>
+          </div>
+        </div>
+      </div>
+      <div class="banner__info pb-4 pt-4 pt-xl-0">
+        <div class="row justify-content-center">
+          <div class="col-xl-4 mb-3 mb-xl-0 d-none d-xl-flex">
+            <div class="d-flex flex-column align-items-start banner__adress">
+              <div class="mb-2"><span class="b">Офис:</span> пр.Обуховской Обороны, 112/2, оф.517</div>
+              <div class="mb-2"><span class="b">Производство/склад:</span> ул. Караваевская, д.57</div>
+              <div class="mb-2"><span class="b">Шоу-рум:</span> п.Сосново, ул.Вокзальная, 21</div>
+            </div>
+          </div>
+          <div class="col-xl-6">
+            <div class="d-flex flex-column">
+              <form action="" class="banner__search mb-3 mb-xl-0">
+                <input type="text" class="banner__search-input" placeholder="Катанка">
+                <input type="submit" class="banner__search-btn" value="" title="Нажмите для поиска">
+              </form>
+              <div class="d-flex justify-content-between align-items-start mt-2">
+                <div class="header__work d-flex align-items-start">
+                  <img src="img/icon__work_white.png" alt="" class="mr-2 mt-1">
+                  <div class="d-flex flex-column">
+                    <span>Пн-Пт: 09.00-18.00</span>
+                    <span>Сб-Вс: Выходной</span>
+                  </div>
+                </div>
+                <a href="mailto:info@lzmmg.ru" class="banner__mail d-none d-xl-flex align-items-center">
+                  <img src="img/icon__mail_white.png" alt="" class="mr-2">
+                  <span>info@lzmmg.ru</span>
+                </a>
+                <div class="d-none d-xl-flex align-items-center">
+                  <img src="img/icon__tel_white.png" alt="" class="mr-2">
+                  <a href="tel:88126042003" class="banner__tel">+7 (812) 604-20-03</a>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-xl-2">
+            <div class="d-flex flex-column align-items-center align-items-xl-start">
+              <a href="#popup_call" data-fancybox class="btn btn_blue">Заказать звонок</a>
+              <a href="#sidebar" data-fancybox class="btn banner__menu-btn">
+                <span>Меню</span>
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <main class="main">
+    <div class="container">
+      <ul class="crumbs">
+        <li><a href="#">Главная</a></li>
+        <li><a href="#">Акции</a></li>
+        <li>Личный кабинет</li>
+      </ul>
+      <section class="section_inner">
+        <div class="section__ttl">Личный кабинет</div>
+        <div class="row">
+          <div class="col-xl-4 col-sm-6 mb-4">
+            <div class="cab__item">
+              <div class="cab__item-top d-flex align-items-center cab__item-dec">
+                <img src="img/cab__img_1.png" alt="">
+                <span class="b upp ml-3">Персональная информация</span>
+              </div>
+              <div class="cab__item-cnt">
+                <div class="row mb-2">
+                  <div class="col-5">Имя</div>
+                  <div class="col-7"><b>Александр</b></div>
+                </div>
+                <div class="row mb-2">
+                  <div class="col-5">Фамилия</div>
+                  <div class="col-7"><b>Константинопольский</b></div>
+                </div>
+                <div class="row mb-2">
+                  <div class="col-5">E-mail </div>
+                  <div class="col-7"><b>info@mail.ru</b></div>
+                </div>
+                <div class="row mb-2">
+                  <div class="col-5">Телефон</div>
+                  <div class="col-7"><b>+7 921 332 43 55</b></div>
+                </div>
+                <a href="#" class="btn w100 mt-2">
+                  <span>Изменить данные / пароль</span>
+                </a>
+              </div>
+            </div>
+            <div class="cab__item">
+              <div class="cab__item-top d-flex align-items-center cab__item-dec">
+                <img src="img/cab__img_2.png" alt="">
+                <span class="b upp ml-3">История заказов</span>
+              </div>
+              <div class="cab__item-cnt">
+                <div class="cab__item-dec">
+                  <div class="mb-1">
+                    <span class="b blue">Заказ № 8623527</span>
+                    <span>от 06.06.2019  12:25</span>
+                  </div>
+                  <div class="b">22 000 Р  В обработке</div>
+                </div>
+                <div class="cab__item-dec">
+                  <div class="mb-1">
+                    <span class="b blue">Заказ № 8623527</span>
+                    <span>от 06.06.2019  12:25</span>
+                  </div>
+                  <div class="b">22 000 Р  В обработке</div>
+                </div>
+                <a href="#" class="btn w100 mt-2">
+                  <span>Показать все заказы</span>
+                </a>
+              </div>
+            </div>
+          </div>
+          <div class="col-xl-4 col-sm-6 mb-4">
+            <div class="cab__item">
+              <div class="cab__item-top d-flex align-items-center cab__item-dec">
+                <img src="img/cab__img_3.png" alt="">
+                <span class="b upp ml-3">Профили организаций</span>
+              </div>
+              <div class="cab__item-cnt">
+                <div class="cab__item-dec">
+                  <a href="#" class="btn btn_small mb-2">
+                    <span>По умолчанию</span>
+                  </a>
+                  <div>
+                    OOO “Ромашка”, ИНН 123456789, КПП 6310001,  ОГРН 12345678910
+                  </div>
+                </div>
+                <div>OOO “ДизельПарк”, ИНН 123456789, КПП 6310001,  ОГРН 12345678910</div>
+              </div>
+            </div>
+            <div class="cab__item">
+              <div class="cab__item-top d-flex align-items-center cab__item-dec">
+                <img src="img/cab__img_4.png" alt="">
+                <span class="b upp ml-3">Профили организаций</span>
+              </div>
+              <div class="cab__item-cnt">
+                <div class="cab__item-dec">
+                  <a href="#" class="btn btn_small mb-2">
+                    <span>По умолчанию</span>
+                  </a>
+                  <div><span class="blue b">Адрес:</span>  г. Самара, ул. Петра Дуброва, дом 154, офис 25</div>
+                </div>
+                <div><span class="blue b">Адрес:</span>  г. Самара, ул. Петра Дуброва, дом 154, офис 25</div>
+              </div>
+            </div>
+          </div>
+          <div class="col-xl-4 col-sm-6 mb-4">
+            <div class="cab__item">
+              <div class="cab__item-top d-flex align-items-center cab__item-dec">
+                <img src="img/cab__img_5.png" alt="">
+                <span class="b upp ml-3">Подписка на рассылку</span>
+              </div>
+              <form class="cab__item-cnt">
+                <input type="email" placeholder="Введите ваш e-mail" required="" class="w100 mt-1 mb-1">
+                <div class="btn btn_subm mt-2 w100">
+                  <input type="submit" value="Сохранить изменения">
+                </div>
+              </form>
+            </div>
+            <div class="cab__item">
+              <div class="cab__item-top d-flex align-items-center cab__item-dec">
+                <img src="img/cab__img_5.png" alt="">
+                <span class="b upp ml-3">Подписка на рассылку</span>
+              </div>
+              <div class="cab__item-cnt">
+                <div class="d-flex justify-content-center mt-2 mb-2 align-items-center cab__item-check">
+                  <img src="img/cab__img_check.png" alt="">
+                  <span class="b upp ml-2">Вы подписаны</span>
+                </div>
+                <a href="#" class="btn btn_subm mt-2 w100">
+                  <span>Отменить подписку</span>
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+    </div>
+  </main> 
+  <footer class="footer section_inner">
+    <div class="container">
+      <div class="row mb-3">
+        <div class="col-xl-3 col-sm-6 mb-4 mb-xl-3">
+          <div class="d-flex flex-column align-items-center align-items-sm-start">
+            <div class="footer__ttl">Связаться с нами</div>
+            <div class="d-flex align-items-center mb-4">
+              <div class="footer__soc d-flex mr-4">
+                <a href="#" class="footer__soc-link mr-2">
+                  <img src="img/icon__in.png" alt="">
+                </a>
+                <a href="#" class="footer__soc-link mr-2">
+                  <img src="img/icon__fb.png" alt="">
+                </a>
+                <a href="#" class="footer__soc-link mr-2">
+                  <img src="img/icon__vk.png" alt="">
+                </a>
+                <a href="#" class="footer__soc-link">
+                  <img src="img/icon__yu.png" alt="">
+                </a>
+              </div>
+              <div class="footer__days">
+                365/7/24
+              </div>
+            </div>
+            <a href="#" class="d-flex align-items-center footer__req mb-4">
+              <div class="footer__req-img mr-2">
+                <img src="img/icon__arr-down.png" alt="">
+              </div>
+              <span>Скачать реквизиты</span>
+            </a>
+            <a href="#popup_call" data-fancybox class="btn">Написать директору</a>
+          </div>
+        </div>
+        <div class="col-xl-3 col-sm-6 mb-4 mb-xl-3">
+          <div class="footer__ttl footer__ttl_mobile">Лзм металлгарант</div>
+          <div class="d-flex flex-column align-items-center align-items-sm-start">
+            <a href="#" class="mb-1 und footer__link">О компании</a>
+            <a href="#" class="mb-1 und footer__link">Акции</a>
+            <a href="#" class="mb-1 und footer__link">Карьера</a>
+            <a href="#" class="mb-1 und footer__link">Вакансии</a>
+            <a href="#" class="mb-1 und footer__link">Корпоративная жизнь</a>
+            <a href="#" class="mb-1 und footer__link">Реализованные проекты</a>
+            <a href="#" class="mb-1 und footer__link">Отзывы</a>
+            <a href="#" class="mb-1 und footer__link">Контакты</a>
+          </div>
+        </div>
+        <div class="col-xl-3 col-sm-6 mb-4 mb-xl-3">
+          <div class="footer__ttl footer__ttl_mobile">Помощь по сайту</div>
+          <div class="d-flex flex-column align-items-center align-items-sm-start">
+            <a href="#" class="mb-1 und footer__link">Доставка</a>
+            <a href="#" class="mb-1 und footer__link">Способы оплаты</a>
+            <a href="#" class="mb-1 und footer__link">Справочник металлопроката</a>
+            <a href="#" class="mb-1 und footer__link">Марочник металлопроката</a>
+            <a href="#" class="mb-1 und footer__link">Каталог металлобаз</a>
+            <a href="#" class="mb-1 und footer__link">FAQ</a>
+            <a href="#" class="mb-1 und footer__link">Политика конфиденциальности</a>
+            <a href="#" class="mb-1 und footer__link">Карта сайта</a>
+          </div>
+        </div>
+        <div class="col-xl-3 col-sm-6 mb-4 mb-xl-3 footer__info">
+          <div class="footer__ttl">Контакты</div>
+          <div class="d-flex flex-column align-items-center align-items-sm-start">
+            <a href="tel:88126042003" class="mb-1 b">+7 (812) 604-20-03</a>
+            <a href="mailto:info@lzmmg.ru" class="mb-3 und">info@lzmmg.ru</a>
+            <div class="mb-1">Офис: пр.Обуховской Обороны, 112/2, оф.517</div>
+            <div class="mb-3">Производство/склад: ул. Караваевская, д.57 Шоу-рум: п.Сосново, ул.Вокзальная, 21</div>
+            <div>Пн-Пт: 09.00-18.00, Сб-Вс: Выходной</div>
+          </div>
+        </div>
+      </div>
+      <div class="row align-items-center">
+        <div class="col-xl-2 mb-4 mb-xl-0">
+          <a href="#" class="footer__logo">
+            <img src="img/banner__logo.png" alt="" class="img-fluid">
+          </a>
+        </div>
+        <div class="col-xl-7 mb-3 mb-xl-0 footer__copy-text">
+          © 2001-2019 Ленинградский Завод Металлоконструкций МеталлГарант - Производство и продажа металлопроката и металлоконструкций в Санкт-Петербурге Использование материалов сайта lzmmg.ru без письменного разрешения запрещено.
+        </div>
+        <div class="col-xl-3">
+          <div class="d-flex flex-column align-items-xl-start align-items-center">
+            <img src="img/footer__stars.png" alt="">
+            <span>Оценка: 4,8 (Голосов: 49)</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </footer>
+	<div id="popup_call" class="popup__container" style="display:none">
+		<div  class="popup__wrp popup_call__wrp">
+			<form action="[[~[[*id]]]]" method="post" class="popup">
+				<div class="popup__ttl">Оставьте заявку</div>
+				<div class="input__wrp input__wrp_name">
+					<input type="text" class="form__input" name="popup_call__name" placeholder="Ваше имя" required="">
+				</div>
+				<div class="input__wrp input__wrp_tel">
+					<input type="tel" class="form__input" name="popup_call__tel" placeholder="Телефон" required="">
+				</div>
+				<div class="input__wrp input__wrp_mail">
+					<input type="email" class="form__input" name="popup_call__email" placeholder="E-mail">
+				</div>
+				<input type="submit" class="btn" name="popup_call__sumbit" value="Заказать">
+				<div class="popup__policy">
+					Нажимая кнопку "Отправить", вы соглашаетесь с <a href="#" class="form__policy-link">политикой конфиденциальности</a>
+				</div>
+			</form>
+		</div>
+	</div>
+  <!-- preloader-->
+  <div class="preloader">
+    <div class="preloader__icon"></div>
+  </div>
+  <!--/ preloader-->
+	<script src="js/libs.min.js"></script>
+  <script src="https://api-maps.yandex.ru/2.1/?apikey=3629c6cc-8564-466b-9c39-8680f92c24c3&lang=ru_RU" type="text/javascript"></script>
+  <script src="js/scripts.js"></script>
+  <!-- Marquiz script start -->
+  <script src="//script.marquiz.ru/v1.js" type="application/javascript"></script>
+  <script>
+  document.addEventListener("DOMContentLoaded", function() {
+    Marquiz.init({ 
+      id: '5c6a8f6a084fad005583a641', 
+      autoOpen: false, 
+      autoOpenFreq: 'once', 
+      openOnExit: false 
+    });
+  });
+  </script>
+  <div class="d-none">
+  #popup:marquiz_5c6a8f6a084fad005583a641
+    onclick="Marquiz.showModal('5c6a8f6a084fad005583a641')"
+  </div>
+  <!-- Marquiz script end -->
+</body>
+</html>

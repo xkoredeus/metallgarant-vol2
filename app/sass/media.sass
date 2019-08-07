@@ -121,6 +121,26 @@ $a-bold: 'AvenirNextCyr-Bold'
 			& > div
 				width: 100%
 				justify-content: center
+	.del
+		&__banner
+			margin-bottom: 30px
+			&-item
+				min-height: 370px
+				background-position: 50% 50%
+				background-repeat: no-repeat
+				background-size: cover
+			.owl
+				&-nav
+					button.owl
+						&-prev
+							left: 0
+							margin-left: 0
+						&-next
+							right: 0
+							margin-right: 0
+	.unk
+		&__ttl
+			font-size: 60px
 @media screen and (max-width: 900px)
 	.section_inner
 		padding: 35px 0
@@ -325,6 +345,9 @@ $a-bold: 'AvenirNextCyr-Bold'
 			div
 				padding-left: 4px
 				padding-right: 4px
+	.unk
+		&__ttl
+			font-size: 30px
 @media screen and (max-width: 576px)
 	.mobile-menu
 		padding: 10px
@@ -340,6 +363,8 @@ $a-bold: 'AvenirNextCyr-Bold'
 		right: 62%
 	.footer__ttl_mobile::after
 		right: -6px
+	.del__banner
+		display: none !important
 @media screen and (max-width: 330px)
 	.footer__ttl_mobile::after
 		right: -6px

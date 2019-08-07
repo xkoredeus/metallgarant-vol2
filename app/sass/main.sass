@@ -248,8 +248,18 @@ input[type="number"]
 		box-shadow: 0px 30px 40px rgba(0, 80, 147, 0.25)
 .w100
 	width: 100%
+.fz12
+	font-size: 12px
+.fz13
+	font-size: 13px
 .b
 	font-family: $a-bold
+.m
+	font-family: $a-med
+.blue
+	color: $blue
+.yel
+	color: $yellow
 .m
 	font-family: $a-med
 .tac
@@ -302,6 +312,9 @@ input[type="number"]
 			background-color: $blue
 			&::before
 				left: 150%
+	&_small
+		font-size: 12px
+		padding: 8px 12px
 	&_blue
 		background-color: $blue
 		&:hover
@@ -1221,6 +1234,10 @@ input[type="number"]
 			&:hover
 				transform: translateY(3px)
 	&__cat
+		&_unk
+			max-width: 870px
+			margin-left: auto
+			margin-right: auto
 		&-item
 			width: 100%
 			max-width: 270px
@@ -2097,6 +2114,17 @@ input[type=range]
 			background-position: 50% 50%
 			background-repeat: no-repeat
 			background-size: cover
+		.owl
+			&-nav
+				button.owl
+					&-prev
+						left: 50%
+						margin-left: calc(-1110px/2)
+					&-next
+						right: 50%
+						margin-right: calc(-1110px/2)
+			&-dots
+				bottom: 30px
 	&__item
 		padding: 200px 20px 30px
 		background: #F3F3F3
@@ -3278,3 +3306,24 @@ input[type=range]
 			&::before
 				background-color: $blue
 				opacity: .6
+.cab
+	&__item
+		padding: 20px 15px
+		background: #F3F3F3
+		box-shadow: 0px 2px 2px rgba(0, 0, 0, 0.15)
+		border-radius: 2px
+		margin-bottom: 30px
+		&-top
+			font-size: 16px
+		&-dec
+			padding-bottom: 7px
+			border-bottom: 1px solid #c4c4c4
+			margin-bottom: 8px
+		&-check
+			color: #27AE60
+.unk
+	&__ttl
+		font-size: 130px
+		line-height: 1
+		font-family: $a-bold
+		text-align: center

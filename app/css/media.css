@@ -145,6 +145,26 @@
         -ms-flex-pack: center;
             justify-content: center;
   }
+  .del__banner {
+    margin-bottom: 30px;
+  }
+  .del__banner-item {
+    min-height: 370px;
+    background-position: 50% 50%;
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+  .del__banner .owl-nav button.owl-prev {
+    left: 0;
+    margin-left: 0;
+  }
+  .del__banner .owl-nav button.owl-next {
+    right: 0;
+    margin-right: 0;
+  }
+  .unk__ttl {
+    font-size: 60px;
+  }
 }
 
 @media screen and (max-width: 900px) {
@@ -399,6 +419,9 @@
     padding-left: 4px;
     padding-right: 4px;
   }
+  .unk__ttl {
+    font-size: 30px;
+  }
 }
 
 @media screen and (max-width: 576px) {
@@ -419,6 +442,9 @@
   }
   .footer__ttl_mobile::after {
     right: -6px;
+  }
+  .del__banner {
+    display: none !important;
   }
 }
 

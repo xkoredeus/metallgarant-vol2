@@ -277,7 +277,7 @@ $(function() {
       autoplayHoverPause: true,
       loop: true,
       smartSpeed: 800,
-      dots: false,
+      dots: true,
       navText: ["<img src='img/slider__arrow_prev.png'>", "<img src='img/slider__arrow_next.png'>"]
   });
   //login/reg popups
@@ -499,7 +499,7 @@ $(function() {
   });
   //sales timer
   function makeTimer() {
-    
+
     var endTime = new Date("29 September 2019 9:56:00 GMT+04:00");      
       endTime = (Date.parse(endTime) / 1000);
 
