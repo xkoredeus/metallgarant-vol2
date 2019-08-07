@@ -374,6 +374,31 @@
             box-shadow: 0px 2px 2px rgba(0, 0, 0, 0.15);
     border-radius: 2px;
   }
+  .sale-page__timer-item {
+    width: 24%;
+  }
+  .sale-page__timer-item div {
+    padding: 10px 5px;
+  }
+  .sale-page__timer-item span {
+    font-size: 14px;
+  }
+  .sale-page__timer #days {
+    font-size: 25px;
+  }
+  .sale-page__timer #hours {
+    font-size: 25px;
+  }
+  .sale-page__timer #minutes {
+    font-size: 25px;
+  }
+  .sale-page__timer #seconds {
+    font-size: 18px;
+  }
+  .sale-page__timer #seconds div {
+    padding-left: 4px;
+    padding-right: 4px;
+  }
 }
 
 @media screen and (max-width: 576px) {

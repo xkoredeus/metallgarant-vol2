@@ -328,10 +328,9 @@ $(function() {
       $(this).toggleClass('active').siblings('.tabs-acc__cnt').slideToggle();
     })
   };
-  //Закрываем AjaxForm popup после успешной отправки
-  // $(document).on('af_complete', function(event,res) {
-  //   if(res.success) parent.$.fancybox.close();
-  // });
+  $('.car__acc-item-top').on('click', function(){
+    $(this).parent('.car__acc-item').toggleClass('active').find('.car__acc-item-cnt').slideToggle();
+  })
 
   //Стилизованный input type file
   $(".upload__file").change(function() {
@@ -435,7 +434,7 @@ $(function() {
     $owl_slider.to(number, 100, true);
   });
   //map
-  $('.contact__pan-item:not(:last-child)').hide();
+  // $('.contact__pan-item:not(:last-child)').hide();
   $(document).ready(function () {
     var myMap;
 
@@ -448,8 +447,8 @@ $(function() {
             });
         }
 
-          $('.contact__pan-item').hide();
-          $('.contact__pan-item[data-tab="' + $(this).attr('data-tab') + '"]').slideToggle();
+          // $('.contact__pan-item').hide();
+          // $('.contact__pan-item[data-tab="' + $(this).attr('data-tab') + '"]').slideToggle();
     });
 
     ymaps.ready(init);
@@ -498,7 +497,33 @@ $(function() {
       });
     };
   });
+  //sales timer
+  function makeTimer() {
+    
+    var endTime = new Date("29 September 2019 9:56:00 GMT+04:00");      
+      endTime = (Date.parse(endTime) / 1000);
 
+      var now = new Date();
+      now = (Date.parse(now) / 1000);
+
+      var timeLeft = endTime - now;
+
+      var days = Math.floor(timeLeft / 86400); 
+      var hours = Math.floor((timeLeft - (days * 86400)) / 3600);
+      var minutes = Math.floor((timeLeft - (days * 86400) - (hours * 3600 )) / 60);
+      var seconds = Math.floor((timeLeft - (days * 86400) - (hours * 3600) - (minutes * 60)));
+  
+      if (hours < "10") { hours = "0" + hours; }
+      if (minutes < "10") { minutes = "0" + minutes; }
+      if (seconds < "10") { seconds = "0" + seconds; }
+
+      $("#days").html("<div>" + days + "</div>" + "<span>дни</span>");
+      $("#hours").html("<div>" + hours + "</div>" + "<span>часы</span>");
+      $("#minutes").html("<div>" + minutes + "</div>" + "<span>минуты</span>");
+      $("#seconds").html("<div>" + seconds + "</div>" + "<span>секунды</span>");
+  }
+
+  setInterval(function() { makeTimer(); }, 1000);
   //mobile menu
   $(".banner__hamburger").on('click',function() {
       $(this).toggleClass("active");
