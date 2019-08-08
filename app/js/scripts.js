@@ -330,7 +330,20 @@ $(function() {
   };
   $('.car__acc-item-top').on('click', function(){
     $(this).parent('.car__acc-item').toggleClass('active').find('.car__acc-item-cnt').slideToggle();
-  })
+  });
+  $('.cab-table__det').on('click', function(){
+    $(this).toggleClass('active').parents('.cab-table__item').find('.cab-table__item-bot').slideToggle();
+  });
+  $('.cab-pers__item-change').on('click', function(e){
+    e.preventDefault();
+    $(this).toggleClass('active').parents('.cab-pers__item').find('.cab-pers__item-cnt').slideToggle();
+  });
+  // $('.cart__item-next').on('click', function(e){
+  //   e.preventDefault();
+  //   $(this).parents('.cart__item-cnt').slideToggle().parents('.cart__item').toggleClass('active checked').next('.cart__item').find('.cart__item-cnt').slideToggle();
+  // });
+  
+  
 
   //Стилизованный input type file
   $(".upload__file").change(function() {
@@ -585,7 +598,8 @@ $(function() {
   //   console.log($(this).offset());
   // });
   //input type number
-  $( '.quantity' ).on( 'click', '.quantity-minus, .quantity-plus', function () {
+  $( '.quantity' ).on( 'click', '.quantity-minus, .quantity-plus', function (e) {
+    e.preventDefault();
   var input = $( this ).siblings( '.quantity-num' );
     if ( (input.val() > 1) && ($( this ).hasClass( 'quantity-minus' ) ) ) {
         input.val( +input.val() - 1 );

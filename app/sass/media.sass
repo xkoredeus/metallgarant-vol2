@@ -242,7 +242,65 @@ $a-bold: 'AvenirNextCyr-Bold'
 				height: auto
 	.roll-page__bot .tabs__list li
 		width: 100%
-
+	.cab-table
+		&__head
+			&>div
+				padding: 5px
+				&:nth-child(2),
+				&:nth-child(3),
+				&:nth-child(4),
+				&:nth-child(6),
+				&:nth-child(7),
+				&:nth-child(8)
+					display: none
+				&:nth-child(1),
+				&:nth-child(5)
+					width: 43% !important
+		&__item
+			&-top
+				&>div
+					padding: 5px
+					&:nth-child(2),
+					&:nth-child(3),
+					&:nth-child(4),
+					&:nth-child(6)
+						display: none
+					&:nth-child(1),
+					&:nth-child(5)
+						width: 43% !important
+			&-bot
+				.cab-table__head
+					&>div
+						&:nth-child(1),
+						&:nth-child(6)
+							display: none
+						&:nth-child(2),
+						&:nth-child(7)
+							display: block
+						&:nth-child(2)
+							width: 40% !important
+						&:nth-child(7)
+							width: 35% !important
+						&:nth-child(5)
+							width: 25% !important
+				&-cnt
+					font-size: 13px
+					padding: 8px 0
+					p
+						font-size: 13px
+					&>div
+						padding: 0 8px
+						&:nth-child(1),
+						&:nth-child(3),
+						&:nth-child(4),
+						&:nth-child(6)
+							display: none
+						&:nth-child(2)
+							width: 40% !important
+						&:nth-child(7)
+							width: 35% !important
+						&:nth-child(5)
+							width: 25% !important
 @media screen and (max-width: 600px)
 	.main-page
 		.banner
@@ -348,6 +406,14 @@ $a-bold: 'AvenirNextCyr-Bold'
 	.unk
 		&__ttl
 			font-size: 30px
+	.search
+		&__item
+			text-align: center
+			&-img
+				margin-left: auto
+				margin-right: auto
+			.btn
+				margin-top: 15px
 @media screen and (max-width: 576px)
 	.mobile-menu
 		padding: 10px

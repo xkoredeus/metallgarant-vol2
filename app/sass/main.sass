@@ -1,6 +1,7 @@
 @import "../fonts/fonts.css"
 $mid-blue: #072754
 $dark-blue: #05162E
+$red: #ea1a25
 $blue: #008CFF
 $yellow: #F18E02
 $tr: transparent
@@ -236,9 +237,31 @@ input[type="number"]
 	input[type="checkbox"]:checked + .checkbox__text:before,
 	input[type="radio"]:checked + .checkbox__text:before
 		background-color: #fff
-		// border: 1px solid #39B54A
-	// input[type="checkbox"]:focus + .checkbox__text:before
-	// 	box-shadow: inset 0 1px 2px rgba(0,0,0,.2), 0 0 0 1px rgba(49, 179, 237, 0.61)
+	&_cart
+		background-color: #FFFFFF
+		box-shadow: 0px 2px 2px rgba(0, 0, 0, 0.25)
+		border-radius: 2px
+		padding-left: 15px
+		padding-right: 15px
+		.checkbox__text
+			padding: 15px 15px 15px 35px
+			height: auto !important
+			img
+				filter: grayscale(1)
+			&::after,
+			&::before
+				top: 50%
+				transform: translateY(-50%)
+			&::after
+				margin-top: -6px
+				transform: scale(0)
+		input[type="checkbox"]:checked + .checkbox__text,
+		input[type="radio"]:checked + .checkbox__text
+			span
+				color: $blue
+		input[type="checkbox"]:checked + .checkbox__text img,
+		input[type="radio"]:checked + .checkbox__text img
+			filter: grayscale(0)
 .img-fluid
 	max-width: 100%
 	height: auto
@@ -248,6 +271,8 @@ input[type="number"]
 		box-shadow: 0px 30px 40px rgba(0, 80, 147, 0.25)
 .w100
 	width: 100%
+.fz10
+	font-size: 10px
 .fz12
 	font-size: 12px
 .fz13
@@ -258,6 +283,8 @@ input[type="number"]
 	font-family: $a-med
 .blue
 	color: $blue
+.red
+	color: #ea1a25
 .yel
 	color: $yellow
 .m
@@ -3321,9 +3348,237 @@ input[type=range]
 			margin-bottom: 8px
 		&-check
 			color: #27AE60
+	&__nav
+		display: flex
+		flex-direction: column
+		background: #FFFFFF
+		box-shadow: 0px 2px 2px rgba(0, 0, 0, 0.15)
+		border-radius: 2px
+		overflow: hidden
+		&-link
+			padding: 12px 10px
+			font-family: $a-bold
+			&:not(:last-child)
+				border-bottom: 1px solid #c4c4c445
+			&_here
+				color: #fff
+				background-color: $blue
+	&-table
+		&__head
+			&>div
+				padding: 10px 12px
+		&__item
+			margin-bottom: 12px
+			&:nth-child(odd)
+				.cab-table__item-top
+					background-color: #e0e0e0
+			&:nth-child(even)
+				.cab-table__item-top
+					background-color: #ccc
+			&-top
+				border-radius: 2px
+				&>div
+					padding: 10px 12px
+					&:not(last-child)
+						border-right: 1px solid #fff
+			button
+				text-align: center
+				padding: 0
+				margin: 0 auto
+				display: block
+				filter: grayscale(100)
+				opacity: .5
+				&:hover
+					opacity: 1
+					filter: grayscale(0)
+				&.active
+					opacity: 1
+					transform: scaleY(-1)
+					filter: grayscale(0)
+			&-bot
+				display: none
+				transition: unset
+				&-cnt
+					padding: 20px 0
+					background-color: #fff
+					box-shadow: 0px 2px 2px rgba(0, 0, 0, 0.25)
+					border-radius: 2px
+					display: flex
+					&:not(last-child)
+						margin-bottom: 10px
+					&>div
+						padding: 0 15px
+						display: flex
+						flex-direction: column
+						justify-content: center
+						&:not(last-child)
+							border-right: 1px solid #e0e0e0
+	&-pers
+		padding: 20px
+		background-color: #F3F3F3
+		box-shadow: 0px 2px 2px rgba(0, 0, 0, 0.15)
+		border-radius: 2px
+		&__item
+			padding: 15px 0
+			&:not(:last-child)
+				border-bottom: 1px solid #c4c4c445
+			sup
+				color: $red
+			&-cnt
+				display: none
+				transition: unset
+			&-change
+				&.active
+					color: $blue
 .unk
 	&__ttl
 		font-size: 130px
 		line-height: 1
 		font-family: $a-bold
 		text-align: center
+.search
+	position: relative
+	width: 100%
+	&::before
+		content: ''
+		position: absolute
+		left: 10px
+		top: 9px
+		width: 26px
+		height: 22px
+		background: url('../img/offer__search-icon.png') no-repeat 50% 50% / contain
+	&__input
+		width: 100%
+		font-size: 14px
+		padding: 10px 40px 10px 40px
+	&__btn
+		position: absolute
+		width: 26px
+		height: 21px
+		top: 10px
+		right: 10px
+		background: #fff url('../img/icon__loupe.svg') no-repeat 50% 50%/contain
+		padding: 0
+		transform: scale(.96)
+		border: none
+		&:hover
+			transform: scale(1.05)
+	&__item
+		padding: 20px 15px
+		position: relative
+		background-color: #F3F3F3
+		color: $dark-blue
+		border-radius: 2px
+		overflow: hidden
+		&:hover
+			box-shadow: 0px 30px 40px rgba(0, 80, 147, 0.25)
+		&-img
+			width: 160px
+			max-width: 100%
+			height: 90px
+			display: block
+			background-position: 50% 50%
+			background-size: contain
+			background-repeat: no-repeat
+			&:hover
+				opacity: .7
+		&-ttl
+			font-family: $a-bold
+			font-size: 16px
+			margin-bottom: 8px
+.view__col
+	.search__item
+		.row
+			flex-direction: column
+			&>*
+				width: 100%
+				max-width: 100%
+				// text-align: center
+				margin-bottom: 10px
+		&-img
+			margin-left: auto
+			margin-right: auto
+.cart
+	&__item
+		padding: 12px 0
+		border-top: 1px solid #c4c4c4fa
+		border-bottom: 1px solid #c4c4c4fa
+		margin-bottom: 10px
+		&-img
+			width: 100%
+			height: 320px
+			background-position: 50% 50%
+			background-repeat: no-repeat
+			background-size: cover
+		&-ttl
+			font-size: 28px
+			font-family: $a-bold
+			filter: grayscale(100)
+			opacity: .6
+			span
+				&:nth-child(2)
+					color: $blue
+		&-change
+			display: none
+		&-cnt
+			// display: none
+			transition: unset
+		&.active,
+		&.checked
+			display: block
+			.cart__item
+				&-cnt
+					display: block
+				&-ttl
+					filter: grayscale(0)
+					opacity: 1
+					margin-bottom: 15px
+		&.checked
+			.cart__item
+				&-ttl
+					margin-bottom: -0px
+				&-change
+					display: block
+	&__table
+		&-head
+			&>div
+				padding: 10px 12px
+		&-cnt
+			padding: 20px 0
+			background-color: #fff
+			box-shadow: 0px 2px 2px rgba(0, 0, 0, 0.25)
+			border-radius: 2px
+			display: flex
+			&:not(last-child)
+				margin-bottom: 10px
+			&>div
+				padding: 0 15px
+				display: flex
+				flex-direction: column
+				justify-content: center
+				&:not(last-child)
+					border-right: 1px solid #e0e0e0
+			.select__wrp
+				select
+					padding-top: 12px
+					padding-bottom: 12px
+		&-delete
+			width: 44px
+			height: 44px
+			display: flex
+			justify-content: center
+			align-items: center
+			background-color: #F3F3F3
+			border-radius: 50%
+			img
+				filter: grayscale(100)
+				opacity: .6
+			&:hover
+				img
+					filter: grayscale(0)
+					opacity: 1
+	&__del
+		&-in
+			max-width: 970px
+			margin-left: auto
+			margin-right: auto
