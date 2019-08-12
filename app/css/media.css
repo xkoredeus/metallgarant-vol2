@@ -165,6 +165,28 @@
   .unk__ttl {
     font-size: 60px;
   }
+  .cart__item-img {
+    height: 150px;
+    max-width: 570px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  .cart__table-head > div, .cart__table-cnt > div {
+    font-size: 12px;
+    width: 30% !important;
+    padding-left: 5px;
+    padding-right: 5px;
+  }
+  .cart__table-head > div:nth-child(2), .cart__table-cnt > div:nth-child(2) {
+    width: 50% !important;
+  }
+  .cart__table-head > div:nth-child(7), .cart__table-cnt > div:nth-child(7) {
+    border-right: unset;
+  }
+  .cart__table-head > div p, .cart__table-cnt > div p {
+    font-size: 12px;
+    margin-bottom: 5px;
+  }
 }
 
 @media screen and (max-width: 900px) {
