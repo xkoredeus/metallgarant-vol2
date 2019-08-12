@@ -242,8 +242,7 @@ $(function() {
             items: 1
         },
         768 : {
-            items: 2,
-            autoWidth:true
+            items: 1
         },
         1040 : {
             items: 3,
@@ -366,7 +365,7 @@ $(function() {
     items:1,
     loop:true,
     margin:10,
-    nav: true,
+    nav: false,
     navText: ["<img src='img/slider__arrow_prev.png'>", "<img src='img/slider__arrow_next.png'>"],
     dots: false,
     smartSpeed: 700,

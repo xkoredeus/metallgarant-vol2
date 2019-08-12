@@ -1511,6 +1511,8 @@ input[type="number"] {
 .banner__nav .btn {
   padding-left: 5px;
   padding-right: 5px;
+  width: 100%;
+  max-width: 370px;
 }
 
 .banner__tel {
@@ -3686,6 +3688,7 @@ input[type=range]:focus::-ms-fill-upper {
 
 .book-page__banner .section__ttl {
   position: relative;
+  z-index: 2;
 }
 
 .book-page__banner-img {
@@ -3837,7 +3840,7 @@ input[type=range]:focus::-ms-fill-upper {
   text-align: center;
   max-width: unset;
   height: auto;
-  padding: 20px 15px;
+  padding: 15px;
   position: relative;
   background-color: #F3F3F3;
   color: #05162E;
@@ -3852,7 +3855,7 @@ input[type=range]:focus::-ms-fill-upper {
 
 .roll__list.view__row > div .hot__item-img {
   width: 160px;
-  height: 160px;
+  height: 80px;
   display: block;
   background-position: 50% 50%;
   background-size: contain;
@@ -5562,10 +5565,11 @@ input[type=range]:focus::-ms-fill-upper {
   -webkit-justify-content: center;
       -ms-flex-pack: center;
           justify-content: center;
+  border-right: 1px solid #e0e0e0;
 }
 
-.cart__table-cnt > div:not(last-child) {
-  border-right: 1px solid #e0e0e0;
+.cart__table-cnt > div:last-child {
+  border-right: 1px solid transparent;
 }
 
 .cart__table-cnt .select__wrp select {

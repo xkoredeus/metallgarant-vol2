@@ -115,9 +115,10 @@ $a-bold: 'AvenirNextCyr-Bold'
 		display: none
 	.del-calc
 		&__ttl
-			font-size: 14px
+			font-size: 16px
 			margin-bottom: 10px
 		&__res
+			font-size: 16px
 			text-align: center
 			& > div
 				width: 100%
@@ -164,6 +165,79 @@ $a-bold: 'AvenirNextCyr-Bold'
 					p
 						font-size: 12px
 						margin-bottom: 5px
+	.book
+		&__list
+			.col-4
+				padding-left: 5px
+				padding-right: 5px
+			&-item
+				height: auto
+				min-height: 150px
+				&-in
+					padding: 10px 5px
+					transform: translateY(0)
+				.list_string
+					opacity: 1
+					font-size: 10px
+					li
+						padding-left: 10px
+						&::before
+							width: 5px
+							top: 6px
+				&::after
+					opacity: .8
+			&-ttl
+				font-size: 10px
+				color: #fff
+	// .book
+	// 	&__list
+	// 		&-item
+	// 			height: auto
+	// 			min-height: 150px
+	// 			&-in
+	// 				padding: 10px 5px
+	// 				transform: translateY(0)
+	// 			.list_string
+	// 				opacity: 1
+	// 				font-size: 10px
+	// 				li
+	// 					padding-left: 10px
+	// 					&::before
+	// 						width: 5px
+	// 						top: 6px
+	// 			&::after
+	// 				opacity: .8
+	// 		&-ttl
+	// 			font-size: 10px
+	// 			color: #fff
+	.crumbs
+		a
+			font-size: 12px
+			padding: 0
+			margin-bottom: 2px
+		li
+			font-size: 12px
+			padding: 0
+			margin-bottom: 2px
+			&:not(:last-child)
+				background-color: $tr
+				border: unset
+				box-shadow: none
+				margin-right: 13px
+				position: relative
+				&::after
+					content: '>'
+					position: absolute
+					right: -10px
+					top: .5px
+					font-family: $a-bold
+					transform: scaleX(.5)
+
+			&:last-child
+				font-family: $a-bold
+				color: $blue
+				background-color: $tr
+				box-shadow: none
 @media screen and (max-width: 900px)
 	.section_inner
 		padding: 35px 0
@@ -221,7 +295,37 @@ $a-bold: 'AvenirNextCyr-Bold'
 		.btn
 			margin: 0 auto
 			display: block
-	
+	.roll
+		&__list
+			&-item
+				display: flex
+				align-items: flex-end
+				height: auto
+				min-height: 150px
+				// box-shadow: 0px 30px 40px rgba(0, 80, 147, 0.25)
+				// &::after
+					// opacity: 1
+				&-in
+					padding: 8px
+				&-img
+					width: 100%
+					background-position-y: 0%
+			&-ttl
+				margin-bottom: 0
+				font-size: 14px
+	.watch
+		&-more
+			&__item
+				flex-direction: column
+				align-items: center
+				padding: 0
+				padding-bottom: 15px
+				&-img
+					width: 100%
+					height: 90px
+					left: 0
+					margin-bottom: 10px
+					position: relative
 @media screen and (max-width: 768px)
 	.section__ttl,
 	.banner__ttl
@@ -342,8 +446,8 @@ $a-bold: 'AvenirNextCyr-Bold'
 		&>.container:nth-child(1)
 			// position: relative
 			z-index: 3
-	.watch-more__item-img
-		left: 30px
+	// .watch-more__item-img
+	// 	left: 0px
 	.footer__ttl_mobile
 		position: relative
 		&::after
@@ -437,12 +541,19 @@ $a-bold: 'AvenirNextCyr-Bold'
 				margin-right: auto
 			.btn
 				margin-top: 15px
-@media screen and (max-width: 576px)
+	.roll
+		&__list
+			&-item
+				min-height: 90px
+			&-img
+				height: 89px
+				background-position-y: 100%
+			&-ttl
+				font-size: 8px
 	.mobile-menu
 		padding: 10px
 	.header__cab-in-wrp
 		width: 260px
-
 	.roll-page__img-top-item
 		height: 240px
 	.popup__container
@@ -454,6 +565,18 @@ $a-bold: 'AvenirNextCyr-Bold'
 		right: -6px
 	.del__banner
 		display: none !important
+	.succ
+		&__in
+			padding-left: 35px
+			padding-right: 35px
+		&__item
+			height: auto
+			min-height: 260px
+@media screen and (max-width: 400px)
+	.book
+		&__list
+			&-ttl
+				font-size: 8px
 @media screen and (max-width: 330px)
 	.footer__ttl_mobile::after
 		right: -6px
