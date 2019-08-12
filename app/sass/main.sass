@@ -12,7 +12,6 @@ $a-med: 'AvenirNextCyr-Medium'
 $a-demi: 'AvenirNextCyr-Demi'
 $a-bold: 'AvenirNextCyr-Bold'
 
-
 .preloader
 	position: fixed
 	left: 0
@@ -639,6 +638,7 @@ input[type="number"]
 		border: 1px solid #000
 	input,
 	select
+		background-color: #fff
 		width: 100%
 		padding-left: 35px
 	&::before
@@ -1137,7 +1137,12 @@ input[type="number"]
 			font-family: $a-bold
 			color: #fff
 			position: relative
-			padding: 10px 5px 10px 20px
+			padding: 10px 4px 10px 10px
+			font-size: 13px
+			img
+				margin-right: .5rem !important
+				max-width: 30px
+				max-height: 21px
 			&::before
 				content: ''
 				position: absolute

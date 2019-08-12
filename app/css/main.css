@@ -1058,6 +1058,7 @@ input[type="number"] {
 
 .input__wrp input,
 .input__wrp select {
+  background-color: #fff;
   width: 100%;
   padding-left: 35px;
 }
@@ -1773,7 +1774,14 @@ input[type="number"] {
   font-family: "AvenirNextCyr-Bold";
   color: #fff;
   position: relative;
-  padding: 10px 5px 10px 20px;
+  padding: 10px 4px 10px 10px;
+  font-size: 13px;
+}
+
+.begin__nav-top img {
+  margin-right: .5rem !important;
+  max-width: 30px;
+  max-height: 21px;
 }
 
 .begin__nav-top::before {
