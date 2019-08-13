@@ -494,6 +494,9 @@
     position: relative;
     z-index: 2;
   }
+  .banner__info {
+    text-align: center;
+  }
   .header > .container:nth-child(1) {
     z-index: 3;
   }
