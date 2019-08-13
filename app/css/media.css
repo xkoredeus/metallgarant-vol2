@@ -265,6 +265,23 @@
   .banner__offer {
     padding: 10px 0;
   }
+  .begin__nav_filter .begin__nav-top::after {
+    content: '';
+    position: absolute;
+    width: 20px;
+    height: 9px;
+    right: 10px;
+    top: 14px;
+    background: url("../img/acc__arr_up.png") no-repeat 50% 50%/contain;
+    -webkit-transform: scaleY(-1);
+        -ms-transform: scaleY(-1);
+            transform: scaleY(-1);
+  }
+  .begin__nav_filter.active .begin__nav-top::after {
+    -webkit-transform: scaleY(1);
+        -ms-transform: scaleY(1);
+            transform: scaleY(1);
+  }
   .begin__slider-item {
     position: relative;
     padding: 20px 45px;
@@ -420,23 +437,36 @@
   .roll-page__bot .tabs__list li {
     width: 100%;
   }
+  .roll-page__info {
+    text-align: center;
+  }
+  .roll-page__info-price {
+    margin-left: auto;
+    margin-right: auto;
+  }
+  .cab__checkbox {
+    width: 6% !important;
+  }
   .cab-table__head > div {
     padding: 5px;
   }
-  .cab-table__head > div:nth-child(2), .cab-table__head > div:nth-child(3), .cab-table__head > div:nth-child(4), .cab-table__head > div:nth-child(6), .cab-table__head > div:nth-child(7), .cab-table__head > div:nth-child(8) {
+  .cab-table__head > div:nth-child(9), .cab-table__head > div:nth-child(3), .cab-table__head > div:nth-child(4), .cab-table__head > div:nth-child(6), .cab-table__head > div:nth-child(7), .cab-table__head > div:nth-child(8) {
     display: none;
   }
-  .cab-table__head > div:nth-child(1), .cab-table__head > div:nth-child(5) {
-    width: 43% !important;
+  .cab-table__head > div:nth-child(2), .cab-table__head > div:nth-child(6) {
+    width: 40% !important;
+  }
+  .cab-table__head > div:nth-child(1) {
+    width: 6% !important;
   }
   .cab-table__item-top > div {
     padding: 5px;
   }
-  .cab-table__item-top > div:nth-child(2), .cab-table__item-top > div:nth-child(3), .cab-table__item-top > div:nth-child(4), .cab-table__item-top > div:nth-child(6) {
+  .cab-table__item-top > div:nth-child(3), .cab-table__item-top > div:nth-child(4), .cab-table__item-top > div:nth-child(6) {
     display: none;
   }
-  .cab-table__item-top > div:nth-child(1), .cab-table__item-top > div:nth-child(5) {
-    width: 43% !important;
+  .cab-table__item-top > div:nth-child(2), .cab-table__item-top > div:nth-child(5) {
+    width: 40% !important;
   }
   .cab-table__item-bot .cab-table__head > div:nth-child(1), .cab-table__item-bot .cab-table__head > div:nth-child(6) {
     display: none;

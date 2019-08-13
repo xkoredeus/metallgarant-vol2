@@ -244,6 +244,22 @@ $a-bold: 'AvenirNextCyr-Bold'
 	.banner__offer
 		padding: 10px 0
 	.begin
+		&__nav
+			&_filter
+				.begin__nav-top
+					&::after
+						content: ''
+						position: absolute
+						width: 20px
+						height: 9px
+						right: 10px
+						top: 14px
+						background: url('../img/acc__arr_up.png') no-repeat 50% 50% / contain
+						transform: scaleY(-1)
+				&.active
+					.begin__nav-top
+						&::after
+							transform: scaleY(1)
 		&__slider
 			&-item
 				// min-height: 300px
@@ -367,67 +383,78 @@ $a-bold: 'AvenirNextCyr-Bold'
 			&-item
 				min-height: 300px
 				height: auto
-	.roll-page__bot .tabs__list li
-		width: 100%
-	.cab-table
-		&__head
-			&>div
-				padding: 5px
-				&:nth-child(2),
-				&:nth-child(3),
-				&:nth-child(4),
-				&:nth-child(6),
-				&:nth-child(7),
-				&:nth-child(8)
-					display: none
-				&:nth-child(1),
-				&:nth-child(5)
-					width: 43% !important
-		&__item
-			&-top
+	.roll-page
+		&__bot .tabs__list li
+			width: 100%
+		&__info
+			text-align: center
+			&-price
+				margin-left: auto
+				margin-right: auto
+	.cab
+		&__checkbox
+			width: 6% !important
+		&-table
+			&__head
 				&>div
 					padding: 5px
-					&:nth-child(2),
+					&:nth-child(9),
 					&:nth-child(3),
 					&:nth-child(4),
-					&:nth-child(6)
+					&:nth-child(6),
+					&:nth-child(7),
+					&:nth-child(8)
 						display: none
-					&:nth-child(1),
-					&:nth-child(5)
-						width: 43% !important
-			&-bot
-				.cab-table__head
+					&:nth-child(2),
+					&:nth-child(6)
+						width: 40% !important
+					&:nth-child(1)
+						width: 6% !important
+			&__item
+				&-top
 					&>div
-						&:nth-child(1),
-						&:nth-child(6)
-							display: none
-						&:nth-child(2),
-						&:nth-child(7)
-							display: block
-						&:nth-child(2)
-							width: 40% !important
-						&:nth-child(7)
-							width: 35% !important
-						&:nth-child(5)
-							width: 25% !important
-				&-cnt
-					font-size: 13px
-					padding: 8px 0
-					p
-						font-size: 13px
-					&>div
-						padding: 0 8px
-						&:nth-child(1),
+						padding: 5px
 						&:nth-child(3),
+						// &:nth-child(5),
 						&:nth-child(4),
 						&:nth-child(6)
 							display: none
-						&:nth-child(2)
-							width: 40% !important
-						&:nth-child(7)
-							width: 35% !important
+						&:nth-child(2),
 						&:nth-child(5)
-							width: 25% !important
+							width: 40% !important
+				&-bot
+					.cab-table__head
+						&>div
+							&:nth-child(1),
+							&:nth-child(6)
+								display: none
+							&:nth-child(2),
+							&:nth-child(7)
+								display: block
+							&:nth-child(2)
+								width: 40% !important
+							&:nth-child(7)
+								width: 35% !important
+							&:nth-child(5)
+								width: 25% !important
+					&-cnt
+						font-size: 13px
+						padding: 8px 0
+						p
+							font-size: 13px
+						&>div
+							padding: 0 8px
+							&:nth-child(1),
+							&:nth-child(3),
+							&:nth-child(4),
+							&:nth-child(6)
+								display: none
+							&:nth-child(2)
+								width: 40% !important
+							&:nth-child(7)
+								width: 35% !important
+							&:nth-child(5)
+								width: 25% !important
 @media screen and (max-width: 600px)
 	.main-page
 		.banner

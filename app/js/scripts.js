@@ -589,6 +589,14 @@ $(function() {
       $(this).toggleClass('active').next('div').find('.footer__link').slideToggle();
     });
   };
+  //hide filter in sidebar
+  if ( $(window).width() < 600 ) {
+    $('.begin__nav_filter .begin__nav-bot').hide();
+    $('.begin__nav_filter .begin__nav-top').on('click', function(e){
+      e.preventDefault();
+      $(this).next('.begin__nav-bot').slideToggle().parent().toggleClass('active');
+    });
+  };
   //filter float submit
   // $('.begin__nav_filter select').on('change', function() {
   //   console.log($(this).position());
