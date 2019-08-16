@@ -667,8 +667,39 @@ $(function() {
       pause: 1500,
     });
   });
-    $('.feed__bot').hide();
-    $('.feed input').change(function() {
-      $(this).parents('.feed').find('.feed__bot').slideDown();
-    });
+  $('.feed__bot').hide();
+  $('.feed input').change(function() {
+    $(this).parents('.feed').find('.feed__bot').slideDown();
+  });
+  if ( $(window).width() < 1200 ) {
+    $('.banner__test-list').removeClass('row').addClass('owl-carousel');
+    $('.banner__test-item-wrp').removeClass('col-xl-3 col-sm-6 mb-5 mb-xl-3');
+
+    $('.banner__test-list').owlCarousel({
+      nav: false,
+      autoplay: true,
+      loop: true,
+      smartSpeed: 700,
+      margin: 20,
+      dots: true,
+      responsive : {
+        0   : {
+            items: 1
+        },
+        380 : {
+            items: 1
+        },
+        480 : {
+            items: 1
+        },
+        768 : {
+            items: 2
+        },
+        1040 : {
+            items: 3
+        }
+      }
+   });
+  };
+
 });
