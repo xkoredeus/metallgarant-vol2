@@ -714,7 +714,7 @@ input[type="number"]
 				height: 9.5px
 				right: 15px
 				top: 14px
-				background: url(../img/icon__select-arr.png) no-repeat 50% 50% / contain
+				background: url(../img/icon__select-arr.svg) no-repeat 50% 50% / contain
 			&.active
 				&::before
 					transform: scale(1,-1)
@@ -1001,7 +1001,7 @@ input[type="number"]
 			top: 15px
 			width: 26px
 			height: 36px
-			background: url('../img/offer__search-icon.png') no-repeat 50% 50% / contain
+			background: url('../img/offer__search-icon.svg') no-repeat 50% 50% / contain
 		&-input
 			width: 100%
 			font-size: 18px
@@ -1148,8 +1148,8 @@ input[type="number"]
 			font-size: 13px
 			img
 				margin-right: .5rem !important
-				max-width: 30px
-				max-height: 21px
+				max-width: 45px
+				max-height: 39px
 			&::before
 				content: ''
 				position: absolute
@@ -2614,6 +2614,8 @@ input[type=range]
 		filter: grayscale(100)
 		opacity: .6
 		cursor: pointer
+		// &[data-view="view__col"]
+		// 	order: 2
 		&.active
 			filter: grayscale(0)
 			opacity: 1
@@ -3267,6 +3269,14 @@ input[type=range]
 				font-family: $a-bold
 				font-size: 18px
 				color: $blue
+			&:hover
+				color: #000
+				.steel-views__item
+					&-ttl
+						color: $yellow
+					&-info
+						box-shadow: 0px 30px 40px rgba(0, 80, 147, 0.25)
+
 	&-forms
 		&__item
 			display: flex
@@ -3419,9 +3429,9 @@ input[type=range]
 			height: 20px
 			padding-left: 20px
 			&::before
-				left: 4px
-			&::after
 				left: 8px
+			&::after
+				left: 12px
 				margin-top: -6px
 	&-table
 		&__head

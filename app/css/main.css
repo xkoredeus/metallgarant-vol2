@@ -1159,7 +1159,7 @@ input[type="number"] {
   height: 9.5px;
   right: 15px;
   top: 14px;
-  background: url(../img/icon__select-arr.png) no-repeat 50% 50%/contain;
+  background: url(../img/icon__select-arr.svg) no-repeat 50% 50%/contain;
 }
 
 .header__city-select.active::before {
@@ -1574,7 +1574,7 @@ input[type="number"] {
   top: 15px;
   width: 26px;
   height: 36px;
-  background: url("../img/offer__search-icon.png") no-repeat 50% 50%/contain;
+  background: url("../img/offer__search-icon.svg") no-repeat 50% 50%/contain;
 }
 
 .banner__search-input {
@@ -1790,8 +1790,8 @@ input[type="number"] {
 
 .begin__nav-top img {
   margin-right: .5rem !important;
-  max-width: 30px;
-  max-height: 21px;
+  max-width: 45px;
+  max-height: 39px;
 }
 
 .begin__nav-top::before {
@@ -5082,6 +5082,19 @@ input[type=range]:focus::-ms-fill-upper {
   color: #008CFF;
 }
 
+.steel-views__item:hover {
+  color: #000;
+}
+
+.steel-views__item:hover .steel-views__item-ttl {
+  color: #F18E02;
+}
+
+.steel-views__item:hover .steel-views__item-info {
+  -webkit-box-shadow: 0px 30px 40px rgba(0, 80, 147, 0.25);
+          box-shadow: 0px 30px 40px rgba(0, 80, 147, 0.25);
+}
+
 .steel-forms__item {
   display: -webkit-box;
   display: -webkit-flex;
@@ -5322,11 +5335,11 @@ input[type=range]:focus::-ms-fill-upper {
 }
 
 .cab__checkbox .checkbox__text::before {
-  left: 4px;
+  left: 8px;
 }
 
 .cab__checkbox .checkbox__text::after {
-  left: 8px;
+  left: 12px;
   margin-top: -6px;
 }
 
