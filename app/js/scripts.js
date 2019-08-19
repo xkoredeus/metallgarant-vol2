@@ -300,6 +300,11 @@ $(function() {
   
 
   //catalog list|tab view
+  if ( $(window).width() > 1200 ) {
+    $('.roll__list').addClass('view__row');
+    $('.roll__view[data-view="view__col"]').removeClass('active');
+    $('.roll__view[data-view="view__row"]').addClass('active');
+  };
   $('.roll__view').on('click', function(){
     var view = $(this).attr('data-view');
     $('.roll__view').removeClass('active');

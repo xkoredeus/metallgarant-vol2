@@ -3880,6 +3880,18 @@ input[type=range]:focus::-ms-fill-upper {
           box-shadow: 0px 30px 40px rgba(0, 80, 147, 0.25);
 }
 
+.roll__list.view__row > div .hot__item-info {
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+  -webkit-flex-direction: row;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-justify-content: space-around;
+      -ms-flex-pack: distribute;
+          justify-content: space-around;
+  min-width: 300px;
+}
+
 .roll__list.view__row > div .hot__item-img {
   width: 160px;
   height: 80px;
@@ -3895,9 +3907,10 @@ input[type=range]:focus::-ms-fill-upper {
 
 .roll__list.view__row > div .hot__item-ttl {
   font-size: 16px;
-  margin-bottom: 8px;
+  margin-bottom: 0px;
   max-width: 120px;
   width: 100%;
+  margin-right: 15px;
 }
 
 .roll__list.view__row > div .hot__item-price {
@@ -3906,21 +3919,8 @@ input[type=range]:focus::-ms-fill-upper {
 }
 
 .roll__list.view__row > div .hot__item-price-wrp {
-  margin-bottom: 10px;
-}
-
-.roll__list.view__row > div .hot__item-price_cur {
-  font-family: "AvenirNextCyr-Bold";
-  font-size: 26px;
-}
-
-.roll__list.view__row > div .hot__item-price_old {
-  font-size: 13px;
-  color: #BDBDBD;
-  text-decoration: line-through;
-}
-
-.roll__list.view__row > div .hot__item-btn-wrp {
+  margin-bottom: 0px;
+  text-align: left;
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -3930,16 +3930,51 @@ input[type=range]:focus::-ms-fill-upper {
   -webkit-flex-direction: column;
       -ms-flex-direction: column;
           flex-direction: column;
-  -webkit-box-align: center;
-  -webkit-align-items: center;
-      -ms-flex-align: center;
-          align-items: center;
+  -webkit-box-align: start;
+  -webkit-align-items: flex-start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+}
+
+.roll__list.view__row > div .hot__item-price_cur {
+  font-family: "AvenirNextCyr-Bold";
+  font-size: 24px;
+  -webkit-box-ordinal-group: 3;
+  -webkit-order: 2;
+      -ms-flex-order: 2;
+          order: 2;
+}
+
+.roll__list.view__row > div .hot__item-price_old {
+  font-size: 14px;
+  color: #BDBDBD;
+  text-decoration: line-through;
+  -webkit-box-ordinal-group: 2;
+  -webkit-order: 1;
+      -ms-flex-order: 1;
+          order: 1;
+}
+
+.roll__list.view__row > div .hot__item-btns {
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+  -webkit-flex-direction: row;
+      -ms-flex-direction: row;
+          flex-direction: row;
 }
 
 .roll__list.view__row > div .hot__item .btn {
   -webkit-box-shadow: 0px 2px 2px rgba(0, 0, 0, 0.2);
           box-shadow: 0px 2px 2px rgba(0, 0, 0, 0.2);
-  margin-bottom: 15px;
+  margin-bottom: 0;
+}
+
+.roll__list.view__row > div .hot__item .btn_add {
+  -webkit-box-ordinal-group: 3;
+  -webkit-order: 2;
+      -ms-flex-order: 2;
+          order: 2;
+  margin-left: 15px;
 }
 
 .roll__list.view__row > div .hot__item-flag {
@@ -4392,6 +4427,7 @@ input[type=range]:focus::-ms-fill-upper {
 }
 
 .about-video {
+  color: #fff;
   background: url("../img/about__video-bg.jpg") no-repeat 50% 50%/cover;
 }
 
@@ -4630,20 +4666,7 @@ input[type=range]:focus::-ms-fill-upper {
 }
 
 .car-block {
-  color: #fff;
-  background: url("../img/career-page__bg.jpg") no-repeat 50% 50%/cover;
   position: relative;
-}
-
-.car-block::before {
-  content: '';
-  position: absolute;
-  width: 100%;
-  height: 100%;
-  left: 0;
-  top: 0;
-  background-color: #008CFF;
-  opacity: .8;
 }
 
 .car-block .container {
@@ -4652,15 +4675,40 @@ input[type=range]:focus::-ms-fill-upper {
 
 .car-block__left {
   color: #05162E;
-  background-color: #fff;
+  background-color: #F3F3F3;
   -webkit-box-shadow: 0px 30px 40px rgba(0, 80, 147, 0.25);
           box-shadow: 0px 30px 40px rgba(0, 80, 147, 0.25);
   border-radius: 2px;
-  padding: 30px 20px;
+  padding: 30px 25px;
+  min-height: 168px;
+}
+
+.car-block__left:hover {
+  background-color: #008CFF;
+}
+
+.car-block__left:hover .car-block__ttl {
+  color: #fff;
+}
+
+.car-block__left:hover .btn {
+  background-color: #fff;
+}
+
+.car-block__left:hover .btn > * {
+  -webkit-transition: unset;
+  -o-transition: unset;
+  transition: unset;
+  color: #000;
+}
+
+.car-block__left:hover .btn:hover {
+  background-color: #F18E02;
+  color: #fff;
 }
 
 .car-block__ttl {
-  font-size: 24px;
+  font-size: 20px;
   font-family: "AvenirNextCyr-Bold";
   letter-spacing: .5px;
   margin-bottom: 20px;
