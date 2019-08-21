@@ -199,12 +199,8 @@
   }
   .book__list-item-in {
     padding: 10px 5px;
-    -webkit-transform: translateY(0);
-        -ms-transform: translateY(0);
-            transform: translateY(0);
   }
   .book__list-item .list_string {
-    opacity: 1;
     font-size: 10px;
   }
   .book__list-item .list_string li {
@@ -214,12 +210,8 @@
     width: 5px;
     top: 6px;
   }
-  .book__list-item::after {
-    opacity: .8;
-  }
   .book__list-ttl {
-    font-size: 10px;
-    color: #fff;
+    font-size: 12px;
   }
   .crumbs a {
     font-size: 12px;
@@ -410,7 +402,7 @@
   }
   .footer__ttl,
   .footer__info {
-    text-align: center;
+    text-align: left;
   }
   .test__item {
     -webkit-box-orient: vertical;
@@ -672,6 +664,10 @@
     -webkit-transition: unset;
     -o-transition: unset;
     transition: unset;
+  }
+  .footer__ttl,
+  .footer__info {
+    text-align: center;
   }
   .succ__item {
     width: 100% !important;

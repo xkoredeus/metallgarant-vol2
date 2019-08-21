@@ -11,7 +11,7 @@ $(function() {
       loop: true,
       smartSpeed: 800,
       dots: true,
-      navText: ["<img src='img/slider__arrow_prev.png'>", "<img src='img/slider__arrow_next.png'>"]
+      navText: ["<img src='img/slider__arrow_prev.svg'>", "<img src='img/slider__arrow_next.svg'>"]
 	});
   $('.trust__in').owlCarousel({
       nav: true,
@@ -22,7 +22,7 @@ $(function() {
       smartSpeed: 800,
       margin: 20,
       dots: false,
-      navText: ["<img src='img/slider__arrow_prev.png'>", "<img src='img/slider__arrow_next.png'>"],
+      navText: ["<img src='img/slider__arrow_prev.svg'>", "<img src='img/slider__arrow_next.svg'>"],
       responsive : {
         0   : {
             items: 1
@@ -49,7 +49,7 @@ $(function() {
       smartSpeed: 800,
       margin: 20,
       dots: false,
-      navText: ["<img src='img/slider__arrow_prev.png'>", "<img src='img/slider__arrow_next.png'>"],
+      navText: ["<img src='img/slider__arrow_prev.svg'>", "<img src='img/slider__arrow_next.svg'>"],
       responsive : {
         0   : {
             items: 1
@@ -71,7 +71,7 @@ $(function() {
       smartSpeed: 800,
       margin: 20,
       dots: false,
-      navText: ["<img src='img/slider__arrow_prev.png'>", "<img src='img/slider__arrow_next.png'>"],
+      navText: ["<img src='img/slider__arrow_prev.svg'>", "<img src='img/slider__arrow_next.svg'>"],
       responsive : {
         0   : {
             items: 1
@@ -99,7 +99,7 @@ $(function() {
       smartSpeed: 800,
       margin: 20,
       dots: false,
-      navText: ["<img src='img/slider__arrow_prev.png'>", "<img src='img/slider__arrow_next.png'>"],
+      navText: ["<img src='img/slider__arrow_prev.svg'>", "<img src='img/slider__arrow_next.svg'>"],
       responsive : {
         0   : {
             items: 1
@@ -124,7 +124,7 @@ $(function() {
       smartSpeed: 800,
       margin: 20,
       dots: false,
-      navText: ["<img src='img/slider__arrow_prev.png'>", "<img src='img/slider__arrow_next.png'>"],
+      navText: ["<img src='img/slider__arrow_prev.svg'>", "<img src='img/slider__arrow_next.svg'>"],
       responsive : {
         0   : {
             items: 1
@@ -149,7 +149,7 @@ $(function() {
       smartSpeed: 800,
       margin: 20,
       dots: false,
-      navText: ["<img src='img/slider__arrow_prev.png'>", "<img src='img/slider__arrow_next.png'>"],
+      navText: ["<img src='img/slider__arrow_prev.svg'>", "<img src='img/slider__arrow_next.svg'>"],
       responsive : {
         0   : {
             items: 1
@@ -177,7 +177,7 @@ $(function() {
       smartSpeed: 800,
       margin: 20,
       dots: false,
-      navText: ["<img src='img/slider__arrow_prev.png'>", "<img src='img/slider__arrow_next.png'>"],
+      navText: ["<img src='img/slider__arrow_prev.svg'>", "<img src='img/slider__arrow_next.svg'>"],
       responsive : {
         0   : {
             items: 1
@@ -205,7 +205,7 @@ $(function() {
       smartSpeed: 800,
       margin: 20,
       dots: false,
-      navText: ["<img src='img/slider__arrow_prev.png'>", "<img src='img/slider__arrow_next.png'>"],
+      navText: ["<img src='img/slider__arrow_prev.svg'>", "<img src='img/slider__arrow_next.svg'>"],
       responsive : {
         0   : {
             items: 1
@@ -230,7 +230,7 @@ $(function() {
       smartSpeed: 800,
       margin: 20,
       dots: false,
-      navText: ["<img src='img/slider__arrow_prev.png'>", "<img src='img/slider__arrow_next.png'>"],
+      navText: ["<img src='img/slider__arrow_prev.svg'>", "<img src='img/slider__arrow_next.svg'>"],
       responsive : {
         0   : {
             items: 1
@@ -256,7 +256,7 @@ $(function() {
       smartSpeed: 800,
       margin: 20,
       dots: false,
-      navText: ["<img src='img/slider__arrow_prev.png'>", "<img src='img/slider__arrow_next.png'>"],
+      navText: ["<img src='img/slider__arrow_prev.svg'>", "<img src='img/slider__arrow_next.svg'>"],
       responsive : {
         0   : {
             items: 1
@@ -271,13 +271,26 @@ $(function() {
   });
   $('.del__banner').owlCarousel({
       nav: true,
-      items: 1,
       autoplay: true,
       autoplayHoverPause: true,
       loop: true,
       smartSpeed: 800,
-      dots: true,
-      navText: ["<img src='img/slider__arrow_prev.png'>", "<img src='img/slider__arrow_next.png'>"]
+      margin: 10,
+      navText: ["<img src='img/slider__arrow_prev.svg'>", "<img src='img/slider__arrow_next.svg'>"],
+      responsive : {
+        0   : {
+            items: 1,
+            dots: true
+        },
+        768 : {
+            items: 2,
+            dots: false
+        },
+        1040 : {
+            items: 3,
+            dots: false
+        }
+      }
   });
   //login/reg popups
   $('.header__cab').on('click', function(e) {
@@ -369,7 +382,7 @@ $(function() {
     loop:true,
     margin:10,
     nav: false,
-    navText: ["<img src='img/slider__arrow_prev.png'>", "<img src='img/slider__arrow_next.png'>"],
+    navText: ["<img src='img/slider__arrow_prev.svg'>", "<img src='img/slider__arrow_next.svg'>"],
     dots: false,
     smartSpeed: 700,
     animateIn: 'fadeIn',
@@ -418,7 +431,7 @@ $(function() {
     loop:false,
     margin: 15,
     autoplay:false,
-    navText: ["<img src='img/slider__arrow_prev.png'>", "<img src='img/slider__arrow_next.png'>"],
+    navText: ["<img src='img/slider__arrow_prev.svg'>", "<img src='img/slider__arrow_next.svg'>"],
     dots: false,
     responsive : {
       0   : {
@@ -479,19 +492,19 @@ $(function() {
       var placemarks = [
           {
               coords: [59.86663456, 30.47202250],
-              icon: 'img/baloon.png',
+              icon: 'img/baloon.svg',
               icon_size: [46, 52],
               icon_offset: [-23, -52], // -50% ширины, -100% высоты от точки привязки (левый верхний угол)
           },
           {
               coords: [59.82384206, 30.52547200],
-              icon: 'img/baloon.png',
+              icon: 'img/baloon.svg',
               icon_size: [46, 52],
               icon_offset: [-23, -52],
           },
           {
               coords: [60.54950006, 30.21664900],
-              icon: 'img/baloon.png',
+              icon: 'img/baloon.svg',
               icon_size: [46, 52],
               icon_offset: [-23, -52],
           }

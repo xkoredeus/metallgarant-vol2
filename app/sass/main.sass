@@ -373,8 +373,8 @@ input[type="number"]
 		color: #fff
 		cursor: pointer
 		max-width: 230px
-		padding-right: 56px
-		padding-left: 15px
+		padding-right: 49px
+		padding-left: 6px
 		.upload__file
 			width: 0.1px
 			height: 0.1px
@@ -850,7 +850,7 @@ input[type="number"]
 				right: 0
 				width: 20px
 				height: 20px
-				background: url('../img/icon__cross.png') no-repeat 50% 50% / contain
+				background: url('../img/icon__cross.svg') no-repeat 50% 50% / contain
 				z-index: 2
 				transform: translateY(-50%)
 				transition: .5s all ease
@@ -1149,6 +1149,8 @@ input[type="number"]
 			bottom: 25px
 			button.owl-dot
 	&__nav
+		padding-left: 0
+		padding-right: 0
 		button.owl-prev
 			left: -36px
 		button.owl-next
@@ -1161,8 +1163,8 @@ input[type="number"]
 			font-size: 13px
 			img
 				margin-right: .5rem !important
-				max-width: 45px
-				max-height: 39px
+				max-width: 33px
+				max-height: 31px
 			&::before
 				content: ''
 				position: absolute
@@ -1175,17 +1177,33 @@ input[type="number"]
 			&>*
 				position: relative
 		&_1
-			.begin__nav-top::before
-				background-color: $blue
+			.begin__nav-top
+				&::before
+					background-color: $blue
+				img
+					width: 25px
+					height: 26px
 		&_2
-			.begin__nav-top::before
-				background-color: $yellow
+			.begin__nav-top
+				&::before
+					background-color: $yellow
+				img
+					width: 31px
+					height: 22px
 		&_3
-			.begin__nav-top::before
-				background-color: $mid-blue
+			.begin__nav-top
+				&::before
+					background-color: $mid-blue
+				img
+					width: 31px
+					height: 22px
 		&_4
-			.begin__nav-top::before
-				background-color: #838383
+			.begin__nav-top
+				&::before
+					background-color: #838383
+				img
+					width: 25px
+					height: 23px
 		&_5
 			position: relative
 			overflow: hidden
@@ -1205,6 +1223,9 @@ input[type="number"]
 					opacity: 0.5
 					transform: rotate(36.57deg)
 					transition: 3s all ease
+				img
+					width: 20px
+					height: 22px
 			&:hover
 				.begin__nav-top
 					&::after
@@ -1213,6 +1234,9 @@ input[type="number"]
 			.begin__nav-top
 				&::before
 					background-color: #838383
+				img
+					width: 19px
+					height: 17px
 			.begin__nav-bot
 				transition: unset
 				padding: 20px 15px
@@ -2172,6 +2196,9 @@ input[type=range]
 			background-position: 50% 50%
 			background-repeat: no-repeat
 			background-size: cover
+			display: block
+			&:hover
+				opacity: .7
 		.owl
 			&-nav
 				button.owl
@@ -2323,7 +2350,7 @@ input[type=range]
 				position: relative
 				z-index: 1
 				padding: 30px
-				transform: translateY(55%)
+				transform: translateY(70%)
 				transition: .6s all ease
 			.btn
 				opacity: 0
@@ -2382,7 +2409,7 @@ input[type=range]
 				background-repeat: no-repeat
 				background-size: contain
 .watch-more
-	background-color: $blue
+	background-color: $yellow
 	.section__ttl
 		color: #fff
 	&__item
@@ -2836,7 +2863,7 @@ input[type=range]
 		&__play
 			width: 63px
 			height: 45px
-			background: url('../img/icon__play.png') no-repeat 50% 50% / contain
+			background: url('../img/icon__play.svg') no-repeat 50% 50% / contain
 			opacity: 1
 			position: absolute
 			left: 50%
@@ -3052,10 +3079,10 @@ input[type=range]
 					background-repeat: no-repeat
 					background-size: contain
 				&::before
-					background-image: url('../img/acc__arr_down.png')
+					background-image: url('../img/acc__arr_down.svg')
 				&::after
 					opacity: 0
-					background-image: url('../img/acc__arr_up.png')
+					background-image: url('../img/acc__arr_up.svg')
 			&-cnt
 				transition: unset
 				display: none
@@ -3163,7 +3190,7 @@ input[type=range]
 		&-play
 			width: 63px
 			height: 45px
-			background: url('../img/icon__play.png') no-repeat 50% 50% / contain
+			background: url('../img/icon__play.svg') no-repeat 50% 50% / contain
 			opacity: 1
 			position: relative
 		&:hover
