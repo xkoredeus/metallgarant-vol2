@@ -25,16 +25,24 @@ $(function() {
       navText: ["<img src='img/slider__arrow_prev.svg'>", "<img src='img/slider__arrow_next.svg'>"],
       responsive : {
         0   : {
-            items: 1
+            items: 1,
+            nav: false,
+            dots: true,
         },
         380 : {
-            items: 1
+            items: 2,
+            nav: false,
+            dots: true,
         },
         480 : {
-            items: 2
+            items: 2,
+            nav: false,
+            dots: true,
         },
         768 : {
-            items: 3
+            items: 3,
+            nav: true,
+            dots: false,
         },
         1040 : {
             items: 4

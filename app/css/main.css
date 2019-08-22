@@ -1808,7 +1808,7 @@ input[type="number"] {
   font-family: "AvenirNextCyr-Bold";
   color: #fff;
   position: relative;
-  padding: 10px 4px 10px 10px;
+  padding: 10px 4px 10px 20px;
   font-size: 13px;
 }
 
@@ -3504,15 +3504,11 @@ input[type=range]:focus::-ms-fill-upper {
 }
 
 .del__banner .owl-nav button.owl-prev {
-  left: 50%;
-  margin-left: -webkit-calc(-1110px/2);
-  margin-left: calc(-1110px/2);
+  left: -35px;
 }
 
 .del__banner .owl-nav button.owl-next {
-  right: 50%;
-  margin-right: -webkit-calc(-1110px/2);
-  margin-right: calc(-1110px/2);
+  right: -35px;
 }
 
 .del__banner .owl-dots {
@@ -3789,11 +3785,7 @@ input[type=range]:focus::-ms-fill-upper {
 }
 
 .watch-more {
-  background-color: #F18E02;
-}
-
-.watch-more .section__ttl {
-  color: #fff;
+  background-color: #fff;
 }
 
 .watch-more__item {
