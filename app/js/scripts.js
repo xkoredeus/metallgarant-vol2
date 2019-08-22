@@ -1,8 +1,8 @@
 $(function() {
   //preloader
-  $(window).on('load', function () {
-      $('.preloader').fadeOut();
-  });
+  // $(window).on('load', function () {
+  //     $('.preloader').fadeOut();
+  // });
   $('.begin__slider').owlCarousel({
       nav: true,
       items: 1,
@@ -288,7 +288,8 @@ $(function() {
       responsive : {
         0   : {
             items: 1,
-            dots: true
+            dots: true,
+            nav: false,
         },
         768 : {
             items: 2,
