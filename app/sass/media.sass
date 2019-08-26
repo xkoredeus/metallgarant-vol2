@@ -151,20 +151,49 @@ $a-bold: 'AvenirNextCyr-Bold'
 				margin-left: auto
 				margin-right: auto
 		&__table
-			&-head,
 			&-cnt
+				padding-left: 8px
+				padding-right: 8px
+				flex-wrap: wrap
+				select
+					font-size: 13px
+					padding-top: 7px
+					padding-bottom: 7px
+					padding-right: 30px
+				.input__wrp
+					padding: 7px 20px
+				.quantity
+					max-width: unset
+					width: 100%
 				&>div
-					font-size: 12px
-					width: 30% !important
+					font-size: 13px
 					padding-left: 5px
 					padding-right: 5px
+					border: none
 					&:nth-child(2)
-						width: 50% !important
+						width: 85% !important
+					&:nth-child(3)
+						width: 42% !important
+					&:nth-child(4)
+						width: 34% !important
+					&:nth-child(6)
+						width: 24% !important
+						text-align: right
 					&:nth-child(7)
+						width: 100% !important
+					&:nth-child(8)
+						display: flex
+						align-items: flex-end
+						width: 14% !important
+					&:nth-child(8)
 						border-right: unset
 					p
 						font-size: 12px
 						margin-bottom: 5px
+			&-delete
+				width: 31px
+				height: 31px
+				padding: 8px
 	.book
 		&__list
 			.col-4

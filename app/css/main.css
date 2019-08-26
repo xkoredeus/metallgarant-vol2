@@ -227,7 +227,7 @@ input[type="number"] {
   font-family: "AvenirNextCyr-Bold";
   width: 22px;
   height: 22px;
-  background-color: #F3F3F3;
+  background-color: #e0e0e0;
   border: none;
   border-radius: 50%;
   display: -webkit-box;
@@ -3740,8 +3740,8 @@ input[type=range]:focus::-ms-fill-upper {
       -ms-flex-align: center;
           align-items: center;
   background-color: #fff;
-  -webkit-box-shadow: 0px 2px 2px rgba(0, 0, 0, 0.15);
-          box-shadow: 0px 2px 2px rgba(0, 0, 0, 0.15);
+  -webkit-box-shadow: 0px 10px 10px rgba(0, 0, 0, 0.15);
+          box-shadow: 0px 10px 10px rgba(0, 0, 0, 0.15);
   border-radius: 2px;
   overflow: hidden;
 }
@@ -5695,6 +5695,10 @@ input[type=range]:focus::-ms-fill-upper {
 .cart__table-cnt .select__wrp select {
   padding-top: 12px;
   padding-bottom: 12px;
+}
+
+.cart__table-cnt .select__wrp::before {
+  background-image: url("../img/select__arr_cart.svg");
 }
 
 .cart__table-delete {
