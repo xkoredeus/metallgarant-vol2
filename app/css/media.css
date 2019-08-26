@@ -420,7 +420,7 @@
   }
   .begin__slider-item {
     position: relative;
-    padding: 20px 45px;
+    padding: 20px 35px;
   }
   .begin__slider-item::before {
     content: '';
@@ -453,6 +453,15 @@
   }
   .begin__slider-ttl {
     font-size: 25px;
+  }
+  .begin__slider .owl-nav button.owl-prev {
+    left: 0;
+  }
+  .begin__slider .owl-nav button.owl-next {
+    right: 0;
+  }
+  .begin__slider .owl-dots {
+    left: 35px;
   }
   .begin__cat-item {
     height: 100%;
@@ -668,6 +677,20 @@
   .succ__item {
     width: 100% !important;
   }
+  .succ__item_his {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -webkit-flex-direction: column;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .succ__item_his .team__item-top {
+    height: 225px;
+    width: 100%;
+  }
+  .succ__item_his .team__item-bot {
+    width: 100%;
+  }
   .car-block {
     text-align: center;
   }
@@ -676,6 +699,9 @@
   }
   .steel-page__img-wrp {
     padding: 15px;
+  }
+  .steel-btns .btn {
+    width: 190px;
   }
   .roll-page__bot .tabs__list {
     display: none;

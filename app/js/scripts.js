@@ -241,13 +241,16 @@ $(function() {
       navText: ["<img src='img/slider__arrow_prev.svg'>", "<img src='img/slider__arrow_next.svg'>"],
       responsive : {
         0   : {
-            items: 1
+            items: 1,
+            autoHeight: true
         },
         380 : {
-            items: 1
+            items: 1,
+            autoHeight: true
         },
         570 : {
-            items: 1
+            items: 1,
+            autoHeight: true
         },
         768 : {
             items: 1

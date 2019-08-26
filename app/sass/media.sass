@@ -377,7 +377,7 @@ $a-bold: 'AvenirNextCyr-Bold'
         // min-height: 300px
         // height: auto
         position: relative
-        padding: 20px 45px
+        padding: 20px 35px
         &::before
           content: ''
           position: absolute
@@ -402,11 +402,20 @@ $a-bold: 'AvenirNextCyr-Bold'
           .begin__slider-subttl
             font-size: 19px
             color: #fff
-
+          
         & *
           position: relative
       &-ttl
         font-size: 25px
+      .owl
+        &-nav
+          button.owl
+            &-prev
+              left: 0
+            &-next
+              right: 0
+        &-dots
+          left: 35px
     &__cat-item
       height: 100%
       &::before
@@ -564,12 +573,25 @@ $a-bold: 'AvenirNextCyr-Bold'
     text-align: center
   .succ__item
     width: 100% !important
+    &_his
+      flex-direction: column
+      .team
+        &__item
+          &-top
+            height: 225px
+            width: 100%
+          &-bot
+            width: 100%
   .car-block
     text-align: center
     &__left
       padding: 15px
-  .steel-page__img-wrp
-    padding: 15px
+  .steel
+    &-page__img-wrp
+      padding: 15px
+    &-btns
+      .btn
+        width: 190px
   .roll-page__bot
     .tabs
       &__list

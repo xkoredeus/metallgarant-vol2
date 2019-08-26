@@ -5670,6 +5670,10 @@ input[type=range]:focus::-ms-fill-upper {
   margin-bottom: 10px;
 }
 
+.cart__table-cnt p {
+  font-size: 14px;
+}
+
 .cart__table-cnt > div {
   padding: 0 15px;
   display: -webkit-box;
