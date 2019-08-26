@@ -262,12 +262,16 @@ $(function() {
       nav: true,
       loop: true,
       smartSpeed: 800,
+      autoplay: false,
       margin: 20,
       dots: false,
       navText: ["<img src='img/slider__arrow_prev.svg'>", "<img src='img/slider__arrow_next.svg'>"],
       responsive : {
         0   : {
-            items: 1
+            items: 1,
+            nav: false,
+            autoplay: true,
+            dots: true,
         },
         768 : {
             items: 2

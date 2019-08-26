@@ -4416,7 +4416,7 @@ input[type=range]:focus::-ms-fill-upper {
 
 .about-video {
   color: #fff;
-  background: url("../img/about__video-bg.jpg") no-repeat 50% 50%/cover;
+  background-color: #05162E;
 }
 
 .about-video__in {
