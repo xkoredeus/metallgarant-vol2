@@ -9,790 +9,754 @@ $a-reg: 'AvenirNextCyr-Regular'
 $a-med: 'AvenirNextCyr-Medium'
 $a-demi: 'AvenirNextCyr-Demi'
 $a-bold: 'AvenirNextCyr-Bold'
-@media screen and (max-width: 1366px)
-	.banner
-		&__offer
-			margin-bottom: 10px
-			padding-bottom: 0
-		&__test-item-img
-			height: 50px
-			margin-bottom: 10px
-		&__test-item-ttl
-			margin-bottom: 0
 @media screen and (max-width: 1200px)
-	.banner__hamburger
-		display: block
-	.banner__menu-btn
-		display: block
-	.banner .btn_blue
-		padding-top: 14px
-		padding-bottom: 14px
-	.banner
-		.banner__nav
-			display: none
-		&.active
-			top: 0
-			opacity: 1
-			z-index: 3
-		.header__info-ttl
-			margin-bottom: 5px
-		.header__info-item
-			text-align: center
-			margin-bottom: 10px
-			display: block
-		.header__logo
-			display: block
-			margin-bottom: 25px
-		&-item
-			width: 170px
-			margin-bottom: 6px
-			&:last-child
-				margin-bottom: 25px
-			&:nth-child(5)
-				margin-top: 20px
-		.btn
-			width: 170px
-	.banner__tel
-		font-size: 20px
+  .banner__hamburger
+    display: block
+  .banner__menu-btn
+    display: block
+  .banner .btn_blue
+    padding-top: 14px
+    padding-bottom: 14px
+  .banner
+    .banner__nav
+      display: none
+    &.active
+      top: 0
+      opacity: 1
+      z-index: 3
+    .header__info-ttl
+      margin-bottom: 5px
+    .header__info-item
+      text-align: center
+      margin-bottom: 10px
+      display: block
+    .header__logo
+      display: block
+      margin-bottom: 25px
+    &-item
+      width: 170px
+      margin-bottom: 6px
+      &:last-child
+        margin-bottom: 25px
+      &:nth-child(5)
+        margin-top: 20px
+    .btn
+      width: 170px
+  .banner__tel
+    font-size: 20px
 
-	.test__item-img
-		min-width: 90px
-		max-width: 90px
-		height: 90px
-		padding: 10px
-		img
-			max-width: 100%
-			height: auto
-	.header
-		&__city-wrp
-			display: none
-		&__soc,
-		&__work
-			display: none !important
-		&__days
-			display: none
-		&__cab-in
-			&-wrp
-				right: 50%
-				transform: translateX(50%)
-			&::after
-				width: 16px
-				height: 16px
-				right: 50%
-				margin-right: -8px
-	.contact
-		padding-bottom: 30px
-	#sidebar
-		display: none
-		min-height: 100vh
-		padding: 30px 15px
-		.begin__nav
-			&-sub
-				position: relative
-				left: 0
-				width: 90%
-				left: 5%
-				right: 5%
-				padding: 15px
-				background-color: #fff
-				&-ttl
-					font-size: 14px
-	.footer__logo::after
-		display: none
-	.footer__copy-text
-		text-align: center
-	.banner__test-item::after
-		display: none
-	.begin__nav-link
-		position: relative
-		&::after
-			content: ''
-			position: absolute
-			width: 10px
-			height: 10px
-			right: 20px
-			top: 10px
-			border-bottom: solid 5px $dark-blue
-			border-right: solid 5px $dark-blue
-			border-left: solid 5px transparent
-			border-top: solid 5px transparent
-			transform: rotate(45deg)
-		&.active
-			&::after
-				top: 15px
-				transform: rotate(45deg) scale(-1,-1)
-	.header__cart::after
-		display: none
-	.del-calc
-		&__ttl
-			font-size: 16px
-			margin-bottom: 10px
-		&__res
-			font-size: 16px
-			text-align: center
-			& > div
-				width: 100%
-				justify-content: center
-	.del
-		&__banner
-			margin-bottom: 30px
-			&-item
-				min-height: 300px
-				background-position: 50% 50%
-				background-repeat: no-repeat
-				background-size: cover
-			.owl
-				&-nav
-					button.owl
-						&-prev
-							left: 0
-							margin-left: 0
-						&-next
-							right: 0
-							margin-right: 0
-	.unk
-		&__ttl
-			font-size: 60px
-	.cart
-		&__item
-			&-img
-				height: 150px
-				max-width: 570px
-				margin-left: auto
-				margin-right: auto
-		&__table
-			&-cnt
-				padding-left: 8px
-				padding-right: 8px
-				flex-wrap: wrap
-				select
-					font-size: 13px
-					padding-top: 7px
-					padding-bottom: 7px
-					padding-right: 30px
-				.input__wrp
-					padding: 7px 20px
-				.quantity
-					max-width: unset
-					width: 100%
-				&>div
-					font-size: 13px
-					padding-left: 5px
-					padding-right: 5px
-					border: none
-					&:nth-child(2)
-						width: 85% !important
-					&:nth-child(3)
-						width: 42% !important
-					&:nth-child(4)
-						width: 34% !important
-					&:nth-child(6)
-						width: 24% !important
-						text-align: right
-					&:nth-child(7)
-						width: 100% !important
-					&:nth-child(8)
-						display: flex
-						align-items: flex-end
-						width: 14% !important
-					&:nth-child(8)
-						border-right: unset
-					p
-						font-size: 12px
-						margin-bottom: 5px
-			&-delete
-				width: 31px
-				height: 31px
-				padding: 8px
-	.book
-		&__list
-			.col-4
-				padding-left: 5px
-				padding-right: 5px
-			&-item
-				height: auto
-				min-height: 150px
-				&-img
-					width: 100%
-					height: 100%
-					background-position: 100% -50%
-					left: 5px
-				&-in
-					padding: 10px 5px
-					// transform: translateY(0)
-				.list_string
-					// opacity: 1
-					font-size: 10px
-					li
-						padding-left: 10px
-						&::before
-							width: 5px
-							top: 6px
-				&::after
-					// opacity: .8
-			&-ttl
-				font-size: 12px
-				padding-left: 10px
-				// color: #fff
-	// .book
-	// 	&__list
-	// 		&-item
-	// 			height: auto
-	// 			min-height: 150px
-	// 			&-in
-	// 				padding: 10px 5px
-	// 				transform: translateY(0)
-	// 			.list_string
-	// 				opacity: 1
-	// 				font-size: 10px
-	// 				li
-	// 					padding-left: 10px
-	// 					&::before
-	// 						width: 5px
-	// 						top: 6px
-	// 			&::after
-	// 				opacity: .8
-	// 		&-ttl
-	// 			font-size: 10px
-	// 			color: #fff
-	.crumbs
-		a
-			font-size: 12px
-			padding: 0
-			margin-bottom: 2px
-		li
-			font-size: 12px
-			padding: 0
-			margin-bottom: 2px
-			&:not(:last-child)
-				background-color: $tr
-				border: unset
-				box-shadow: none
-				margin-right: 13px
-				position: relative
-				&::after
-					content: '>'
-					position: absolute
-					right: -10px
-					top: .5px
-					font-family: $a-bold
-					transform: scaleX(.5)
+  .test__item-img
+    min-width: 90px
+    max-width: 90px
+    height: 90px
+    padding: 10px
+    img
+      max-width: 100%
+      height: auto
+  .header
+    &__city-wrp
+      display: none
+    &__soc,
+    &__work
+      display: none !important
+    &__days
+      display: none
+    &__cab-in
+      &-wrp
+        right: 50%
+        transform: translateX(50%)
+      &::after
+        width: 16px
+        height: 16px
+        right: 50%
+        margin-right: -8px
+  .contact
+    padding-bottom: 30px
+  #sidebar
+    display: none
+    min-height: 100vh
+    padding: 30px 15px
+    .begin__nav
+      &-sub
+        position: relative
+        left: 0
+        width: 90%
+        left: 5%
+        right: 5%
+        padding: 15px
+        background-color: #fff
+        &-ttl
+          font-size: 14px
+  .footer__logo::after
+    display: none
+  .footer__copy-text
+    text-align: center
+  .banner__test-item::after
+    display: none
+  .begin__nav-link
+    position: relative
+    &::after
+      content: ''
+      position: absolute
+      width: 10px
+      height: 10px
+      right: 20px
+      top: 10px
+      border-bottom: solid 5px $dark-blue
+      border-right: solid 5px $dark-blue
+      border-left: solid 5px transparent
+      border-top: solid 5px transparent
+      transform: rotate(45deg)
+    &.active
+      &::after
+        top: 15px
+        transform: rotate(45deg) scale(-1,-1)
+  .header__cart::after
+    display: none
+  .del-calc
+    &__ttl
+      font-size: 16px
+      margin-bottom: 10px
+    &__res
+      font-size: 16px
+      text-align: center
+      & > div
+        width: 100%
+        justify-content: center
+  .del
+    &__banner
+      margin-bottom: 30px
+      &-item
+        min-height: 300px
+        background-position: 50% 50%
+        background-repeat: no-repeat
+        background-size: cover
+      .owl
+        &-nav
+          button.owl
+            &-prev
+              left: 0
+              margin-left: 0
+            &-next
+              right: 0
+              margin-right: 0
+  .unk
+    &__ttl
+      font-size: 60px
+  .cart
+    &__item
+      &-img
+        height: 150px
+        max-width: 570px
+        margin-left: auto
+        margin-right: auto
+    &__table
+      &-cnt
+        padding-left: 8px
+        padding-right: 8px
+        flex-wrap: wrap
+        select
+          font-size: 13px
+          padding-top: 7px
+          padding-bottom: 7px
+          padding-right: 30px
+        .input__wrp
+          padding: 7px 20px
+        .quantity
+          max-width: unset
+          width: 100%
+        &>div
+          font-size: 13px
+          padding-left: 5px
+          padding-right: 5px
+          border: none
+          &:nth-child(2)
+            width: 85% !important
+          &:nth-child(3)
+            width: 42% !important
+          &:nth-child(4)
+            width: 34% !important
+          &:nth-child(6)
+            width: 24% !important
+            text-align: right
+          &:nth-child(7)
+            width: 100% !important
+          &:nth-child(8)
+            display: flex
+            align-items: flex-end
+            width: 14% !important
+          &:nth-child(8)
+            border-right: unset
+          p
+            font-size: 12px
+            margin-bottom: 5px
+      &-delete
+        width: 31px
+        height: 31px
+        padding: 8px
+  .book
+    &__list
+      .col-4
+        padding-left: 5px
+        padding-right: 5px
+      &-item
+        height: auto
+        min-height: 150px
+        &-in
+          padding: 10px 5px
+          // transform: translateY(0)
+        .list_string
+          // opacity: 1
+          font-size: 10px
+          li
+            padding-left: 10px
+            &::before
+              width: 5px
+              top: 6px
+        &::after
+          // opacity: .8
+      &-ttl
+        font-size: 12px
+        // color: #fff
+  // .book
+  //  &__list
+  //    &-item
+  //      height: auto
+  //      min-height: 150px
+  //      &-in
+  //        padding: 10px 5px
+  //        transform: translateY(0)
+  //      .list_string
+  //        opacity: 1
+  //        font-size: 10px
+  //        li
+  //          padding-left: 10px
+  //          &::before
+  //            width: 5px
+  //            top: 6px
+  //      &::after
+  //        opacity: .8
+  //    &-ttl
+  //      font-size: 10px
+  //      color: #fff
+  .crumbs
+    a
+      font-size: 12px
+      padding: 0
+      margin-bottom: 2px
+    li
+      font-size: 12px
+      padding: 0
+      margin-bottom: 2px
+      &:not(:last-child)
+        background-color: $tr
+        border: unset
+        box-shadow: none
+        margin-right: 13px
+        position: relative
+        &::after
+          content: '>'
+          position: absolute
+          right: -10px
+          top: .5px
+          font-family: $a-bold
+          transform: scaleX(.5)
 
-			&:last-child
-				font-family: $a-bold
-				color: $blue
-				background-color: $tr
-				box-shadow: none
-	.banner__test-list
-		padding-bottom: 30px
-	.cab
-		&__checkbox
-			width: 8% !important
-		&-table
-			&__head
-				&>div
-					padding: 5px
-					&:nth-child(9),
-					&:nth-child(2),
-					&:nth-child(5),
-					&:nth-child(6),
-					&:nth-child(7)
-						display: none
-					&:nth-child(1)
-						width: 8% !important
-					&:nth-child(3)
-						width: 41% !important
-					&:nth-child(4)
-						width: 41% !important
-					&:nth-child(8)
-						width: 15% !important
-			&__item
-				margin-bottom: 0
-				&-top
-					&>div
-						padding: 12px
-						min-height: unset
-						&:nth-child(2),
-						// &:nth-child(5),
-						&:nth-child(5),
-						&:nth-child(6)
-							display: none
-						&:nth-child(3)
-							width: 8% !important
-						&:nth-child(3)
-							width: 41% !important
-						&:nth-child(4)
-							width: 41% !important
-				&-bot
-					.cab-table__head
-						&>div
-							&:nth-child(1),
-							&:nth-child(6),
-							&:nth-child(4)
-								display: none
-							&:nth-child(2),
-							&:nth-child(7)
-								display: block
-							&:nth-child(2)
-								width: 40% !important
-							&:nth-child(7)
-								width: 35% !important
-							&:nth-child(3)
-								width: 25% !important
-					&-cnt
-						font-size: 13px
-						padding: 8px 0
-						p
-							font-size: 13px
-						&>div
-							padding: 0 8px
-							&:nth-child(1),
-							&:nth-child(3),
-							&:nth-child(4),
-							&:nth-child(6)
-								display: none
-							&:nth-child(2)
-								width: 40% !important
-							&:nth-child(7)
-								width: 35% !important
-							&:nth-child(5)
-								width: 25% !important
-				&-btns
-					width: 15% !important
-					flex-direction: column
-					&>div
-						min-height: 40px
-						padding-top: 2px
-						padding-bottom: 2px
-						width: 100% !important
-						border: none !important
-					&>div:nth-child(1),
-					&>div:nth-child(2)
-						display: none
-	.btn_subm
-		max-width: 190px
-		margin: 0 auto
-		display: block
+      &:last-child
+        font-family: $a-bold
+        color: $blue
+        background-color: $tr
+        box-shadow: none
+  .banner__test-list
+    padding-bottom: 30px
+  .cab
+    &__checkbox
+      width: 8% !important
+    &-table
+      &__head
+        &>div
+          padding: 5px
+          &:nth-child(9),
+          &:nth-child(2),
+          &:nth-child(5),
+          &:nth-child(6),
+          &:nth-child(7)
+            display: none
+          &:nth-child(1)
+            width: 8% !important
+          &:nth-child(3)
+            width: 41% !important
+          &:nth-child(4)
+            width: 41% !important
+          &:nth-child(8)
+            width: 15% !important
+      &__item
+        margin-bottom: 0
+        &-top
+          &>div
+            padding: 5px
+            min-height: 120px
+            &:nth-child(2),
+            // &:nth-child(5),
+            &:nth-child(5),
+            &:nth-child(6)
+              display: none
+            &:nth-child(3)
+              width: 8% !important
+            &:nth-child(3)
+              width: 41% !important
+            &:nth-child(4)
+              width: 41% !important
+        &-bot
+          .cab-table__head
+            &>div
+              &:nth-child(1),
+              &:nth-child(6),
+              &:nth-child(4)
+                display: none
+              &:nth-child(2),
+              &:nth-child(7)
+                display: block
+              &:nth-child(2)
+                width: 40% !important
+              &:nth-child(7)
+                width: 35% !important
+              &:nth-child(3)
+                width: 25% !important
+          &-cnt
+            font-size: 13px
+            padding: 8px 0
+            p
+              font-size: 13px
+            &>div
+              padding: 0 8px
+              &:nth-child(1),
+              &:nth-child(3),
+              &:nth-child(4),
+              &:nth-child(6)
+                display: none
+              &:nth-child(2)
+                width: 40% !important
+              &:nth-child(7)
+                width: 35% !important
+              &:nth-child(5)
+                width: 25% !important
+        &-btns
+          width: 15% !important
+          flex-direction: column
+          &>div
+            min-height: 40px
+            padding-top: 2px
+            padding-bottom: 2px
+            width: 100% !important
+            border: none !important
 @media screen and (max-width: 900px)
-	.section_inner
-		padding: 35px 0
-	.banner__offer
-		padding: 10px 0
-	.begin
-		&__nav
-			&_filter
-				.begin__nav-top
-					&::after
-						content: ''
-						position: absolute
-						width: 20px
-						height: 9px
-						right: 10px
-						top: 14px
-						background: url('../img/acc__arr_up.png') no-repeat 50% 50% / contain
-						transform: scaleY(-1)
-				&.active
-					.begin__nav-top
-						&::after
-							transform: scaleY(1)
-		&__slider
-			&-item
-				// min-height: 300px
-				// height: auto
-				position: relative
-				padding: 20px 45px
-				&::before
-					content: ''
-					position: absolute
-					width: 100%
-					height: 100%
-					left: 0
-					top: 0
-					background-color: #072754
-					opacity: .7
-				&_1
-					&::before
-						background-color: #f18e02
-				&_2
-					color: #fff
-				&_3
-					.begin__slider-ttl 
-						.begin__slider-item-string
-							line-height: 1.4
-						> div:nth-child(1)
-							margin-bottom: 0
-				&_4
-					.begin__slider-subttl
-						font-size: 19px
-						color: #fff
+  .section_inner
+    padding: 35px 0
+  .banner__offer
+    padding: 10px 0
+  .begin
+    &__nav
+      &_filter
+        .begin__nav-top
+          &::after
+            content: ''
+            position: absolute
+            width: 20px
+            height: 9px
+            right: 10px
+            top: 14px
+            background: url('../img/acc__arr_up.png') no-repeat 50% 50% / contain
+            transform: scaleY(-1)
+        &.active
+          .begin__nav-top
+            &::after
+              transform: scaleY(1)
+    &__slider
+      &-item
+        // min-height: 300px
+        // height: auto
+        position: relative
+        padding: 20px 45px
+        &::before
+          content: ''
+          position: absolute
+          width: 100%
+          height: 100%
+          left: 0
+          top: 0
+          background-color: #072754
+          opacity: .7
+        &_1
+          &::before
+            background-color: #f18e02
+        &_2
+          color: #fff
+        &_3
+          .begin__slider-ttl 
+            .begin__slider-item-string
+              line-height: 1.4
+            > div:nth-child(1)
+              margin-bottom: 0
+        &_4
+          .begin__slider-subttl
+            font-size: 19px
+            color: #fff
 
-				& *
-					position: relative
-			&-ttl
-				font-size: 25px
-		&__cat-item
-			height: 125px
-			&:hover
-				.begin__cat-item-in
-					transform: translateY(55%)
-			&-in
-				transform: translateY(55%)
-				padding: 15px
-				display: flex
-				flex-direction: column
-				justify-content: space-between
-			.list_string,
-			.btn
-				display: none
-		&__cat-ttl
-			display: table-cell
-			font-size: 12px
-			height: 32px
-			vertical-align: bottom
-	.feed__top
-		input,
-		.btn
-			margin: 0 auto
-			display: block
-	.roll
-		&__list
-			&-item
-				display: flex
-				align-items: flex-end
-				height: auto
-				min-height: 150px
-				// box-shadow: 0px 30px 40px rgba(0, 80, 147, 0.25)
-				// &::after
-					// opacity: 1
-				&-in
-					padding: 8px
-				&-img
-					width: 100%
-					background-position-y: 0%
-			&-ttl
-				margin-bottom: 0
-				font-size: 14px
-	.watch
-		&-more
-			&__item
-				flex-direction: column
-				align-items: center
-				padding: 0
-				padding-bottom: 15px
-				&-img
-					width: 100%
-					height: 60px
-					left: 0
-					margin-bottom: 0
-					position: relative
-					background-position: center
-	.hot__in
-		padding-left: 0
-		padding-right: 0
-		.owl-nav button.owl
-			&-prev
-				left: -12px
-			&-next
-				right: -12px
-		.owl-dots
-			bottom: -20px
-			.owl-dot
-				border: 2.5px solid $wt !important
-				&.active
-					background-color: $wt !important
-
+        & *
+          position: relative
+      &-ttl
+        font-size: 25px
+    &__cat-item
+      height: 100%
+      &::before
+        opacity: 0
+      &::after
+        opacity: .7
+      &-in
+        transform: translateY(0)
+        color: #fff
+        padding: 15px
+        display: flex
+        flex-direction: column
+        justify-content: space-between
+      .list_string,
+      .btn
+        opacity: 1
+  .feed__top
+    input,
+    .btn
+      margin: 0 auto
+      display: block
+  .roll
+    &__list
+      &-item
+        display: flex
+        align-items: flex-end
+        height: auto
+        min-height: 150px
+        // box-shadow: 0px 30px 40px rgba(0, 80, 147, 0.25)
+        // &::after
+          // opacity: 1
+        &-in
+          padding: 8px
+        &-img
+          width: 100%
+          background-position-y: 0%
+      &-ttl
+        margin-bottom: 0
+        font-size: 14px
+  .watch
+    &-more
+      &__item
+        flex-direction: column
+        align-items: center
+        padding: 0
+        padding-bottom: 15px
+        &-img
+          width: 100%
+          height: 90px
+          left: 0
+          margin-bottom: 10px
+          position: relative
+  .hot__in
+    padding-left: 0
+    padding-right: 0
+    .owl-nav button.owl
+      &-prev
+        left: -12px
+      &-next
+        right: -12px
 @media screen and (max-width: 768px)
-	.main-page
-		.banner
-			background-image: url('../img/banner__bg.jpg')
-			position: relative
-			z-index: 2
-			overflow: visible
-			&::before
-				display: none
-			&__video
-				display: none
-		.container
-			position: relative
-			z-index: 2
-	.section__ttl,
-	.banner__ttl
-		font-size: 25px
-	.section__subttl
-		font-size: 20px
-	.car__ttl
-		font-size: 18px
-	.footer__ttl,
-	.footer__info
-		text-align: left
-	.test__item
-		flex-direction: column
-		text-align: center
-		&-img
-			margin: 0 auto 15px
-	.banner
-		&_inner
-			.banner
-				&__tel
-					font-size: 14px
-					margin-bottom: 0
-				&__search
-					&-input
-						font-size: 16px
-						padding: 9px 30px 9px 30px
-					&::before
-						width: 12px
-						height: 16px
-						left: 10px
-						top: 13px
-					&-btn
-						width: 16px
-						height: 16px
-						top: 13px
-						right: 10px
-	.begin
-		&__slider
-			&-item
-				min-height: 300px
-				height: auto
-	.roll-page
-		&__bot .tabs__list li
-			width: 100%
-		&__info
-			text-align: center
-			&-price
-				margin-left: auto
-				margin-right: auto
+  .main-page
+    .banner
+      background-image: url('../img/banner__bg.jpg')
+      position: relative
+      z-index: 2
+      overflow: visible
+      &::before
+        display: none
+      &__video
+        display: none
+    .container
+      position: relative
+      z-index: 2
+  .section__ttl,
+  .banner__ttl
+    font-size: 25px
+  .section__subttl
+    font-size: 20px
+  .car__ttl
+    font-size: 18px
+  .footer__ttl,
+  .footer__info
+    text-align: left
+  .test__item
+    flex-direction: column
+    text-align: center
+    &-img
+      margin: 0 auto 15px
+  .banner
+    &_inner
+      .banner
+        &__tel
+          font-size: 14px
+          margin-bottom: 0
+        &__search
+          &-input
+            font-size: 16px
+            padding: 9px 30px 9px 30px
+          &::before
+            width: 12px
+            height: 16px
+            left: 10px
+            top: 13px
+          &-btn
+            width: 16px
+            height: 16px
+            top: 13px
+            right: 10px
+  .begin
+    &__slider
+      &-item
+        min-height: 300px
+        height: auto
+  .roll-page
+    &__bot .tabs__list li
+      width: 100%
+    &__info
+      text-align: center
+      &-price
+        margin-left: auto
+        margin-right: auto
 @media screen and (max-width: 600px)
-	.banner
-		&__info
-			text-align: center
-	.header
-		&>.container:nth-child(1)
-			// position: relative
-			z-index: 3
-	// .watch-more__item-img
-	// 	left: 0px
-	.footer__ttl_mobile
-		position: relative
-		&::after
-			content: ''
-			position: absolute
-			width: 10px
-			height: 10px
-			right: 60px
-			top: 3px
-			border-bottom: solid 5px #fff
-			border-right: solid 5px #fff
-			border-left: solid 5px transparent
-			border-top: solid 5px transparent
-			transform: rotate(45deg)
-		&.active
-			&::after
-				top: 9px
-				transform: rotate(45deg) scale(-1,-1)
-	.footer__link
-		transition: unset
-	.footer__ttl,
-	.footer__info
-		text-align: center
-	.succ__item
-		width: 100% !important
-	.car-block
-		text-align: center
-		&__left
-			padding: 15px
-	.steel-page__img-wrp
-		padding: 15px
-	.roll-page__bot
-		.tabs
-			&__list
-				display: none
-			&__content-item
-				padding: 0
-				background-color: $tr
-				box-shadow: unset
-			&-acc
-				&__btn
-					display: block
-					position: relative
-					&::after
-						content: ''
-						position: absolute
-						width: 10px
-						height: 10px
-						right: 60px
-						top: 50%
-						border-bottom: solid 5px $dark-blue
-						border-right: solid 5px $dark-blue
-						border-left: solid 5px transparent
-						border-top: solid 5px transparent
-						transform: rotate(45deg) translateY(-50%)
-					&.active
-						&::after
-							border-left: solid 5px #fff
-							border-top: solid 5px #fff
-							border-bottom: solid 5px transparent
-							border-right: solid 5px transparent
-				&__cnt
-					display: none
-					background-color: #fff
-					padding: 15px 10px
-					box-shadow: 0px 2px 2px rgba(0, 0, 0, 0.15)
-					border-radius: 2px
-	.sale-page__timer
-		&-item
-			width: 24%
-			div
-				padding: 10px 5px
-			span
-				font-size: 14px
-		#days
-			font-size: 25px
-		#hours
-			font-size: 25px
-		#minutes
-			font-size: 25px
-		#seconds
-			font-size: 18px
-			div
-				padding-left: 4px
-				padding-right: 4px
-	.unk
-		&__ttl
-			font-size: 30px
-	.search
-		&__item
-			text-align: center
-			padding: 10px 15px
-			&-ttl
-				font-size: 12px
-			&-img
-				height: 60px
-				margin-left: auto
-				margin-right: auto
-			.btn
-				font-size: 12px
-				padding: 10px 3px
-				&::before
-					left: -280%
-	.roll
-		&__list
-			&-item
-				min-height: 130px
-				&-img
-					height: 69px
-					background-position-y: 100%
+  .banner
+    &__info
+      text-align: center
+  .header
+    &>.container:nth-child(1)
+      // position: relative
+      z-index: 3
+  // .watch-more__item-img
+  //  left: 0px
+  .footer__ttl_mobile
+    position: relative
+    &::after
+      content: ''
+      position: absolute
+      width: 10px
+      height: 10px
+      right: 60px
+      top: 3px
+      border-bottom: solid 5px #fff
+      border-right: solid 5px #fff
+      border-left: solid 5px transparent
+      border-top: solid 5px transparent
+      transform: rotate(45deg)
+    &.active
+      &::after
+        top: 9px
+        transform: rotate(45deg) scale(-1,-1)
+  .footer__link
+    transition: unset
+  .footer__ttl,
+  .footer__info
+    text-align: center
+  .succ__item
+    width: 100% !important
+  .car-block
+    text-align: center
+    &__left
+      padding: 15px
+  .steel-page__img-wrp
+    padding: 15px
+  .roll-page__bot
+    .tabs
+      &__list
+        display: none
+      &__content-item
+        padding: 0
+        background-color: $tr
+        box-shadow: unset
+      &-acc
+        &__btn
+          display: block
+          position: relative
+          &::after
+            content: ''
+            position: absolute
+            width: 10px
+            height: 10px
+            right: 60px
+            top: 50%
+            border-bottom: solid 5px $dark-blue
+            border-right: solid 5px $dark-blue
+            border-left: solid 5px transparent
+            border-top: solid 5px transparent
+            transform: rotate(45deg) translateY(-50%)
+          &.active
+            &::after
+              border-left: solid 5px #fff
+              border-top: solid 5px #fff
+              border-bottom: solid 5px transparent
+              border-right: solid 5px transparent
+        &__cnt
+          display: none
+          background-color: #fff
+          padding: 15px 10px
+          box-shadow: 0px 2px 2px rgba(0, 0, 0, 0.15)
+          border-radius: 2px
+  .sale-page__timer
+    &-item
+      width: 24%
+      div
+        padding: 10px 5px
+      span
+        font-size: 14px
+    #days
+      font-size: 25px
+    #hours
+      font-size: 25px
+    #minutes
+      font-size: 25px
+    #seconds
+      font-size: 18px
+      div
+        padding-left: 4px
+        padding-right: 4px
+  .unk
+    &__ttl
+      font-size: 30px
+  .search
+    &__item
+      text-align: center
+      padding: 10px 15px
+      &-ttl
+        font-size: 12px
+      &-img
+        height: 60px
+        margin-left: auto
+        margin-right: auto
+      .btn
+        font-size: 12px
+        padding: 10px 3px
+        &::before
+          left: -280%
+  .roll
+    &__list
+      &-item
+        min-height: 130px
+        &-img
+          height: 69px
+          background-position-y: 100%
 
-			&-ttl
-				font-size: 12px
-				text-align: left
-	.mobile-menu
-		padding: 10px
-	.header__cab-in-wrp
-		width: 260px
-	.roll-page__img-top-item
-		height: 240px
-	.popup__container
-		.popup_cart
-			padding: 5px
-	.header__cab-in-wrp
-		right: 62%
-	.footer__ttl_mobile::after
-		right: -6px
-	.del__banner
-		padding-bottom: 30px
-		.owl-dots
-			bottom: 0
-			button.owl-dot
-				box-shadow: 0px 0px 5px 0px rgba(0,0,0,0.75)
-				&.active
-					background-color: $yellow
-	.succ
-		&__in
-			padding-left: 35px
-			padding-right: 35px
-		&__item
-			height: auto
-			min-height: 260px
-	.trust__in
-		padding-left: 0
-		padding-right: 0
-		padding-bottom: 30px
-		.owl-dots
-			button.owl-dot
-				box-shadow: 0px 0px 5px 0px rgba(0,0,0,0.75)
-				&.active
-					background-color: $yellow
-	.hot
-		&__item
-			flex-direction: row
-			// flex-wrap: wrap
-			justify-content: space-between
-			align-items: center
-			text-align: left
-			padding: 20px
-			&-flag
-				width: 50px
-				font-size: 13px
-				padding-top: 5px
-				padding-bottom: 5px
-				opacity: .8
-				&::after
-					border-width: 27px 13px 0 0
-			&-img
-				height: 65px
-				width: 90px
-				min-width: 90px
-				margin-bottom: 0
-			&-info
-				align-items: flex-start
-				.und
-					font-size: 13px
-			&-ttl
-				font-size: 13px
-				margin-bottom: 5px
-			&-price
-				&-wrp
-					display: flex
-					align-items: flex-end
-					margin-bottom: 5px
-				&_cur
-					order: 2
-					font-size: 13px
-					// margin-left: 10px
-				&_old
-					display: none
-					// font-size: 14px
-					// margin-bottom: 4px
-			&-btns
-				flex-direction: row
-				justify-content: end
-				align-items: center
-				// width: 100%
-				.btn_add
-					// order: 2
-					margin-bottom: 0
-					margin-right: 0px
-					padding: 0
-					width: 60px
-					height: 60px
-					margin-left: 10px
-					span
-						display: none
+      &-ttl
+        font-size: 12px
+        text-align: left
+  .mobile-menu
+    padding: 10px
+  .header__cab-in-wrp
+    width: 260px
+  .roll-page__img-top-item
+    height: 240px
+  .popup__container
+    .popup_cart
+      padding: 5px
+  .header__cab-in-wrp
+    right: 62%
+  .footer__ttl_mobile::after
+    right: -6px
+  .del__banner
+    padding-bottom: 30px
+    .owl-dots
+      bottom: 0
+      button.owl-dot
+        box-shadow: 0px 0px 5px 0px rgba(0,0,0,0.75)
+        &.active
+          background-color: $yellow
+  .succ
+    &__in
+      padding-left: 35px
+      padding-right: 35px
+    &__item
+      height: auto
+      min-height: 260px
+  .trust__in
+    padding-left: 0
+    padding-right: 0
+    padding-bottom: 30px
+    .owl-dots
+      button.owl-dot
+        box-shadow: 0px 0px 5px 0px rgba(0,0,0,0.75)
+        &.active
+          background-color: $yellow
+  .hot
+    &__item
+      flex-direction: row
+      // flex-wrap: wrap
+      justify-content: space-between
+      align-items: center
+      text-align: left
+      padding: 20px
+      &-flag
+        width: 50px
+        font-size: 13px
+        padding-top: 5px
+        padding-bottom: 5px
+        opacity: .8
+        &::after
+          border-width: 27px 13px 0 0
+      &-img
+        height: 65px
+        width: 90px
+        min-width: 90px
+        margin-bottom: 0
+      &-info
+        align-items: flex-start
+        .und
+          font-size: 13px
+      &-ttl
+        font-size: 13px
+        margin-bottom: 5px
+      &-price
+        &-wrp
+          display: flex
+          align-items: flex-end
+          margin-bottom: 5px
+        &_cur
+          order: 2
+          font-size: 13px
+          // margin-left: 10px
+        &_old
+          display: none
+          // font-size: 14px
+          // margin-bottom: 4px
+      &-btns
+        flex-direction: row
+        justify-content: end
+        align-items: center
+        // width: 100%
+        .btn_add
+          // order: 2
+          margin-bottom: 0
+          margin-right: 0px
+          padding: 0
+          width: 60px
+          height: 60px
+          margin-left: 10px
+          span
+            display: none
 @media screen and (max-width: 400px)
-	// .book
-	// 	&__list
-	// 		&-ttl
-	// 			font-size: 8px
-	.section,
-	.banner
-		&__ttl
-			font-size: 20px
+  // .book
+  //  &__list
+  //    &-ttl
+  //      font-size: 8px
+  .section,
+  .banner
+    &__ttl
+      font-size: 20px
 @media screen and (max-width: 330px)
-	.footer__ttl_mobile::after
-		right: -6px
-	.hot__item-btns .btn_add
-		padding: 12px 48px 12px 6px
-	.book__list-item-img
-		background-position: 100% 0
+  .footer__ttl_mobile::after
+    right: -6px
+  .hot__item-btns .btn_add
+    padding: 12px 48px 12px 6px

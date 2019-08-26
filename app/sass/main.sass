@@ -13,3698 +13,3697 @@ $a-demi: 'AvenirNextCyr-Demi'
 $a-bold: 'AvenirNextCyr-Bold'
 
 .preloader
-	display: none
+  display: none
 // .preloader
-// 	position: fixed
-// 	left: 0
-// 	top: 0
-// 	right: 0
-// 	bottom: 0
-// 	min-height: 100vh
-// 	display: flex
-// 	flex-wrap: wrap
-// 	justify-content: space-around
-// 	align-content: space-around
-// 	flex: 1 1 25%
-// 	background-color: #fff
-// 	z-index: 1000
+//  position: fixed
+//  left: 0
+//  top: 0
+//  right: 0
+//  bottom: 0
+//  min-height: 100vh
+//  display: flex
+//  flex-wrap: wrap
+//  justify-content: space-around
+//  align-content: space-around
+//  flex: 1 1 25%
+//  background-color: #fff
+//  z-index: 1000
 // .preloader__icon
-// 	width: 4em
-// 	height: 4em
-// 	margin: auto
-// 	background-color: $blue
-// 	animation: rotating-plane 1.2s infinite ease-in-out
+//  width: 4em
+//  height: 4em
+//  margin: auto
+//  background-color: $blue
+//  animation: rotating-plane 1.2s infinite ease-in-out
 // @keyframes rotating-plane
-// 	0%
-// 		transform: perspective(120px) rotateX(0deg) rotateY(0deg)
-// 	50%
-// 		transform: perspective(120px) rotateX(-180.1deg) rotateY(0deg)
-// 		background-color: $yellow
-// 	100%
-// 		transform: perspective(120px) rotateX(-180deg) rotateY(-179.9deg)
+//  0%
+//    transform: perspective(120px) rotateX(0deg) rotateY(0deg)
+//  50%
+//    transform: perspective(120px) rotateX(-180.1deg) rotateY(0deg)
+//    background-color: $yellow
+//  100%
+//    transform: perspective(120px) rotateX(-180deg) rotateY(-179.9deg)
 
 body
-	scroll-behavior: smooth
-	background-color: #fff
-	font-family: $a-reg, sans-serif
-	color: $dark-blue
-	font-size: 14px
-	line-height: 1.4
-	position: relative
-	-webkit-font-smoothing: antialiased
-	transition: unset
+  scroll-behavior: smooth
+  background-color: #fff
+  font-family: $a-reg, sans-serif
+  color: $dark-blue
+  font-size: 14px
+  line-height: 1.4
+  position: relative
+  -webkit-font-smoothing: antialiased
+  transition: unset
 *,
 *:after,
 *:before
-	transition: .3s all ease
+  transition: .3s all ease
 h1::selection, h2::selection, h3::selection, h4::selection, h5::selection, h6::selection, p::selection, a::selection, span::selection, div::selection, img::selection, mark::selection, ul::selection, li::selection
-	color						: #fff
-	background-color : $dark-blue
+  color           : #fff
+  background-color : $dark-blue
 ::selection
-	color						: #fff
-	background-color : $dark-blue
+  color           : #fff
+  background-color : $dark-blue
 a, a:hover, a:active, a:focus,
 button, input, button:hover, button:active, button:focus,
 input:focus, input:active, .btn, .btn:after, select:focus, select:active
-	text-decoration: none
-	outline: none
-	transition: all 0.4s ease
-	cursor: pointer
+  text-decoration: none
+  outline: none
+  transition: all 0.4s ease
+  cursor: pointer
 a
-	color: $dark-blue
-	&:hover
-		color: $yellow
+  color: $dark-blue
+  &:hover
+    color: $yellow
 button
-	border: transparent
-	background: none
+  border: transparent
+  background: none
 option
-	color: $dark-blue
+  color: $dark-blue
 textarea
-	resize:none
-	overflow: hidden
-	&::placeholder
-		color: $dark-blue
+  resize:none
+  overflow: hidden
+  &::placeholder
+    color: $dark-blue
 input,
 textarea,
 select
-	color: $dark-blue
-	font-family: $a-med
-	font-size: 14px
-	padding: 12px 30px
-	border-radius: 2px
-	border: 1px solid #E0E0E0
+  color: $dark-blue
+  font-family: $a-med
+  font-size: 14px
+  padding: 12px 30px
+  border-radius: 2px
+  border: 1px solid #E0E0E0
 // input,
 // select
-// 	border: 1px solid #fff
+//  border: 1px solid #fff
 input[type="text"]::placeholder,
 input[type="email"]::placeholder,
 input[type="tel"]::placeholder
-	color: $dark-blue
+  color: $dark-blue
 input:focus,
 textarea:focus,
 input:active,
 textarea:active
-	// background: #ffff
-	color: $dark-blue
-	box-shadow: inset 0px 0px 5px 1px $yellow
-	outline: none
+  // background: #ffff
+  color: $dark-blue
+  box-shadow: inset 0px 0px 5px 1px $yellow
+  outline: none
 input::-webkit-outer-spin-button,
 input::-webkit-inner-spin-button 
-	-webkit-appearance: none
+  -webkit-appearance: none
 input[type="number"]
-	-moz-appearance: textfield
-	appearance: textfield
+  -moz-appearance: textfield
+  appearance: textfield
 .select__wrp
-	border: 1px solid #BDBDBD
-	border-radius: 3px
-	position: relative
-	display: flex
-	background-color: #fff
-	&::before
-		content: ''
-		position: absolute
-		width: 20px
-		height: 20px
-		background: url('../img/select__arr.svg') no-repeat 50% 50% / contain
-		top: 50%
-		transform: translateY(-50%)
-		right: 9px
-	select
-		width: 100%
-		background-color: $tr
-		border: none
-		padding: 8px 40px 8px 12px
-		position: relative
-		appearance: none
-		option
-			width: 100%
-	&:hover
-		&::before
-			transform: translateY(-50%) scale(.9)
+  border: 1px solid #BDBDBD
+  border-radius: 3px
+  position: relative
+  display: flex
+  background-color: #fff
+  &::before
+    content: ''
+    position: absolute
+    width: 20px
+    height: 20px
+    background: url('../img/select__arr.svg') no-repeat 50% 50% / contain
+    top: 50%
+    transform: translateY(-50%)
+    right: 9px
+  select
+    width: 100%
+    background-color: $tr
+    border: none
+    padding: 8px 40px 8px 12px
+    position: relative
+    appearance: none
+    option
+      width: 100%
+  &:hover
+    &::before
+      transform: translateY(-50%) scale(.9)
 .quantity
-	position: relative
-	max-width: 129px
-	input
-		width: 100%
-	&-num
-		// max-width: 110px
-		text-align: center
-	&-minus,
-	&-plus
-		position: absolute
-		height: 50%
-		top: 50%
-		transform: translate(0,-50%)
-		font-family: $a-bold
-		width: 22px
-		height: 22px
-		background-color: #e0e0e0
-		border: none
-		border-radius: 50%
-		display: flex
-		justify-content: center
-		align-items: center
-		line-height: 1
-		&:hover
-			background-color: #ccc
-	&-minus
-		left: 15px
-		color: $blue
-	&-plus
-		right: 15px
-		color: $yellow
+  position: relative
+  max-width: 129px
+  input
+    width: 100%
+  &-num
+    // max-width: 110px
+    text-align: center
+  &-minus,
+  &-plus
+    position: absolute
+    height: 50%
+    top: 50%
+    transform: translate(0,-50%)
+    font-family: $a-bold
+    width: 22px
+    height: 22px
+    background-color: #e0e0e0
+    border: none
+    border-radius: 50%
+    display: flex
+    justify-content: center
+    align-items: center
+    line-height: 1
+    &:hover
+      background-color: #ccc
+  &-minus
+    left: 15px
+    color: $blue
+  &-plus
+    right: 15px
+    color: $yellow
 .fancybox-container *
-		transition: unset
+    transition: unset
 .tabs
-	&__content-item
-		transition: unset
-	&__list
-		list-style-type: none
-		padding: 0
-		margin: 0
+  &__content-item
+    transition: unset
+  &__list
+    list-style-type: none
+    padding: 0
+    margin: 0
 .checkbox
-	// min-width: 200px
-	cursor: pointer
-	position: relative
-	margin-bottom: 0
-	input[type="checkbox"],
-	input[type="radio"]
-		position: absolute
-		z-index: 1
-		opacity: 0
-		width: 100%
-		height: 20px
-		cursor: pointer
-	.checkbox__text
-		font-size: 14px
-		position: relative
-		padding-left: 30px
-		cursor: pointer
-		width: 100%
-		height: 30px
-		display: block
-		&::before
-			content: ''
-			position: absolute
-			top: 0px
-			left: -2px
-			width: 20px
-			height: 20px
-			border-radius: 5px
-			border: 1px solid #ABABAB
-			background: #fff
-		&::after
-			content: ''
-			position: absolute
-			top: 50%
-			margin-top: -11px
-			left: 2px
-			width: 12px
-			height: 12px
-			background-color: $blue
-			border-radius: 3px
-			opacity: 0
-			transform: scale(0)
-			transition: 0.2s
-		a
-			color: $blue
-			text-decoration: underline
-			position: relative
-			z-index: 2
-	input[type="checkbox"]:checked + .checkbox__text:after,
-	input[type="radio"]:checked + .checkbox__text:after
-		opacity: 1
-		transform: scale(1)
-	input[type="checkbox"]:checked + .checkbox__text:before,
-	input[type="radio"]:checked + .checkbox__text:before
-		background-color: #fff
-	&_cart
-		background-color: #FFFFFF
-		box-shadow: 0px 2px 2px rgba(0, 0, 0, 0.25)
-		border-radius: 2px
-		padding-left: 15px
-		padding-right: 15px
-		.checkbox__text
-			padding: 15px 15px 15px 35px
-			height: auto !important
-			img
-				filter: grayscale(1)
-			&::after,
-			&::before
-				top: 50%
-				transform: translateY(-50%)
-			&::after
-				margin-top: -6px
-				transform: scale(0)
-		input[type="checkbox"]:checked + .checkbox__text,
-		input[type="radio"]:checked + .checkbox__text
-			span
-				color: $blue
-		input[type="checkbox"]:checked + .checkbox__text img,
-		input[type="radio"]:checked + .checkbox__text img
-			filter: grayscale(0)
+  // min-width: 200px
+  cursor: pointer
+  position: relative
+  margin-bottom: 0
+  input[type="checkbox"],
+  input[type="radio"]
+    position: absolute
+    z-index: 1
+    opacity: 0
+    width: 100%
+    height: 20px
+    cursor: pointer
+  .checkbox__text
+    font-size: 14px
+    position: relative
+    padding-left: 30px
+    cursor: pointer
+    width: 100%
+    height: 30px
+    display: block
+    &::before
+      content: ''
+      position: absolute
+      top: 0px
+      left: -2px
+      width: 20px
+      height: 20px
+      border-radius: 5px
+      border: 1px solid #ABABAB
+      background: #fff
+    &::after
+      content: ''
+      position: absolute
+      top: 50%
+      margin-top: -11px
+      left: 2px
+      width: 12px
+      height: 12px
+      background-color: $blue
+      border-radius: 3px
+      opacity: 0
+      transform: scale(0)
+      transition: 0.2s
+    a
+      color: $blue
+      text-decoration: underline
+      position: relative
+      z-index: 2
+  input[type="checkbox"]:checked + .checkbox__text:after,
+  input[type="radio"]:checked + .checkbox__text:after
+    opacity: 1
+    transform: scale(1)
+  input[type="checkbox"]:checked + .checkbox__text:before,
+  input[type="radio"]:checked + .checkbox__text:before
+    background-color: #fff
+  &_cart
+    background-color: #FFFFFF
+    box-shadow: 0px 2px 2px rgba(0, 0, 0, 0.25)
+    border-radius: 2px
+    padding-left: 15px
+    padding-right: 15px
+    .checkbox__text
+      padding: 15px 15px 15px 35px
+      height: auto !important
+      img
+        filter: grayscale(1)
+      &::after,
+      &::before
+        top: 50%
+        transform: translateY(-50%)
+      &::after
+        margin-top: -6px
+        transform: scale(0)
+    input[type="checkbox"]:checked + .checkbox__text,
+    input[type="radio"]:checked + .checkbox__text
+      span
+        color: $blue
+    input[type="checkbox"]:checked + .checkbox__text img,
+    input[type="radio"]:checked + .checkbox__text img
+      filter: grayscale(0)
 .img-fluid
-	max-width: 100%
-	height: auto
+  max-width: 100%
+  height: auto
 .shd,
-	box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25)
-	&:hover
-		box-shadow: 0px 30px 40px rgba(0, 80, 147, 0.25)
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25)
+  &:hover
+    box-shadow: 0px 30px 40px rgba(0, 80, 147, 0.25)
 .w100
-	width: 100%
+  width: 100%
 .fz10
-	font-size: 10px
+  font-size: 10px
 .fz12
-	font-size: 12px
+  font-size: 12px
 .fz13
-	font-size: 13px
+  font-size: 13px
 .b
-	font-family: $a-bold
+  font-family: $a-bold
 .m
-	font-family: $a-med
+  font-family: $a-med
 .blue
-	color: $blue
+  color: $blue
 .red
-	color: #ea1a25
+  color: #ea1a25
 .yel
-	color: $yellow
+  color: $yellow
 .m
-	font-family: $a-med
+  font-family: $a-med
 .tac
-	text-align: center
+  text-align: center
 .tal
-	text-align: left !important
+  text-align: left !important
 .tar
-	text-align: right
+  text-align: right
 .und
-	text-decoration: underline
+  text-decoration: underline
 .upp
-	text-transform: uppercase
+  text-transform: uppercase
 .btn
-	outline: none
-	font-size: 14px
-	font-family: $a-med
-	letter-spacing: .5px
-	text-align: center
-	padding: 12px 30px
-	color: #fff
-	background-color: $yellow
-	display: inline-block
-	border-radius: 2px
-	position: relative
-	overflow: hidden
-	&>*
-		position: relative
-	&::before
-		content: ''
-		position: absolute
-		width: 138px
-		height: 138px
-		left: -210%
-		top: -80px
-		background: linear-gradient(272.36deg, #FFFFFF -11.72%, rgba(255, 255, 255, 0) 23.19%)
-		opacity: 0.5
-		transform: rotate(36.57deg)
-		transition: 3s all ease
-	&:hover
-		color: #fff
-		background-color: $blue
-		&::before
-			left: 150%
-	&_transp
-		color: #fff
-		background: transparent
-		border: 1px solid $dark-blue
-		&:hover
-			color: #fff
-			background-color: $blue
-			&::before
-				left: 150%
-	&_small
-		font-size: 12px
-		padding: 8px 12px
-	&_blue
-		background-color: $blue
-		&:hover
-			background-color: $yellow
-	&_white
-		background-color: #E3E3E3
-		box-shadow: 0px 2.65px 2.65px rgba(0, 0, 0, 0.2)
-		color: $dark-blue
-		&:hover
-			color: #fff
-			background-color: $blue
-	&_add
-		margin-left: auto
-		margin-right: auto
-		max-width: 192px
-		padding-right: 60px
-		padding-left: 15px
-		overflow: hidden
-		box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.2)
-		img
-			height: 100%
-			position: absolute
-			right: 0
-			top: 0
-		&:hover
-			img
-				transform: scale(1.05)
-	&_file
-		position: relative
-		color: #fff
-		cursor: pointer
-		max-width: 230px
-		padding-right: 49px
-		padding-left: 6px
-		.upload__file
-			width: 0.1px
-			height: 0.1px
-			opacity: 0
-			overflow: hidden
-			position: absolute
-			z-index: -1
-		label.filename
-			cursor: pointer
-			margin-bottom: 0
-			cursor: pointer
-		img
-			height: 100%
-			position: absolute
-			right: 0
-			top: 0
-		&:hover
-			img
-				transform: scale(1.05)
-		// .upload__file-status
-		// 	margin-left: 15px
-	&_subm
-		min-width: 190px
-		input[type="submit"]
-			color: #fff
-			background: none
-			padding: 0
-			border: none
-			margin: 0
-		&.btn_transp
-			border: none
-			background-color: #F3F3F3
-			box-shadow: 0px 2px 2px rgba(0, 0, 0, 0.2)
-			&:hover
-				background-color: #ccc
-			input[type="submit"]
-				color: #000
+  outline: none
+  font-size: 14px
+  font-family: $a-med
+  letter-spacing: .5px
+  text-align: center
+  padding: 12px 30px
+  color: #fff
+  background-color: $yellow
+  display: inline-block
+  border-radius: 2px
+  position: relative
+  overflow: hidden
+  &>*
+    position: relative
+  &::before
+    content: ''
+    position: absolute
+    width: 138px
+    height: 138px
+    left: -210%
+    top: -80px
+    background: linear-gradient(272.36deg, #FFFFFF -11.72%, rgba(255, 255, 255, 0) 23.19%)
+    opacity: 0.5
+    transform: rotate(36.57deg)
+    transition: 3s all ease
+  &:hover
+    color: #fff
+    background-color: $blue
+    &::before
+      left: 150%
+  &_transp
+    color: #fff
+    background: transparent
+    border: 1px solid $dark-blue
+    &:hover
+      color: #fff
+      background-color: $blue
+      &::before
+        left: 150%
+  &_small
+    font-size: 12px
+    padding: 8px 12px
+  &_blue
+    background-color: $blue
+    &:hover
+      background-color: $yellow
+  &_white
+    background-color: #E3E3E3
+    box-shadow: 0px 2.65px 2.65px rgba(0, 0, 0, 0.2)
+    color: $dark-blue
+    &:hover
+      color: #fff
+      background-color: $blue
+  &_add
+    margin-left: auto
+    margin-right: auto
+    max-width: 192px
+    padding-right: 60px
+    padding-left: 15px
+    overflow: hidden
+    box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.2)
+    img
+      height: 100%
+      position: absolute
+      right: 0
+      top: 0
+    &:hover
+      img
+        transform: scale(1.05)
+  &_file
+    position: relative
+    color: #fff
+    cursor: pointer
+    max-width: 230px
+    padding-right: 49px
+    padding-left: 6px
+    .upload__file
+      width: 0.1px
+      height: 0.1px
+      opacity: 0
+      overflow: hidden
+      position: absolute
+      z-index: -1
+    label.filename
+      cursor: pointer
+      margin-bottom: 0
+      cursor: pointer
+    img
+      height: 100%
+      position: absolute
+      right: 0
+      top: 0
+    &:hover
+      img
+        transform: scale(1.05)
+    // .upload__file-status
+    //  margin-left: 15px
+  &_subm
+    min-width: 190px
+    input[type="submit"]
+      color: #fff
+      background: none
+      padding: 0
+      border: none
+      margin: 0
+    &.btn_transp
+      border: none
+      background-color: #F3F3F3
+      box-shadow: 0px 2px 2px rgba(0, 0, 0, 0.2)
+      &:hover
+        background-color: #ccc
+      input[type="submit"]
+        color: #000
 .list
-	&_circle
-		list-style-type: none
-		padding-left: 0
-		li
-			padding-left: 25px
-			position: relative
-			&
-				margin-bottom: 10px
-			&::before
-				content: ''
-				position: absolute
-				width: 8px
-				height: 8px
-				background-color: #EE414F
-				left: 0
-				top: 8px
-				border-radius: 50%
-	&_string
-		list-style-type: none
-		padding-left: 0
-		li
-			padding-left: 25px
-			position: relative
-			&
-				margin-bottom: 10px
-			&::before
-				content: ''
-				position: absolute
-				width: 12px
-				height: 1px
-				background-color: $dark-blue
-				left: 0
-				top: 9px
-	&_num
-		padding-left: 0
-		counter-reset: list1
-		li
-			list-style-type: none
-			&
-				margin-bottom: 10px
-			&::before
-				counter-increment: list1
-				content: counter(list1)
-				color: $blue
-				font-size: 16px
-				font-family: $a-bold
-				margin-right: 15px
+  &_circle
+    list-style-type: none
+    padding-left: 0
+    li
+      padding-left: 25px
+      position: relative
+      &
+        margin-bottom: 10px
+      &::before
+        content: ''
+        position: absolute
+        width: 8px
+        height: 8px
+        background-color: #EE414F
+        left: 0
+        top: 8px
+        border-radius: 50%
+  &_string
+    list-style-type: none
+    padding-left: 0
+    li
+      padding-left: 25px
+      position: relative
+      &
+        margin-bottom: 10px
+      &::before
+        content: ''
+        position: absolute
+        width: 12px
+        height: 1px
+        background-color: $dark-blue
+        left: 0
+        top: 9px
+  &_num
+    padding-left: 0
+    counter-reset: list1
+    li
+      list-style-type: none
+      &
+        margin-bottom: 10px
+      &::before
+        counter-increment: list1
+        content: counter(list1)
+        color: $blue
+        font-size: 16px
+        font-family: $a-bold
+        margin-right: 15px
 
 .popup__container
-	padding: 40px
-	background-color: transparent
-	*,
-	*::before,
-	*::after
-		transition: .3s all ease
-	.fancybox-close-small
-		top: 40px
-		right: 40px
-		color: #000
-	.popup__wrp
-		display: flex
-		-o-flex-wrap: wrap
-		flex-wrap: wrap
-		align-items: center
-		justify-content: center
-		position: relative
-		// &::before
-		// 	z-index: 1
-		// 	content: ''
-		// 	position: absolute
-		// 	height: 110%
-		// 	width: 110%
-		// 	top: -5%
-		// 	right: -5%
-		// 	bottom: -5%
-		// 	left: -5%
-		// 	z-index: 1
-		// 	background-color: $dark-blue
-		// 	opacity: .7
-	.popup_call__wrp
-		max-width: 320px
-		.popup
-			width: 100%
-			height: 100%
-			position: relative
-			z-index: 2
-			display: -webkit-flex
-			display: -moz-flex
-			display: -ms-flex
-			display: -o-flex
-			display: flex
-			-webkit-flex-direction: column
-			-moz-flex-direction: column
-			-ms-flex-direction: column
-			-o-flex-direction: column
-			flex-direction: column
-			-ms-align-items: center
-			align-items: center
-			justify-content: flex-start
-			background-color: #fff
-			color: $dark-blue
-			padding: 25px 25px 30px
-			text-align: center
-			&__ttl
-				font-family: $a-bold
-				text-transform: uppercase
-				font-size: 22px
-				margin-bottom: 30px
-			.form__input
-				border: 1px solid $dark-blue
-				color: $dark-blue
-				margin-bottom: 15px
-			input.form__input::placeholder
-				color: $dark-blue
-			.btn
-				width: 100%
-				margin-bottom: 15px
-			&__policy
-				margin-top: 15px
-				max-width: 230px
-				text-align: center
-				font-size: 12px
-				a
-					font-size: 12px 
-					color: #00BFF3
-	.popup_cart
-		position: relative
-		z-index: 2
-		background-color: #fff
-		padding: 30px
-		&__item
-			max-width: 190px
-			// width: 100%
-			margin: 0 15px 20px
-			&-res
-				color: $dark-blue
-				font-family: $a-med
-				font-size: 14px
-				padding: 12px 30px
-				border-radius: 2px
-				border: 1px solid #E0E0E0
+  padding: 40px
+  background-color: transparent
+  *,
+  *::before,
+  *::after
+    transition: .3s all ease
+  .fancybox-close-small
+    top: 40px
+    right: 40px
+    color: #000
+  .popup__wrp
+    display: flex
+    -o-flex-wrap: wrap
+    flex-wrap: wrap
+    align-items: center
+    justify-content: center
+    position: relative
+    // &::before
+    //  z-index: 1
+    //  content: ''
+    //  position: absolute
+    //  height: 110%
+    //  width: 110%
+    //  top: -5%
+    //  right: -5%
+    //  bottom: -5%
+    //  left: -5%
+    //  z-index: 1
+    //  background-color: $dark-blue
+    //  opacity: .7
+  .popup_call__wrp
+    max-width: 320px
+    .popup
+      width: 100%
+      height: 100%
+      position: relative
+      z-index: 2
+      display: -webkit-flex
+      display: -moz-flex
+      display: -ms-flex
+      display: -o-flex
+      display: flex
+      -webkit-flex-direction: column
+      -moz-flex-direction: column
+      -ms-flex-direction: column
+      -o-flex-direction: column
+      flex-direction: column
+      -ms-align-items: center
+      align-items: center
+      justify-content: flex-start
+      background-color: #fff
+      color: $dark-blue
+      padding: 25px 25px 30px
+      text-align: center
+      &__ttl
+        font-family: $a-bold
+        text-transform: uppercase
+        font-size: 22px
+        margin-bottom: 30px
+      .form__input
+        border: 1px solid $dark-blue
+        color: $dark-blue
+        margin-bottom: 15px
+      input.form__input::placeholder
+        color: $dark-blue
+      .btn
+        width: 100%
+        margin-bottom: 15px
+      &__policy
+        margin-top: 15px
+        max-width: 230px
+        text-align: center
+        font-size: 12px
+        a
+          font-size: 12px 
+          color: #00BFF3
+  .popup_cart
+    position: relative
+    z-index: 2
+    background-color: #fff
+    padding: 30px
+    &__item
+      max-width: 190px
+      // width: 100%
+      margin: 0 15px 20px
+      &-res
+        color: $dark-blue
+        font-family: $a-med
+        font-size: 14px
+        padding: 12px 30px
+        border-radius: 2px
+        border: 1px solid #E0E0E0
 .owl-carousel
-	.owl-item
-		img
-			width: auto !important
-	.owl-dots
-		position: absolute
-		width: 100%
-		display: flex
-		justify-content: center
-		bottom: 0
-		button.owl-dot
-			width: 13px
-			height: 13px
-			border: 2.5px solid #fff
-			border-radius: 50%
-			background-color: transparent
-			position: relative
-			// transform: scale(1)
-			&:not(:last-child)
-				margin-right: 10px
-			&.active
-				// transform: scale(.8)
-				border-color: transparent
-				background-color: #fff
-	.owl-nav
-		button.owl-prev,
-		button.owl-next
-			width: 31px
-			height: 31px
-			position: absolute
-			bottom: 50%
-			margin-bottom: -25.5px
-			border-radius: 50%
-			padding: 0
-			background-color: #fff
-			border: 1.5px solid $dark-blue
-			display: flex
-			justify-content: center
-			align-items: center
-			img
-				max-width: 17px
-				max-height: 17px
-				height: auto
-		button.owl-prev:hover,
-		button.owl-next:hover
-			background-color: $yellow
-			transform: scale(.9)
-			border-color: $yellow
-		button.owl-prev.disabled,
-		button.owl-next.disabled,
-		button.owl-prev.disabled:hover,
-		button.owl-next.disabled:hover
-			opacity: 0
-			cursor: default
-			
-		button.owl-prev
-			left: 0
-		button.owl-next
-			right: 0
+  .owl-item
+    img
+      width: auto !important
+  .owl-dots
+    position: absolute
+    width: 100%
+    display: flex
+    justify-content: center
+    bottom: 0
+    button.owl-dot
+      width: 13px
+      height: 13px
+      border: 2.5px solid #fff
+      border-radius: 50%
+      background-color: transparent
+      position: relative
+      // transform: scale(1)
+      &:not(:last-child)
+        margin-right: 10px
+      &.active
+        // transform: scale(.8)
+        border-color: transparent
+        background-color: #fff
+  .owl-nav
+    button.owl-prev,
+    button.owl-next
+      width: 31px
+      height: 31px
+      position: absolute
+      bottom: 50%
+      margin-bottom: -25.5px
+      border-radius: 50%
+      padding: 0
+      background-color: #fff
+      border: 1.5px solid $dark-blue
+      display: flex
+      justify-content: center
+      align-items: center
+      img
+        max-width: 17px
+        max-height: 17px
+        height: auto
+    button.owl-prev:hover,
+    button.owl-next:hover
+      background-color: $yellow
+      transform: scale(.9)
+      border-color: $yellow
+    button.owl-prev.disabled,
+    button.owl-next.disabled,
+    button.owl-prev.disabled:hover,
+    button.owl-next.disabled:hover
+      opacity: 0
+      cursor: default
+      
+    button.owl-prev
+      left: 0
+    button.owl-next
+      right: 0
 .section
-	&_inner
-		padding: 60px 0
-	&__ttl
-		font-size: 34px
-		font-family: $a-bold
-		letter-spacing: 1px
-		margin-bottom: 35px
-		text-align: center
-		text-transform: uppercase
-	&__subttl
-		font-size: 28px
-		font-family: $a-bold
-		letter-spacing: .5px
-		margin-bottom: 35px
-		margin-top: -10px
-		text-align: center
+  &_inner
+    padding: 60px 0
+  &__ttl
+    font-size: 34px
+    font-family: $a-bold
+    letter-spacing: 1px
+    margin-bottom: 35px
+    text-align: center
+    text-transform: uppercase
+  &__subttl
+    font-size: 28px
+    font-family: $a-bold
+    letter-spacing: .5px
+    margin-bottom: 35px
+    margin-top: -10px
+    text-align: center
 .input__wrp
-	position: relative
-	max-width: 230px
-	textarea
-		width: 100%
-		border: 1px solid #000
-	input,
-	select
-		background-color: #fff
-		width: 100%
-		padding-left: 35px
-	&::before
-		content: ''
-		position: absolute
-		left: 10px
-		top: 8px
-		width: 12px
-		height: 17px
-		background-position: 50% 50%
-		background-size: contain
-		background-repeat: no-repeat
-	&_file
-		&::before
-			background-image: url('../img/icon__file.svg')
-	&:not(:last-child)
-		margin-bottom: 15px
+  position: relative
+  max-width: 230px
+  textarea
+    width: 100%
+    border: 1px solid #000
+  input,
+  select
+    background-color: #fff
+    width: 100%
+    padding-left: 35px
+  &::before
+    content: ''
+    position: absolute
+    left: 10px
+    top: 8px
+    width: 12px
+    height: 17px
+    background-position: 50% 50%
+    background-size: contain
+    background-repeat: no-repeat
+  &_file
+    &::before
+      background-image: url('../img/icon__file.svg')
+  &:not(:last-child)
+    margin-bottom: 15px
 .main-page
-	.banner
-		background-image: none
-		position: relative
-		z-index: 2
-		overflow: hidden
-		.container
-			position: relative
-			z-index: 2
-		&::before
-			content: ''
-			position: absolute
-			width: 100%
-			height: 100%
-			left: 0
-			top: 0
-			background: url('../img/main-page__top-filter.jpg') no-repeat 50% 50% / cover
-			z-index: 1
-			opacity: .46
-		&__video
-			position: absolute
-			left: 50%
-			transform: translateX(-50%)
-			top: -140px
-			width: 100%
-			height: 100%
-			video
-				display: block
-				width: 100%
+  .banner
+    background-image: none
+    position: relative
+    z-index: 2
+    overflow: hidden
+    .container
+      position: relative
+      z-index: 2
+    &::before
+      content: ''
+      position: absolute
+      width: 100%
+      height: 100%
+      left: 0
+      top: 0
+      background: url('../img/main-page__top-filter.jpg') no-repeat 50% 50% / cover
+      z-index: 1
+      opacity: .46
+    &__video
+      position: absolute
+      left: 50%
+      transform: translateX(-50%)
+      top: -140px
+      width: 100%
+      height: 100%
+      video
+        display: block
+        width: 100%
 .header
-	font-size: 13px
-	color: #fff
-	background-color: $dark-blue
-	padding: 20px 0
-	&__work
-		span
-			&:nth-child(2)
-				color: $yellow
-	&__city
-		&-wrp
-			max-width: 297px
-			position: relative
-		&-select
-			width: 100%
-			padding: 7px 35px 7px 15px
-			border: 1px solid #f9f9f966
-			border-radius: 2px
-			position: relative
-			cursor: pointer
-			&:hover
-				border-color: $yellow
-			&::before
-				content: ''
-				position: absolute
-				width: 10px
-				height: 9.5px
-				right: 15px
-				top: 14px
-				background: url(../img/icon__select-arr.svg) no-repeat 50% 50% / contain
-			&.active
-				&::before
-					transform: scale(1,-1)
-		&-list
-			width: 100%
-			border: 1px solid #f9f9f966
-			position: absolute
-			left: 0
-			right: 0
-			top: 100%
-			z-index: 3
-			background-color: #f9f9f9
-			transition: unset
-			&-item
-				color: #000
-				padding: 3px 7px
-				display: block
-				width: 100%
-				&:nth-child(odd)
-					background-color: #e2dfdf
-				&:hover
-					color: #fff
-					background-color: $yellow
-	&__soc
-		position: relative
-		&::after
-			content: ''
-			position: absolute
-			width: 1px
-			height: 100%
-			right: -30px
-			top: 0
-			background-color: #F9F9F9
-			opacity: .3
-		&-link
-			width: 27px
-			height: 27px
-			display: flex
-			justify-content: center
-			align-items: center
-			border-radius: 2px
-			background-color: $mid-blue
-			position: relative
-			overflow: hidden
-			&::before
-				content: ''
-				position: absolute
-				width: 78px
-				height: 58px
-				left: -350%
-				top: -30px
-				background: linear-gradient(272.36deg, #FFFFFF -11.72%, rgba(255, 255, 255, 0) 23.19%)
-				opacity: 0.5
-				transform: rotate(36.57deg)
-				transition: .9s all ease
-			&:hover
-				background-color: $blue
-				&::before
-					left: 150%
-	&__days
-		position: relative
-		&::after
-			content: ''
-			position: absolute
-			width: 1px
-			height: 100%
-			right: -18px
-			top: 0
-			background-color: #F9F9F9
-			opacity: .3
-	&__cart
-		color: #fff
-		position: relative
-		&::after
-			content: ''
-			position: absolute
-			width: 1px
-			height: 100%
-			right: -15px
-			top: 0
-			background-color: #F9F9F9
-			opacity: .3
-		&-val
-			position: relative
-			&-num
-				position: absolute
-				background-color: $yellow
-				border-radius: 50%
-				width: 17px
-				height: 17px
-				left: 10px
-				top: -6px
-				color: $dark-blue
-				text-align: center
-	&__cab
-		color: #fff
-		&-wrp
-			position: relative
-		&-in
-			padding: 15px 20px
-			border-radius: 3px
-			background-color: #fff
-			color: #000
-			&::after
-				content: ''
-				position: absolute
-				width: 30px
-				height: 30px
-				right: 36px
-				top: -4px
-				background-color: #fff
-				transform: rotate(45deg)
-			&-wrp
-				position: absolute
-				width: 300px
-				right: 0
-				top: 30px
-				z-index: 3
-				transition: unset
-				&_reg
-					display: none
-				&_log
-					display: none
-		&-ttl
-			font-size: 16px
-			font-family: $a-bold
-			text-transform: uppercase
-			margin-bottom: 10px
-			position: relative
-			&-btn
-				position: absolute
-				top: 50%
-				right: 0
-				width: 20px
-				height: 20px
-				background: url('../img/icon__cross.svg') no-repeat 50% 50% / contain
-				z-index: 2
-				transform: translateY(-50%)
-				transition: .5s all ease
-				cursor: pointer
-				&:hover
-					transform: translateY(-50%) rotate(180deg)
-		&-show-log
-			font-size: 15px
-			a
-				color: $blue
-	&__logo-min
-		color: #fff
-		div
-			position: relative
-			max-width: 100px
-			&::before
-				content: ''
-				position: absolute
-				width: 1px
-				height: 53px
-				left: -12px
-				top: 50%
-				transform: translateY(-50%)
-				background-color: #F9F9F9
-				opacity: .3
-		span
-			font-size: 12px
-			font-family: $a-bold
-		&:hover
-			transform: scale(.95)
-	&__in
-		position: relative
+  font-size: 13px
+  color: #fff
+  background-color: $dark-blue
+  padding: 20px 0
+  &__work
+    span
+      &:nth-child(2)
+        color: $yellow
+  &__city
+    &-wrp
+      max-width: 297px
+      position: relative
+    &-select
+      width: 100%
+      padding: 7px 35px 7px 15px
+      border: 1px solid #f9f9f966
+      border-radius: 2px
+      position: relative
+      cursor: pointer
+      &:hover
+        border-color: $yellow
+      &::before
+        content: ''
+        position: absolute
+        width: 10px
+        height: 9.5px
+        right: 15px
+        top: 14px
+        background: url(../img/icon__select-arr.svg) no-repeat 50% 50% / contain
+      &.active
+        &::before
+          transform: scale(1,-1)
+    &-list
+      width: 100%
+      border: 1px solid #f9f9f966
+      position: absolute
+      left: 0
+      right: 0
+      top: 100%
+      z-index: 3
+      background-color: #f9f9f9
+      transition: unset
+      &-item
+        color: #000
+        padding: 3px 7px
+        display: block
+        width: 100%
+        &:nth-child(odd)
+          background-color: #e2dfdf
+        &:hover
+          color: #fff
+          background-color: $yellow
+  &__soc
+    position: relative
+    &::after
+      content: ''
+      position: absolute
+      width: 1px
+      height: 100%
+      right: -30px
+      top: 0
+      background-color: #F9F9F9
+      opacity: .3
+    &-link
+      width: 27px
+      height: 27px
+      display: flex
+      justify-content: center
+      align-items: center
+      border-radius: 2px
+      background-color: $mid-blue
+      position: relative
+      overflow: hidden
+      &::before
+        content: ''
+        position: absolute
+        width: 78px
+        height: 58px
+        left: -350%
+        top: -30px
+        background: linear-gradient(272.36deg, #FFFFFF -11.72%, rgba(255, 255, 255, 0) 23.19%)
+        opacity: 0.5
+        transform: rotate(36.57deg)
+        transition: .9s all ease
+      &:hover
+        background-color: $blue
+        &::before
+          left: 150%
+  &__days
+    position: relative
+    &::after
+      content: ''
+      position: absolute
+      width: 1px
+      height: 100%
+      right: -18px
+      top: 0
+      background-color: #F9F9F9
+      opacity: .3
+  &__cart
+    color: #fff
+    position: relative
+    &::after
+      content: ''
+      position: absolute
+      width: 1px
+      height: 100%
+      right: -15px
+      top: 0
+      background-color: #F9F9F9
+      opacity: .3
+    &-val
+      position: relative
+      &-num
+        position: absolute
+        background-color: $yellow
+        border-radius: 50%
+        width: 17px
+        height: 17px
+        left: 10px
+        top: -6px
+        color: $dark-blue
+        text-align: center
+  &__cab
+    color: #fff
+    &-wrp
+      position: relative
+    &-in
+      padding: 15px 20px
+      border-radius: 3px
+      background-color: #fff
+      color: #000
+      &::after
+        content: ''
+        position: absolute
+        width: 30px
+        height: 30px
+        right: 36px
+        top: -4px
+        background-color: #fff
+        transform: rotate(45deg)
+      &-wrp
+        position: absolute
+        width: 300px
+        right: 0
+        top: 30px
+        z-index: 3
+        transition: unset
+        &_reg
+          display: none
+        &_log
+          display: none
+    &-ttl
+      font-size: 16px
+      font-family: $a-bold
+      text-transform: uppercase
+      margin-bottom: 10px
+      position: relative
+      &-btn
+        position: absolute
+        top: 50%
+        right: 0
+        width: 20px
+        height: 20px
+        background: url('../img/icon__cross.svg') no-repeat 50% 50% / contain
+        z-index: 2
+        transform: translateY(-50%)
+        transition: .5s all ease
+        cursor: pointer
+        &:hover
+          transform: translateY(-50%) rotate(180deg)
+    &-show-log
+      font-size: 15px
+      a
+        color: $blue
+  &__logo-min
+    color: #fff
+    div
+      position: relative
+      max-width: 100px
+      &::before
+        content: ''
+        position: absolute
+        width: 1px
+        height: 53px
+        left: -12px
+        top: 50%
+        transform: translateY(-50%)
+        background-color: #F9F9F9
+        opacity: .3
+    span
+      font-size: 12px
+      font-family: $a-bold
+    &:hover
+      transform: scale(.95)
+  &__in
+    position: relative
 .banner
-	position: relative
-	color: #fff
-	background-position: 50% 50%
-	background-size: cover
-	background-repeat: no-repeat
-	background-image: url('../img/banner__bg.jpg')
-	.container
-		position: relative
-	&__hamburger
-		display: none
-		position: absolute
-		top: 50%
-		transform: translateX(-50%)
-		right: 0
-		width: 32px
-		height: 2px
-		background-color: $yellow
-		opacity: 1
-		z-index: 2
-		transition: all 0.5s ease
-		&::before,
-		&::after
-			content: ''
-			position: absolute
-			width: 32px
-			height: 2px
-			background-color: $yellow
-			left: 0
-		&::before
-			top: -10px
-		&::after
-			bottom: -10px
-		// &.active
-		// 	background-color: transparent
-		// 	z-index: 6
-		// 	top: 29px
-		// 	right: 23px
-		// 	width: 32px
-		// 	height: 40px
-		// 	&::before
-		// 		width: 39px
-		// 		top: 24px
-		// 		transform: rotate(315deg)
-		// 		background-color: $yellow
-		// 	&::after
-		// 		width: 39px
-		// 		bottom: 14px
-		// 		transform: rotate(45deg)
-		// 		background-color: $yellow
-	&__menu-btn
-		display: none
-		width: 200px
-		margin-top: 15px
-	&__nav
-		&-item
-			font-size: 14px
-			font-family: $a-med
-			letter-spacing: .5px
-			text-align: center
-			padding: 12px 10px
-			color: #fff
-			border: 1px solid #f9f9f966
-			border-radius: 2px
-			position: relative
-			overflow: hidden
-			span
-				position: relative
-			&::before
-				content: ''
-				position: absolute
-				width: 138px
-				height: 138px
-				left: -230%
-				top: -80px
-				background: linear-gradient(272.36deg, #FFFFFF -11.72%, rgba(255, 255, 255, 0) 23.19%)
-				opacity: 0.5
-				transform: rotate(36.57deg)
-				transition: .9s all ease
-			&:hover
-				color: #fff
-				background-color: $blue
-				border-color: $tr
-				&::before
-					left: 120%
-			&.active
-				background-color: $yellow
-				border-color: $yellow
-		.btn
-			padding-left: 5px
-			padding-right: 5px
-			width: 100%
-			max-width: 370px
-			
-	&__tel
-		font-family: $a-bold
-		font-size: 26px
-		margin-bottom: 10px
-		color: #fff
-	&__mail
-		color: #fff
-	&__logo
-		&:hover
-			img
-				transform: scale(.95)
-	.btn_blue
-		padding: 15px 10px
-		width: 100%
-		max-width: 180px
-	&__offer
-		padding: 30px 0
-		max-width: 840px
-		margin-left: auto
-		margin-right: auto
-		margin-bottom: 25px
-	&__ttl
-		font-size: 32px
-		font-family: $a-bold
-		text-transform: uppercase
-		text-align: center
-		margin-bottom: 15px
-	&__search
-		position: relative
-		width: 100%
-		&::before
-			content: ''
-			position: absolute
-			left: 15px
-			top: 15px
-			width: 26px
-			height: 36px
-			background: url('../img/offer__search-icon.svg') no-repeat 50% 50% / contain
-		&-input
-			width: 100%
-			font-size: 18px
-			padding: 19px 50px 19px 60px
-		&-btn
-			position: absolute
-			width: 26px
-			height: 26px
-			top: 19px
-			right: 25px
-			background: #fff url('../img/icon__loupe.svg') no-repeat 50% 50%/contain
-			padding: 0
-			transform: scale(.96)
-			border: none
-			&:hover
-				transform: scale(1.05)
-	&__test
-		padding-top: 20px
-		padding-bottom: 40px
-		&>.row>div
-			&:last-child
-				.banner__test-item
-					&::after
-						display: none
-		&-item
-			display: flex
-			flex-direction: column
-			align-items: center
-			text-align: center
-			position: relative
-			// padding-left: 15px
-			// padding-right: 15px
-			&::after
-				content: ''
-				position: absolute
-				width: 10px
-				height: 10px
-				right: -20px
-				top: 50%
-				margin-top: -5px
-				background-color: #fff
-				border-radius: 50%
-			&-img
-				width: 95px
-				height: 73px
-				margin-bottom: 20px
-				background-position: 50% 50%
-				background-size: contain
-				background-repeat: no-repeat
-			&-ttl
-				font-size: 18px
-				font-family: $a-bold
-				margin-bottom: 10px
-			&-descr
-				font-size: 15px
-	&_inner
-		.btn_blue
-			padding-top: 12px
-			padding-bottom: 12px
-		.banner
-			&__tel
-				font-size: 14px
-				margin-bottom: 0
-			&__search
-				&-input
-					font-size: 16px
-					padding: 10px 40px 10px 50px
-				&::before
-					width: 12px
-					height: 16px
-					left: 20px
-				&-btn
-					width: 16px
-					height: 16px
-					top: 15px
-			&__adress
-				font-size: 15px
+  position: relative
+  color: #fff
+  background-position: 50% 50%
+  background-size: cover
+  background-repeat: no-repeat
+  background-image: url('../img/banner__bg.jpg')
+  .container
+    position: relative
+  &__hamburger
+    display: none
+    position: absolute
+    top: 50%
+    transform: translateX(-50%)
+    right: 0
+    width: 32px
+    height: 2px
+    background-color: $yellow
+    opacity: 1
+    z-index: 2
+    transition: all 0.5s ease
+    &::before,
+    &::after
+      content: ''
+      position: absolute
+      width: 32px
+      height: 2px
+      background-color: $yellow
+      left: 0
+    &::before
+      top: -10px
+    &::after
+      bottom: -10px
+    // &.active
+    //  background-color: transparent
+    //  z-index: 6
+    //  top: 29px
+    //  right: 23px
+    //  width: 32px
+    //  height: 40px
+    //  &::before
+    //    width: 39px
+    //    top: 24px
+    //    transform: rotate(315deg)
+    //    background-color: $yellow
+    //  &::after
+    //    width: 39px
+    //    bottom: 14px
+    //    transform: rotate(45deg)
+    //    background-color: $yellow
+  &__menu-btn
+    display: none
+    width: 200px
+    margin-top: 15px
+  &__nav
+    &-item
+      font-size: 14px
+      font-family: $a-med
+      letter-spacing: .5px
+      text-align: center
+      padding: 12px 10px
+      color: #fff
+      border: 1px solid #f9f9f966
+      border-radius: 2px
+      position: relative
+      overflow: hidden
+      span
+        position: relative
+      &::before
+        content: ''
+        position: absolute
+        width: 138px
+        height: 138px
+        left: -230%
+        top: -80px
+        background: linear-gradient(272.36deg, #FFFFFF -11.72%, rgba(255, 255, 255, 0) 23.19%)
+        opacity: 0.5
+        transform: rotate(36.57deg)
+        transition: .9s all ease
+      &:hover
+        color: #fff
+        background-color: $blue
+        border-color: $tr
+        &::before
+          left: 120%
+      &.active
+        background-color: $yellow
+        border-color: $yellow
+    .btn
+      padding-left: 5px
+      padding-right: 5px
+      width: 100%
+      max-width: 370px
+      
+  &__tel
+    font-family: $a-bold
+    font-size: 26px
+    margin-bottom: 10px
+    color: #fff
+  &__mail
+    color: #fff
+  &__logo
+    &:hover
+      img
+        transform: scale(.95)
+  .btn_blue
+    padding: 15px 10px
+    width: 100%
+    max-width: 180px
+  &__offer
+    padding: 30px 0
+    max-width: 840px
+    margin-left: auto
+    margin-right: auto
+    margin-bottom: 25px
+  &__ttl
+    font-size: 32px
+    font-family: $a-bold
+    text-transform: uppercase
+    text-align: center
+    margin-bottom: 15px
+  &__search
+    position: relative
+    width: 100%
+    &::before
+      content: ''
+      position: absolute
+      left: 15px
+      top: 15px
+      width: 26px
+      height: 36px
+      background: url('../img/offer__search-icon.svg') no-repeat 50% 50% / contain
+    &-input
+      width: 100%
+      font-size: 18px
+      padding: 19px 50px 19px 60px
+    &-btn
+      position: absolute
+      width: 26px
+      height: 26px
+      top: 19px
+      right: 25px
+      background: #fff url('../img/icon__loupe.svg') no-repeat 50% 50%/contain
+      padding: 0
+      transform: scale(.96)
+      border: none
+      &:hover
+        transform: scale(1.05)
+  &__test
+    padding-top: 20px
+    padding-bottom: 40px
+    &>.row>div
+      &:last-child
+        .banner__test-item
+          &::after
+            display: none
+    &-item
+      display: flex
+      flex-direction: column
+      align-items: center
+      text-align: center
+      position: relative
+      // padding-left: 15px
+      // padding-right: 15px
+      &::after
+        content: ''
+        position: absolute
+        width: 10px
+        height: 10px
+        right: -20px
+        top: 50%
+        margin-top: -5px
+        background-color: #fff
+        border-radius: 50%
+      &-img
+        width: 95px
+        height: 73px
+        margin-bottom: 20px
+        background-position: 50% 50%
+        background-size: contain
+        background-repeat: no-repeat
+      &-ttl
+        font-size: 18px
+        font-family: $a-bold
+        margin-bottom: 10px
+      &-descr
+        font-size: 15px
+  &_inner
+    .btn_blue
+      padding-top: 12px
+      padding-bottom: 12px
+    .banner
+      &__tel
+        font-size: 14px
+        margin-bottom: 0
+      &__search
+        &-input
+          font-size: 16px
+          padding: 10px 40px 10px 50px
+        &::before
+          width: 12px
+          height: 16px
+          left: 20px
+        &-btn
+          width: 16px
+          height: 16px
+          top: 15px
+      &__adress
+        font-size: 15px
 .begin
-	overflow: hidden
-	&__slider
-		margin-bottom: 30px
-		&-item
-			height: 300px
-			width: 100%
-			background-position: 50% 50%
-			background-repeat: no-repeat
-			background-size: cover
-			padding: 30px 65px
-			color: #fff
-			&_2
-				color: $dark-blue
-				.begin__slider-ttl
-					span
-						color: $yellow
-			&_3
-				.begin__slider-subttl
-					span
-						color: #fff
-						background-color: $yellow
-						padding: 5px 6px
-				.begin__slider-ttl
-					&>div:nth-child(1)
-						margin-bottom: 13px
-						margin-top: 10px
-					.begin__slider-item-string
-						color: $dark-blue
-						background-color: #FFFFFFe3
-						padding: 2px 6px
-			&_4
-				.begin__slider-subttl
-					max-width: 460px
-					color: $dark-blue
-					font-family: $a-bold
-		&-subttl
-			font-size: 22px
-			text-transform: uppercase
-		&-ttl
-			font-size: 38px
-			line-height: 1
-			text-transform: uppercase
-			margin-bottom: 8px
-		.owl-nav
-			button.owl-prev
-				left: 10px
-				border-color: transparent
-			button.owl-next
-				right: 10px
-				border-color: transparent
-		.owl-dots
-			justify-content: flex-start
-			left: 65px
-			bottom: 25px
-			button.owl-dot
-	&__nav
-		padding-left: 0
-		padding-right: 0
-		button.owl-prev
-			left: -36px
-		button.owl-next
-			right: -36px
-		&-top
-			font-family: $a-bold
-			color: #fff
-			position: relative
-			padding: 10px 4px 10px 20px
-			font-size: 13px
-			img
-				margin-right: .5rem !important
-				max-width: 33px
-				max-height: 31px
-			&::before
-				content: ''
-				position: absolute
-				width: 100%
-				height: 100%
-				left: 5px
-				top: 0
-				background-color: $blue
-				transform: skew(-12deg)
-			&>*
-				position: relative
-		&_1
-			.begin__nav-top
-				&::before
-					background-color: $blue
-				img
-					width: 25px
-					height: 26px
-		&_2
-			.begin__nav-top
-				&::before
-					background-color: $yellow
-				img
-					width: 31px
-					height: 22px
-		&_3
-			.begin__nav-top
-				&::before
-					background-color: $mid-blue
-				img
-					width: 31px
-					height: 22px
-		&_4
-			.begin__nav-top
-				&::before
-					background-color: #838383
-				img
-					width: 25px
-					height: 23px
-		&_5
-			position: relative
-			overflow: hidden
-			&>*
-				position: relative
-			.begin__nav-top
-				&::before
-					background-color: $mid-blue
-				&::after
-					content: ''
-					position: absolute
-					width: 138px
-					height: 138px
-					left: -210%
-					top: -80px
-					background: linear-gradient(272.36deg, #FFFFFF -11.72%, rgba(255, 255, 255, 0) 23.19%)
-					opacity: 0.5
-					transform: rotate(36.57deg)
-					transition: 3s all ease
-				img
-					width: 20px
-					height: 22px
-			&:hover
-				.begin__nav-top
-					&::after
-						left: 150%
-		&_filter
-			.begin__nav-top
-				&::before
-					background-color: #838383
-				img
-					width: 19px
-					height: 17px
-			.begin__nav-bot
-				transition: unset
-				padding: 20px 15px
-				font-size: 13px
-				position: relative
-			.checkbox__text
-				padding-left: 25px
-				font-size: 13px
-			.unav
-				opacity: .3
-			.select__wrp
-				max-width: 370px
-			.btn
-				max-width: 370px
-			.filter__float-submit
-				position: absolute
-				width: 90px
-				min-width: unset
-				padding: 5px
-				right: -84px
-				z-index: 2
-				display: none
-		&-bot
-			padding: 15px 0 35px
-			box-shadow: 0px 2px 2px rgba(0, 0, 0, 0.15)
-			border-bottom-left-radius: 2px
-			border-bottom-right-radius: 2px
-			position: relative
-			&.active
-				.begin__nav-more
-					transform: scaleY(-1)
-		&-link
-			padding: 8px 20px
-			width: 100%
-			display: block
-			&-wrp
-				position: relative
-				// margin-bottom: 10px
-				
-				&:hover
-					background-color: #F3F3F3
-		&-sub
-			position: absolute
-			left: 100%
-			top: 0
-			width: 870px
-			z-index: 2
-			background: #F3F3F3
-			padding: 25px 20px
-			box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25)
-			transition: unset
-			&-ttl
-				font-family: $a-bold
-				text-transform: uppercase
-				font-size: 16px
-				margin-bottom: 10px
-			&-link
-				text-decoration: underline
-				margin-bottom: 6px
-		&-more
-			position: absolute
-			width: 22px
-			height: 22px
-			background-color: #E0E0E0
-			left: 50%
-			margin-left: -11px
-			bottom: 5px
-			display: flex
-			justify-content: center
-			align-items: center
-			border-radius: 50%
-			cursor: pointer
-			&:hover
-				transform: translateY(3px)
-	&__cat
-		&_unk
-			max-width: 870px
-			margin-left: auto
-			margin-right: auto
-		&-item
-			width: 100%
-			max-width: 270px
-			height: 270px
-			margin-left: auto
-			margin-right: auto
-			position: relative
-			overflow: hidden
-			border-radius: 2px
-			&::after
-				content: ''
-				position: absolute
-				width: 100%
-				height: 100%
-				left: 0
-				top: 0
-				background: url('../img/begin__cat-item_bg.jpg') no-repeat 50% 50% / cover
-				opacity: 0
-				
-			&::before
-				content: ''
-				position: absolute
-				width: 100%
-				height: 100%
-				left: 0
-				top: 0
-				background-color: #F3F3F3
-				opacity: .7
-			&-in
-				height: 100%
-				color: $dark-blue
-				position: relative
-				z-index: 1
-				padding: 30px
-				transform: translateY(65%)
-				transition: .6s all ease
-			.btn
-				opacity: 0
-				&:hover
-					color: #000
-			&:hover
-				.begin__cat-item-in
-					transform: translateY(0)
-				.btn,
-				.list_string
-					opacity: 1
-				.begin__cat-ttl
-					color: #fff
-				&::before
-					opacity: 0
-				&::after
-					opacity: .8
-		&-ttl
-			font-family: $a-bold
-			text-transform: uppercase
-			font-size: 16px
-			margin-bottom: 11px
-		.list_string
-			opacity: 0
-			li
-				a
-					display: block
-					color: #fff
-					&:hover
-						color: $yellow
-				&:not(:last-child)
-					margin-bottom: 6px
-				&::before
-					background-color: #fff
-				&:hover
-					&::before
-						background-color: $yellow
+  overflow: hidden
+  &__slider
+    margin-bottom: 30px
+    &-item
+      height: 300px
+      width: 100%
+      background-position: 50% 50%
+      background-repeat: no-repeat
+      background-size: cover
+      padding: 30px 65px
+      color: #fff
+      &_2
+        color: $dark-blue
+        .begin__slider-ttl
+          span
+            color: $yellow
+      &_3
+        .begin__slider-subttl
+          span
+            color: #fff
+            background-color: $yellow
+            padding: 5px 6px
+        .begin__slider-ttl
+          &>div:nth-child(1)
+            margin-bottom: 13px
+            margin-top: 10px
+          .begin__slider-item-string
+            color: $dark-blue
+            background-color: #FFFFFFe3
+            padding: 2px 6px
+      &_4
+        .begin__slider-subttl
+          max-width: 460px
+          color: $dark-blue
+          font-family: $a-bold
+    &-subttl
+      font-size: 22px
+      text-transform: uppercase
+    &-ttl
+      font-size: 38px
+      line-height: 1
+      text-transform: uppercase
+      margin-bottom: 8px
+    .owl-nav
+      button.owl-prev
+        left: 10px
+        border-color: transparent
+      button.owl-next
+        right: 10px
+        border-color: transparent
+    .owl-dots
+      justify-content: flex-start
+      left: 65px
+      bottom: 25px
+      button.owl-dot
+  &__nav
+    padding-left: 0
+    padding-right: 0
+    button.owl-prev
+      left: -36px
+    button.owl-next
+      right: -36px
+    &-top
+      font-family: $a-bold
+      color: #fff
+      position: relative
+      padding: 10px 4px 10px 20px
+      font-size: 13px
+      img
+        margin-right: .5rem !important
+        max-width: 33px
+        max-height: 31px
+      &::before
+        content: ''
+        position: absolute
+        width: 100%
+        height: 100%
+        left: 5px
+        top: 0
+        background-color: $blue
+        transform: skew(-12deg)
+      &>*
+        position: relative
+    &_1
+      .begin__nav-top
+        &::before
+          background-color: $blue
+        img
+          width: 25px
+          height: 26px
+    &_2
+      .begin__nav-top
+        &::before
+          background-color: $yellow
+        img
+          width: 31px
+          height: 22px
+    &_3
+      .begin__nav-top
+        &::before
+          background-color: $mid-blue
+        img
+          width: 31px
+          height: 22px
+    &_4
+      .begin__nav-top
+        &::before
+          background-color: #838383
+        img
+          width: 25px
+          height: 23px
+    &_5
+      position: relative
+      overflow: hidden
+      &>*
+        position: relative
+      .begin__nav-top
+        &::before
+          background-color: $mid-blue
+        &::after
+          content: ''
+          position: absolute
+          width: 138px
+          height: 138px
+          left: -210%
+          top: -80px
+          background: linear-gradient(272.36deg, #FFFFFF -11.72%, rgba(255, 255, 255, 0) 23.19%)
+          opacity: 0.5
+          transform: rotate(36.57deg)
+          transition: 3s all ease
+        img
+          width: 20px
+          height: 22px
+      &:hover
+        .begin__nav-top
+          &::after
+            left: 150%
+    &_filter
+      .begin__nav-top
+        &::before
+          background-color: #838383
+        img
+          width: 19px
+          height: 17px
+      .begin__nav-bot
+        transition: unset
+        padding: 20px 15px
+        font-size: 13px
+        position: relative
+      .checkbox__text
+        padding-left: 25px
+        font-size: 13px
+      .unav
+        opacity: .3
+      .select__wrp
+        max-width: 370px
+      .btn
+        max-width: 370px
+      .filter__float-submit
+        position: absolute
+        width: 90px
+        min-width: unset
+        padding: 5px
+        right: -84px
+        z-index: 2
+        display: none
+    &-bot
+      padding: 15px 0 35px
+      box-shadow: 0px 2px 2px rgba(0, 0, 0, 0.15)
+      border-bottom-left-radius: 2px
+      border-bottom-right-radius: 2px
+      position: relative
+      &.active
+        .begin__nav-more
+          transform: scaleY(-1)
+    &-link
+      padding: 8px 20px
+      width: 100%
+      display: block
+      &-wrp
+        position: relative
+        // margin-bottom: 10px
+        
+        &:hover
+          background-color: #F3F3F3
+    &-sub
+      position: absolute
+      left: 100%
+      top: 0
+      width: 870px
+      z-index: 2
+      background: #F3F3F3
+      padding: 25px 20px
+      box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25)
+      transition: unset
+      &-ttl
+        font-family: $a-bold
+        text-transform: uppercase
+        font-size: 16px
+        margin-bottom: 10px
+      &-link
+        text-decoration: underline
+        margin-bottom: 6px
+    &-more
+      position: absolute
+      width: 22px
+      height: 22px
+      background-color: #E0E0E0
+      left: 50%
+      margin-left: -11px
+      bottom: 5px
+      display: flex
+      justify-content: center
+      align-items: center
+      border-radius: 50%
+      cursor: pointer
+      &:hover
+        transform: translateY(3px)
+  &__cat
+    &_unk
+      max-width: 870px
+      margin-left: auto
+      margin-right: auto
+    &-item
+      width: 100%
+      max-width: 270px
+      height: 270px
+      margin-left: auto
+      margin-right: auto
+      position: relative
+      overflow: hidden
+      border-radius: 2px
+      &::after
+        content: ''
+        position: absolute
+        width: 100%
+        height: 100%
+        left: 0
+        top: 0
+        background: url('../img/begin__cat-item_bg.jpg') no-repeat 50% 50% / cover
+        opacity: 0
+        
+      &::before
+        content: ''
+        position: absolute
+        width: 100%
+        height: 100%
+        left: 0
+        top: 0
+        background-color: #F3F3F3
+        opacity: .7
+      &-in
+        height: 100%
+        color: $dark-blue
+        position: relative
+        z-index: 1
+        padding: 30px
+        transform: translateY(65%)
+        transition: .6s all ease
+      .btn
+        opacity: 0
+        &:hover
+          color: #000
+      &:hover
+        .begin__cat-item-in
+          transform: translateY(0)
+        .btn,
+        .list_string
+          opacity: 1
+        .begin__cat-ttl
+          color: #fff
+        &::before
+          opacity: 0
+        &::after
+          opacity: .8
+    &-ttl
+      font-family: $a-bold
+      text-transform: uppercase
+      font-size: 16px
+      margin-bottom: 11px
+    .list_string
+      opacity: 0
+      li
+        a
+          display: block
+          color: #fff
+          &:hover
+            color: $yellow
+        &:not(:last-child)
+          margin-bottom: 6px
+        &::before
+          background-color: #fff
+        &:hover
+          &::before
+            background-color: $yellow
 hr
-	opacity: .5
+  opacity: .5
 .hot
-	color: #fff
-	background: url('../img/hot__bg.jpg') no-repeat 50% 50% / cover
-	position: relative
-	&::before
-		content: ''
-		position: absolute
-		width: 100%
-		height: 100%
-		left: 0
-		top: 0
-		background-color: $dark-blue
-		opacity: .8
-	.container
-		position: relative
-	&__item
-		display: flex
-		flex-direction: column
-		text-align: center
-		padding: 30px 15px
-		position: relative
-		background-color: #F3F3F3
-		color: $dark-blue
-		height: 100%
-		border-radius: 2px
-		overflow: hidden
-		max-width: 370px
-		margin-left: auto
-		margin-right: auto
-		&:hover
-			box-shadow: 0px 10px 7px rgba(11, 40, 79, 0.13)
-		&-img
-			width: 100%
-			height: 160px
-			background-position: 50% 50%
-			background-size: contain
-			background-repeat: no-repeat
-			margin-bottom: 10px
-			&:hover
-				opacity: .7
-		&-info
-			display: flex
-			flex-direction: column
-			align-items: center
-		&-ttl
-			font-size: 16px
-			margin-bottom: 8px
-		&-btns
-			display: flex
-			flex-direction: column
-			align-items: center
-		&-price
-			&-wrp
-				margin-bottom: 10px
-			&_cur
-				font-family: $a-bold
-				font-size: 25px
-			&_old
-				font-size: 13px
-				color: #BDBDBD
-				text-decoration: line-through
-		.btn
-			margin-bottom: 15px
-		&-flag
-			padding: 8px 0px 8px 20px
-			text-align: center
-			// transform: skew(-20deg)
-			display: flex
-			justify-content: center
-			align-items: center
-			color: #fff
-			font-family: $a-bold
-			font-size: 16px
-			width: 70px
-			position: absolute
-			top: 19px
-			left: -18px
-			z-index: 1
-			span
-				// transform: skew(20deg)
-			&_sale
-				background-color: #EE1A26
-				&::after
-					content: ''
-					position: absolute
-					border-style: solid
-					border-width: 38px 13px 0 0
-					border-color: #EE1A26 transparent transparent transparent
-					right: -13px
-					top: 0
-					height: 100%
-			&_hit
-				text-transform: uppercase
-				background-color: $blue
-				&::after
-					content: ''
-					position: absolute
-					border-style: solid
-					border-width: 38px 13px 0 0
-					border-color: $blue transparent transparent transparent
-					right: -13px
-					top: 0
-					height: 100%
-	&__in
-		padding-left: 40px
-		padding-right: 40px
+  color: #fff
+  background: url('../img/hot__bg.jpg') no-repeat 50% 50% / cover
+  position: relative
+  &::before
+    content: ''
+    position: absolute
+    width: 100%
+    height: 100%
+    left: 0
+    top: 0
+    background-color: $dark-blue
+    opacity: .8
+  .container
+    position: relative
+  &__item
+    display: flex
+    flex-direction: column
+    text-align: center
+    padding: 30px 15px
+    position: relative
+    background-color: #F3F3F3
+    color: $dark-blue
+    height: 100%
+    border-radius: 2px
+    overflow: hidden
+    max-width: 370px
+    margin-left: auto
+    margin-right: auto
+    &:hover
+      box-shadow: 0px 10px 7px rgba(11, 40, 79, 0.13)
+    &-img
+      width: 100%
+      height: 160px
+      background-position: 50% 50%
+      background-size: contain
+      background-repeat: no-repeat
+      margin-bottom: 10px
+      &:hover
+        opacity: .7
+    &-info
+      display: flex
+      flex-direction: column
+      align-items: center
+    &-ttl
+      font-size: 16px
+      margin-bottom: 8px
+    &-btns
+      display: flex
+      flex-direction: column
+      align-items: center
+    &-price
+      &-wrp
+        margin-bottom: 10px
+      &_cur
+        font-family: $a-bold
+        font-size: 25px
+      &_old
+        font-size: 13px
+        color: #BDBDBD
+        text-decoration: line-through
+    .btn
+      margin-bottom: 15px
+    &-flag
+      padding: 8px 0px 8px 20px
+      text-align: center
+      // transform: skew(-20deg)
+      display: flex
+      justify-content: center
+      align-items: center
+      color: #fff
+      font-family: $a-bold
+      font-size: 16px
+      width: 70px
+      position: absolute
+      top: 19px
+      left: -18px
+      z-index: 1
+      span
+        // transform: skew(20deg)
+      &_sale
+        background-color: #EE1A26
+        &::after
+          content: ''
+          position: absolute
+          border-style: solid
+          border-width: 38px 13px 0 0
+          border-color: #EE1A26 transparent transparent transparent
+          right: -13px
+          top: 0
+          height: 100%
+      &_hit
+        text-transform: uppercase
+        background-color: $blue
+        &::after
+          content: ''
+          position: absolute
+          border-style: solid
+          border-width: 38px 13px 0 0
+          border-color: $blue transparent transparent transparent
+          right: -13px
+          top: 0
+          height: 100%
+  &__in
+    padding-left: 40px
+    padding-right: 40px
 .feed
-	color: #fff
-	background: url('../img/feed__bg.jpg') no-repeat 50% 50% / cover
-	position: relative
-	&::before
-		content: ''
-		position: absolute
-		width: 100%
-		height: 100%
-		left: 0
-		top: 0
-		background-color: $dark-blue
-		opacity: .8
-	.container
-		position: relative
-	&__input
-		width: 100%
-		max-width: 370px
-		margin-left: auto
-		margin-right: auto
-	&__bot
-		transition: unset
+  color: #fff
+  background: url('../img/feed__bg.jpg') no-repeat 50% 50% / cover
+  position: relative
+  &::before
+    content: ''
+    position: absolute
+    width: 100%
+    height: 100%
+    left: 0
+    top: 0
+    background-color: $dark-blue
+    opacity: .8
+  .container
+    position: relative
+  &__input
+    width: 100%
+    max-width: 370px
+    margin-left: auto
+    margin-right: auto
+  &__bot
+    transition: unset
 .test
-	color: #fff
-	background: url('../img/test__bg.jpg') no-repeat 50% 50% / cover
-	&__item
-		max-width: 370px
-		margin-left: auto
-		margin-right: auto
-		display: flex
-		justify-content: space-between
-		&-img
-			display: flex
-			justify-content: center
-			align-items: center
-			min-width: 129px
-			height: 129px
-			background-color: $blue
-			border-radius: 2px
-			margin-right: 15px
-		&-info
-			display: flex
-			flex-direction: column
-			justify-content: space-between
-		&-ttl
-			font-size: 18px
-			font-family: $a-bold
-			text-transform: uppercase
-			margin-bottom: 10px
+  color: #fff
+  background: url('../img/test__bg.jpg') no-repeat 50% 50% / cover
+  &__item
+    max-width: 370px
+    margin-left: auto
+    margin-right: auto
+    display: flex
+    justify-content: space-between
+    &-img
+      display: flex
+      justify-content: center
+      align-items: center
+      min-width: 129px
+      height: 129px
+      background-color: $blue
+      border-radius: 2px
+      margin-right: 15px
+    &-info
+      display: flex
+      flex-direction: column
+      justify-content: space-between
+    &-ttl
+      font-size: 18px
+      font-family: $a-bold
+      text-transform: uppercase
+      margin-bottom: 10px
 .trust
-	background-color: #F3F3F3
-	&__item
-		min-width: 170px
-		height: 100px
-		background-color: #fff
-		background-position: 50% 50%
-		background-size: 90px
-		background-repeat: no-repeat
-		border-radius: 2px
-		box-shadow: 0px 2px 2px rgba(0, 0, 0, 0.25)
-		margin-bottom: 7px
-	&__in
-		padding-left: 50px
-		padding-right: 50px
+  background-color: #F3F3F3
+  &__item
+    min-width: 170px
+    height: 100px
+    background-color: #fff
+    background-position: 50% 50%
+    background-size: 90px
+    background-repeat: no-repeat
+    border-radius: 2px
+    box-shadow: 0px 2px 2px rgba(0, 0, 0, 0.25)
+    margin-bottom: 7px
+  &__in
+    padding-left: 50px
+    padding-right: 50px
 .contact
-	background-color: #e5e5e5
-	& *
-		transition: unset !important
-	.section__ttl
-		text-align: left
-	&__left
-		padding: 4rem 0
-	&__item
-		border-bottom: 1px solid #b8aeae
-		cursor: pointer
-		padding: 15px 0 15px 15px
-		&:last-child
-			border-bottom: none
-		&_active
-			background-color: #cecece
-		&-title
-			font-size: 20px
-			font-family: $a-bold
-			text-transform: uppercase
-			&_light-blue
-				color: $blue
-			&_blue
-				color: $mid-blue
-			&_light-orange
-				color: $yellow
-		&-text
-			font-size: 15px
-	&__pan
-		height: 380px
-		background-position: 50% 50%
-		background-size: cover
-		background-repeat: no-repeat
+  background-color: #e5e5e5
+  & *
+    transition: unset !important
+  .section__ttl
+    text-align: left
+  &__left
+    padding: 4rem 0
+  &__item
+    border-bottom: 1px solid #b8aeae
+    cursor: pointer
+    padding: 15px 0 15px 15px
+    &:last-child
+      border-bottom: none
+    &_active
+      background-color: #cecece
+    &-title
+      font-size: 20px
+      font-family: $a-bold
+      text-transform: uppercase
+      &_light-blue
+        color: $blue
+      &_blue
+        color: $mid-blue
+      &_light-orange
+        color: $yellow
+    &-text
+      font-size: 15px
+  &__pan
+    height: 380px
+    background-position: 50% 50%
+    background-size: cover
+    background-repeat: no-repeat
 .cont
-	&-page
-		background-color: #E5E5E5
-		.section__ttl
-			text-align: left
+  &-page
+    background-color: #E5E5E5
+    .section__ttl
+      text-align: left
 .ymaps-2-1-74-map
-	min-height: 400px !important
-	& *
-		transition: unset !important
+  min-height: 400px !important
+  & *
+    transition: unset !important
 .footer
-	background-color: $mid-blue
-	color: #fff
-	a:not(.btn)
-		color: #fff
-		&:hover
-			color: $yellow
-	&__ttl
-		font-size: 18px
-		font-family: $a-bold
-		text-transform: uppercase
-		margin-bottom: 15px
-	&__soc
-		position: relative
-		&::after
-			content: ''
-			position: absolute
-			width: 1px
-			height: 100%
-			right: -15px
-			top: 0
-			background-color: #F9F9F9
-			opacity: .3
-		&-link
-			width: 27px
-			height: 27px
-			display: flex
-			justify-content: center
-			align-items: center
-			border-radius: 2px
-			background-color: $mid-blue
-			position: relative
-			overflow: hidden
-			&::before
-				content: ''
-				position: absolute
-				width: 78px
-				height: 58px
-				left: -350%
-				top: -30px
-				background: linear-gradient(272.36deg, #FFFFFF -11.72%, rgba(255, 255, 255, 0) 23.19%)
-				opacity: 0.5
-				transform: rotate(36.57deg)
-				transition: .9s all ease
-			&:hover
-				background-color: $blue
-				&::before
-					left: 150%
-	.btn
-		max-width: 220px
-	&__req
-		&-img
-			width: 27px
-			height: 27px
-			display: flex
-			justify-content: center
-			align-items: center
-			border-radius: 2px
-			background-color: $blue
-			position: relative
-			overflow: hidden
-			&::before
-				content: ''
-				position: absolute
-				width: 78px
-				height: 58px
-				left: -350%
-				top: -30px
-				background: linear-gradient(272.36deg, #FFFFFF -11.72%, rgba(255, 255, 255, 0) 23.19%)
-				opacity: 0.5
-				transform: rotate(36.57deg)
-				transition: .9s all ease
-		&:hover
-			.footer__req-img
-				background-color: $yellow
-				&::before
-					left: 150%
-		span
-			text-decoration: underline
-	&__logo
-		position: relative
-		display: flex
-		justify-content: center
-		align-items: center
-		&::after
-			content: ''
-			position: absolute
-			width: 1px
-			height: 100%
-			right: -15px
-			top: 0
-			background-color: #F9F9F9
-			opacity: .3
-		img
-			max-width: 100%
-		&:hover
-			img
-				transform: scale(.95)
+  background-color: $mid-blue
+  color: #fff
+  a:not(.btn)
+    color: #fff
+    &:hover
+      color: $yellow
+  &__ttl
+    font-size: 18px
+    font-family: $a-bold
+    text-transform: uppercase
+    margin-bottom: 15px
+  &__soc
+    position: relative
+    &::after
+      content: ''
+      position: absolute
+      width: 1px
+      height: 100%
+      right: -15px
+      top: 0
+      background-color: #F9F9F9
+      opacity: .3
+    &-link
+      width: 27px
+      height: 27px
+      display: flex
+      justify-content: center
+      align-items: center
+      border-radius: 2px
+      background-color: $mid-blue
+      position: relative
+      overflow: hidden
+      &::before
+        content: ''
+        position: absolute
+        width: 78px
+        height: 58px
+        left: -350%
+        top: -30px
+        background: linear-gradient(272.36deg, #FFFFFF -11.72%, rgba(255, 255, 255, 0) 23.19%)
+        opacity: 0.5
+        transform: rotate(36.57deg)
+        transition: .9s all ease
+      &:hover
+        background-color: $blue
+        &::before
+          left: 150%
+  .btn
+    max-width: 220px
+  &__req
+    &-img
+      width: 27px
+      height: 27px
+      display: flex
+      justify-content: center
+      align-items: center
+      border-radius: 2px
+      background-color: $blue
+      position: relative
+      overflow: hidden
+      &::before
+        content: ''
+        position: absolute
+        width: 78px
+        height: 58px
+        left: -350%
+        top: -30px
+        background: linear-gradient(272.36deg, #FFFFFF -11.72%, rgba(255, 255, 255, 0) 23.19%)
+        opacity: 0.5
+        transform: rotate(36.57deg)
+        transition: .9s all ease
+    &:hover
+      .footer__req-img
+        background-color: $yellow
+        &::before
+          left: 150%
+    span
+      text-decoration: underline
+  &__logo
+    position: relative
+    display: flex
+    justify-content: center
+    align-items: center
+    &::after
+      content: ''
+      position: absolute
+      width: 1px
+      height: 100%
+      right: -15px
+      top: 0
+      background-color: #F9F9F9
+      opacity: .3
+    img
+      max-width: 100%
+    &:hover
+      img
+        transform: scale(.95)
 .crumbs
-	display: flex
-	flex-wrap: wrap
-	list-style-type: none
-	padding-left: 0
-	margin-left: 0
-	margin-bottom: 0
-	margin-top: 20px
-	li
-		border-radius: 3px
-		box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.25)
-	li,
-	a
-		position: relative
-		color: $dark-blue
-		padding: 7px 12px
-		margin-bottom: 10px
+  display: flex
+  flex-wrap: wrap
+  list-style-type: none
+  padding-left: 0
+  margin-left: 0
+  margin-bottom: 0
+  margin-top: 20px
+  li
+    border-radius: 3px
+    box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.25)
+  li,
+  a
+    position: relative
+    color: $dark-blue
+    padding: 7px 12px
+    margin-bottom: 10px
 
-	li:not(:last-child)
-		background-color: #fff
-		border: 1px solid $mid-blue
-		margin-right: 8px
-		&:hover
-			background-color: $mid-blue
-			border-color: $mid-blue
-			a
-				color: #fff
-	li:last-child
-		color: #fff
-		background-color: $mid-blue
+  li:not(:last-child)
+    background-color: #fff
+    border: 1px solid $mid-blue
+    margin-right: 8px
+    &:hover
+      background-color: $mid-blue
+      border-color: $mid-blue
+      a
+        color: #fff
+  li:last-child
+    color: #fff
+    background-color: $mid-blue
 
 .main
-	padding: 30px 0
-	background-color: #f9f9f9
-	p
-		font-size: 15px
-	&__ttl
-		color: $mid-blue
-		font-family: $a-bold
-		font-size: 20px
-		margin-bottom: 15px
+  padding: 30px 0
+  background-color: #f9f9f9
+  p
+    font-size: 15px
+  &__ttl
+    color: $mid-blue
+    font-family: $a-bold
+    font-size: 20px
+    margin-bottom: 15px
 .rev
-	&__pop
-		max-width: 970px
-		&-ttl
-			font-family: $a-bold
-			font-size: 18px
-			margin-bottom: 15px
-		&-img
-			width: 100%
-			max-width: 295px
-			height: 415px
-			margin-left: auto
-			margin-right: auto
-			background-size: cover
-			background-position: 50% 50%
-			background-repeat: no-repeat
-	&__in
-		padding-left: 50px
-		padding-right: 50px
-	&__item
-		background-position: 50% 50%
-		background-repeat: no-repeat
-		background-size: cover
-		border-radius: 2px
-		overflow: hidden
-		display: flex
-		justify-content: center
-		align-items: center
-		width: 100%
-		max-width: 170px
-		height: 241px
-		margin-left: auto
-		margin-right: auto
-		position: relative
-		&::before
-			content: ''
-			position: absolute
-			width: 100%
-			height: 100%
-			left: 0
-			top: 0
-			background-color: $blue
-			opacity: 0
-		&-more
-			width: 52px
-			height: 53px
-			background: url('../img/rev__btn.svg') no-repeat 50% 50% / contain
-			opacity: 0
-			position: relative
-		&:hover
-			box-shadow: 0px 19px 19px rgba(0, 80, 147, 0.25)
-			&::before
-				opacity: .7
-			.rev__item-more
-				opacity: 1
-	.owl-stage
-		padding-bottom: 35px
-	&__list
-		&-item
-			img
-				filter: grayscale(100%)
-				opacity: .6
-			&-date
-				position: relative
-				margin-right: 35px
-				opacity: .6
-				&::before
-					content: ''
-					position: absolute
-					width: 1px
-					height: 100%
-					right: -17px
-					top: 0
-					background-color: #000
-					opacity: 6
-			&-ttl
-				font-family: $a-bold
-				font-size: 18px
-				color: $blue
+  &__pop
+    max-width: 970px
+    &-ttl
+      font-family: $a-bold
+      font-size: 18px
+      margin-bottom: 15px
+    &-img
+      width: 100%
+      max-width: 295px
+      height: 415px
+      margin-left: auto
+      margin-right: auto
+      background-size: cover
+      background-position: 50% 50%
+      background-repeat: no-repeat
+  &__in
+    padding-left: 50px
+    padding-right: 50px
+  &__item
+    background-position: 50% 50%
+    background-repeat: no-repeat
+    background-size: cover
+    border-radius: 2px
+    overflow: hidden
+    display: flex
+    justify-content: center
+    align-items: center
+    width: 100%
+    max-width: 170px
+    height: 241px
+    margin-left: auto
+    margin-right: auto
+    position: relative
+    &::before
+      content: ''
+      position: absolute
+      width: 100%
+      height: 100%
+      left: 0
+      top: 0
+      background-color: $blue
+      opacity: 0
+    &-more
+      width: 52px
+      height: 53px
+      background: url('../img/rev__btn.svg') no-repeat 50% 50% / contain
+      opacity: 0
+      position: relative
+    &:hover
+      box-shadow: 0px 19px 19px rgba(0, 80, 147, 0.25)
+      &::before
+        opacity: .7
+      .rev__item-more
+        opacity: 1
+  .owl-stage
+    padding-bottom: 35px
+  &__list
+    &-item
+      img
+        filter: grayscale(100%)
+        opacity: .6
+      &-date
+        position: relative
+        margin-right: 35px
+        opacity: .6
+        &::before
+          content: ''
+          position: absolute
+          width: 1px
+          height: 100%
+          right: -17px
+          top: 0
+          background-color: #000
+          opacity: 6
+      &-ttl
+        font-family: $a-bold
+        font-size: 18px
+        color: $blue
 .rev-form
-	color: #fff
-	background: url('../img/feed__bg.jpg') no-repeat 50% 50% / cover
-	position: relative
-	&::before
-		content: ''
-		position: absolute
-		width: 100%
-		height: 100%
-		left: 0
-		top: 0
-		background-color: $dark-blue
-		opacity: .8
-	.container
-		position: relative
-	&__input,
-	.btn_file
-		width: 100%
-		max-width: 370px
-		margin-left: auto
-		margin-right: auto
-	textarea
-		width: 100%
+  color: #fff
+  background: url('../img/feed__bg.jpg') no-repeat 50% 50% / cover
+  position: relative
+  &::before
+    content: ''
+    position: absolute
+    width: 100%
+    height: 100%
+    left: 0
+    top: 0
+    background-color: $dark-blue
+    opacity: .8
+  .container
+    position: relative
+  &__input,
+  .btn_file
+    width: 100%
+    max-width: 370px
+    margin-left: auto
+    margin-right: auto
+  textarea
+    width: 100%
 
 .corp
-	&__in
-		padding-left: 50px
-		padding-right: 50px
-	&__item
-		&-img
-			background-position: 50% 50%
-			background-repeat: no-repeat
-			background-size: cover
-			border-radius: 2px
-			overflow: hidden
-			display: flex
-			justify-content: center
-			align-items: center
-			width: 100%
-			max-width: 300px
-			height: 187px
-			margin-left: auto
-			margin-right: auto
-			position: relative
-			&::before
-				content: ''
-				position: absolute
-				width: 100%
-				height: 100%
-				left: 0
-				top: 0
-				background-color: $blue
-				opacity: 0
-			&:hover
-				&::before
-					opacity: .7
-				.corp__item-more
-					opacity: 1
-		&-more
-			width: 52px
-			height: 53px
-			background: url('../img/rev__btn.png') no-repeat 50% 50% / contain
-			opacity: 0
-			position: relative
-		&-top
-			img
-				filter: grayscale(100%)
-				opacity: .6
-		&-date
-			position: relative
-			margin-right: 35px
-			opacity: .6
-			&::before
-				content: ''
-				position: absolute
-				width: 1px
-				height: 100%
-				right: -17px
-				top: 0
-				background-color: #000
-				opacity: 6
-		&-ttl
-			font-family: $a-bold
-			font-size: 18px
-			color: $blue
-	&-block
-		background: url('../img/about__video-bg.jpg') no-repeat 50% 50%/cover
-		&__in
-			border-radius: 3px
-			min-height: 400px
-			padding: 25px
-			background-position: 50% 50%
-			background-repeat: no-repeat
-			background-size: cover
-			display: flex
-			align-items: flex-end
+  &__in
+    padding-left: 50px
+    padding-right: 50px
+  &__item
+    &-img
+      background-position: 50% 50%
+      background-repeat: no-repeat
+      background-size: cover
+      border-radius: 2px
+      overflow: hidden
+      display: flex
+      justify-content: center
+      align-items: center
+      width: 100%
+      max-width: 300px
+      height: 187px
+      margin-left: auto
+      margin-right: auto
+      position: relative
+      &::before
+        content: ''
+        position: absolute
+        width: 100%
+        height: 100%
+        left: 0
+        top: 0
+        background-color: $blue
+        opacity: 0
+      &:hover
+        &::before
+          opacity: .7
+        .corp__item-more
+          opacity: 1
+    &-more
+      width: 52px
+      height: 53px
+      background: url('../img/rev__btn.png') no-repeat 50% 50% / contain
+      opacity: 0
+      position: relative
+    &-top
+      img
+        filter: grayscale(100%)
+        opacity: .6
+    &-date
+      position: relative
+      margin-right: 35px
+      opacity: .6
+      &::before
+        content: ''
+        position: absolute
+        width: 1px
+        height: 100%
+        right: -17px
+        top: 0
+        background-color: #000
+        opacity: 6
+    &-ttl
+      font-family: $a-bold
+      font-size: 18px
+      color: $blue
+  &-block
+    background: url('../img/about__video-bg.jpg') no-repeat 50% 50%/cover
+    &__in
+      border-radius: 3px
+      min-height: 400px
+      padding: 25px
+      background-position: 50% 50%
+      background-repeat: no-repeat
+      background-size: cover
+      display: flex
+      align-items: flex-end
 div
-	&.pagination
-		display: flex
-		justify-content: center
-		align-items: center
-		margin-top: 20px
-		padding: 15px 0
-		ul
-			&.pagination
-				list-style-type: none
-				display: flex
-				justify-content: center
-				align-items: center
-				margin-bottom: 0
-				padding: 0
-				li
-					display: flex
-					justify-content: center
-					align-items: center
-					border-radius: 50%
-					padding: 8px
-					&:not(:last-child)
-						margin-right: 5px
-					&.active
-						background-color: $yellow
-						a
-							color: #fff
-					a
-						font-family: $a-med
-						color: #000
-						width: 20px
-						height: 20px
-						border: none
-						display: flex
-						justify-content: center
-						align-items: center
-					&:hover
-						opacity: .7
-					&.control
-						opacity: 1
-						color: #fff
-						position: relative
-						border: 1.5px solid $dark-blue
-						background-color: #fff
-						&:hover
-							background-color: $yellow
-							border-color: $yellow
-						a
-							width: 20px
-							height: 20px
-						span
-							width: 20px
-							height: 20px
-							opacity: 0
-						&::before
-							content: ''
-							position: absolute
-							left: 50%
-							top: 50%
-							transform: translate(-50%,-50%)
-							width: 20px
-							height: 20px
-						&_prev
-							margin-right: 25px
-							&::before
-								background: url('../img/slider__arrow_prev.svg') no-repeat 50% 50% / contain
-						&_next
-							margin-left: 25px
-							&::before
-								background: url('../img/slider__arrow_next.svg') no-repeat 50% 50% / contain
+  &.pagination
+    display: flex
+    justify-content: center
+    align-items: center
+    margin-top: 20px
+    padding: 15px 0
+    ul
+      &.pagination
+        list-style-type: none
+        display: flex
+        justify-content: center
+        align-items: center
+        margin-bottom: 0
+        padding: 0
+        li
+          display: flex
+          justify-content: center
+          align-items: center
+          border-radius: 50%
+          padding: 8px
+          &:not(:last-child)
+            margin-right: 5px
+          &.active
+            background-color: $yellow
+            a
+              color: #fff
+          a
+            font-family: $a-med
+            color: #000
+            width: 20px
+            height: 20px
+            border: none
+            display: flex
+            justify-content: center
+            align-items: center
+          &:hover
+            opacity: .7
+          &.control
+            opacity: 1
+            color: #fff
+            position: relative
+            border: 1.5px solid $dark-blue
+            background-color: #fff
+            &:hover
+              background-color: $yellow
+              border-color: $yellow
+            a
+              width: 20px
+              height: 20px
+            span
+              width: 20px
+              height: 20px
+              opacity: 0
+            &::before
+              content: ''
+              position: absolute
+              left: 50%
+              top: 50%
+              transform: translate(-50%,-50%)
+              width: 20px
+              height: 20px
+            &_prev
+              margin-right: 25px
+              &::before
+                background: url('../img/slider__arrow_prev.svg') no-repeat 50% 50% / contain
+            &_next
+              margin-left: 25px
+              &::before
+                background: url('../img/slider__arrow_next.svg') no-repeat 50% 50% / contain
 .sale
-	.begin__slider
-		&_sale
-			display: flex
-			flex-direction: column
-		&-item
-			&:not(:last-child)
-				margin-bottom: 30px
-	&-page
-		.begin__slider
-			&-item
-				display: flex
-				flex-direction: column
-				align-items: flex-start
-				justify-content: center
-		&__descr
-			text-align: center
-			display: flex
-			flex-direction: column
-			align-items: center
-			justify-content: center
-			font-size: 18px
-		&__in
-			padding-left: 50px
-			padding-right: 50px
-		&__item
-			&-img
-				background-position: 50% 50%
-				background-repeat: no-repeat
-				background-size: cover
-				border-radius: 2px
-				overflow: hidden
-				display: flex
-				justify-content: center
-				align-items: center
-				width: 100%
-				max-width: 300px
-				height: 187px
-				margin-left: auto
-				margin-right: auto
-				position: relative
-				&::before
-					content: ''
-					position: absolute
-					width: 100%
-					height: 100%
-					left: 0
-					top: 0
-					background-color: $blue
-					opacity: 0
-				&:hover
-					&::before
-						opacity: .7
-					.sale-page__item-more
-						opacity: 1
-			&-more
-				width: 52px
-				height: 53px
-				background: url('../img/rev__btn.png') no-repeat 50% 50% / contain
-				opacity: 0
-				position: relative
-		&__timer
-			color: #000
-			max-width: 630px
-			background-color: #E9E9E9
-			border-radius: 3px
-			padding: 30px
-			margin-left: auto
-			margin-right: auto
-			text-align: center
-			&-in
-				max-width: 450px
-				margin-left: auto
-				margin-right: auto
-			&-item
-				div
-					background: linear-gradient(180deg, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 0.08) 100%)
-					border: 1px solid #C6C6C6
-					box-sizing: border-box
-					border-radius: 3px
-					padding: 15px
-					margin-bottom: 12px
-			#days
-				font-size: 50px
-			#hours
-				font-size: 50px
-			#minutes
-				font-size: 50px
-			#seconds
-				font-size: 25px
-				div
-					background: linear-gradient(180deg, rgba(0, 0, 0, 0.15) 0%, rgba(0, 0, 0, 0.03) 100%)
-					padding-left: 10px
-					padding-right: 10px
-			span
-				display: block
-				font-size: 18px
-	&-list
-		&__in
-			padding-left: 30px
-			padding-right: 30px
-		&__item
-			max-width: 370px
-			margin-left: auto
-			margin-right: auto
-			display: flex
-			flex-direction: column
-			&-img
-				width: 100%
-				height: 200px
-				background-position: 50% 50%
-				background-size: cover
-				background-repeat: no-repeat
-				border-radius: 2px
-			&-ttl
-				font-size: 18px
-				font-family: $a-bold
-				margin-bottom: 10px
-				min-height: 52px
-			&:hover
-				color: $dark-blue
-				opacity: .7
+  .begin__slider
+    &_sale
+      display: flex
+      flex-direction: column
+    &-item
+      &:not(:last-child)
+        margin-bottom: 30px
+  &-page
+    .begin__slider
+      &-item
+        display: flex
+        flex-direction: column
+        align-items: flex-start
+        justify-content: center
+    &__descr
+      text-align: center
+      display: flex
+      flex-direction: column
+      align-items: center
+      justify-content: center
+      font-size: 18px
+    &__in
+      padding-left: 50px
+      padding-right: 50px
+    &__item
+      &-img
+        background-position: 50% 50%
+        background-repeat: no-repeat
+        background-size: cover
+        border-radius: 2px
+        overflow: hidden
+        display: flex
+        justify-content: center
+        align-items: center
+        width: 100%
+        max-width: 300px
+        height: 187px
+        margin-left: auto
+        margin-right: auto
+        position: relative
+        &::before
+          content: ''
+          position: absolute
+          width: 100%
+          height: 100%
+          left: 0
+          top: 0
+          background-color: $blue
+          opacity: 0
+        &:hover
+          &::before
+            opacity: .7
+          .sale-page__item-more
+            opacity: 1
+      &-more
+        width: 52px
+        height: 53px
+        background: url('../img/rev__btn.png') no-repeat 50% 50% / contain
+        opacity: 0
+        position: relative
+    &__timer
+      color: #000
+      max-width: 630px
+      background-color: #E9E9E9
+      border-radius: 3px
+      padding: 30px
+      margin-left: auto
+      margin-right: auto
+      text-align: center
+      &-in
+        max-width: 450px
+        margin-left: auto
+        margin-right: auto
+      &-item
+        div
+          background: linear-gradient(180deg, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 0.08) 100%)
+          border: 1px solid #C6C6C6
+          box-sizing: border-box
+          border-radius: 3px
+          padding: 15px
+          margin-bottom: 12px
+      #days
+        font-size: 50px
+      #hours
+        font-size: 50px
+      #minutes
+        font-size: 50px
+      #seconds
+        font-size: 25px
+        div
+          background: linear-gradient(180deg, rgba(0, 0, 0, 0.15) 0%, rgba(0, 0, 0, 0.03) 100%)
+          padding-left: 10px
+          padding-right: 10px
+      span
+        display: block
+        font-size: 18px
+  &-list
+    &__in
+      padding-left: 30px
+      padding-right: 30px
+    &__item
+      max-width: 370px
+      margin-left: auto
+      margin-right: auto
+      display: flex
+      flex-direction: column
+      &-img
+        width: 100%
+        height: 200px
+        background-position: 50% 50%
+        background-size: cover
+        background-repeat: no-repeat
+        border-radius: 2px
+      &-ttl
+        font-size: 18px
+        font-family: $a-bold
+        margin-bottom: 10px
+        min-height: 52px
+      &:hover
+        color: $dark-blue
+        opacity: .7
 input[type=range]
-	-webkit-appearance: none
-	padding-left: 0
-	padding-right: 0
-	width: 100%
-	box-shadow: none
-	border: none
-	background-color: $tr
-	&::-webkit-slider-thumb
-		height: 20px
-		width: 20px
-		border-radius: 100%
-		background: #fff
-		cursor: pointer
-		-webkit-appearance: none
-		margin-top: -9px
-		border: 6px solid $blue
-		box-shadow: 0px 10px 10px rgba(0, 0, 0, 0.25)
-	&::-moz-range-thumb
-		box-shadow: 0px 0px 0px #000000, 0px 0px 0px #0d0d0d
-		height: 20px
-		width: 20px
-		border-radius: 100%
-		background: #fff
-		cursor: pointer
-		border: 6px solid $blue
-		box-shadow: 0px 10px 10px rgba(0, 0, 0, 0.25)
-	&::-ms-thumb
-		box-shadow: 0px 0px 0px #000000, 0px 0px 0px #0d0d0d
-		height: 20px
-		width: 20px
-		border-radius: 100%
-		background: #fff
-		cursor: pointer
-		border: 6px solid $blue
-		box-shadow: 0px 10px 10px rgba(0, 0, 0, 0.25)
-	
-	&::-moz-range-track
-		width: 100%
-		height: 2px
-		cursor: pointer
-		animate: 0.2s
-		box-shadow: 0px 0px 0px #000000, 0px 0px 0px #0d0d0d
-		background: #7C72AA
-		// border: none
-	&::-webkit-slider-runnable-track
-		width: 50%
-		height: 2px
-		cursor: pointer
-		animate: 0.2s
-		// box-shadow: 0px 0px 0px #000000, 0px 0px 0px #0d0d0d
-		background: #7C72AA
-		border: none
+  -webkit-appearance: none
+  padding-left: 0
+  padding-right: 0
+  width: 100%
+  box-shadow: none
+  border: none
+  background-color: $tr
+  &::-webkit-slider-thumb
+    height: 20px
+    width: 20px
+    border-radius: 100%
+    background: #fff
+    cursor: pointer
+    -webkit-appearance: none
+    margin-top: -9px
+    border: 6px solid $blue
+    box-shadow: 0px 10px 10px rgba(0, 0, 0, 0.25)
+  &::-moz-range-thumb
+    box-shadow: 0px 0px 0px #000000, 0px 0px 0px #0d0d0d
+    height: 20px
+    width: 20px
+    border-radius: 100%
+    background: #fff
+    cursor: pointer
+    border: 6px solid $blue
+    box-shadow: 0px 10px 10px rgba(0, 0, 0, 0.25)
+  &::-ms-thumb
+    box-shadow: 0px 0px 0px #000000, 0px 0px 0px #0d0d0d
+    height: 20px
+    width: 20px
+    border-radius: 100%
+    background: #fff
+    cursor: pointer
+    border: 6px solid $blue
+    box-shadow: 0px 10px 10px rgba(0, 0, 0, 0.25)
+  
+  &::-moz-range-track
+    width: 100%
+    height: 2px
+    cursor: pointer
+    animate: 0.2s
+    box-shadow: 0px 0px 0px #000000, 0px 0px 0px #0d0d0d
+    background: #7C72AA
+    // border: none
+  &::-webkit-slider-runnable-track
+    width: 50%
+    height: 2px
+    cursor: pointer
+    animate: 0.2s
+    // box-shadow: 0px 0px 0px #000000, 0px 0px 0px #0d0d0d
+    background: #7C72AA
+    border: none
 
-	&:focus::-webkit-slider-runnable-track
-		background: #7C72AA
-	&::-ms-track
-		width: 100%
-		height: 2px
-		cursor: pointer
-		animate: 0.2s
-		background: transparent
-		border-color: transparent
-		border-width: 39px 0
-		color: transparent
+  &:focus::-webkit-slider-runnable-track
+    background: #7C72AA
+  &::-ms-track
+    width: 100%
+    height: 2px
+    cursor: pointer
+    animate: 0.2s
+    background: transparent
+    border-color: transparent
+    border-width: 39px 0
+    color: transparent
 
-	&::-ms-fill-lower
-		background: #ac51b5
-		border: none
-		box-shadow: 0px 0px 0px #000000, 0px 0px 0px #0d0d0d
-	&:focus::-ms-fill-lower
-		background: $blue
+  &::-ms-fill-lower
+    background: #ac51b5
+    border: none
+    box-shadow: 0px 0px 0px #000000, 0px 0px 0px #0d0d0d
+  &:focus::-ms-fill-lower
+    background: $blue
 
-	&::-ms-fill-upper
-		background: $blue
-		border: none
-		// border-radius: 50px
-		box-shadow: 0px 0px 0px #000000, 0px 0px 0px #0d0d0d
-	&:focus::-ms-fill-upper
-		background: $blue
+  &::-ms-fill-upper
+    background: $blue
+    border: none
+    // border-radius: 50px
+    box-shadow: 0px 0px 0px #000000, 0px 0px 0px #0d0d0d
+  &:focus::-ms-fill-upper
+    background: $blue
 .del
-	&__banner
-		margin-bottom: 30px
-		&-item
-			min-height: 370px
-			background-position: 50% 50%
-			background-repeat: no-repeat
-			background-size: cover
-			display: block
-			&:hover
-				opacity: .7
-		.owl
-			&-nav
-				button.owl
-					&-prev
-						left: -35px
-					&-next
-						right: -35px
-			&-dots
-				bottom: 30px
-	&__item
-		padding: 200px 20px 30px
-		background: #F3F3F3
-		box-shadow: 0px 2px 2px rgba(0, 0, 0, 0.15)
-		border-radius: 2px
-		position: relative
-		max-width: 370px
-		margin-left: auto
-		margin-right: auto
-		overflow: hidden
-		// &::before
-		// 	content: ''
-		// 	position: absolute
-		// 	width: 100%
-		// 	height: 100%
-		// 	left: 0
-		// 	top: 0
-		// 	background: url('../img/del__item-bg.jpg') no-repeat 50% 50% / cover
-		// 	opacity: 0
-		// 	transition: .6s all ease
-		&-img
-			position: absolute
-			width: 300px
-			height: 159px
-			left: 50%
-			transform: translateX(-50%)
-			top: 30px
-			background-position: 50% 50%
-			background-repeat: no-repeat
-			background-size: contain
-			z-index: 1
-			// transform: translateX(10px)
-		&-info
-			font-size: 15px
-			line-height: 1.5
-			position: relative
-			margin-top: 15px
-			transform: unset
-			& *
-				transform: unset
-		&:hover
-			box-shadow: 0px 30px 40px rgba(0, 80, 147, 0.25)
-			// .del__item-img
-			// 	transform: translateX(0px)
-			// .del__item-info
-			// 	& *
-			// 		color: #fff
-			// &::before
-			// 	opacity: 1
-	&__info
-		color: #fff
-		background: url('../img/del__info-bg.jpg') no-repeat 50% 50% / cover
-		.section__ttl
-			text-align: left
-		.btn
-			width: 100%
-			max-width: 370px
-			margin-left: auto
-			margin-right: auto
-	&-calc
-		background-color: #F3F3F3
-		&__input
-			height: 5px
-			display: block
-			padding: 0
-			margin-bottom: 20px
-		input[type="range"]
-			&::-moz-range-track
-				background: none
-			&::-webkit-slider-runnable-track
-				background: none
-			&:focus::-webkit-slider-runnable-track
-				background: none
-		&__ttl
-			font-size: 12px
-			margin-bottom: 25px
-		&__in
-			background-color: #fff
-			border-radius: 4px
-			padding: 20px 10px
-			&-bot
-				font-size: 12px
-				margin-top: -10px
-		&__res
-			&
-			&-item
-				font-family: $a-bold
-				span
-					&:nth-child(1)
-						margin-right: 3px
-						margin-left: 4px
-				&_sum
-					color: $blue
-		&__form
-			&-wrp
-				transition: unset
+  &__banner
+    margin-bottom: 30px
+    &-item
+      min-height: 370px
+      background-position: 50% 50%
+      background-repeat: no-repeat
+      background-size: cover
+      display: block
+      &:hover
+        opacity: .7
+    .owl
+      &-nav
+        button.owl
+          &-prev
+            left: -35px
+          &-next
+            right: -35px
+      &-dots
+        bottom: 30px
+  &__item
+    padding: 200px 20px 30px
+    background: #F3F3F3
+    box-shadow: 0px 2px 2px rgba(0, 0, 0, 0.15)
+    border-radius: 2px
+    position: relative
+    max-width: 370px
+    margin-left: auto
+    margin-right: auto
+    overflow: hidden
+    // &::before
+    //  content: ''
+    //  position: absolute
+    //  width: 100%
+    //  height: 100%
+    //  left: 0
+    //  top: 0
+    //  background: url('../img/del__item-bg.jpg') no-repeat 50% 50% / cover
+    //  opacity: 0
+    //  transition: .6s all ease
+    &-img
+      position: absolute
+      width: 300px
+      height: 159px
+      left: 50%
+      transform: translateX(-50%)
+      top: 30px
+      background-position: 50% 50%
+      background-repeat: no-repeat
+      background-size: contain
+      z-index: 1
+      // transform: translateX(10px)
+    &-info
+      font-size: 15px
+      line-height: 1.5
+      position: relative
+      margin-top: 15px
+      transform: unset
+      & *
+        transform: unset
+    &:hover
+      box-shadow: 0px 30px 40px rgba(0, 80, 147, 0.25)
+      // .del__item-img
+      //  transform: translateX(0px)
+      // .del__item-info
+      //  & *
+      //    color: #fff
+      // &::before
+      //  opacity: 1
+  &__info
+    color: #fff
+    background: url('../img/del__info-bg.jpg') no-repeat 50% 50% / cover
+    .section__ttl
+      text-align: left
+    .btn
+      width: 100%
+      max-width: 370px
+      margin-left: auto
+      margin-right: auto
+  &-calc
+    background-color: #F3F3F3
+    &__input
+      height: 5px
+      display: block
+      padding: 0
+      margin-bottom: 20px
+    input[type="range"]
+      &::-moz-range-track
+        background: none
+      &::-webkit-slider-runnable-track
+        background: none
+      &:focus::-webkit-slider-runnable-track
+        background: none
+    &__ttl
+      font-size: 12px
+      margin-bottom: 25px
+    &__in
+      background-color: #fff
+      border-radius: 4px
+      padding: 20px 10px
+      &-bot
+        font-size: 12px
+        margin-top: -10px
+    &__res
+      &
+      &-item
+        font-family: $a-bold
+        span
+          &:nth-child(1)
+            margin-right: 3px
+            margin-left: 4px
+        &_sum
+          color: $blue
+    &__form
+      &-wrp
+        transition: unset
 #tickmarks
-	border: .5em solid #137da0
-	font-size: 2em
-	font-weight: bolder
-	font-size: 2em
-	color: red
-	padding: 1px 1px
-	cursor: pointer
+  border: .5em solid #137da0
+  font-size: 2em
+  font-weight: bolder
+  font-size: 2em
+  color: red
+  padding: 1px 1px
+  cursor: pointer
 .book
-	&__list
-		&-item
-			width: 100%
-			max-width: 270px
-			height: 270px
-			margin-left: auto
-			margin-right: auto
-			position: relative
-			overflow: hidden
-			border-radius: 2px
-			background-color: #F3F3F3
-			&-img
-				position: absolute
-				width: 230px
-				height: 139px
-				right: 0
-				top: 0px
-				background-position: 100% 50%
-				background-repeat: no-repeat
-				background-size: contain
-			&::after
-				content: ''
-				position: absolute
-				width: 100%
-				height: 100%
-				left: 0
-				top: 0
-				background: url('../img/begin__cat-item_bg.jpg') no-repeat 50% 50% / cover
-				opacity: 0
-			&-in
-				height: 100%
-				color: $dark-blue
-				position: relative
-				z-index: 1
-				padding: 30px
-				transform: translateY(70%)
-				transition: .6s all ease
-			.btn
-				opacity: 0
-				&:hover
-					color: #000
-			&:hover
-				box-shadow: 0px 30px 40px rgba(0, 80, 147, 0.25)
-				.book__list-item-in
-					transform: translateY(0)
-				.btn,
-				.list_string
-					opacity: 1
-				.book__list-ttl
-					color: #fff
-				// &::before
-				// 	opacity: 0
-				&::after
-					opacity: .8
-		&-ttl
-			font-family: $a-bold
-			text-transform: uppercase
-			font-size: 18px
-			margin-bottom: 11px
-		.list_string
-			opacity: 0
-			li
-				a
-					display: block
-					color: #fff
-					&:hover
-						color: $yellow
-				&:not(:last-child)
-					margin-bottom: 6px
-				&::before
-					background-color: #fff
-				&:hover
-					&::before
-						background-color: $yellow
-	&-page
-		&__banner
-			background-color: #F3F3F3
-			border-radius: 2px
-			overflow: hidden
-			position: relative
-			padding: 20px
-			.section__ttl
-				position: relative
-				z-index: 2
-			&-img
-				position: absolute
-				width: 140px
-				height: 79px
-				right: 0
-				top: 0px
-				background-position: 100% 50%
-				background-repeat: no-repeat
-				background-size: contain
+  &__list
+    &-item
+      width: 100%
+      max-width: 270px
+      height: 270px
+      margin-left: auto
+      margin-right: auto
+      position: relative
+      overflow: hidden
+      border-radius: 2px
+      background-color: #F3F3F3
+      &-img
+        position: absolute
+        width: 230px
+        height: 139px
+        right: 0
+        top: 0px
+        background-position: 100% 50%
+        background-repeat: no-repeat
+        background-size: contain
+      &::after
+        content: ''
+        position: absolute
+        width: 100%
+        height: 100%
+        left: 0
+        top: 0
+        background: url('../img/begin__cat-item_bg.jpg') no-repeat 50% 50% / cover
+        opacity: 0
+      &-in
+        height: 100%
+        color: $dark-blue
+        position: relative
+        z-index: 1
+        padding: 30px
+        transform: translateY(70%)
+        transition: .6s all ease
+      .btn
+        opacity: 0
+        &:hover
+          color: #000
+      &:hover
+        box-shadow: 0px 30px 40px rgba(0, 80, 147, 0.25)
+        .book__list-item-in
+          transform: translateY(0)
+        .btn,
+        .list_string
+          opacity: 1
+        .book__list-ttl
+          color: #fff
+        // &::before
+        //  opacity: 0
+        &::after
+          opacity: .8
+    &-ttl
+      font-family: $a-bold
+      text-transform: uppercase
+      font-size: 18px
+      margin-bottom: 11px
+    .list_string
+      opacity: 0
+      li
+        a
+          display: block
+          color: #fff
+          &:hover
+            color: $yellow
+        &:not(:last-child)
+          margin-bottom: 6px
+        &::before
+          background-color: #fff
+        &:hover
+          &::before
+            background-color: $yellow
+  &-page
+    &__banner
+      background-color: #F3F3F3
+      border-radius: 2px
+      overflow: hidden
+      position: relative
+      padding: 20px
+      .section__ttl
+        position: relative
+        z-index: 2
+      &-img
+        position: absolute
+        width: 140px
+        height: 79px
+        right: 0
+        top: 0px
+        background-position: 100% 50%
+        background-repeat: no-repeat
+        background-size: contain
 .watch-more
-	background-color: #fff
-	// .section__ttl
-	// 	color: #fff
-	&__item
-		width: 100%
-		max-width: 370px
-		margin-left: auto
-		margin-right: auto
-		padding: 20px 15px 20px 100px
-		display: flex
-		align-items: center
-		background-color: #fff
-		box-shadow: 0px 10px 10px rgba(0, 0, 0, 0.15)
-		border-radius: 2px
-		overflow: hidden
-		&-img
-			position: absolute
-			width: 90px
-			height: 100%
-			left: 15px
-			top: 0px
-			background-position: 100% 50%
-			background-repeat: no-repeat
-			background-size: contain
-			transform: scale(-1,1)
-		&-ttl
-			font-family: $a-bold
-			font-size: 16px
-			position: relative
-			img
-				transform: scale(.7)
-		&:hover
-			img
-				transform: scale(.7) translateX(8px)
+  background-color: #fff
+  // .section__ttl
+  //  color: #fff
+  &__item
+    width: 100%
+    max-width: 370px
+    margin-left: auto
+    margin-right: auto
+    padding: 20px 15px 20px 100px
+    display: flex
+    align-items: center
+    background-color: #fff
+    box-shadow: 0px 10px 10px rgba(0, 0, 0, 0.15)
+    border-radius: 2px
+    overflow: hidden
+    &-img
+      position: absolute
+      width: 90px
+      height: 100%
+      left: 15px
+      top: 0px
+      background-position: 100% 50%
+      background-repeat: no-repeat
+      background-size: contain
+      transform: scale(-1,1)
+    &-ttl
+      font-family: $a-bold
+      font-size: 16px
+      position: relative
+      img
+        transform: scale(.7)
+    &:hover
+      img
+        transform: scale(.7) translateX(8px)
 .table
-	text-align: center
-	width: 100%
-	th,
-	td
-		padding: 15px
-	th
-		background-color: $mid-blue
-		color: #fff
-	tr
-		&:nth-child(odd)
-			td
-				background-color: #C4C4C4
-		&:nth-child(even)
-			td
-				background-color: #fff
+  text-align: center
+  width: 100%
+  th,
+  td
+    padding: 15px
+  th
+    background-color: $mid-blue
+    color: #fff
+  tr
+    &:nth-child(odd)
+      td
+        background-color: #C4C4C4
+    &:nth-child(even)
+      td
+        background-color: #fff
 .roll
-	&__banner
-		background-color: #F3F3F3
-		border-radius: 2px
-		overflow: hidden
-		position: relative
-		padding: 20px
-		.section__ttl
-			position: relative
-			z-index: 1
-		&-img
-			position: absolute
-			width: 140px
-			height: 79px
-			right: 0
-			top: 0px
-			background-position: 100% 50%
-			background-repeat: no-repeat
-			background-size: contain
-	&__list
-		&.view
-			&__row
-				&>div
-					width: 100%
-					max-width: unset
-					flex: 0 0 100%
-					.hot__item
-						display: flex
-						flex-direction: row
-						justify-content: space-between
-						align-items: center
-						text-align: center
-						max-width: unset
-						height: auto
-						padding: 15px
-						position: relative
-						background-color: #F3F3F3
-						color: $dark-blue
-						border-radius: 2px
-						overflow: hidden
-						&:hover
-							box-shadow: 0px 30px 40px rgba(0, 80, 147, 0.25)
-						&-info
-							flex-direction: row
-							justify-content: space-around
-							min-width: 300px
-						&-img
-							width: 160px
-							height: 80px
-							display: block
-							background-position: 50% 50%
-							background-size: contain
-							background-repeat: no-repeat
-							// margin-bottom: 10px
-							// margin-left: auto
-							// margin-right: auto
-							&:hover
-								opacity: .7
-						&-ttl
-							font-size: 16px
-							margin-bottom: 0px
-							max-width: 120px
-							width: 100%
-							margin-right: 15px
-						&-price
-							max-width: 135px
-							width: 100%
-							&-wrp
-								margin-bottom: 0px
-								text-align: left
-								display: flex
-								flex-direction: column
-								align-items: flex-start
-							&_cur
-								font-family: $a-bold
-								font-size: 24px
-								order: 2
-							&_old
-								font-size: 14px
-								color: #BDBDBD
-								text-decoration: line-through
-								order: 1
-						&-btns
-							flex-direction: row
-						// &-btn
-						// 	&_add
-						// 		order: 2
-						// 	&-wrp
-						// 		display: flex
-						// 		flex-direction: column
-						// 		align-items: center
-						.btn
-							box-shadow: 0px 2px 2px rgba(0, 0, 0, 0.2)
-							margin-bottom: 0
-							&_add
-								order: 2
-								margin-left: 15px
-						&-flag
-							padding: 8px 0px 8px 20px
-							text-align: center
-							// transform: skew(-20deg)
-							display: flex
-							justify-content: center
-							align-items: center
-							color: #fff
-							font-family: $a-bold
-							font-size: 16px
-							width: 70px
-							position: absolute
-							top: 19px
-							left: -18px
-							z-index: 1
-							span
-								// transform: skew(20deg)
-							&_sale
-								background-color: #EE1A26
-								&::after
-									content: ''
-									position: absolute
-									border-style: solid
-									border-width: 38px 13px 0 0
-									border-color: #EE1A26 transparent transparent transparent
-									right: -13px
-									top: 0
-									height: 100%
-							&_hit
-								text-transform: uppercase
-								background-color: $blue
-								&::after
-									content: ''
-									position: absolute
-									border-style: solid
-									border-width: 38px 13px 0 0
-									border-color: $blue transparent transparent transparent
-									right: -13px
-									top: 0
-									height: 100%
-		&-item
-			width: 100%
-			max-width: 270px
-			height: 270px
-			margin-left: auto
-			margin-right: auto
-			position: relative
-			overflow: hidden
-			border-radius: 3px
-			background-color: #F3F3F3
-			display: block
-			&-img
-				position: absolute
-				width: 230px
-				height: 139px
-				right: 0
-				top: 0px
-				background-position: 100% 50%
-				background-repeat: no-repeat
-				background-size: contain
-				z-index: 1
-			&::after
-				content: ''
-				position: absolute
-				width: 100%
-				height: 100%
-				left: 0
-				top: 0
-				background: url('../img/begin__cat-item_bg.jpg') no-repeat 50% 50% / cover
-				opacity: 0
-			&-in
-				height: 100%
-				color: $dark-blue
-				position: relative
-				z-index: 1
-				padding: 25px
-				display: flex
-				align-items: flex-end
-				transition: .6s all ease
-			.btn
-				opacity: 0
-				&:hover
-					color: #000
-			&:hover
-				box-shadow: 0px 30px 40px rgba(0, 80, 147, 0.25)
-				.roll__list-ttl
-					color: #fff
-				&::after
-					opacity: .8
-		&-ttl
-			font-family: $a-bold
-			text-transform: uppercase
-			font-size: 18px
-			margin-bottom: 11px
-	&__view
-		filter: grayscale(100)
-		opacity: .6
-		cursor: pointer
-		// &[data-view="view__col"]
-		// 	order: 2
-		&.active
-			filter: grayscale(0)
-			opacity: 1
-		&:hover
-			&:not(.active)
-				transform: scale(.9)
-	&-page
-		&__img
-			.owl-item
-				transition: unset
-			&-top
-				margin-bottom: 15px
-				&-item
-					width: 100%
-					height: 340px
-					background-color: #F3F3F3
-					border-radius: 3px
-					background-position: 50% 50%
-					background-repeat: no-repeat
-					background-size: contain
-			&-bot
-				&-item
-					width: 100%
-					height: 70px
-					background-color: #F3F3F3
-					border-radius: 3px
-					background-position: 50% 50%
-					background-repeat: no-repeat
-					background-size: contain
-					cursor: pointer
-					margin-bottom: 30px
-					&:hover
-						box-shadow: 0px 10px 7px rgba(11, 40, 79, 0.13)
-				.synced
-					.roll-page__img-bot-item
-						box-shadow: 0px 10px 7px rgba(11, 40, 79, 0.13)
-		&__info
-			font-size: 18px
-			&-price
-				max-width: 230px
-				div:nth-child(2)
-					font-family: $a-bold
-					font-size: 22px
-		&__price
-			&-descr
-				font-size: 14px
-				// line-height: 1.2
-		&__bot
-			.tabs
-				&__list
-					display: flex
-					flex-wrap: wrap
-					margin-left: 7px
-					li
-						min-width: 200px
-						padding: 12px 25px
-						background-color: #E0E0E0
-						font-family: $a-bold
-						transform: skew(-20deg)
-						// display: flex
-						text-align: center
-						cursor: pointer
-						border-right: 1px solid #fff
-						span
-							position: relative
-							display: block
-							transform: skew(20deg)
-						&:hover:not(.active)
-							transform: skew(-20deg) translateY(-3px)
-						&.active
-							background-color: $blue
-							span
-								color: #fff
-				&__content
-					&-item
-						background-color: #fff
-						padding: 25px 20px
-						box-shadow: 0px 2px 2px rgba(0, 0, 0, 0.15)
-						border-radius: 2px
-				&-acc
-					&__btn
-						display: none
-						width: 100%
-						padding: 12px 25px
-						background-color: #E0E0E0
-						font-family: $a-bold
-						text-align: center
-						cursor: pointer
-						border: 1px solid #fff
-						&.active
-							background-color: $blue
-							color: #fff
-					&__cnt
-						transition: unset
+  &__banner
+    background-color: #F3F3F3
+    border-radius: 2px
+    overflow: hidden
+    position: relative
+    padding: 20px
+    .section__ttl
+      position: relative
+      z-index: 1
+    &-img
+      position: absolute
+      width: 140px
+      height: 79px
+      right: 0
+      top: 0px
+      background-position: 100% 50%
+      background-repeat: no-repeat
+      background-size: contain
+  &__list
+    &.view
+      &__row
+        &>div
+          width: 100%
+          max-width: unset
+          flex: 0 0 100%
+          .hot__item
+            display: flex
+            flex-direction: row
+            justify-content: space-between
+            align-items: center
+            text-align: center
+            max-width: unset
+            height: auto
+            padding: 15px
+            position: relative
+            background-color: #F3F3F3
+            color: $dark-blue
+            border-radius: 2px
+            overflow: hidden
+            &:hover
+              box-shadow: 0px 30px 40px rgba(0, 80, 147, 0.25)
+            &-info
+              flex-direction: row
+              justify-content: space-around
+              min-width: 300px
+            &-img
+              width: 160px
+              height: 80px
+              display: block
+              background-position: 50% 50%
+              background-size: contain
+              background-repeat: no-repeat
+              // margin-bottom: 10px
+              // margin-left: auto
+              // margin-right: auto
+              &:hover
+                opacity: .7
+            &-ttl
+              font-size: 16px
+              margin-bottom: 0px
+              max-width: 120px
+              width: 100%
+              margin-right: 15px
+            &-price
+              max-width: 135px
+              width: 100%
+              &-wrp
+                margin-bottom: 0px
+                text-align: left
+                display: flex
+                flex-direction: column
+                align-items: flex-start
+              &_cur
+                font-family: $a-bold
+                font-size: 24px
+                order: 2
+              &_old
+                font-size: 14px
+                color: #BDBDBD
+                text-decoration: line-through
+                order: 1
+            &-btns
+              flex-direction: row
+            // &-btn
+            //  &_add
+            //    order: 2
+            //  &-wrp
+            //    display: flex
+            //    flex-direction: column
+            //    align-items: center
+            .btn
+              box-shadow: 0px 2px 2px rgba(0, 0, 0, 0.2)
+              margin-bottom: 0
+              &_add
+                order: 2
+                margin-left: 15px
+            &-flag
+              padding: 8px 0px 8px 20px
+              text-align: center
+              // transform: skew(-20deg)
+              display: flex
+              justify-content: center
+              align-items: center
+              color: #fff
+              font-family: $a-bold
+              font-size: 16px
+              width: 70px
+              position: absolute
+              top: 19px
+              left: -18px
+              z-index: 1
+              span
+                // transform: skew(20deg)
+              &_sale
+                background-color: #EE1A26
+                &::after
+                  content: ''
+                  position: absolute
+                  border-style: solid
+                  border-width: 38px 13px 0 0
+                  border-color: #EE1A26 transparent transparent transparent
+                  right: -13px
+                  top: 0
+                  height: 100%
+              &_hit
+                text-transform: uppercase
+                background-color: $blue
+                &::after
+                  content: ''
+                  position: absolute
+                  border-style: solid
+                  border-width: 38px 13px 0 0
+                  border-color: $blue transparent transparent transparent
+                  right: -13px
+                  top: 0
+                  height: 100%
+    &-item
+      width: 100%
+      max-width: 270px
+      height: 270px
+      margin-left: auto
+      margin-right: auto
+      position: relative
+      overflow: hidden
+      border-radius: 3px
+      background-color: #F3F3F3
+      display: block
+      &-img
+        position: absolute
+        width: 230px
+        height: 139px
+        right: 0
+        top: 0px
+        background-position: 100% 50%
+        background-repeat: no-repeat
+        background-size: contain
+        z-index: 1
+      &::after
+        content: ''
+        position: absolute
+        width: 100%
+        height: 100%
+        left: 0
+        top: 0
+        background: url('../img/begin__cat-item_bg.jpg') no-repeat 50% 50% / cover
+        opacity: 0
+      &-in
+        height: 100%
+        color: $dark-blue
+        position: relative
+        z-index: 1
+        padding: 25px
+        display: flex
+        align-items: flex-end
+        transition: .6s all ease
+      .btn
+        opacity: 0
+        &:hover
+          color: #000
+      &:hover
+        box-shadow: 0px 30px 40px rgba(0, 80, 147, 0.25)
+        .roll__list-ttl
+          color: #fff
+        &::after
+          opacity: .8
+    &-ttl
+      font-family: $a-bold
+      text-transform: uppercase
+      font-size: 18px
+      margin-bottom: 11px
+  &__view
+    filter: grayscale(100)
+    opacity: .6
+    cursor: pointer
+    // &[data-view="view__col"]
+    //  order: 2
+    &.active
+      filter: grayscale(0)
+      opacity: 1
+    &:hover
+      &:not(.active)
+        transform: scale(.9)
+  &-page
+    &__img
+      .owl-item
+        transition: unset
+      &-top
+        margin-bottom: 15px
+        &-item
+          width: 100%
+          height: 340px
+          background-color: #F3F3F3
+          border-radius: 3px
+          background-position: 50% 50%
+          background-repeat: no-repeat
+          background-size: contain
+      &-bot
+        &-item
+          width: 100%
+          height: 70px
+          background-color: #F3F3F3
+          border-radius: 3px
+          background-position: 50% 50%
+          background-repeat: no-repeat
+          background-size: contain
+          cursor: pointer
+          margin-bottom: 30px
+          &:hover
+            box-shadow: 0px 10px 7px rgba(11, 40, 79, 0.13)
+        .synced
+          .roll-page__img-bot-item
+            box-shadow: 0px 10px 7px rgba(11, 40, 79, 0.13)
+    &__info
+      font-size: 18px
+      &-price
+        max-width: 230px
+        div:nth-child(2)
+          font-family: $a-bold
+          font-size: 22px
+    &__price
+      &-descr
+        font-size: 14px
+        // line-height: 1.2
+    &__bot
+      .tabs
+        &__list
+          display: flex
+          flex-wrap: wrap
+          margin-left: 7px
+          li
+            min-width: 200px
+            padding: 12px 25px
+            background-color: #E0E0E0
+            font-family: $a-bold
+            transform: skew(-20deg)
+            // display: flex
+            text-align: center
+            cursor: pointer
+            border-right: 1px solid #fff
+            span
+              position: relative
+              display: block
+              transform: skew(20deg)
+            &:hover:not(.active)
+              transform: skew(-20deg) translateY(-3px)
+            &.active
+              background-color: $blue
+              span
+                color: #fff
+        &__content
+          &-item
+            background-color: #fff
+            padding: 25px 20px
+            box-shadow: 0px 2px 2px rgba(0, 0, 0, 0.15)
+            border-radius: 2px
+        &-acc
+          &__btn
+            display: none
+            width: 100%
+            padding: 12px 25px
+            background-color: #E0E0E0
+            font-family: $a-bold
+            text-align: center
+            cursor: pointer
+            border: 1px solid #fff
+            &.active
+              background-color: $blue
+              color: #fff
+          &__cnt
+            transition: unset
 .serv
-	background-color: #F9F9F9
-	&__in
-		padding-left: 50px
-		padding-right: 50px
-	&__item
-		display: flex
-		flex-direction: column
-		align-items: center
-		padding: 30px 0
-		max-width: 270px
-		margin-left: auto
-		margin-right: auto
-		&-top
-			width: 170px
-			height: 100px
-			position: relative
-			background: #FFFFFF
-			box-shadow: 0px 2px 2px rgba(0, 0, 0, 0.15)
-			border-radius: 2px
-			overflow: hidden
-			transition: .6s all ease
-			&>*
-				position: relative
-			&::before
-				content: ''
-				position: absolute
-				width: 138px
-				height: 158px
-				left: -210%
-				top: -70px
-				background: linear-gradient(272.36deg, #FFFFFF -11.72%, rgba(255, 255, 255, 0) 23.19%)
-				opacity: 0.5
-				transform: rotate(36.57deg)
-				transition: 3s all ease
-			&:hover
-				color: #fff
-				background-color: $blue
-				&::before
-					left: 150%
-		&-ttl
-			font-family: $a-bold
-			font-size: 19px
-			text-align: center
-			margin-top: 20px
-		&-img
-			width: 70px
-			height: 70px
-			background-position: 50% 50%
-			background-size: contain
-			background-repeat: no-repeat
-			position: absolute
-			left: 50%
-			margin-left: -35px
-			top: 50%
-			margin-top: -35px
-			&_2
-				opacity: 0
-		&:hover
-			.serv__item
-				&-top
-					background-color: $blue
-					transform: translateY(-5px)
-					box-shadow: 0px 30px 40px rgba(0, 80, 147, 0.25)
-				&-img
-					&_1
-						opacity: 0
-					&_2
-						opacity: 1
-	&__img
-		width: 100%
-		height: 300px
-		background: url('../img/serv__img.jpg') no-repeat 50% 50% / cover
+  background-color: #F9F9F9
+  &__in
+    padding-left: 50px
+    padding-right: 50px
+  &__item
+    display: flex
+    flex-direction: column
+    align-items: center
+    padding: 30px 0
+    max-width: 270px
+    margin-left: auto
+    margin-right: auto
+    &-top
+      width: 170px
+      height: 100px
+      position: relative
+      background: #FFFFFF
+      box-shadow: 0px 2px 2px rgba(0, 0, 0, 0.15)
+      border-radius: 2px
+      overflow: hidden
+      transition: .6s all ease
+      &>*
+        position: relative
+      &::before
+        content: ''
+        position: absolute
+        width: 138px
+        height: 158px
+        left: -210%
+        top: -70px
+        background: linear-gradient(272.36deg, #FFFFFF -11.72%, rgba(255, 255, 255, 0) 23.19%)
+        opacity: 0.5
+        transform: rotate(36.57deg)
+        transition: 3s all ease
+      &:hover
+        color: #fff
+        background-color: $blue
+        &::before
+          left: 150%
+    &-ttl
+      font-family: $a-bold
+      font-size: 19px
+      text-align: center
+      margin-top: 20px
+    &-img
+      width: 70px
+      height: 70px
+      background-position: 50% 50%
+      background-size: contain
+      background-repeat: no-repeat
+      position: absolute
+      left: 50%
+      margin-left: -35px
+      top: 50%
+      margin-top: -35px
+      &_2
+        opacity: 0
+    &:hover
+      .serv__item
+        &-top
+          background-color: $blue
+          transform: translateY(-5px)
+          box-shadow: 0px 30px 40px rgba(0, 80, 147, 0.25)
+        &-img
+          &_1
+            opacity: 0
+          &_2
+            opacity: 1
+  &__img
+    width: 100%
+    height: 300px
+    background: url('../img/serv__img.jpg') no-repeat 50% 50% / cover
 .mobile-menu
-	min-height: 100vh
-	width: 100%
-	display: none
-	color: #fff
-	background-color: #05162E
-	.banner__nav-item
-		margin-bottom: 15px
-		width: 210px
-	.btn
-		width: 210px
-	.header__soc::after
-		display: none
+  min-height: 100vh
+  width: 100%
+  display: none
+  color: #fff
+  background-color: #05162E
+  .banner__nav-item
+    margin-bottom: 15px
+    width: 210px
+  .btn
+    width: 210px
+  .header__soc::after
+    display: none
 .about
-	&__ttl
-		color: $blue
-		font-size: 20px
-		margin-bottom: 15px
-	&-test
-		color: #fff
-		background-position: 50% 50%
-		background-size: cover
-		background-repeat: no-repeat
-		background-image: url('../img/banner__bg.jpg')
-	&-video
-		color: #fff
-		//background: url('../img/about__video-bg.jpg') no-repeat 50% 50% / cover
-		background-color: $dark-blue
-		&__in
-			max-width: 570px
-			display: flex
-			justify-content: center
-			align-items: center
-			margin: 0 auto
-			position: relative
-			&:hover
-				.about-video__play
-					transform: translate(-50%, -50%) scale(.8)
-		&__play
-			width: 63px
-			height: 45px
-			background: url('../img/icon__play.svg') no-repeat 50% 50% / contain
-			opacity: 1
-			position: absolute
-			left: 50%
-			top: 50%
-			transform: translate(-50%, -50%)
+  &__ttl
+    color: $blue
+    font-size: 20px
+    margin-bottom: 15px
+  &-test
+    color: #fff
+    background-position: 50% 50%
+    background-size: cover
+    background-repeat: no-repeat
+    background-image: url('../img/banner__bg.jpg')
+  &-video
+    color: #fff
+    background: url('../img/about__video-bg.jpg') no-repeat 50% 50% / cover
+    &__in
+      max-width: 570px
+      display: flex
+      justify-content: center
+      align-items: center
+      margin: 0 auto
+      position: relative
+      &:hover
+        .about-video__play
+          transform: translate(-50%, -50%) scale(.8)
+    &__play
+      width: 63px
+      height: 45px
+      background: url('../img/icon__play.svg') no-repeat 50% 50% / contain
+      opacity: 1
+      position: absolute
+      left: 50%
+      top: 50%
+      transform: translate(-50%, -50%)
 .team
-	background-color: #E5E5E5
-	&__item
-		width: 100%
-		max-width: 280px
-		text-align: center
-		margin-left: auto
-		margin-right: auto
-		margin-bottom: 10px
-		&-top
-			position: relative
-			background-color: #d9d9d9
-			width: 100%
-			height: 215px
-		&-bot
-			background-color: #d9d9d9
-			padding: 0 20px 15px 20px
-		&-decor
-			width: 100%
-			height: 100%
-			position: relative
-			overflow: hidden
-			&::after
-				content: ''
-				position: absolute
-				width: 100%
-				height: 86%
-				left: -80px
-				bottom: 10px
-				transform: skew(-26deg)
-				background-color: #008CFF
-		&-img
-			position: absolute
-			bottom: 0
-			width: 100%
-			height: 110%
-			background-position: 50% 100%
-			background-repeat: no-repeat
-			-webkit-background-size: contain
-			background-size: contain
-			transform: translateY(-10px)
-		&-ttl
-			font-family: $a-bold
-			font-size: 20px
-			margin-bottom: 8px
-		&-pos
-			font-size: 12px
-			font-family: $a-med
-			margin-bottom: 8px
-		&-descr
-			font-size: 13px
+  background-color: #E5E5E5
+  &__item
+    width: 100%
+    max-width: 280px
+    text-align: center
+    margin-left: auto
+    margin-right: auto
+    margin-bottom: 10px
+    &-top
+      position: relative
+      background-color: #d9d9d9
+      width: 100%
+      height: 215px
+    &-bot
+      background-color: #d9d9d9
+      padding: 0 20px 15px 20px
+    &-decor
+      width: 100%
+      height: 100%
+      position: relative
+      overflow: hidden
+      &::after
+        content: ''
+        position: absolute
+        width: 100%
+        height: 86%
+        left: -80px
+        bottom: 10px
+        transform: skew(-26deg)
+        background-color: #008CFF
+    &-img
+      position: absolute
+      bottom: 0
+      width: 100%
+      height: 110%
+      background-position: 50% 100%
+      background-repeat: no-repeat
+      -webkit-background-size: contain
+      background-size: contain
+      transform: translateY(-10px)
+    &-ttl
+      font-family: $a-bold
+      font-size: 20px
+      margin-bottom: 8px
+    &-pos
+      font-size: 12px
+      font-family: $a-med
+      margin-bottom: 8px
+    &-descr
+      font-size: 13px
 
 .pay
-	&__ttl
-		font-size: 20px
-		margin-bottom: 15px
-		span
-			color: $blue
-	&__item
-		max-width: 370px
-		margin-left: auto
-		margin-right: auto
-		display: flex
-		justify-content: space-between
-		align-items: center
-		&-img
-			position: absolute
-			left: 50%
-			margin-left: -30px
-			top: 50%
-			margin-top: -30px
-			width: 60px
-			height: 60px
-			background-position: 50% 50%
-			background-repeat: no-repeat
-			-webkit-background-size: contain
-			background-size: contain
-			z-index: 1
-			&_2
-				opacity: 0
-			&-wrp
-				min-width: 170px
-				height: 95px
-				background-color: #fff
-				border-radius: 3px
-				margin-right: 15px
-				position: relative
-				overflow: hidden
-				&::before
-					content: ''
-					position: absolute
-					width: 138px
-					height: 168px
-					left: -210%
-					top: -80px
-					background: linear-gradient(272.36deg, #FFFFFF -11.72%, rgba(255, 255, 255, 0) 23.19%)
-					opacity: 0.5
-					transform: rotate(36.57deg)
-					transition: 3s all ease
-		&:hover
-			.pay__item-img-wrp
-				color: #fff
-				background-color: $blue
-				&::before
-							left: 150%
-			.pay__item-img
-				&_1
-					opacity: 0
-				&_2
-					opacity: 1
-		&-ttl
-			font-family: $a-med
+  &__ttl
+    font-size: 20px
+    margin-bottom: 15px
+    span
+      color: $blue
+  &__item
+    max-width: 370px
+    margin-left: auto
+    margin-right: auto
+    display: flex
+    justify-content: space-between
+    align-items: center
+    &-img
+      position: absolute
+      left: 50%
+      margin-left: -30px
+      top: 50%
+      margin-top: -30px
+      width: 60px
+      height: 60px
+      background-position: 50% 50%
+      background-repeat: no-repeat
+      -webkit-background-size: contain
+      background-size: contain
+      z-index: 1
+      &_2
+        opacity: 0
+      &-wrp
+        min-width: 170px
+        height: 95px
+        background-color: #fff
+        border-radius: 3px
+        margin-right: 15px
+        position: relative
+        overflow: hidden
+        &::before
+          content: ''
+          position: absolute
+          width: 138px
+          height: 168px
+          left: -210%
+          top: -80px
+          background: linear-gradient(272.36deg, #FFFFFF -11.72%, rgba(255, 255, 255, 0) 23.19%)
+          opacity: 0.5
+          transform: rotate(36.57deg)
+          transition: 3s all ease
+    &:hover
+      .pay__item-img-wrp
+        color: #fff
+        background-color: $blue
+        &::before
+              left: 150%
+      .pay__item-img
+        &_1
+          opacity: 0
+        &_2
+          opacity: 1
+    &-ttl
+      font-family: $a-med
 .inner
-	&-banner
-		background-position: 50% 50%
-		background-repeat: no-repeat
-		background-size: cover
-		padding: 20px 0 30px
-		min-height: 400px
-		&__ttl
-			margin-top: 30px
-			color: #fff
-			span
-				background-color: $yellow
-				padding: 4px 15px
+  &-banner
+    background-position: 50% 50%
+    background-repeat: no-repeat
+    background-size: cover
+    padding: 20px 0 30px
+    min-height: 400px
+    &__ttl
+      margin-top: 30px
+      color: #fff
+      span
+        background-color: $yellow
+        padding: 4px 15px
 .car
-	&__ttl
-		font-size: 24px
-		font-family: $a-bold
-		letter-spacing: .5px
-		margin-bottom: 15px
-	p
-		font-size: 14px
-	&-block
-		// color: #fff
-		// background: url('../img/career-page__bg.jpg') no-repeat 50% 50% / cover
-		position: relative
-		// &::before
-		// 	content: ''
-		// 	position: absolute
-		// 	width: 100%
-		// 	height: 100%
-		// 	left: 0
-		// 	top: 0
-		// 	background-color: $blue
-		// 	opacity: .8
-		.container
-			position: relative
-		&__left
-			color: $dark-blue
-			background-color: #F3F3F3
-			box-shadow: 0px 30px 40px rgba(0, 80, 147, 0.25)
-			border-radius: 2px
-			padding: 30px 25px
-			min-height: 168px
-			&:hover
-				background-color: $blue
-				.car-block__ttl
-					color: #fff
-				.btn
-					background-color: #fff
-					&>*
-						transition: unset
-						color: #000
-					&:hover
-						background-color: $yellow
-						color: #fff
-		&__ttl
-			font-size: 20px
-			font-family: $a-bold
-			letter-spacing: .5px
-			margin-bottom: 20px
-			text-align: center
-	&__img
-		width: 100%
-		height: 319px
-		background-position: 50% 50%
-		background-repeat: no-repeat
-		background-size: cover
-		border-radius: 3px
-		margin-bottom: 30px
-	&__acc
-		&-item
-			background-color: #FFFFFF
-			box-shadow: 0px 2px 2px rgba(0, 0, 0, 0.25)
-			border-radius: 2px
-			overflow: hidden
-			margin-bottom: 30px
-			&-top
-				padding: 15px 20px
-				cursor: pointer
-			&-ttl
-				font-family: $a-bold
-				font-size: 22px
-			&-btn
-				width: 18px
-				height: 12px
-				position: relative
-				&::before,
-				&::after
-					content: ''
-					position: absolute
-					width: 100%
-					height: 100%
-					left: 0
-					top: 0
-					background-position: 50% 50%
-					background-repeat: no-repeat
-					background-size: contain
-				&::before
-					background-image: url('../img/acc__arr_down.svg')
-				&::after
-					opacity: 0
-					background-image: url('../img/acc__arr_up.svg')
-			&-cnt
-				transition: unset
-				display: none
-				padding: 35px 20px 25px
-			&:hover
-				box-shadow: 0px 2px 2px rgba(0, 0, 0, 0.55)
-			&.active
-				.car__acc-item
-					&-top
-						background-color: #008CFF
-						box-shadow: 0px 30px 40px rgba(0, 80, 147, 0.25)
-					&-ttl
-						color: #fff
-					&-btn
-						&::before
-							opacity: 0
-							transform: scale(0)
-						&::after
-							opacity: 1
-							transform: scale(1)
+  &__ttl
+    font-size: 24px
+    font-family: $a-bold
+    letter-spacing: .5px
+    margin-bottom: 15px
+  p
+    font-size: 14px
+  &-block
+    // color: #fff
+    // background: url('../img/career-page__bg.jpg') no-repeat 50% 50% / cover
+    position: relative
+    // &::before
+    //  content: ''
+    //  position: absolute
+    //  width: 100%
+    //  height: 100%
+    //  left: 0
+    //  top: 0
+    //  background-color: $blue
+    //  opacity: .8
+    .container
+      position: relative
+    &__left
+      color: $dark-blue
+      background-color: #F3F3F3
+      box-shadow: 0px 30px 40px rgba(0, 80, 147, 0.25)
+      border-radius: 2px
+      padding: 30px 25px
+      min-height: 168px
+      &:hover
+        background-color: $blue
+        .car-block__ttl
+          color: #fff
+        .btn
+          background-color: #fff
+          &>*
+            transition: unset
+            color: #000
+          &:hover
+            background-color: $yellow
+            color: #fff
+    &__ttl
+      font-size: 20px
+      font-family: $a-bold
+      letter-spacing: .5px
+      margin-bottom: 20px
+      text-align: center
+  &__img
+    width: 100%
+    height: 319px
+    background-position: 50% 50%
+    background-repeat: no-repeat
+    background-size: cover
+    border-radius: 3px
+    margin-bottom: 30px
+  &__acc
+    &-item
+      background-color: #FFFFFF
+      box-shadow: 0px 2px 2px rgba(0, 0, 0, 0.25)
+      border-radius: 2px
+      overflow: hidden
+      margin-bottom: 30px
+      &-top
+        padding: 15px 20px
+        cursor: pointer
+      &-ttl
+        font-family: $a-bold
+        font-size: 22px
+      &-btn
+        width: 18px
+        height: 12px
+        position: relative
+        &::before,
+        &::after
+          content: ''
+          position: absolute
+          width: 100%
+          height: 100%
+          left: 0
+          top: 0
+          background-position: 50% 50%
+          background-repeat: no-repeat
+          background-size: contain
+        &::before
+          background-image: url('../img/acc__arr_down.svg')
+        &::after
+          opacity: 0
+          background-image: url('../img/acc__arr_up.svg')
+      &-cnt
+        transition: unset
+        display: none
+        padding: 35px 20px 25px
+      &:hover
+        box-shadow: 0px 2px 2px rgba(0, 0, 0, 0.55)
+      &.active
+        .car__acc-item
+          &-top
+            background-color: #008CFF
+            box-shadow: 0px 30px 40px rgba(0, 80, 147, 0.25)
+          &-ttl
+            color: #fff
+          &-btn
+            &::before
+              opacity: 0
+              transform: scale(0)
+            &::after
+              opacity: 1
+              transform: scale(1)
 .vac
-	&__left
-		max-width: 570px
-		margin-left: auto
-		margin-right: auto
-		border-radius: 3px
-		min-height: 400px
-		padding: 25px
-		background-position: 50% 50%
-		background-repeat: no-repeat
-		background-size: cover
-		display: flex
-		align-items: flex-end
-	&__right
-		max-width: 570px
-		margin-left: auto
-		margin-right: auto
-		&-img
-			width: 100%
-			height: 211px
-			background-position: 50% 50%
-			background-repeat: no-repeat
-			background-size: cover
-			border-radius: 3px
-			margin-bottom: 15px
-		&-ttl
-			font-family: $a-bold
-			color: $blue
-			font-size: 22px
-			margin-bottom: 15px
+  &__left
+    max-width: 570px
+    margin-left: auto
+    margin-right: auto
+    border-radius: 3px
+    min-height: 400px
+    padding: 25px
+    background-position: 50% 50%
+    background-repeat: no-repeat
+    background-size: cover
+    display: flex
+    align-items: flex-end
+  &__right
+    max-width: 570px
+    margin-left: auto
+    margin-right: auto
+    &-img
+      width: 100%
+      height: 211px
+      background-position: 50% 50%
+      background-repeat: no-repeat
+      background-size: cover
+      border-radius: 3px
+      margin-bottom: 15px
+    &-ttl
+      font-family: $a-bold
+      color: $blue
+      font-size: 22px
+      margin-bottom: 15px
 .succ
-	background-color: #fff
-	&__in
-		padding-left: 50px
-		padding-right: 50px
-	&__item
-		background-position: 50% 50%
-		background-repeat: no-repeat
-		background-size: cover
-		border-radius: 2px
-		overflow: hidden
-		display: flex
-		justify-content: center
-		align-items: center
-		width: 100%
-		max-width: 300px
-		height: 260px
-		margin-left: auto
-		margin-right: auto
-		position: relative
-		&_vid
-			max-width: unset
-		&_his
-			background-color: #d9d9d9
-			&:hover
-				&::before
-					opacity: 0 !important
-			.team__item
-				&-top
-					width: 40%
-				&-bot
-					width: 60%
-				&-img
-					right: -20px
-					width: 130%
-					height: 110%
-				&-decor
-					&::after
-						left: -50px
-		&::before
-			content: ''
-			position: absolute
-			width: 100%
-			height: 100%
-			left: 0
-			top: 0
-			background-color: $blue
-			opacity: 0
-		&-more
-			width: 52px
-			height: 53px
-			background: url('../img/rev__btn.png') no-repeat 50% 50% / contain
-			opacity: 0
-			position: relative
-		&-play
-			width: 63px
-			height: 45px
-			background: url('../img/icon__play.svg') no-repeat 50% 50% / contain
-			opacity: 1
-			position: relative
-		&:hover
-			box-shadow: 0px 19px 19px rgba(0, 80, 147, 0.25)
-			&::before
-				opacity: .7
-			.succ__item-more
-				opacity: 1
-	.owl-stage
-		padding-bottom: 35px
+  background-color: #fff
+  &__in
+    padding-left: 50px
+    padding-right: 50px
+  &__item
+    background-position: 50% 50%
+    background-repeat: no-repeat
+    background-size: cover
+    border-radius: 2px
+    overflow: hidden
+    display: flex
+    justify-content: center
+    align-items: center
+    width: 100%
+    max-width: 300px
+    height: 260px
+    margin-left: auto
+    margin-right: auto
+    position: relative
+    &_vid
+      max-width: unset
+    &_his
+      background-color: #d9d9d9
+      &:hover
+        &::before
+          opacity: 0 !important
+      .team__item
+        &-top
+          width: 40%
+        &-bot
+          width: 60%
+        &-img
+          right: -20px
+          width: 130%
+          height: 110%
+        &-decor
+          &::after
+            left: -50px
+    &::before
+      content: ''
+      position: absolute
+      width: 100%
+      height: 100%
+      left: 0
+      top: 0
+      background-color: $blue
+      opacity: 0
+    &-more
+      width: 52px
+      height: 53px
+      background: url('../img/rev__btn.png') no-repeat 50% 50% / contain
+      opacity: 0
+      position: relative
+    &-play
+      width: 63px
+      height: 45px
+      background: url('../img/icon__play.svg') no-repeat 50% 50% / contain
+      opacity: 1
+      position: relative
+    &:hover
+      box-shadow: 0px 19px 19px rgba(0, 80, 147, 0.25)
+      &::before
+        opacity: .7
+      .succ__item-more
+        opacity: 1
+  .owl-stage
+    padding-bottom: 35px
 .steel
-	&__list
-		&-item
-			width: 100%
-			// max-width: 270px
-			height: 230px
-			margin-left: auto
-			margin-right: auto
-			position: relative
-			overflow: hidden
-			border-radius: 2px
-			background-color: #F3F3F3
-			display: block
-			background-position: 50% 50%
-			background-size: cover
-			background-repeat: no-repeat
-			&::before
-				content: ''
-				position: absolute
-				width: 100%
-				height: 100%
-				left: 0
-				top: 0
-				background-color: #fff
-				opacity: .2
-			&::after
-				content: ''
-				position: absolute
-				width: 100%
-				height: 100%
-				left: 0
-				top: 0
-				background: url('../img/begin__cat-item_bg.jpg') no-repeat 50% 50% / cover
-				opacity: 0
-			&-in
-				height: 100%
-				color: $dark-blue
-				position: relative
-				z-index: 1
-				padding: 25px
-				display: flex
-				align-items: flex-end
-				transition: .6s all ease
-			// .btn
-			// 	opacity: 0
-			// 	&:hover
-			// 		color: #000
-			&:hover
-				box-shadow: 0px 30px 40px rgba(0, 80, 147, 0.25)
-				.steel__list-ttl
-					color: #fff
-				&::after
-					opacity: .8
-		&-ttl
-			font-family: $a-bold
-			text-transform: uppercase
-			font-size: 18px
-			margin-bottom: 11px
-	&-page
-		&__img
-			width: 100%
-			height: 297px
-			background-position: 50% 50%
-			background-repeat: no-repeat
-			background-size: cover
-			border-radius: 3px
-		// &__price
-		// 	font-size: 24px
-		// 	margin-bottom: 15px
-		// &__form
-		// 	display: flex
-		// 	flex-direction: column
-		// 	align-items: center
-		// 	max-width: 370px
-		// 	margin-left: auto
-		// 	margin-right: auto
-		// 	&-input
-		// 		width: 100%
-		// 	.btn
-		// 		padding-left: 10px
-		// 		padding-right: 10px
-		// 		box-shadow: 0px 1.6px 1.6px rgba(0, 0, 0, 0.2)
-		// 		&_subm
-		// 			min-width: 150px
-		// 		&_file
-		// 			padding-right: 48px
-	&-views
-		&__item
-			display: flex
-			flex-direction: column
-			width: 100%
-			max-width: 370px
-			margin-left: auto
-			margin-right: auto
-			&-img
-				width: 100%
-				height: 100px
-				background-position: bottom center
-				background-repeat: no-repeat
-				background-size: contain
-			&-info
-				background: #FFFFFF
-				box-shadow: 0px 2px 2px rgba(0, 0, 0, 0.25)
-				padding: 10px 15px
-			&-ttl
-				font-family: $a-bold
-				font-size: 18px
-				color: $blue
-			&:hover
-				color: #000
-				.steel-views__item
-					&-ttl
-						color: $yellow
-					&-info
-						box-shadow: 0px 30px 40px rgba(0, 80, 147, 0.25)
+  &__list
+    &-item
+      width: 100%
+      // max-width: 270px
+      height: 230px
+      margin-left: auto
+      margin-right: auto
+      position: relative
+      overflow: hidden
+      border-radius: 2px
+      background-color: #F3F3F3
+      display: block
+      background-position: 50% 50%
+      background-size: cover
+      background-repeat: no-repeat
+      &::before
+        content: ''
+        position: absolute
+        width: 100%
+        height: 100%
+        left: 0
+        top: 0
+        background-color: #fff
+        opacity: .2
+      &::after
+        content: ''
+        position: absolute
+        width: 100%
+        height: 100%
+        left: 0
+        top: 0
+        background: url('../img/begin__cat-item_bg.jpg') no-repeat 50% 50% / cover
+        opacity: 0
+      &-in
+        height: 100%
+        color: $dark-blue
+        position: relative
+        z-index: 1
+        padding: 25px
+        display: flex
+        align-items: flex-end
+        transition: .6s all ease
+      // .btn
+      //  opacity: 0
+      //  &:hover
+      //    color: #000
+      &:hover
+        box-shadow: 0px 30px 40px rgba(0, 80, 147, 0.25)
+        .steel__list-ttl
+          color: #fff
+        &::after
+          opacity: .8
+    &-ttl
+      font-family: $a-bold
+      text-transform: uppercase
+      font-size: 18px
+      margin-bottom: 11px
+  &-page
+    &__img
+      width: 100%
+      height: 297px
+      background-position: 50% 50%
+      background-repeat: no-repeat
+      background-size: cover
+      border-radius: 3px
+    // &__price
+    //  font-size: 24px
+    //  margin-bottom: 15px
+    // &__form
+    //  display: flex
+    //  flex-direction: column
+    //  align-items: center
+    //  max-width: 370px
+    //  margin-left: auto
+    //  margin-right: auto
+    //  &-input
+    //    width: 100%
+    //  .btn
+    //    padding-left: 10px
+    //    padding-right: 10px
+    //    box-shadow: 0px 1.6px 1.6px rgba(0, 0, 0, 0.2)
+    //    &_subm
+    //      min-width: 150px
+    //    &_file
+    //      padding-right: 48px
+  &-views
+    &__item
+      display: flex
+      flex-direction: column
+      width: 100%
+      max-width: 370px
+      margin-left: auto
+      margin-right: auto
+      &-img
+        width: 100%
+        height: 100px
+        background-position: bottom center
+        background-repeat: no-repeat
+        background-size: contain
+      &-info
+        background: #FFFFFF
+        box-shadow: 0px 2px 2px rgba(0, 0, 0, 0.25)
+        padding: 10px 15px
+      &-ttl
+        font-family: $a-bold
+        font-size: 18px
+        color: $blue
+      &:hover
+        color: #000
+        .steel-views__item
+          &-ttl
+            color: $yellow
+          &-info
+            box-shadow: 0px 30px 40px rgba(0, 80, 147, 0.25)
 
-	&-forms
-		&__item
-			display: flex
-			flex-direction: column
-			width: 100%
-			max-width: 370px
-			margin-left: auto
-			margin-right: auto
-			&-top
-				width: 100%
-				height: 50px
-				background-color: #fff
-				box-shadow: 0px 2px 2px rgba(0, 0, 0, 0.15)
-				border-radius: 2px
-				overflow: hidden
-				position: relative
-				margin-bottom: 8px
-			&-img
-				position: absolute
-				width: 90px
-				height: 100%
-				left: 0
-				top: 0px
-				background-position: 100% 50%
-				background-repeat: no-repeat
-				background-size: contain
-			&-ttl
-				position: relative
-				img
-					transform: scale(.7)
-			&:hover
-				img
-					transform: scale(.7) translateX(8px)
-	&-descr
-		&__ttl
-			font-size: 18px
-			font-family: $a-bold
-			margin-bottom: 20px
-			text-transform: uppercase
-		&__in
-			padding-left: 50px
-			padding-right: 50px
-		&__item
-			&-img
-				background-position: 50% 50%
-				background-repeat: no-repeat
-				background-size: cover
-				border-radius: 2px
-				overflow: hidden
-				display: flex
-				justify-content: center
-				align-items: center
-				width: 100%
-				max-width: 300px
-				height: 187px
-				margin-left: auto
-				margin-right: auto
-				position: relative
-				&::before
-					content: ''
-					position: absolute
-					width: 100%
-					height: 100%
-					left: 0
-					top: 0
-					background-color: $blue
-					opacity: 0
-				&:hover
-					&::before
-						opacity: .7
-					.steel-descr__item-more
-						opacity: 1
-			&-more
-				width: 52px
-				height: 53px
-				background: url('../img/rev__btn.png') no-repeat 50% 50% / contain
-				opacity: 0
-				position: relative
+  &-forms
+    &__item
+      display: flex
+      flex-direction: column
+      width: 100%
+      max-width: 370px
+      margin-left: auto
+      margin-right: auto
+      &-top
+        width: 100%
+        height: 50px
+        background-color: #fff
+        box-shadow: 0px 2px 2px rgba(0, 0, 0, 0.15)
+        border-radius: 2px
+        overflow: hidden
+        position: relative
+        margin-bottom: 8px
+      &-img
+        position: absolute
+        width: 90px
+        height: 100%
+        left: 0
+        top: 0px
+        background-position: 100% 50%
+        background-repeat: no-repeat
+        background-size: contain
+      &-ttl
+        position: relative
+        img
+          transform: scale(.7)
+      &:hover
+        img
+          transform: scale(.7) translateX(8px)
+  &-descr
+    &__ttl
+      font-size: 18px
+      font-family: $a-bold
+      margin-bottom: 20px
+      text-transform: uppercase
+    &__in
+      padding-left: 50px
+      padding-right: 50px
+    &__item
+      &-img
+        background-position: 50% 50%
+        background-repeat: no-repeat
+        background-size: cover
+        border-radius: 2px
+        overflow: hidden
+        display: flex
+        justify-content: center
+        align-items: center
+        width: 100%
+        max-width: 300px
+        height: 187px
+        margin-left: auto
+        margin-right: auto
+        position: relative
+        &::before
+          content: ''
+          position: absolute
+          width: 100%
+          height: 100%
+          left: 0
+          top: 0
+          background-color: $blue
+          opacity: 0
+        &:hover
+          &::before
+            opacity: .7
+          .steel-descr__item-more
+            opacity: 1
+      &-more
+        width: 52px
+        height: 53px
+        background: url('../img/rev__btn.png') no-repeat 50% 50% / contain
+        opacity: 0
+        position: relative
 .prj
-	&__item
-		width: 100%
-		max-width: 370px
-		height: 265px
-		margin-left: auto
-		margin-right: auto
-		position: relative
-		overflow: hidden
-		border-radius: 2px
-		background-color: #F3F3F3
-		display: flex
-		flex-direction: column
-		justify-content: space-between
-		align-items: flex-start
-		background-position: 50% 50%
-		background-size: cover
-		background-repeat: no-repeat
-		padding: 25px
-		&::before
-			content: ''
-			position: absolute
-			width: 100%
-			height: 100%
-			left: 0
-			top: 0
-			background-color: #000
-			opacity: .4
-		&>*
-			position: relative
-		&-ttl
-			font-family: $a-bold
-			font-size: 26px
-			text-transform: uppercase
-			color: #fff
-		&:hover
-			&::before
-				background-color: $blue
-				opacity: .6
+  &__item
+    width: 100%
+    max-width: 370px
+    height: 265px
+    margin-left: auto
+    margin-right: auto
+    position: relative
+    overflow: hidden
+    border-radius: 2px
+    background-color: #F3F3F3
+    display: flex
+    flex-direction: column
+    justify-content: space-between
+    align-items: flex-start
+    background-position: 50% 50%
+    background-size: cover
+    background-repeat: no-repeat
+    padding: 25px
+    &::before
+      content: ''
+      position: absolute
+      width: 100%
+      height: 100%
+      left: 0
+      top: 0
+      background-color: #000
+      opacity: .4
+    &>*
+      position: relative
+    &-ttl
+      font-family: $a-bold
+      font-size: 26px
+      text-transform: uppercase
+      color: #fff
+    &:hover
+      &::before
+        background-color: $blue
+        opacity: .6
 .cab
-	&__item
-		padding: 20px 15px
-		background: #F3F3F3
-		box-shadow: 0px 2px 2px rgba(0, 0, 0, 0.15)
-		border-radius: 2px
-		margin-bottom: 30px
-		&-top
-			font-size: 16px
-		&-dec
-			padding-bottom: 7px
-			border-bottom: 1px solid #c4c4c4
-			margin-bottom: 8px
-		&-check
-			color: #27AE60
-	&__nav
-		display: flex
-		flex-direction: column
-		background: #FFFFFF
-		box-shadow: 0px 2px 2px rgba(0, 0, 0, 0.15)
-		border-radius: 2px
-		overflow: hidden
-		&-link
-			padding: 12px 10px
-			font-family: $a-bold
-			&:not(:last-child)
-				border-bottom: 1px solid #c4c4c445
-			&_here
-				color: #fff
-				background-color: $blue
-	&__checkbox
-		.checkbox__text
-			height: 20px
-			padding-left: 20px
-			&::before
-				left: 8px
-			&::after
-				left: 12px
-				margin-top: -6px
-	&-table
-		&__head
-			&>div
-				padding: 10px 12px
-		&__item
-			margin-bottom: 12px
-			&:nth-child(odd)
-				.cab-table__item-top
-					background-color: #e0e0e0
-			&:nth-child(even)
-				.cab-table__item-top
-					background-color: #ccc
-			&-top
-				border-radius: 2px
-				&>div
-					min-height: 46px
-					padding: 13px 12px
-					display: flex
-					align-items: center
-					&:not(:last-child)
-						border-right: 1px solid #fff
-			&-btns
-				padding: 0 !important
-				&>div
-					min-height: 46px
-					padding: 10px 4px
-					display: flex
-					align-items: center
-					&:not(:last-child)
-						border-right: 1px solid #fff
-			button
-				text-align: center
-				padding: 0
-				margin: 0 auto
-				display: block
-				filter: grayscale(100)
-				opacity: .5
-				&:hover
-					opacity: 1
-					filter: grayscale(0)
-				&.active
-					opacity: 1
-					transform: scaleY(-1)
-					filter: grayscale(0)
-			&-bot
-				display: none
-				transition: unset
-				&-cnt
-					padding: 20px 0
-					background-color: #fff
-					box-shadow: 0px 2px 2px rgba(0, 0, 0, 0.25)
-					border-radius: 2px
-					display: flex
-					&:not(last-child)
-						margin-bottom: 10px
-					&>div
-						padding: 0 15px
-						display: flex
-						flex-direction: column
-						justify-content: center
-						&:not(last-child)
-							border-right: 1px solid #e0e0e0
-	&-pers
-		padding: 20px
-		background-color: #F3F3F3
-		box-shadow: 0px 2px 2px rgba(0, 0, 0, 0.15)
-		border-radius: 2px
-		&__item
-			padding: 15px 0
-			&:not(:last-child)
-				border-bottom: 1px solid #c4c4c445
-			sup
-				color: $red
-			&-cnt
-				display: none
-				transition: unset
-			&-change
-				&.active
-					color: $blue
+  &__item
+    padding: 20px 15px
+    background: #F3F3F3
+    box-shadow: 0px 2px 2px rgba(0, 0, 0, 0.15)
+    border-radius: 2px
+    margin-bottom: 30px
+    &-top
+      font-size: 16px
+    &-dec
+      padding-bottom: 7px
+      border-bottom: 1px solid #c4c4c4
+      margin-bottom: 8px
+    &-check
+      color: #27AE60
+  &__nav
+    display: flex
+    flex-direction: column
+    background: #FFFFFF
+    box-shadow: 0px 2px 2px rgba(0, 0, 0, 0.15)
+    border-radius: 2px
+    overflow: hidden
+    &-link
+      padding: 12px 10px
+      font-family: $a-bold
+      &:not(:last-child)
+        border-bottom: 1px solid #c4c4c445
+      &_here
+        color: #fff
+        background-color: $blue
+  &__checkbox
+    .checkbox__text
+      height: 20px
+      padding-left: 20px
+      &::before
+        left: 8px
+      &::after
+        left: 12px
+        margin-top: -6px
+  &-table
+    &__head
+      &>div
+        padding: 10px 12px
+    &__item
+      margin-bottom: 12px
+      &:nth-child(odd)
+        .cab-table__item-top
+          background-color: #e0e0e0
+      &:nth-child(even)
+        .cab-table__item-top
+          background-color: #ccc
+      &-top
+        border-radius: 2px
+        &>div
+          min-height: 46px
+          padding: 13px 12px
+          display: flex
+          align-items: center
+          &:not(:last-child)
+            border-right: 1px solid #fff
+      &-btns
+        padding: 0 !important
+        &>div
+          min-height: 46px
+          padding: 10px 4px
+          display: flex
+          align-items: center
+          &:not(:last-child)
+            border-right: 1px solid #fff
+      button
+        text-align: center
+        padding: 0
+        margin: 0 auto
+        display: block
+        filter: grayscale(100)
+        opacity: .5
+        &:hover
+          opacity: 1
+          filter: grayscale(0)
+        &.active
+          opacity: 1
+          transform: scaleY(-1)
+          filter: grayscale(0)
+      &-bot
+        display: none
+        transition: unset
+        &-cnt
+          padding: 20px 0
+          background-color: #fff
+          box-shadow: 0px 2px 2px rgba(0, 0, 0, 0.25)
+          border-radius: 2px
+          display: flex
+          &:not(last-child)
+            margin-bottom: 10px
+          &>div
+            padding: 0 15px
+            display: flex
+            flex-direction: column
+            justify-content: center
+            &:not(last-child)
+              border-right: 1px solid #e0e0e0
+  &-pers
+    padding: 20px
+    background-color: #F3F3F3
+    box-shadow: 0px 2px 2px rgba(0, 0, 0, 0.15)
+    border-radius: 2px
+    &__item
+      padding: 15px 0
+      &:not(:last-child)
+        border-bottom: 1px solid #c4c4c445
+      sup
+        color: $red
+      &-cnt
+        display: none
+        transition: unset
+      &-change
+        &.active
+          color: $blue
 .unk
-	&__ttl
-		font-size: 130px
-		line-height: 1
-		font-family: $a-bold
-		text-align: center
+  &__ttl
+    font-size: 130px
+    line-height: 1
+    font-family: $a-bold
+    text-align: center
 .search
-	position: relative
-	width: 100%
-	&::before
-		content: ''
-		position: absolute
-		left: 10px
-		top: 9px
-		width: 26px
-		height: 22px
-		background: url('../img/offer__search-icon.png') no-repeat 50% 50% / contain
-	&__input
-		width: 100%
-		font-size: 14px
-		padding: 10px 40px 10px 40px
-	&__btn
-		position: absolute
-		width: 26px
-		height: 21px
-		top: 10px
-		right: 10px
-		background: #fff url('../img/icon__loupe.svg') no-repeat 50% 50%/contain
-		padding: 0
-		transform: scale(.96)
-		border: none
-		&:hover
-			transform: scale(1.05)
-	&__item
-		padding: 20px 15px
-		position: relative
-		background-color: #F3F3F3
-		color: $dark-blue
-		border-radius: 2px
-		overflow: hidden
-		&:hover
-			box-shadow: 0px 30px 40px rgba(0, 80, 147, 0.25)
-		&-img
-			width: 160px
-			max-width: 100%
-			height: 90px
-			display: block
-			background-position: 50% 50%
-			background-size: contain
-			background-repeat: no-repeat
-			&:hover
-				opacity: .7
-		&-ttl
-			font-family: $a-bold
-			font-size: 16px
-			margin-bottom: 8px
+  position: relative
+  width: 100%
+  &::before
+    content: ''
+    position: absolute
+    left: 10px
+    top: 9px
+    width: 26px
+    height: 22px
+    background: url('../img/offer__search-icon.png') no-repeat 50% 50% / contain
+  &__input
+    width: 100%
+    font-size: 14px
+    padding: 10px 40px 10px 40px
+  &__btn
+    position: absolute
+    width: 26px
+    height: 21px
+    top: 10px
+    right: 10px
+    background: #fff url('../img/icon__loupe.svg') no-repeat 50% 50%/contain
+    padding: 0
+    transform: scale(.96)
+    border: none
+    &:hover
+      transform: scale(1.05)
+  &__item
+    padding: 20px 15px
+    position: relative
+    background-color: #F3F3F3
+    color: $dark-blue
+    border-radius: 2px
+    overflow: hidden
+    &:hover
+      box-shadow: 0px 30px 40px rgba(0, 80, 147, 0.25)
+    &-img
+      width: 160px
+      max-width: 100%
+      height: 90px
+      display: block
+      background-position: 50% 50%
+      background-size: contain
+      background-repeat: no-repeat
+      &:hover
+        opacity: .7
+    &-ttl
+      font-family: $a-bold
+      font-size: 16px
+      margin-bottom: 8px
 .view__col
-	.search__item
-		.row
-			flex-direction: column
-			&>*
-				width: 100%
-				max-width: 100%
-				// text-align: center
-				margin-bottom: 10px
-		&-img
-			margin-left: auto
-			margin-right: auto
+  .search__item
+    .row
+      flex-direction: column
+      &>*
+        width: 100%
+        max-width: 100%
+        // text-align: center
+        margin-bottom: 10px
+    &-img
+      margin-left: auto
+      margin-right: auto
 .cart
-	&__item
-		padding: 12px 0
-		border-top: 1px solid #c4c4c4fa
-		border-bottom: 1px solid #c4c4c4fa
-		margin-bottom: 10px
-		&-img
-			width: 100%
-			height: 320px
-			background-position: 50% 50%
-			background-repeat: no-repeat
-			background-size: cover
-		&-ttl
-			font-size: 28px
-			font-family: $a-bold
-			filter: grayscale(100)
-			opacity: .6
-			span
-				&:nth-child(2)
-					color: $blue
-		&-change
-			display: none
-		&-cnt
-			// display: none
-			transition: unset
-		&.active,
-		&.checked
-			display: block
-			.cart__item
-				&-cnt
-					display: block
-				&-ttl
-					filter: grayscale(0)
-					opacity: 1
-					margin-bottom: 15px
-		&.checked
-			.cart__item
-				&-ttl
-					margin-bottom: -0px
-				&-change
-					display: block
-	&__table
-		&-head
-			&>div
-				padding: 10px 12px
-		&-cnt
-			padding: 20px 0
-			background-color: #fff
-			box-shadow: 0px 2px 2px rgba(0, 0, 0, 0.25)
-			border-radius: 2px
-			display: flex
-			&:not(last-child)
-				margin-bottom: 10px
-			&>div
-				padding: 0 15px
-				display: flex
-				flex-direction: column
-				justify-content: center
-				border-right: 1px solid #e0e0e0
-				&:last-child
-					border-right: 1px solid $tr
-			.select__wrp
-				select
-					padding-top: 12px
-					padding-bottom: 12px
-				&::before
-					background-image: url('../img/select__arr_cart.svg')
-		&-delete
-			width: 44px
-			height: 44px
-			display: flex
-			justify-content: center
-			align-items: center
-			background-color: #F3F3F3
-			border-radius: 50%
-			img
-				filter: grayscale(100)
-				opacity: .6
-			&:hover
-				img
-					filter: grayscale(0)
-					opacity: 1
-	&__del
-		&-in
-			max-width: 970px
-			margin-left: auto
-			margin-right: auto
+  &__item
+    padding: 12px 0
+    border-top: 1px solid #c4c4c4fa
+    border-bottom: 1px solid #c4c4c4fa
+    margin-bottom: 10px
+    &-img
+      width: 100%
+      height: 320px
+      background-position: 50% 50%
+      background-repeat: no-repeat
+      background-size: cover
+    &-ttl
+      font-size: 28px
+      font-family: $a-bold
+      filter: grayscale(100)
+      opacity: .6
+      span
+        &:nth-child(2)
+          color: $blue
+    &-change
+      display: none
+    &-cnt
+      // display: none
+      transition: unset
+    &.active,
+    &.checked
+      display: block
+      .cart__item
+        &-cnt
+          display: block
+        &-ttl
+          filter: grayscale(0)
+          opacity: 1
+          margin-bottom: 15px
+    &.checked
+      .cart__item
+        &-ttl
+          margin-bottom: -0px
+        &-change
+          display: block
+  &__table
+    &-head
+      &>div
+        padding: 10px 12px
+    &-cnt
+      padding: 20px 0
+      background-color: #fff
+      box-shadow: 0px 2px 2px rgba(0, 0, 0, 0.25)
+      border-radius: 2px
+      display: flex
+      &:not(last-child)
+        margin-bottom: 10px
+      &>div
+        padding: 0 15px
+        display: flex
+        flex-direction: column
+        justify-content: center
+        border-right: 1px solid #e0e0e0
+        &:last-child
+          border-right: 1px solid $tr
+      .select__wrp
+        select
+          padding-top: 12px
+          padding-bottom: 12px
+        &::before
+          background-image: url('../img/select__arr_cart.svg')
+    &-delete
+      width: 44px
+      height: 44px
+      display: flex
+      justify-content: center
+      align-items: center
+      background-color: #F3F3F3
+      border-radius: 50%
+      img
+        filter: grayscale(100)
+        opacity: .6
+      &:hover
+        img
+          filter: grayscale(0)
+          opacity: 1
+  &__del
+    &-in
+      max-width: 970px
+      margin-left: auto
+      margin-right: auto
