@@ -20,6 +20,19 @@ $a-bold: 'AvenirNextCyr-Bold'
     &__test-item-ttl
       margin-bottom: 0
 @media screen and (max-width: 1200px)
+  .main-page
+    .banner
+      background-image: url('../img/banner__bg.jpg')
+      position: relative
+      z-index: 2
+      overflow: visible
+      &::before
+        display: none
+      &__video
+        display: none
+    .container
+      position: relative
+      z-index: 2
   .banner__hamburger
     display: block
   .banner__menu-btn
@@ -54,7 +67,16 @@ $a-bold: 'AvenirNextCyr-Bold'
       width: 170px
   .banner__tel
     font-size: 20px
-
+  .section__ttl,
+  .banner__ttl
+    font-size: 25px
+  .section__subttl
+    font-size: 20px
+  .car__ttl
+    font-size: 18px
+  .footer__ttl,
+  .footer__info
+    text-align: left
   .test__item-img
     min-width: 90px
     max-width: 90px
@@ -121,6 +143,20 @@ $a-bold: 'AvenirNextCyr-Bold'
       &::after
         top: 15px
         transform: rotate(45deg) scale(-1,-1)
+  .begin__slider
+    &-item
+      // display: flex
+      // flex-direction: column
+      // align-items: center
+      // text-align: center
+      .btn
+        margin-left: auto
+        margin-right: auto
+        display: block
+        max-width: 220px
+    .owl-dots
+      left: 0
+      justify-content: center
   .header__cart::after
     display: none
   .del-calc
@@ -309,8 +345,6 @@ $a-bold: 'AvenirNextCyr-Bold'
         margin-bottom: 0
         &-top
           &>div
-            padding: 5px
-            min-height: 120px
             padding: 12px
             min-height: unset
             &:nth-child(2),
@@ -324,6 +358,10 @@ $a-bold: 'AvenirNextCyr-Bold'
               width: 41% !important
             &:nth-child(4)
               width: 41% !important
+            &:nth-child(7)
+              &>div:nth-child(1),
+              &>div:nth-child(2)
+                display: none
         &-bot
           .cab-table__head
             &>div
@@ -371,6 +409,76 @@ $a-bold: 'AvenirNextCyr-Bold'
     max-width: 190px
     margin: 0 auto
     display: block
+  .roll
+    &-page
+      &__bot
+        .tabs__list
+          li
+            width: 100%
+      &__info
+        text-align: center
+        &-price
+          margin-left: auto
+          margin-right: auto
+  .search
+    &__item
+      // text-align: center
+      padding: 10px 15px
+      &-ttl
+        font-size: 12px
+      &-img
+        height: 60px
+        margin-left: auto
+        margin-right: auto
+      .btn
+        font-size: 12px
+        padding: 10px 3px
+        &::before
+          left: -280%
+  .watch
+    &-more
+      &__item
+        // flex-direct
+        padding: 0
+        padding-bottom: 15px
+        &-img
+          // width: 100%
+          height: 60px
+          left: 0
+          margin-bottom: 0px
+          position: relative
+          background-position: 100% 100%
+  .header_mob
+    padding: 10px 0
+    display: none
+    &__logo
+      max-width: 81px
+      img
+        max-width: 100%
+        height: auto
+    &__hamb
+      width: 20px
+      height: 16px
+      position: relative
+      &-img
+        position: absolute
+        left: 0
+        top: 0
+        right: 0
+        bottom: 0
+        width: 100%
+        height: 100%
+        background-position: 50% 50%
+        background-size: contain
+        background-repeat: no-repeat
+        &_1
+          background-image: url('../img/icon__hamb.svg')
+        &_2
+          background-image: url('../img/icon__hamb-close.svg')
+          opacity: 0
+          transform: scale(.5)
+      &.active
+
 @media screen and (max-width: 900px)
   .section_inner
     padding: 35px 0
@@ -435,8 +543,8 @@ $a-bold: 'AvenirNextCyr-Bold'
               left: 0
             &-next
               right: 0
-        &-dots
-          left: 35px
+        // &-dots
+        //   left: 35px
     &__cat-item
       height: 125px
       // &::before
@@ -485,20 +593,6 @@ $a-bold: 'AvenirNextCyr-Bold'
       &-ttl
         margin-bottom: 0
         font-size: 14px
-  .watch
-    &-more
-      &__item
-        flex-direction: column
-        align-items: center
-        padding: 0
-        padding-bottom: 15px
-        &-img
-          width: 90px
-          height: 60px
-          left: 0
-          margin-bottom: 0px
-          position: relative
-          background-position: center
   .hot__in
     padding-left: 0
     padding-right: 0
@@ -514,29 +608,6 @@ $a-bold: 'AvenirNextCyr-Bold'
         &.active
           background-color: $wt !important
 @media screen and (max-width: 768px)
-  .main-page
-    .banner
-      background-image: url('../img/banner__bg.jpg')
-      position: relative
-      z-index: 2
-      overflow: visible
-      &::before
-        display: none
-      &__video
-        display: none
-    .container
-      position: relative
-      z-index: 2
-  .section__ttl,
-  .banner__ttl
-    font-size: 25px
-  .section__subttl
-    font-size: 20px
-  .car__ttl
-    font-size: 18px
-  .footer__ttl,
-  .footer__info
-    text-align: left
   .test__item
     flex-direction: column
     text-align: center
@@ -567,14 +638,10 @@ $a-bold: 'AvenirNextCyr-Bold'
       &-item
         min-height: 300px
         height: auto
-  .roll-page
-    &__bot .tabs__list li
-      width: 100%
-    &__info
-      text-align: center
-      &-price
-        margin-left: auto
-        margin-right: auto
+  .hot__item-btns .btn_add
+    padding: 12px 48px 12px 6px
+  .book__list-item-img
+    background-position: 100% 0
 @media screen and (max-width: 600px)
   .banner
     &__info
@@ -665,6 +732,9 @@ $a-bold: 'AvenirNextCyr-Bold'
           padding: 15px 10px
           box-shadow: 0px 2px 2px rgba(0, 0, 0, 0.15)
           border-radius: 2px
+  .search
+    &__item
+      text-align: center
   .sale-page__timer
     &-item
       width: 24%
@@ -686,21 +756,6 @@ $a-bold: 'AvenirNextCyr-Bold'
   .unk
     &__ttl
       font-size: 30px
-  .search
-    &__item
-      text-align: center
-      padding: 10px 15px
-      &-ttl
-        font-size: 12px
-      &-img
-        height: 60px
-        margin-left: auto
-        margin-right: auto
-      .btn
-        font-size: 12px
-        padding: 10px 3px
-        &::before
-          left: -280%
   .roll
     &__list
       &-item
@@ -805,6 +860,14 @@ $a-bold: 'AvenirNextCyr-Bold'
           margin-left: 10px
           span
             display: none
+  .watch
+    &-more
+      &__item
+        padding-bottom: 5px
+        &-ttl
+          font-size: 13px
+        &-img
+          height: 40px
 @media screen and (max-width: 400px)
   // .book
   //  &__list
@@ -817,7 +880,4 @@ $a-bold: 'AvenirNextCyr-Bold'
 @media screen and (max-width: 330px)
   .footer__ttl_mobile::after
     right: -6px
-  .hot__item-btns .btn_add
-    padding: 12px 48px 12px 6px
-  .book__list-item-img
-    background-position: 100% 0
+  

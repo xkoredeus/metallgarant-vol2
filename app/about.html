@@ -116,14 +116,14 @@
     </div>
   </div>
   <!--/mobile menu-->
-  <header class="header">
+  <header class="header d-none d-xl-block">
     <div class="container">
       <div class="row align-items-center">
         <div class="col-xl-9">
           <div class="d-flex justify-content-between align-items-center flex-sm-row flex-wrap flex-xl-nowrap flex-column">
-            <a href="#" class="header__logo-min d-none d-xl-flex align-items-center mr-xl-5">
+            <a href="#" class="header__logo-min d-flex align-items-center mr-xl-5">
               <img src="img/banner__logo-min.svg" alt="banner__logo-min.svg" class="mr-4">
-              <div class="d-flex flex-column">
+              <div class="d-none d-xl-flex flex-column">
                 <span>Ленинградский</span>
                 <span>Завод Металлоконструкций</span>
               </div>
@@ -176,6 +176,21 @@
       </div>
     </div>
   </header>
+  <!--mobile header -->
+  <div class="header_mob d-xl-none">
+    <div class="container">
+      <div class="d-flex align-items-center justify-content-between">
+        <div class="header_mob__hamb">
+          <div class="header_mob__hamb-img header_mob__hamb-img_1"></div>
+          <div class="header_mob__hamb-img header_mob__hamb-img_2"></div>
+        </div>
+        <a href="#" class="header_mob__logo">
+          <img src="img/header_mob__logo.svg" alt="header_mob__logo.svg">
+        </a>
+      </div>
+    </div>
+  </div>
+  <!-- / mobile header -->
   <section class="banner banner_inner">
     <div class="container">
       <a href="#mobile-menu" data-fancybox class="banner__hamburger"></a>
@@ -478,7 +493,7 @@
   <section class="section_inner test">
     <div class="container">
       <div class="row">
-        <div class="col-xl-4 col-sm-6 mb-3">
+        <div class="col-sm-4 mb-3">
           <div class="test__item">
             <div class="test__item-img">
               <img src="img/test__img_1.svg" alt="">
@@ -489,7 +504,7 @@
             </div>
           </div>
         </div>
-        <div class="col-xl-4 col-sm-6 mb-3">
+        <div class="col-sm-4 mb-3">
           <div class="test__item">
             <div class="test__item-img">
               <img src="img/test__img_2.svg" alt="">
@@ -500,7 +515,7 @@
             </div>
           </div>
         </div>
-        <div class="col-xl-4 col-sm-6 mb-3">
+        <div class="col-sm-4 mb-3">
           <div class="test__item">
             <div class="test__item-img">
               <img src="img/test__img_3.svg" alt="">
