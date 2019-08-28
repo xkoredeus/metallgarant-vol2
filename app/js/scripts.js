@@ -732,17 +732,15 @@ $(function() {
         }
       }
    });
-    new Mmenu( "#menu", {
-       "slidingSubmenus": false
+    $("#menu").mmenu({
+      extensions : [ "position-bottom", "listview-50", "fx-panels-zoom", "fx-listitems-drop", "border-offset" ],
+      autoHeight : false,
     });
-
-      document.addEventListener( 'click', ( evnt ) => {
-        let anchor = evnt.target.closest( 'a[href^="#/"]' );
-        if ( anchor ) {
-          alert('Thank you for clicking, but that\'s a demo link.');
-          evnt.preventDefault();
-        }
-      });
-    };
+    $('.header_mob__search-btn').on('click', function(e) {
+      $('body').toggleClass('fixed');
+      $(this).toggleClass('active');
+      $('.search_mob').toggleClass('active');
+    });
+  };
 
 });

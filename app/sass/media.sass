@@ -88,11 +88,10 @@ $a-bold: 'AvenirNextCyr-Bold'
   .header
     &__city-wrp
       display: none
-    &__soc,
     &__work
       display: none !important
-    &__days
-      display: none
+    // &__days
+      // display: none
     &__cab-in
       &-wrp
         right: 50%
@@ -456,7 +455,9 @@ $a-bold: 'AvenirNextCyr-Bold'
       &_file
         max-width: unset
   .header_mob
+    // height: 10vh
     padding: 10px 0
+    box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.25)
     &__logo
       max-width: 81px
       img
@@ -483,15 +484,6 @@ $a-bold: 'AvenirNextCyr-Bold'
           background-image: url('../img/icon__hamb-close.svg')
           opacity: 0
           transform: scale(.5)
-      &.active
-        .header_mob__hamb
-          &-img
-            &_1
-              transform: scale(.5)
-              opacity: 0
-            &_2
-              opacity: 1
-              transform: scale(1)
     &__cart
       color: #fff
       position: relative
@@ -516,6 +508,85 @@ $a-bold: 'AvenirNextCyr-Bold'
           top: -6px
           color: $dark-blue
           text-align: center
+  .search_mob
+    background-color: $mid-blue
+    color: #fff
+    width: 100%
+    height: calc(100vh - 49px)
+    padding: 15px
+    position: fixed
+    left: 0
+    overflow-y: scroll
+    opacity: 0
+    visibility: hidden
+    z-index: -1
+    &.active
+      top: 49px
+      visibility: visible
+      z-index: 999
+      opacity: 1
+    .banner
+      &__search
+        &::before
+          display: none
+        &-btn
+          width: 22px
+          height: 23px
+          top: 13px
+          right: 15px
+        &-input
+          padding: 10px 40px 10px 15px
+    .section__ttl
+      margin-bottom: 15px
+      text-transform: none
+    a
+      color: #fff
+      margin-bottom: 5px
+  .mm
+    &-wrapper_opened
+      .header
+        &__soc
+          margin-right: 30px
+          &::after
+            right: -17px
+            background-color: #000
+        // &__days
+        //   padding-left: 15px
+        &_mob__hamb
+          &-img
+            &_1
+              transform: scale(.5)
+              opacity: 0
+            &_2
+              opacity: 1
+              transform: scale(1)
+    &-menu
+      color: #000
+      background-color: #F3F3F3
+      font-family: $a-med
+      &_position-bottom
+        height: calc(100vh - 49px)
+      &__tel
+        color: $blue !important
+        margin-right: 30px
+        position: relative
+        &::after
+          content: ''
+          position: absolute
+          right: -15px
+          top: 0
+          width: 1px
+          height: 100%
+          background-color: #000
+      &__mail
+        font-family: $a-reg
+        text-decoration: underline !important
+        color: $blue !important
+    &-listitem
+      color: #000
+      &:after
+        left: 0 !important
+        right: 0 !important
 @media screen and (max-width: 900px)
   .section_inner
     padding: 35px 0

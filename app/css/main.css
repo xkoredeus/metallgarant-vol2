@@ -17,6 +17,10 @@ body {
   transition: unset;
 }
 
+body.fixed {
+  overflow-y: hidden;
+}
+
 *,
 *:after,
 *:before {
@@ -439,6 +443,10 @@ input[type="number"] {
 
 .blue {
   color: #008CFF;
+}
+
+.mid-blue {
+  color: #072754;
 }
 
 .red {
