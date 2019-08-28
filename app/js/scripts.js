@@ -622,7 +622,7 @@ $(function() {
     });
   };
   //hide filter in sidebar
-  if ( $(window).width() < 600 ) {
+  if ( $(window).width() < 1200 ) {
     $('.begin__nav_filter .begin__nav-bot').hide();
     $('.begin__nav_filter .begin__nav-top').on('click', function(e){
       e.preventDefault();
@@ -732,6 +732,17 @@ $(function() {
         }
       }
    });
-  };
+    new Mmenu( "#menu", {
+       "slidingSubmenus": false
+    });
+
+      document.addEventListener( 'click', ( evnt ) => {
+        let anchor = evnt.target.closest( 'a[href^="#/"]' );
+        if ( anchor ) {
+          alert('Thank you for clicking, but that\'s a demo link.');
+          evnt.preventDefault();
+        }
+      });
+    };
 
 });

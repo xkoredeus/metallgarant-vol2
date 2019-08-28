@@ -250,12 +250,12 @@ $a-bold: 'AvenirNextCyr-Bold'
         min-height: 150px
         &-img
           width: 100%
-          height: 100%
+          height: 70%
           background-position: 100% -50%
           left: 5px
         &-in
           padding: 10px 5px
-          // transform: translateY(0)
+          transform: translateY(80%)
         .list_string
           // opacity: 1
           font-size: 10px
@@ -448,9 +448,15 @@ $a-bold: 'AvenirNextCyr-Bold'
           margin-bottom: 0px
           position: relative
           background-position: 100% 100%
+  .feed__top
+    input,
+    .btn
+      margin: 0 auto
+      display: block
+      &_file
+        max-width: unset
   .header_mob
     padding: 10px 0
-    display: none
     &__logo
       max-width: 81px
       img
@@ -478,7 +484,38 @@ $a-bold: 'AvenirNextCyr-Bold'
           opacity: 0
           transform: scale(.5)
       &.active
-
+        .header_mob__hamb
+          &-img
+            &_1
+              transform: scale(.5)
+              opacity: 0
+            &_2
+              opacity: 1
+              transform: scale(1)
+    &__cart
+      color: #fff
+      position: relative
+      &::after
+        content: ''
+        position: absolute
+        width: 1px
+        height: 100%
+        right: -15px
+        top: 0
+        background-color: #F9F9F9
+        opacity: .3
+      &-val
+        position: relative
+        &-num
+          position: absolute
+          background-color: $yellow
+          border-radius: 50%
+          width: 17px
+          height: 17px
+          left: 10px
+          top: -6px
+          color: $dark-blue
+          text-align: center
 @media screen and (max-width: 900px)
   .section_inner
     padding: 35px 0
@@ -570,11 +607,6 @@ $a-bold: 'AvenirNextCyr-Bold'
       font-size: 12px
       height: 32px
       vertical-align: bottom
-  .feed__top
-    input,
-    .btn
-      margin: 0 auto
-      display: block
   .roll
     &__list
       &-item
@@ -589,6 +621,7 @@ $a-bold: 'AvenirNextCyr-Bold'
           padding: 8px
         &-img
           width: 100%
+          height: 119px
           background-position-y: 0%
       &-ttl
         margin-bottom: 0

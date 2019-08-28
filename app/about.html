@@ -7,6 +7,7 @@
   <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
   <title>New Project</title>
   <link rel="stylesheet" href="css/libs.min.css">
+  <link rel="stylesheet" href="libs/mmenu/mmenu.css">
   <link rel="stylesheet" href="css/main.css">
   <link rel="stylesheet" href="css/media.css">
 </head>
@@ -180,17 +181,52 @@
   <div class="header_mob d-xl-none">
     <div class="container">
       <div class="d-flex align-items-center justify-content-between">
-        <div class="header_mob__hamb">
-          <div class="header_mob__hamb-img header_mob__hamb-img_1"></div>
-          <div class="header_mob__hamb-img header_mob__hamb-img_2"></div>
+        <div class="d-flex align-items-center mr-2">
+          <a href="#menu" class="header_mob__hamb mr-2">
+            <div class="header_mob__hamb-img header_mob__hamb-img_1"></div>
+            <div class="header_mob__hamb-img header_mob__hamb-img_2"></div>
+          </a>
+          <a href="#" class="header_mob__logo">
+            <img src="img/header_mob__logo.svg" alt="header_mob__logo.svg">
+          </a>
         </div>
-        <a href="#" class="header_mob__logo">
-          <img src="img/header_mob__logo.svg" alt="header_mob__logo.svg">
-        </a>
+        <div class="d-flex align-items-center">
+          <a href="#" class="header_mob__search-btn mr-3">
+            <img src="img/icon__search.svg" alt="icon__search.svg">
+          </a>
+          <a href="#" class="header_mob__cart-val mr-4">
+            <img src="img/icon__cart_blue.svg" alt="icon__cart_blue.svg">
+            <div class="header_mob__cart-val-num">1</div>
+          </a>
+          <a href="#"><img src="img/icon__tel_blue.svg" alt="icon__tel_blue.svg"></a>
+        </div>
       </div>
     </div>
   </div>
   <!-- / mobile header -->
+  <nav id="menu">
+    <ul>
+      <li><a href="#">Home</a></li>
+      <li><span>About us</span>
+        <ul>
+          <li><a href="#about/history">History</a></li>
+          <li><span>The team</span>
+            <ul>
+              <li><a href="#about/team/management">Management</a></li>
+              <li><a href="#about/team/sales">Sales</a></li>
+              <li><a href="#about/team/development">Development</a></li>
+            </ul>
+          </li>
+          <li><a href="#about/address">Our address</a></li>
+        </ul>
+      </li>
+      <li><a href="#contact">Contact</a></li>
+
+      <li class="Divider">Other demos</li>
+      <li><a href="advanced.html">Advanced demo</a></li>
+      <li><a href="onepage.html">One page demo</a></li>
+    </ul>
+  </nav>
   <section class="banner banner_inner">
     <div class="container">
       <a href="#mobile-menu" data-fancybox class="banner__hamburger"></a>
@@ -709,7 +745,9 @@
     <div class="preloader__icon"></div>
   </div>
   <!--/ preloader-->
-	<script src="js/libs.min.js"></script>
+  <script src="js/libs.min.js"></script>
+  <script src="libs/mmenu/mmenu.js"></script>
+
   <script src="https://api-maps.yandex.ru/2.1/?apikey=3629c6cc-8564-466b-9c39-8680f92c24c3&lang=ru_RU" type="text/javascript"></script>
   <script src="js/scripts.js"></script>
   <!-- Marquiz script start -->
