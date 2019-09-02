@@ -309,9 +309,14 @@ $(function() {
       }
   });
   //login/reg popups
-  $('.header__cab').on('click', function(e) {
+  $('.header__cab-link').on('click', function(e) {
     e.preventDefault();
-    $('.header__cab-in-wrp_log').slideToggle(50);
+    if ( $(window).width() < 1200 ) {
+      $("#menu").data( "mmenu" ).close();
+      $('.header__cab-in-wrp_log').slideToggle(150);
+    } else {
+      $('.header__cab-in-wrp_log').slideToggle(50);
+    }
   })
   $('.header__cab-show-reg').on('click', function(e){
     e.preventDefault();
@@ -327,6 +332,14 @@ $(function() {
     $('.header__cab-in-wrp_log').slideToggle(50);
   });
   
+  // $(document).on('click', function (e) {
+  //   var container = $('.header__cab-in-wrp');
+  //   // if the target of the click isn't the container nor a descendant of the container
+  //   if (!container.is(e.target) && container.has(e.target).length === 0) 
+  //   {
+  //       container.hide();
+  //   }
+  // });
 
   //catalog list|tab view
   if ( $(window).width() > 1200 ) {
@@ -733,12 +746,17 @@ $(function() {
       }
    });
     $("#menu").mmenu({
-      extensions : [ "position-bottom", "listview-50", "fx-panels-zoom", "fx-listitems-drop", "border-offset" ],
+      extensions : [ "position-bottom", "listview-50", "fx-listitems-drop", "border-offset" ],
       autoHeight : false,
+      navbar: { title: "Меню" }
     });
     $('.header_mob__search-btn').on('click', function(e) {
-      $('body').toggleClass('fixed');
-      $(this).toggleClass('active');
+      $('html').toggleClass('fixed');
+      // $(this).toggleClass('active');
+      $('.search_mob').toggleClass('active');
+    });
+    $('.search_mob__close').on('click', function(e) {
+      $('html').toggleClass('fixed');
       $('.search_mob').toggleClass('active');
     });
   };

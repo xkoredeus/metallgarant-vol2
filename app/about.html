@@ -7,128 +7,22 @@
   <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
   <title>New Project</title>
   <link rel="stylesheet" href="css/libs.min.css">
-  <link rel="stylesheet" href="libs/mmenu/mmenu.css">
   <link rel="stylesheet" href="css/main.css">
   <link rel="stylesheet" href="css/media.css">
 </head>
 <body>
-  <!--mobile menu-->
-  <div class="mobile-menu" id="mobile-menu">
+  <header class="header d-none d-xl-block">
     <div class="container">
-      <div class="d-flex flex-column align-items-center">
-        <div class="mb-3">
-          <div class="d-flex flex-column align-items-center">
-            <a href="#" class="banner__logo">
-              <img src="img/banner__logo.svg" alt="banner__logo.svg" class="img-fluid">
-            </a>
-          </div>
-        </div>
-        <div class="banner__nav-in d-flex flex-column align-items-center mb-3">
-          <a href="#" class="banner__nav-item">
-            <span>О компании</span>
-          </a>
-          <a href="#" class="banner__nav-item">
-            <span>Способы оплаты</span>
-          </a>
-          <a href="#" class="banner__nav-item">
-            <span>Доставка</span>
-          </a>
-          <a href="#" class="banner__nav-item">
-            <span>Карьера</span>
-          </a>
-          <a href="#" class="banner__nav-item">
-            <span>Контакты</span>
-          </a>
-          <a href="#" class="banner__nav-item">
-            <span>Коммерческое предложение</span>
-          </a>
-          <a href="#" class="banner__nav-item active">
-            <span>Акции</span>
-          </a>
-          <a href="#popup_call" data-fancybox class="btn">
-            <span>Написать директору</span>
-          </a>
-        </div>
-        <div class="mb-3">
-          <div class="d-flex flex-column align-items-center">
-            <a href="#popup_call" data-fancybox class="btn btn_blue">Заказать звонок</a>
-            <a href="#sidebar" data-fancybox class="btn banner__menu-btn">
-              <span>Меню</span>
-            </a>
-          </div>
-        </div>
-
-        <div class="header__city-wrp mb-3">
-          <div class="header__city-select">Санкт-Петербург</div>
-          <div class="header__city-list">
-            <a href="#" class="header__city-list-item">Москва</a>
-            <a href="#" class="header__city-list-item">Самара</a>
-            <a href="#" class="header__city-list-item">Саратов</a>
-            <a href="#" class="header__city-list-item">Саранск</a>
-            <a href="#" class="header__city-list-item">Смоленск</a>
-            <a href="#" class="header__city-list-item">Астрахань</a>
-          </div>
-        </div>
-        <div class="header__soc d-flex mb-2">
-          <a href="#" class="header__soc-link mr-2">
-            <img src="img/icon__in.svg" alt="icon__in.svg">
-          </a>
-          <a href="#" class="header__soc-link mr-2">
-            <img src="img/icon__fb.svg" alt="icon__fb.svg">
-          </a>
-          <a href="#" class="header__soc-link mr-2">
-            <img src="img/icon__vk.svg" alt="icon__vk.svg">
-          </a>
-          <a href="#" class="header__soc-link">
-            <img src="img/icon__yu.svg" alt="icon__yu.svg">
-          </a>
-        </div>
-        <div class="header__days">
-          365/7/24
-        </div>
-        <div class="banner__info pb-4 pt-4 pt-xl-0">
-          <div class="d-flex flex-column">
-            <div class="header__work d-flex justify-content-center align-items-start mb-3">
+      <div class="row align-items-center pr-sm-0 header__in">
+        <div class="col-xl-8">
+          <div class="d-flex align-items-center justify-content-between flex-sm-row flex-wrap flex-xl-nowrap flex-column">
+            <div class="header__work d-flex align-items-start mr-xl-5">
               <img src="img/icon__time_white.svg" alt="icon__time_white.svg" class="mr-2 mt-1">
               <div class="d-flex flex-column">
                 <span>Пн-Пт: 09.00-18.00</span>
                 <span>Сб-Вс: Выходной</span>
               </div>
             </div>
-            <div class="mb-3">
-              <div class="d-flex flex-column align-items-center">
-                <div class="mb-1"><span class="b">Офис:</span> пр.Обуховской Обороны, 112/2, оф.517</div>
-                <div class="mb-1"><span class="b">Производство/склад:</span> ул. Караваевская, д.57</div>
-                <div class="mb-1"><span class="b">Шоу-рум:</span> п.Сосново, ул.Вокзальная, 21</div>
-              </div>
-            </div>
-            <div class="mb-4">
-              <div class="d-flex flex-column align-items-center">
-                <a href="tel:88126042003" class="banner__tel">+7 (812) 604-20-03</a>
-                <a href="mailto:info@lzmmg.ru" class="banner__mail d-flex align-items-center">
-                  <img src="img/icon__mes_white.svg" alt="icon__mes_white.svg" class="mr-2">
-                  <span>info@lzmmg.ru</span>
-                </a>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-  </div>
-  <!--/mobile menu-->
-  <header class="header d-none d-xl-block">
-    <div class="container">
-      <div class="row align-items-center">
-        <div class="col-xl-9">
-          <div class="d-flex justify-content-between align-items-center flex-sm-row flex-wrap flex-xl-nowrap flex-column">
-            <a href="#" class="header__logo-min d-flex align-items-center mr-xl-5">
-              <img src="img/banner__logo-min.svg" alt="banner__logo-min.svg" class="mr-4">
-              <div class="d-none d-xl-flex flex-column">
-                <span>Ленинградский</span>
-                <span>Завод Металлоконструкций</span>
-              </div>
-            </a>
             <div class="header__city-wrp mr-4">
               <div class="header__city-select">Санкт-Петербург</div>
               <div class="header__city-list">
@@ -159,7 +53,7 @@
             </div>
           </div>
         </div>
-        <div class="col-xl-3">
+        <div class="col-xl-4">
           <div class="d-flex justify-content-xl-end justify-content-center align-items-center">
             <a href="#" class="header__cart d-flex align-items-center mr-3 mr-xl-4">
               <div class="header__cart-val mr-3">
@@ -168,10 +62,13 @@
               </div>
               <div class="header__cart-price">15 000 Р</div>
             </a>
-            <a href="#" class="header__cab d-flex align-items-center justify-content-end">
-              <img src="img/icon__cab.svg" alt="icon__cab.svg" class="mr-2">
-              <span>Личный кабинет</span>
-            </a>
+            <div class="header__cab-wrp mr-4 mr-sm-0">
+              <a href="#" class="header__cab-link header__cab d-flex align-items-center justify-content-end">
+                <img src="img/icon__cab.svg" alt="icon__cab.svg" class="mr-2">
+                <span class="und">Личный кабинет</span>
+              </a>
+            </div>
+            <a href="#mobile-menu" data-fancybox class="banner__hamburger"></a>
           </div>
         </div>
       </div>
@@ -278,9 +175,6 @@
           <div class="col-xl-2">
             <div class="d-flex flex-column align-items-center align-items-xl-start">
               <a href="#popup_call" data-fancybox class="btn btn_blue">Заказать звонок</a>
-              <a href="#sidebar" data-fancybox class="btn banner__menu-btn">
-                <span>Меню</span>
-              </a>
             </div>
           </div>
         </div>
@@ -752,16 +646,11 @@
       </li>
       <li>
         <span>
-          <div class="d-flex align-items-center">
+          <a href="#" class="header__cab-link d-flex align-items-center">
             <img src="img/mobile-menu__icon_3.svg" alt="">
             <div class="ml-3">Авторизация на сайте</div>
-          </div>
+          </a>
         </span>
-        <ul>
-          <li><a href="#">Москва</a></li>
-          <li><a href="#">Самара</a></li>
-          <li><a href="#">Псков</a></li>
-        </ul>
       </li>
       <!-- catalog -->
       <li>
@@ -990,6 +879,9 @@
   <!--/mobile menu v2-->
   <!--mobile search-->
   <div class="search_mob d-xl-none">
+    <div class="d-flex justify-content-end mb-3">
+      <a href="#" class="search_mob__close"><img src="img/icon__cross_white.svg" alt=""></a>
+    </div>
     <form action="" class="banner__search mb-3 mb-xl-0">
       <input type="text" class="banner__search-input" placeholder="Катанка">
       <input type="submit" class="banner__search-btn" value="" title="Нажмите для поиска">
@@ -1014,30 +906,57 @@
       <a href="#" class="und">Профнастил СВ</a>
       <a href="#" class="und">Водосточная система</a>
       <a href="#" class="und">Металлочерепица</a>
+      <a href="#" class="und">Монтерей</a>
+      <a href="#" class="und">Штакетник</a>
+      <a href="#" class="und">Профнастил СВ</a>
+      <a href="#" class="und">Водосточная система</a>
+      <a href="#" class="und">Металлочерепица</a>
     </div>
   </div>
   <!--/mobile search-->
+  <!--reg-->
+  <div class="header__cab-in-wrp header__cab-in-wrp_reg">
+    <div class="header__cab-in">
+      <div class="header__cab-ttl">
+        <span>Регистрация</span>
+        <span class="header__cab-ttl-btn"></span>
+      </div>
+      <div class="d-flex flex-column">
+        <input type="text" placeholder="Контактное лицо" class="mb-2">
+        <input type="email" placeholder="E-mail" class="mb-2">
+        <input type="email" placeholder="Подтвердите e-mail" class="mb-3">
+        <div class="btn btn_subm mb-2">
+          <input type="submit" value="Зарегистрироваться">
+        </div>
+      </div>
+      <div class="tac"><span>Нажимая на кнопку регистрации, вы соглашаетесь с</span> <a href="#" class="und">Политикой конфиденциальности компании</a></div>
+      <div class="tac mt-2 header__cab-show-log">
+        Уже зарегистрированы? <a href="#" class="header__cab-show-log-link und">Войти</a>
+      </div>
+    </div>
+  </div>
+  <!--/reg-->
+  <!--log-->
+  <div class="header__cab-in-wrp header__cab-in-wrp_log">
+    <div class="header__cab-in">
+      <div class="header__cab-ttl">
+        <span>Авторизация</span>
+        <span class="header__cab-ttl-btn"></span>
+      </div>
+      <div class="d-flex flex-column">
+        <input type="text" placeholder="Введите логин" class="mb-2">
+        <input type="password" placeholder="Введите пароль" class="mb-2">
+        <a href="#" class="und tar mb-3">Забыли пароль?</a>
+        <div class="btn btn_subm mb-2">
+          <input type="submit" value="Войти">
+        </div>
+      </div>
+      <a href="#" class="und tac w100 d-block header__cab-show-reg">Регистрация на сайте</a>
+    </div>
+  </div>
+  <!--/log-->
   <script src="js/libs.min.js"></script>
-  <script src="libs/mmenu/mmenu.js"></script>
-
   <script src="https://api-maps.yandex.ru/2.1/?apikey=3629c6cc-8564-466b-9c39-8680f92c24c3&lang=ru_RU" type="text/javascript"></script>
   <script src="js/scripts.js"></script>
-  <!-- Marquiz script start -->
-  <script src="//script.marquiz.ru/v1.js" type="application/javascript"></script>
-  <script>
-  document.addEventListener("DOMContentLoaded", function() {
-    Marquiz.init({ 
-      id: '5c6a8f6a084fad005583a641', 
-      autoOpen: false, 
-      autoOpenFreq: 'once', 
-      openOnExit: false 
-    });
-  });
-  </script>
-  <div class="d-none">
-  #popup:marquiz_5c6a8f6a084fad005583a641
-    onclick="Marquiz.showModal('5c6a8f6a084fad005583a641')"
-  </div>
-  <!-- Marquiz script end -->
 </body>
 </html>

@@ -17,8 +17,9 @@ body {
   transition: unset;
 }
 
-body.fixed {
+.fixed {
   overflow-y: hidden;
+  overflow-x: auto;
 }
 
 *,
@@ -114,31 +115,36 @@ select {
 
 input[type="text"]::-webkit-input-placeholder,
 input[type="email"]::-webkit-input-placeholder,
-input[type="tel"]::-webkit-input-placeholder {
+input[type="tel"]::-webkit-input-placeholder,
+input[type="password"]::-webkit-input-placeholder {
   color: #05162E;
 }
 
 input[type="text"]::-moz-placeholder,
 input[type="email"]::-moz-placeholder,
-input[type="tel"]::-moz-placeholder {
+input[type="tel"]::-moz-placeholder,
+input[type="password"]::-moz-placeholder {
   color: #05162E;
 }
 
 input[type="text"]:-ms-input-placeholder,
 input[type="email"]:-ms-input-placeholder,
-input[type="tel"]:-ms-input-placeholder {
+input[type="tel"]:-ms-input-placeholder,
+input[type="password"]:-ms-input-placeholder {
   color: #05162E;
 }
 
 input[type="text"]::-ms-input-placeholder,
 input[type="email"]::-ms-input-placeholder,
-input[type="tel"]::-ms-input-placeholder {
+input[type="tel"]::-ms-input-placeholder,
+input[type="password"]::-ms-input-placeholder {
   color: #05162E;
 }
 
 input[type="text"]::placeholder,
 input[type="email"]::placeholder,
-input[type="tel"]::placeholder {
+input[type="tel"]::placeholder,
+input[type="password"]::placeholder {
   color: #05162E;
 }
 
@@ -1258,6 +1264,8 @@ input[type="number"] {
   border-radius: 3px;
   background-color: #fff;
   color: #000;
+  -webkit-box-shadow: 0px 2px 2px rgba(0, 0, 0, 0.15);
+          box-shadow: 0px 2px 2px rgba(0, 0, 0, 0.15);
 }
 
 .header__cab-in::after {
@@ -1276,8 +1284,10 @@ input[type="number"] {
 .header__cab-in-wrp {
   position: absolute;
   width: 300px;
-  right: 0;
-  top: 30px;
+  right: 50%;
+  margin-right: -webkit-calc(-1130px/2);
+  margin-right: calc(-1130px/2);
+  top: 78px;
   z-index: 3;
   -webkit-transition: unset;
   -o-transition: unset;
