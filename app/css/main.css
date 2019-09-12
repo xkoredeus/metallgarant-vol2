@@ -1345,9 +1345,14 @@ input[type="number"] {
   color: #fff;
 }
 
+.header__logo-min img {
+  max-width: 123px;
+}
+
 .header__logo-min div {
+  line-height: 1.2;
   position: relative;
-  max-width: 100px;
+  max-width: 140px;
 }
 
 .header__logo-min div::before {
