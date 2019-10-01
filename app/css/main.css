@@ -5852,3 +5852,9 @@ input[type=range]:focus::-ms-fill-upper {
   margin-left: auto;
   margin-right: auto;
 }
+
+.cart__del-bot {
+  -webkit-transition: unset;
+  -o-transition: unset;
+  transition: unset;
+}

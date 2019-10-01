@@ -395,9 +395,14 @@ $(function() {
   //   e.preventDefault();
   //   $(this).parents('.cart__item-cnt').slideToggle().parents('.cart__item').toggleClass('active checked').next('.cart__item').find('.cart__item-cnt').slideToggle();
   // });
+  $(document).on('change', '[name="cart__del"]', function() {
+    if ($('[name="cart__del"]:checked').attr('id') == 'cart__checkbox_2') {
+      $('.cart__del-bot').hide();
+    } else {
+      $('.cart__del-bot').show();
+    }
+  })
   
-  
-
   //Стилизованный input type file
   $(".upload__file").change(function() {
     var filename = [];
