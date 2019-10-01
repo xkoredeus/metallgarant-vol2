@@ -546,6 +546,17 @@ input[type="number"]
         padding: 12px 30px
         border-radius: 2px
         border: 1px solid #E0E0E0
+  .popup_succ
+    position: relative
+    z-index: 2
+    background-color: #fff
+    padding: 30px
+    max-width: 770px
+    width: 100%
+    display: flex
+    flex-direction: column
+    align-items: center
+    text-align: center
 .owl-carousel
   .owl-item
     img
@@ -832,6 +843,34 @@ input[type="number"]
           display: none
         &_log
           display: none
+        &_logged
+          display: none
+          .header__cab
+            &-in
+              padding: 0
+            &-ttl
+              padding-top: 15px
+              padding-left: 20px
+              padding-right: 20px
+              &-btn
+                margin-top: 8px
+                right: 20px
+            &-login
+              font-family: $a-reg
+              position: relative
+              font-size: 15px
+              text-transform: none
+              &-link
+                color: #828282
+                padding: 12px 25px
+                &:nth-child(1)
+                  border-top: 1px solid #ccc
+                &:nth-child(2)
+                  border-bottom-left-radius: 4px
+                  border-bottom-right-radius: 4px
+                &:hover
+                  background-color: #C4C4C4
+                  color: #828282
     &-ttl
       font-size: 16px
       font-family: $a-bold
@@ -855,6 +894,7 @@ input[type="number"]
       font-size: 15px
       a
         color: $blue
+    &
   &__logo-min
     color: #fff
     img

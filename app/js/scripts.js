@@ -331,7 +331,16 @@ $(function() {
     $('.header__cab-in-wrp_reg').slideToggle(50);
     $('.header__cab-in-wrp_log').slideToggle(50);
   });
-  
+  //logged popup
+  $('.header__cab-link_logged').on('click', function(e) {
+    e.preventDefault();
+    if ( $(window).width() < 1200 ) {
+      $("#menu").data( "mmenu" ).close();
+      $('.header__cab-in-wrp_logged').slideToggle(150);
+    } else {
+      $('.header__cab-in-wrp_logged').slideToggle(50);
+    }
+  })
   // $(document).on('click', function (e) {
   //   var container = $('.header__cab-in-wrp');
   //   // if the target of the click isn't the container nor a descendant of the container

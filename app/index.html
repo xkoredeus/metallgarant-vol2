@@ -76,9 +76,9 @@
               <div class="header__cart-price">15 000 Р</div>
             </a>
             <div class="header__cab-wrp mr-4 mr-sm-0">
-              <a href="#" class="header__cab-link header__cab d-flex align-items-center justify-content-end">
+              <a href="#" class="header__cab-link_logged header__cab d-flex align-items-center justify-content-end">
                 <img src="img/icon__cab.svg" alt="icon__cab.svg" class="mr-2">
-                <span class="und">Личный кабинет</span>
+                <span class="und">Username123456789</span>
               </a>
             </div>
             <a href="#mobile-menu" data-fancybox class="banner__hamburger"></a>
@@ -1026,12 +1026,12 @@
         <div class="col-xl-3 col-sm-6 mb-4 mb-xl-3">
           <div class="footer__ttl footer__ttl_mobile">Лзм металлгарант</div>
           <div class="d-flex flex-column align-items-center align-items-sm-start">
-            <a href="#" class="mb-1 und footer__link">О компании</a>
-            <a href="#" class="mb-1 und footer__link">Акции</a>
-            <a href="#" class="mb-1 und footer__link">Карьера</a>
-            <a href="#" class="mb-1 und footer__link">Вакансии</a>
-            <a href="#" class="mb-1 und footer__link">Корпоративная жизнь</a>
-            <a href="#" class="mb-1 und footer__link">Реализованные проекты</a>
+            <a href="#popup_succ-reg" data-fancybox class="mb-1 und footer__link">О компании</a>
+            <a href="#popup_succ-auth" data-fancybox class="mb-1 und footer__link">Акции</a>
+            <a href="#popup_succ-ord" data-fancybox class="mb-1 und footer__link">Карьера</a>
+            <a href="#popup_succ-rev" data-fancybox class="mb-1 und footer__link">Вакансии</a>
+            <a href="#popup_succ-res" data-fancybox class="mb-1 und footer__link">Корпоративная жизнь</a>
+            <a href="#popup_succ-cart" data-fancybox class="mb-1 und footer__link">Реализованные проекты</a>
             <a href="#" class="mb-1 und footer__link">Отзывы</a>
             <a href="#" class="mb-1 und footer__link">Контакты</a>
           </div>
@@ -1168,6 +1168,62 @@
       </form>
     </div>
   </div>
+  <div id="popup_succ-cart" class="popup__container" style="display:none">
+    <div class="popup__wrp popup_cart__wrp">
+      <div class="popup_succ">
+        <div class="section__ttl">ТОВАР УСПЕШНО ДОБАВЛЕН В КОРЗИНУ</div>
+        <div class="row w-100">
+          <div class="col-sm-6 mb-2 mb-xl-0">
+            <a href="#" class="btn btn_blue w-100">Перейти в корзину</a>
+          </div>
+          <div class="col-sm-6 mb-2 mb-xl-0">
+            <a href="#" class="btn w-100">Продолжить покупки</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div id="popup_succ-reg" class="popup__container" style="display:none">
+    <div class="popup__wrp popup_cart__wrp">
+      <div class="popup_succ">
+        <div class="section__ttl">Спасибо за регистрацию!</div>
+        <p class="tac mb-0">Информация о вашем профиле отправлена на указанный вами электронный адрес</p>
+      </div>
+    </div>
+  </div>
+  <div id="popup_succ-auth" class="popup__container" style="display:none">
+    <div  class="popup__wrp popup_cart__wrp">
+      <div class="popup_succ">
+        <div class="section__ttl">Вы успешно авторизованы на сайте</div>
+        <img src="img/icon__success.svg" alt="" class="tac">
+      </div>
+    </div>
+  </div>
+  <div id="popup_succ-ord" class="popup__container" style="display:none">
+    <div  class="popup__wrp popup_cart__wrp">
+      <div class="popup_succ">
+        <div class="section__ttl">Ваш заказ успешно отправлен. Спасибо за заказ! </div>
+        <img src="img/icon__success.svg" alt="" class="mb-3 tac">
+        <p class="tac">Отследить статус вашего заказа можно в <a href="#" class="blue und">Личном кабинете</a></p>
+      </div>
+    </div>
+  </div>
+  <div id="popup_succ-rev" class="popup__container" style="display:none">
+    <div  class="popup__wrp popup_cart__wrp">
+      <div class="popup_succ">
+        <div class="section__ttl">Спасибо, ваш отклик доставлен</div>
+        <img src="img/icon__success.svg" alt="" class="tac">
+      </div>
+    </div>
+  </div>
+  <div id="popup_succ-res" class="popup__container" style="display:none">
+    <div  class="popup__wrp popup_cart__wrp">
+      <div class="popup_succ">
+        <div class="section__ttl">Ваше резюме отправлено, <br> спасибо!</div>
+        <img src="img/icon__success.svg" alt="" class="tac">
+      </div>
+    </div>
+  </div>
   <!-- preloader-->
   <div class="preloader">
     <div class="preloader__icon"></div>
@@ -1204,9 +1260,9 @@
       </li>
       <li>
         <span>
-          <a href="#" class="header__cab-link d-flex align-items-center">
+          <a href="#" class="header__cab-link_logged d-flex align-items-center">
             <img src="img/mobile-menu__icon_3.svg" alt="">
-            <div class="ml-3">Авторизация на сайте</div>
+            <div class="ml-3">Username123456789</div>
           </a>
         </span>
       </li>
@@ -1513,6 +1569,20 @@
     </div>
   </div>
   <!--/log-->
+  <!--logged-->
+  <div class="header__cab-in-wrp header__cab-in-wrp_logged">
+    <div class="header__cab-in">
+      <div class="header__cab-ttl">
+        <span class="header__cab-login blue">Username123456789</span>
+        <span class="header__cab-ttl-btn"></span>
+      </div>
+      <div class="d-flex flex-column">
+        <a href="#" class="header__cab-login-link">Личный кабинет</a>
+        <a href="#" class="header__cab-login-link">Выйти</a>
+      </div>
+    </div>
+  </div>
+  <!--/logged-->
   <script src="js/libs.min.js"></script>
   <script src="https://api-maps.yandex.ru/2.1/?apikey=3629c6cc-8564-466b-9c39-8680f92c24c3&lang=ru_RU" type="text/javascript"></script>
   <script src="js/scripts.js"></script>
