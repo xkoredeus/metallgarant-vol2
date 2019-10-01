@@ -597,6 +597,9 @@ input[type="number"] {
   color: #fff;
   cursor: pointer;
   max-width: 230px;
+  min-width: 170px;
+  width: 100%;
+  height: 100%;
   padding-right: 49px;
   padding-left: 6px;
 }
@@ -613,7 +616,30 @@ input[type="number"] {
 .btn_file label.filename {
   cursor: pointer;
   margin-bottom: 0;
-  cursor: pointer;
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+      -ms-flex-align: center;
+          align-items: center;
+  z-index: 1;
+}
+
+.btn_file label.filename span {
+  -webkit-transform: translateX(-24px);
+      -ms-transform: translateX(-24px);
+          transform: translateX(-24px);
 }
 
 .btn_file img {
