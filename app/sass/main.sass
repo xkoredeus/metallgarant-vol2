@@ -672,6 +672,12 @@ input[type="number"]
       background-image: url('../img/icon__file.svg')
   &:not(:last-child)
     margin-bottom: 15px
+  &_date
+    &::before
+      background-image: url('../img/icon__calendar.svg')
+      left: auto
+      right: 25px
+      top: 13px
 .main-page
   .banner
     background-image: none
@@ -2369,6 +2375,35 @@ input[type=range]
         background: #134284
       .ui-state-active
         border-radius: 50%
+    &__date
+      &-wrp
+        max-width: 170px
+.ui-datepicker
+  transition: unset
+  .ui-datepicker
+    &-prev
+      border: 1px solid #ccc
+      &-hover
+        top: 2px !important
+        left: 2px !important
+        opacity: .8
+      span
+        font-weight: 400 !important
+        background: url('../img/icon__arr.svg') no-repeat 50% 50% / contain
+        transform: rotate(90deg)
+    &-next
+      border: 1px solid #ccc
+      &-hover
+        top: 2px !important
+        right: 2px !important
+        opacity: .8
+      span
+        font-weight: 400 !important
+        background: url('../img/icon__arr.svg') no-repeat 50% 50% / contain
+        transform: rotate(-90deg)
+  .ui-state-highlight
+    background: $yellow
+    color: #fff !important
 #tickmarks
   border: .5em solid #137da0
   font-size: 2em

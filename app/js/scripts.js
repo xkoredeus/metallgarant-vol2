@@ -608,7 +608,14 @@ $(function() {
       console.log(value);
       $('.del-calc__slider').slider('value', parseInt(value));
   });
-
+  $('.del-calc__date').datepicker({
+    dateFormat : "dd.mm.yy",
+    prevText: 'Пред',
+    nextText: 'След',
+    minDate: new Date($('#hiddendelivdate').val()),
+    monthNames : ['Январь','Февраль','Март','Апрель','Май','Июнь','Июль','Август','Сентябрь','Октябрь','Ноябрь','Декабрь'],
+    dayNamesMin : ['Вс','Пн','Вт','Ср','Чт','Пт','Сб'],
+  });
   setInterval(function() { makeTimer(); }, 1000);
   //mobile menu
   $(".banner__hamburger").on('click',function() {

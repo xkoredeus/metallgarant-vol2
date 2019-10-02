@@ -1076,6 +1076,13 @@ input[type="number"] {
   margin-bottom: 15px;
 }
 
+.input__wrp_date::before {
+  background-image: url("../img/icon__calendar.svg");
+  left: auto;
+  right: 25px;
+  top: 13px;
+}
+
 .main-page .banner {
   background-image: none;
   position: relative;
@@ -3708,6 +3715,57 @@ input[type=range]:focus::-ms-fill-upper {
 
 .del-calc__slider .ui-state-active {
   border-radius: 50%;
+}
+
+.del-calc__date-wrp {
+  max-width: 170px;
+}
+
+.ui-datepicker {
+  -webkit-transition: unset;
+  -o-transition: unset;
+  transition: unset;
+}
+
+.ui-datepicker .ui-datepicker-prev {
+  border: 1px solid #ccc;
+}
+
+.ui-datepicker .ui-datepicker-prev-hover {
+  top: 2px !important;
+  left: 2px !important;
+  opacity: .8;
+}
+
+.ui-datepicker .ui-datepicker-prev span {
+  font-weight: 400 !important;
+  background: url("../img/icon__arr.svg") no-repeat 50% 50%/contain;
+  -webkit-transform: rotate(90deg);
+      -ms-transform: rotate(90deg);
+          transform: rotate(90deg);
+}
+
+.ui-datepicker .ui-datepicker-next {
+  border: 1px solid #ccc;
+}
+
+.ui-datepicker .ui-datepicker-next-hover {
+  top: 2px !important;
+  right: 2px !important;
+  opacity: .8;
+}
+
+.ui-datepicker .ui-datepicker-next span {
+  font-weight: 400 !important;
+  background: url("../img/icon__arr.svg") no-repeat 50% 50%/contain;
+  -webkit-transform: rotate(-90deg);
+      -ms-transform: rotate(-90deg);
+          transform: rotate(-90deg);
+}
+
+.ui-datepicker .ui-state-highlight {
+  background: #F18E02;
+  color: #fff !important;
 }
 
 #tickmarks {
