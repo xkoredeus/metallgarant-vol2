@@ -593,6 +593,21 @@ $(function() {
       $("#minutes").html("<div>" + minutes + "</div>" + "<span>минуты</span>");
       $("#seconds").html("<div>" + seconds + "</div>" + "<span>секунды</span>");
   }
+  $('.del-calc__slider').slider({
+      range: "min",
+      value: 45,
+      step: 1,
+      min: 1,
+      max: 1000,
+      slide: function( event, ui ) {
+        $( '.del-calc__slider-value' ).val( ui.value + ' км');
+      }
+  });
+  $('.del-calc__slider-value').change(function () {
+      var value = this.value.substring(1);
+      console.log(value);
+      $('.del-calc__slider').slider('value', parseInt(value));
+  });
 
   setInterval(function() { makeTimer(); }, 1000);
   //mobile menu
