@@ -1076,6 +1076,15 @@ input[type="number"] {
   margin-bottom: 15px;
 }
 
+.input__wrp_date {
+  background-color: transparent;
+}
+
+.input__wrp_date input {
+  background-color: transparent;
+  position: relative;
+}
+
 .input__wrp_date::before {
   background-image: url("../img/icon__calendar.svg");
   left: auto;

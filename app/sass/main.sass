@@ -673,6 +673,11 @@ input[type="number"]
   &:not(:last-child)
     margin-bottom: 15px
   &_date
+    background-color: $tr
+    input
+      background-color: $tr
+      // z-index: 2
+      position: relative
     &::before
       background-image: url('../img/icon__calendar.svg')
       left: auto
