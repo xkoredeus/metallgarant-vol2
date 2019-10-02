@@ -607,7 +607,7 @@ $(function() {
     if ( $(window).width() > 1199 ) {
       $('.begin__nav-link-wrp').hover( function() {
         $(this).siblings('.begin__nav-link-wrp').find('.begin__nav-sub').hide(0);
-        $(this).find('.begin__nav-sub').slideToggle(50);
+        $(this).find('.begin__nav-sub').slideToggle(0);
       });
     };
     if ( $(window).width() < 1199 ) {
