@@ -641,6 +641,7 @@
     min-height: -webkit-calc(100vh - 49px);
     min-height: calc(100vh - 49px);
     top: 49px;
+    height: auto;
   }
   .mm-menu__tel {
     color: #008CFF !important;
@@ -671,7 +672,6 @@
   .mm-listitem_selected .mm-listitem__text {
     background-color: #42aaff;
   }
-  .mm-listitem span:hover,
   .mm-listitem a:hover {
     background-color: #42aaff;
   }
