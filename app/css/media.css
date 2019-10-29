@@ -610,6 +610,9 @@
     color: #fff;
     margin-bottom: 5px;
   }
+  .mm-panel::after {
+    height: 60px;
+  }
   .mm-slideout {
     z-index: auto;
   }
@@ -670,10 +673,7 @@
     left: 0 !important;
     right: 0 !important;
   }
-  .mm-listitem_selected .mm-listitem__text {
-    background-color: #42aaff;
-  }
-  .mm-listitem a:hover {
+  .mm-listitem__btn:hover {
     background-color: #42aaff;
   }
   .header__cab-in-wrp {

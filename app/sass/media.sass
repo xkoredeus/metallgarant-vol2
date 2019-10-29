@@ -552,6 +552,9 @@ $a-bold: 'AvenirNextCyr-Bold'
       color: #fff
       margin-bottom: 5px
   .mm
+    &-panel
+      &::after
+        height: 60px
     &-slideout
       z-index: auto
     &-wrapper_opened
@@ -601,13 +604,16 @@ $a-bold: 'AvenirNextCyr-Bold'
       &:after
         left: 0 !important
         right: 0 !important
-      &_selected
-        .mm-listitem__text
+      &__btn
+        &:hover
           background-color: #42aaff
+      // &_selected
+        // .mm-listitem__text
+        // .mm-listitem__btn
           // color: #fff !important
       // span:hover,
-      a:hover
-        background-color: #42aaff
+      // a:hover
+      //   background-color: #42aaff
         // &>div,
         // &>span
         //   color: #fff !important
